@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright (C) 2014 - Sébastien Wilmet <swilmet@gnome.org>
+ * Copyright (C) 2014-2020 - Sébastien Wilmet <swilmet@gnome.org>
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@
  */
 
 #include "latexila-build-tools-personal.h"
-#include <gio/gio.h>
+#include <tepl/tepl.h>
 #include "latexila-build-tool.h"
 #include "latexila-utils.h"
 
@@ -184,7 +184,7 @@ latexila_build_tools_personal_save (LatexilaBuildToolsPersonal *build_tools)
 
 	xml_file = get_xml_file ();
 
-	latexila_utils_create_parent_directories (xml_file, &error);
+	tepl_utils_create_parent_directories (xml_file, NULL, &error);
 
 	if (error == NULL)
 	{

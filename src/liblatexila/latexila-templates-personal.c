@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright (C) 2015 - Sébastien Wilmet <swilmet@gnome.org>
+ * Copyright (C) 2015-2020 - Sébastien Wilmet <swilmet@gnome.org>
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,6 +34,7 @@
 #include "latexila-templates-personal.h"
 #include <string.h>
 #include <stdlib.h>
+#include <tepl/tepl.h>
 #include "latexila-templates-common.h"
 #include "latexila-utils.h"
 
@@ -365,7 +366,7 @@ save_rc_file (LatexilaTemplatesPersonal  *templates,
 				    (const gchar * const *) files,
 				    personal_templates_count);
 
-	if (!latexila_utils_create_parent_directories (rc_file, error))
+	if (!tepl_utils_create_parent_directories (rc_file, NULL, error))
 	{
 		ret = FALSE;
 		goto out;
@@ -484,7 +485,7 @@ latexila_templates_personal_create (LatexilaTemplatesPersonal  *templates,
 
 	template_file = get_personal_template_file_by_index (template_num);
 
-	if (!latexila_utils_create_parent_directories (template_file, error))
+	if (!tepl_utils_create_parent_directories (template_file, NULL, error))
 	{
 		ret = FALSE;
 		goto out;

@@ -21,7 +21,7 @@ Dependencies
 * GLib >= 2.56
 * GTK+ >= 3.22
 * GtkSourceView >= 4.0
-* Tepl >= 4.3 - https://wiki.gnome.org/Projects/Tepl
+* Tepl >= 4.5 - https://wiki.gnome.org/Projects/Tepl
 * gspell >= 1.8
 * gee-0.8 >= 0.10
 * gsettings-desktop-schemas

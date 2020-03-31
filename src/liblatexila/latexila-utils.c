@@ -6,7 +6,7 @@
  * Copyright (C) 2000, 2002 - Chema Celorio, Paolo Maggi
  * Copyright (C) 2003-2005 - Paolo Maggi
  *
- * Copyright (C) 2014, 2015, 2017, 2018 - Sébastien Wilmet <swilmet@gnome.org>
+ * Copyright (C) 2014-2020 - Sébastien Wilmet <swilmet@gnome.org>
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -265,54 +265,6 @@ latexila_utils_get_dialog_component (const gchar *title,
 }
 
 /**
- * latexila_utils_create_parent_directories:
- * @file: a file
- * @error: (out) (optional): a location to a %NULL #GError, or %NULL.
- *
- * Synchronously creates parent directories of @file, so that @file can be
- * saved.
- *
- * Returns: whether the directories are correctly created. %FALSE is returned on
- * error.
- */
-gboolean
-latexila_utils_create_parent_directories (GFile   *file,
-					  GError **error)
-{
-	GFile *parent;
-	GError *my_error = NULL;
-
-	g_return_val_if_fail (G_IS_FILE (file), FALSE);
-	g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
-
-	parent = g_file_get_parent (file);
-
-	if (parent == NULL)
-	{
-		return TRUE;
-	}
-
-	g_file_make_directory_with_parents (parent, NULL, &my_error);
-	g_object_unref (parent);
-
-	if (my_error != NULL)
-	{
-		if (g_error_matches (my_error, G_IO_ERROR, G_IO_ERROR_EXISTS))
-		{
-			g_error_free (my_error);
-			return TRUE;
-		}
-		else
-		{
-			g_propagate_error (error, my_error);
-			return FALSE;
-		}
-	}
-
-	return TRUE;
-}
-
-/**
  * latexila_utils_join_widgets:
  * @widget_top: the #GtkWidget at the top.
  * @widget_bottom: the #GtkWidget at the bottom.
@@ -430,7 +382,7 @@ migrate_latexila_to_gnome_latex_copy_file (GFile *latexila_file,
 {
 	GError *error = NULL;
 
-	latexila_utils_create_parent_directories (glatex_file, &error);
+	tepl_utils_create_parent_directories (glatex_file, NULL, &error);
 	if (error != NULL)
 	{
 		goto out;

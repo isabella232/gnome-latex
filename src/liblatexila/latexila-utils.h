@@ -34,9 +34,6 @@ void		latexila_utils_file_query_exists_async		(GFile               *file,
 gboolean	latexila_utils_file_query_exists_finish		(GFile        *file,
 								 GAsyncResult *result);
 
-gboolean	latexila_utils_create_parent_directories	(GFile   *file,
-								 GError **error);
-
 void		latexila_utils_show_uri				(GtkWidget    *widget,
 								 const gchar  *uri,
 								 guint32       timestamp,

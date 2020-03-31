@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright © 2010-2012 Sébastien Wilmet
+ * Copyright © 2010-2020 Sébastien Wilmet
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -125,7 +125,7 @@ namespace Utils
     {
         try
         {
-            Latexila.utils_create_parent_directories (file);
+            Tepl.utils_create_parent_directories (file, null);
 
             file.replace_contents (contents.data, null, make_backup,
                 FileCreateFlags.NONE, null);

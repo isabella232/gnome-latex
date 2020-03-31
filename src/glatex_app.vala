@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright © 2010-2015, 2017, 2018 Sébastien Wilmet
+ * Copyright © 2010-2020 Sébastien Wilmet
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -145,7 +145,7 @@ public class GlatexApp : Gtk.Application
         File accel_file = File.new_for_path (accel_filename);
         try
         {
-            Latexila.utils_create_parent_directories (accel_file);
+            Tepl.utils_create_parent_directories (accel_file, null);
             Gtk.AccelMap.save (accel_filename);
         }
         catch (Error error)

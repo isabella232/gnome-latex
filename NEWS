@@ -1,5 +1,13 @@
 GNOME LaTeX NEWS
 
+Release 3.36.0, 2020-03-31, “Corona”
+------------------------------------
+* Fix compilation error with valac >= 0.42.
+* Move some utils functions to Tepl.
+* Build system: small update.
+* AppData: small update.
+* Translation updates.
+
 Release 3.32.0, 2019-03-10, “Raging Storm”
 ------------------------------------------
 * Apply GNOME goal “App menu retirement”:

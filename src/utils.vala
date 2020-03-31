@@ -24,16 +24,6 @@ namespace Utils
     /*************************************************************************/
     // String utilities
 
-    public string str_middle_truncate (string str, uint max_length)
-    {
-        if (str.length <= max_length)
-            return str;
-
-        uint half_length = (max_length - 4) / 2;
-        int l = str.length;
-        return str[0:half_length] + "..." + str[l-half_length:l];
-    }
-
     public bool char_is_escaped (string text, long char_index)
     {
         return_val_if_fail (char_index < text.length, false);
@@ -70,41 +60,6 @@ namespace Utils
 
     /*************************************************************************/
     // URI, File or Path utilities
-
-    public string? uri_get_dirname (string uri)
-    {
-        return_val_if_fail (uri != null, null);
-        string dir = Path.get_dirname (uri);
-        if (dir == ".")
-            return null;
-        return Tepl.utils_replace_home_dir_with_tilde (dir);
-    }
-
-    /* Returns a string suitable to be displayed in the UI indicating
-     * the name of the directory where the file is located.
-     * For remote files it may also contain the hostname etc.
-     * For local files it tries to replace the home dir with ~.
-     */
-    public string? get_dirname_for_display (File location)
-    {
-        try
-        {
-            Mount mount = location.find_enclosing_mount (null);
-            string mount_name = mount.get_name ();
-            string? dirname =
-                uri_get_dirname (location.get_path () ?? location.get_uri ());
-
-            if (dirname == null || dirname == ".")
-                return mount_name;
-            return mount_name + " " + dirname;
-        }
-
-        // local files or uri without mounts
-        catch (Error e)
-        {
-            return uri_get_dirname (location.get_path () ?? location.get_uri ());
-        }
-    }
 
     public void delete_file (File file)
     {

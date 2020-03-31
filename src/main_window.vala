@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright © 2010-2015, 2017 Sébastien Wilmet
+ * Copyright © 2010-2020 Sébastien Wilmet
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -644,15 +644,7 @@ public class MainWindow : ApplicationWindow
                 DocumentTab tab = create_tab_from_location (location, jump_to);
                 tab.document.readonly = true;
 
-                string primary_msg =
-                    _("This file (%s) is already opened in another GNOME LaTeX window.")
-                    .printf (location.get_parse_name ());
-                string secondary_msg = _("GNOME LaTeX opened this instance of the file in a non-editable way. Do you want to edit it anyway?");
-
-                InfoBar infobar = new Tepl.InfoBar.simple (MessageType.WARNING,
-                    primary_msg, secondary_msg);
-                infobar.add_button (_("Edit Anyway"), ResponseType.YES);
-                infobar.add_button (_("Don’t Edit"), ResponseType.NO);
+                Tepl.InfoBar infobar = Tepl.io_error_info_bar_file_already_open (location);
                 tab.add_info_bar (infobar);
                 infobar.show ();
 

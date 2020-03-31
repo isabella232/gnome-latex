@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright © 2010, 2011, 2017 Sébastien Wilmet
+ * Copyright © 2010-2020 Sébastien Wilmet
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -163,19 +163,8 @@ public class DocumentTab : Tepl.Tab
         {
             ask_if_externally_modified = true;
 
-            string primary_msg = _("The file %s changed on disk.")
-                .printf (document.location.get_parse_name ());
-
-            string secondary_msg;
-            if (document.get_modified ())
-                secondary_msg = _("Do you want to drop your changes and reload the file?");
-            else
-                secondary_msg = _("Do you want to reload the file?");
-
-            Tepl.InfoBar infobar = new Tepl.InfoBar.simple (MessageType.WARNING,
-                primary_msg, secondary_msg);
-            infobar.add_button (_("_Reload"), ResponseType.OK);
-            infobar.add_button (_("_Cancel"), ResponseType.CANCEL);
+            Tepl.InfoBar infobar = Tepl.io_error_info_bar_externally_modified (document.location,
+                document.get_modified ());
             add_info_bar (infobar);
             infobar.show ();
 

@@ -275,7 +275,8 @@ latexila_utils_get_dialog_component (const gchar *title,
  * @widget_bottom.
  */
 /* TODO try to simply add the GTK_STYLE_CLASS_LINKED class to the
- * GtkStyleContext of a GtkGrid.
+ * GtkStyleContext of a GtkBox. Test also in RTL (right-to-left) text, although
+ * here it's a vertical container so it should not matter.
  */
 GtkWidget *
 latexila_utils_join_widgets (GtkWidget *widget_top,

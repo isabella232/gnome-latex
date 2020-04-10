@@ -2,26 +2,26 @@
 # Copyright (C) 2015 latexila's COPYRIGHT HOLDER
 # This file is distributed under the same license as the latexila package.
 #
-# yurchor <yurchor@ukr.net>, 2015.
+# yurchor <yurchor@ukr.net>, 2015, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: latexila master\n"
-"POT-Creation-Date: 2015-10-08 13:37+0000\n"
-"PO-Revision-Date: 2015-10-09 17:21+0300\n"
+"POT-Creation-Date: 2020-03-31 13:09+0000\n"
+"PO-Revision-Date: 2020-04-10 19:34+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n%"
-"10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.07.70\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Юрій Чорноіван <yurchor@ukr.net>, 2015"
+msgstr "Юрій Чорноіван <yurchor@ukr.net>, 2015, 2020"
 
 #. (itstool) path: page/title
 #: C/build_tools.page:10
@@ -34,7 +34,8 @@ msgid ""
 "The purpose of the build tools is to generate a document in the PDF, DVI or "
 "PS format."
 msgstr ""
-"Засоби збирання призначено для створення документів у форматах PDF, DVI та PS."
+"Засоби збирання призначено для створення документів у форматах PDF, DVI та "
+"PS."
 
 #. (itstool) path: section/title
 #: C/build_tools.page:20
@@ -89,19 +90,26 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/build_tools.page:78
+#| msgid ""
+#| "Using a higher-level tool such as Latexmk simplify a lot all this "
+#| "process, since only one command is required. Indeed, Latexmk can detect "
+#| "how many times the <cmd>latex</cmd> or <cmd>pdflatex</cmd> command must "
+#| "be called, and whether <cmd>bibtex</cmd> or <cmd>makeindex</cmd> is "
+#| "required. By default, LaTeXila uses Latexmk."
 msgid ""
 "Using a higher-level tool such as Latexmk simplify a lot all this process, "
 "since only one command is required. Indeed, Latexmk can detect how many "
 "times the <cmd>latex</cmd> or <cmd>pdflatex</cmd> command must be called, "
 "and whether <cmd>bibtex</cmd> or <cmd>makeindex</cmd> is required. By "
-"default, LaTeXila uses Latexmk."
+"default, GNOME LaTeX uses Latexmk."
 msgstr ""
 "Використання високорівневого засобу, зокрема Latexmk, значно спрощує увесь "
 "процес, оскільки для його виконання потрібна лише одна команда. Зокрема, "
 "Latexmk може визначити кількість потрібних для обробки даних запусків команд "
-"<cmd>latex</cmd> та <cmd>pdflatex</cmd>, а також те, чи слід запускати <cmd>"
-"bibtex</cmd> і <cmd>makeindex</cmd>. У LaTeXila типово використовується саме "
-"Latexmk."
+"<cmd>latex</cmd> та <cmd>pdflatex</cmd>, а також те, чи слід запускати "
+"<cmd>bibtex</cmd> і <cmd>makeindex</cmd>. У GNOME LaTeX типово"
+" використовується "
+"саме Latexmk."
 
 #. (itstool) path: section/title
 #: C/build_tools.page:86
@@ -136,9 +144,8 @@ msgid ""
 "main file."
 msgstr ""
 "Засіб збирання працює із поточним відкритим файлом. The build tool is "
-"executed on the currently opened file. If the file belongs "
-"to a <link xref=\"projects\">project</link>, it is executed on the project's "
-"main file."
+"executed on the currently opened file. If the file belongs to a <link xref="
+"\"projects\">project</link>, it is executed on the project's main file."
 
 #. (itstool) path: note/title
 #: C/build_tools.page:99
@@ -154,8 +161,8 @@ msgid ""
 msgstr ""
 "Типово, багато із засобів збирання приховано, отже напряму скористатися ними "
 "неможливо. Щоб ознайомитися із повним списком засобів збирання та способами "
-"активації та налаштовування цих засобів, ознайомтеся із розділом <link "
-"xref=\"#general_configuration\"/>."
+"активації та налаштовування цих засобів, ознайомтеся із розділом <link xref="
+"\"#general_configuration\"/>."
 
 #. (itstool) path: section/title
 #: C/build_tools.page:107
@@ -169,8 +176,8 @@ msgid ""
 "gui> <gui style=\"menu\">Manage Build Tools</gui> </guiseq>"
 msgstr ""
 "Щоб налаштувати засоби збирання, скористайтеся пунктом меню <guiseq> <gui "
-"style=\"menu\">Збирання</"
-"gui> <gui style=\"menu\">Керування засобами збирання</gui> </guiseq>"
+"style=\"menu\">Збирання</gui> <gui style=\"menu\">Керування засобами "
+"збирання</gui> </guiseq>"
 
 #. (itstool) path: section/p
 #: C/build_tools.page:117
@@ -243,7 +250,8 @@ msgid ""
 "the useful information. Four post processors are available:"
 msgstr ""
 "Метою остаточної обробки є фільтрування виведених командою даних і "
-"видобування корисної інформації. Передбачено чотири засоби остаточної обробки:"
+"видобування корисної інформації. Передбачено чотири засоби остаточної "
+"обробки:"
 
 #. (itstool) path: item/p
 #: C/build_tools.page:151
@@ -263,8 +271,8 @@ msgid ""
 "There are also some other useful information: the size of the document, the "
 "number of pages, and the number of errors."
 msgstr ""
-"Фільтрування даних, виведених командами <cmd>latex</cmd> і <cmd>pdflatex</cmd>"
-". Передбачено три типи помилок: критичні помилки, попередження та вади "
+"Фільтрування даних, виведених командами <cmd>latex</cmd> і <cmd>pdflatex</"
+"cmd>. Передбачено три типи помилок: критичні помилки, попередження та вади "
 "компонування. Також може бути виведено корисні дані: розмір документа, "
 "кількість сторінок та кількість помилок."
 
@@ -275,8 +283,8 @@ msgid ""
 "uses other ones: <em>latex</em> and <em>all-output</em>."
 msgstr ""
 "Використовується для команди <cmd>latexmk</cmd>. На внутрішньому рівні цей "
-"засіб остаточної обробки використовує інші: <em>latex</em> та <em>all-output<"
-"/em>."
+"засіб остаточної обробки використовує інші: <em>latex</em> та <em>all-"
+"output</em>."
 
 #. (itstool) path: page/title
 #: C/completion.page:10
@@ -307,9 +315,9 @@ msgid ""
 msgstr ""
 "Типово, під час уведення команди LaTeX пропозиції буде показано після "
 "введення перших двох символів. Налаштувати поведінку редактора можна за "
-"допомогою діалогового вікна налаштувань: <guiseq> <gui style=\"menu\">Зміни<"
-"/gui> <gui style=\"menu\">Налаштування</gui> <gui style="
-"\"tab\">Інше</gui> </guiseq>"
+"допомогою діалогового вікна налаштувань: <guiseq> <gui style=\"menu\">Зміни</"
+"gui> <gui style=\"menu\">Налаштування</gui> <gui style=\"tab\">Інше</gui> </"
+"guiseq>"
 
 #. (itstool) path: section/title
 #: C/completion.page:30
@@ -323,18 +331,19 @@ msgid ""
 "show proposals."
 msgstr ""
 "Для перегляду поточного списку пропозицій ви можете будь-коли скористатися "
-"натисканням комбінації клавіш <keyseq> <key>Ctrl</key> <key>Пробіл</key> <"
-"/keyseq>."
+"натисканням комбінації клавіш <keyseq> <key>Ctrl</key> <key>Пробіл</key> </"
+"keyseq>."
 
 #. (itstool) path: page/title
 #: C/index.page:4
-msgid "LaTeXila Help"
-msgstr "Довідка з LaTeXila"
+#| msgid "LaTeXila Help"
+msgid "GNOME LaTeX Help"
+msgstr "Довідка з GNOME LaTeX"
 
 #. (itstool) path: page/title
 #: C/projects.page:10
 msgid "Projects"
-msgstr "Проекти"
+msgstr "Проєкти"
 
 #. (itstool) path: synopsis/p
 #: C/projects.page:13
@@ -343,12 +352,12 @@ msgid ""
 "is useful."
 msgstr ""
 "Якщо документ LaTeX складається з декількох файлів *.tex, варто створити "
-"відповідний проект."
+"відповідний проєкт."
 
 #. (itstool) path: section/title
 #: C/projects.page:18
 msgid "Manage projects"
-msgstr "Керування проектами"
+msgstr "Керування проєктами"
 
 #. (itstool) path: section/p
 #: C/projects.page:20
@@ -356,13 +365,13 @@ msgid ""
 "All actions related to projects are located in the <gui style=\"menu"
 "\">Projects</gui> menu. A project contains only two pieces of information:"
 msgstr ""
-"Усі пункти дій, пов’язані із проектами, розташовано у меню <gui "
-"style=\"menu\">Проекти</gui>. Запис проекту складається з двох записів даних:"
+"Усі пункти дій, пов’язані із проєктами, розташовано у меню <gui style=\"menu"
+"\">Проєкти</gui>. Запис проєкту складається з двох записів даних:"
 
 #. (itstool) path: item/p
 #: C/projects.page:25
 msgid "The directory where the project is located."
-msgstr "Каталог, у якому зберігаються файли проекту."
+msgstr "Каталог, у якому зберігаються файли проєкту."
 
 #. (itstool) path: item/p
 #: C/projects.page:26
@@ -375,13 +384,13 @@ msgid ""
 "As a consequence, a directory can contain only one project, which is quite "
 "logical."
 msgstr ""
-"Відповідно, у кожному каталозі може зберігатися лише один проект, що є доволі "
-"логічним."
+"Відповідно, у кожному каталозі може зберігатися лише один проєкт, що є "
+"доволі логічним."
 
 #. (itstool) path: section/title
 #: C/projects.page:35
 msgid "Usefulness of projects"
-msgstr "Користь від проектів"
+msgstr "Користь від проєктів"
 
 #. (itstool) path: item/p
 #: C/projects.page:37
@@ -390,20 +399,24 @@ msgid ""
 "main file."
 msgstr ""
 "<link xref=\"build_tools\">Засоби збирання</link> запускаються для основного "
-"файла проекту."
+"файла проєкту."
 
 #. (itstool) path: item/p
 #: C/projects.page:39
+#| msgid ""
+#| "The <link xref=\"synctex#forward_search\">forward search</link> works for "
+#| "a secondary file of a project."
 msgid ""
-"The <link xref=\"synctex#forward_search\">forward search</link> works for a "
-"secondary file of a project."
+"<link xref=\"synctex#from_tex_to_pdf\">Jumping from a .tex file to the PDF</"
+"link> works for a secondary .tex file belonging to a project."
 msgstr ""
-"<link xref=\"synctex#forward_search\">Прямий пошук</link> працює і для "
-"підлеглих файлів проекту."
+"<link xref=\"synctex#from_tex_to_pdf\">Перехід з файла .tex до файла PDF<"
+"/link> працює і для підлеглих файлів .tex, які належать до проєкту."
 
 #. (itstool) path: page/title
 #: C/spell_checking.page:10
-msgid "Spell Checking"
+#| msgid "Spell Checking"
+msgid "Spell-Checking"
 msgstr "Перевірка правопису"
 
 #. (itstool) path: synopsis/p
@@ -413,20 +426,25 @@ msgstr "Метою є полегшення виправлення помилок
 
 #. (itstool) path: section/title
 #: C/spell_checking.page:17
-msgid "Use the spell checking"
+#| msgid "Use the spell checking"
+msgid "Use the spell-checking"
 msgstr "Використання перевірки правопису"
 
 #. (itstool) path: section/p
 #: C/spell_checking.page:18
+#| msgid ""
+#| "The default spell checking settings can be changed in the preferences "
+#| "dialog: <guiseq> <gui style=\"menu\">Edit</gui> <gui style=\"menu"
+#| "\">Preferences</gui> <gui style=\"tab\">Other</gui> </guiseq>"
 msgid ""
-"The default spell checking settings can be changed in the preferences "
+"The default spell-checking settings can be changed in the preferences "
 "dialog: <guiseq> <gui style=\"menu\">Edit</gui> <gui style=\"menu"
 "\">Preferences</gui> <gui style=\"tab\">Other</gui> </guiseq>"
 msgstr ""
 "Параметри типового засобу перевірки правопису можна змінити за допомогою "
-"діалогового вікна налаштувань програми: <guiseq> <gui style=\"menu\">Зміни<"
-"/gui> <gui style=\"menu"
-"\">Налаштування</gui> <gui style=\"tab\">Інше</gui> </guiseq>"
+"діалогового вікна налаштувань програми: <guiseq> <gui style=\"menu\">Зміни</"
+"gui> <gui style=\"menu\">Налаштування</gui> <gui style=\"tab\">Інше</gui> </"
+"guiseq>"
 
 #. (itstool) path: section/p
 #: C/spell_checking.page:27
@@ -458,23 +476,37 @@ msgstr "Словники"
 #. (itstool) path: section/p
 #: C/spell_checking.page:41
 msgid ""
-"<link href=\"http://www.abisource.com/projects/enchant/\">Enchant</link> is "
-"used for the spell checking in LaTeXila. Enchant uses one or several "
-"backends such as Hunspell or Aspell for the dictionaries."
+"<link href=\"https://wiki.gnome.org/Projects/gspell\">gspell</link> is used "
+"for the spell-checking in GNOME LaTeX. gspell uses <link href=\"https://"
+"abiword.github.io/enchant/\">Enchant</link>, which in turn supports several "
+"backends such as Hunspell or Aspell for the dictionaries. The Aspell backend "
+"doesn't work well with gspell, Hunspell is preferred. If dictionaries for "
+"both Aspell and Hunspell are installed for the same language, by default "
+"Enchant prefers the Hunspell one."
 msgstr ""
-"Для перевірки правопису у LaTeXila використовується <link "
-"href=\"http://www.abisource.com/projects/enchant/\">Enchant</link>. У Enchant "
-"використовуються словники одного із модулів перевірки правопису, зокрема "
-"Hunspell або Aspell."
+"Для перевірки правопису у GNOME LaTeX використано <link"
+" href=\"https://wiki.gnome.org/Projects/gspell\">gspell</link>. gspell"
+" використовує <link href=\"https://"
+"abiword.github.io/enchant/\">Enchant</link>, у якому передбачено декілька"
+" модулів обробки, зокрема Hunspell та Aspell для роботи зі словниками. Модуль"
+" Aspell має проблеми у роботі з gspell — слід надавати перевагу Hunspell."
+" Якщо у системі одночасно встановлено словники Aspell і Hunspell для однієї"
+" мови, Enchant надаватиме перевагу словнику Hunspell."
 
 #. (itstool) path: section/p
-#: C/spell_checking.page:47
+#: C/spell_checking.page:51
+#| msgid ""
+#| "If your language is not listed, install a dictionary for one of the "
+#| "supported backends."
 msgid ""
-"If your language is not listed, install a dictionary for one of the "
-"supported backends."
+"If your language is not listed in GNOME LaTeX, install a dictionary for one "
+"of the supported Enchant backends (for most languages the best choice is to "
+"install an Hunspell dictionary)."
 msgstr ""
-"Якщо потрібної вам мови немає у списку, встановіть відповідний словник для "
-"одного з підтримуваних модулів перевірки правопису."
+"Якщо потрібної вам мови немає у списку GNOME LaTeX, встановіть відповідний"
+" словник для "
+"одного з підтримуваних модулів перевірки правопису Enchant (для більшості мов"
+" кращим вибором буде встановлення словника Hunspell)."
 
 #. (itstool) path: page/title
 #: C/structure.page:10
@@ -504,8 +536,8 @@ msgid ""
 msgstr ""
 "На бічній панелі вікна програми може бути показано структуру документа. Якщо "
 "бічну панель приховано, ви можете наказати програмі показувати цю панель за "
-"допомогою пункту меню <guiseq> <gui style=\"menu\">Перегляд</gui> <gui "
-"style=\"menu\">Бічна панель</gui> </guiseq>."
+"допомогою пункту меню <guiseq> <gui style=\"menu\">Перегляд</gui> <gui style="
+"\"menu\">Бічна панель</gui> </guiseq>."
 
 #. (itstool) path: section/p
 #: C/structure.page:29
@@ -534,8 +566,8 @@ msgid ""
 msgstr ""
 "Із пунктами структури документа можна виконувати деякі дії, зокрема "
 "«вирізати», «копіювати», «закоментувати». Для доступу до меню дій "
-"скористайтеся клацанням правою кнопкою миші на відповідному пункті або меню <"
-"gui style=\"menu\">Структура</gui>."
+"скористайтеся клацанням правою кнопкою миші на відповідному пункті або меню "
+"<gui style=\"menu\">Структура</gui>."
 
 #. (itstool) path: section/title
 #. Do not translate the words TODO and FIXME. They are special comments
@@ -572,16 +604,19 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/synctex.page:10
-msgid "Forward and Backward Search"
-msgstr "Прямий і зворотний пошук"
+msgid "Jumping Between .tex and PDF"
+msgstr "Перехід між .tex і PDF"
 
 #. (itstool) path: synopsis/p
 #: C/synctex.page:13
+#| msgid ""
+#| "Synchronization between the document's *.tex files and the resulting PDF "
+#| "output, opened with the <app>Evince</app> document viewer."
 msgid ""
-"Synchronization between the document's *.tex files and the resulting PDF "
-"output, opened with the <app>Evince</app> document viewer."
+"Jumping between the document's *.tex files and the resulting PDF output, "
+"opened with the <app>Evince</app> document viewer."
 msgstr ""
-"Синхронізація між файлами *.tex документа і отриманим на основі цих файлів "
+"Перехід між файлами *.tex документа і отриманим на основі цих файлів "
 "файлом PDF, відкритим у програмі для перегляду документів <app>Evince</app>."
 
 #. (itstool) path: note/p
@@ -595,77 +630,125 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/synctex.page:23
-msgid "Forward Search: from .tex to PDF"
-msgstr "Прямий пошук: з .tex у PDF"
+#| msgid "Forward Search: from .tex to PDF"
+msgid "Jumping from .tex to PDF"
+msgstr "Перехід між .tex і PDF"
 
 #. (itstool) path: section/p
 #: C/synctex.page:25
+#| msgid ""
+#| "From a certain position in the .tex source file, jump to the "
+#| "corresponding position in the PDF file."
 msgid ""
 "From a certain position in the .tex source file, jump to the corresponding "
-"position in the PDF file."
+"position in the PDF file. Also called “forward search”."
 msgstr ""
 "Перехід від певного місця у файлі .tex із початковим кодом до відповідного "
-"місця у файлі PDF."
+"місця у файлі PDF. Такий перехід називають «прямим пошуком»."
 
 #. (itstool) path: section/p
 #: C/synctex.page:28
-msgid "There are different ways to do a forward search:"
-msgstr "Існує декілька способів виконання прямого пошуку:"
+#| msgid "There are different ways to do a forward search:"
+msgid "There are different ways to do this action:"
+msgstr "Існує декілька способів виконання цієї дії:"
 
 #. (itstool) path: item/p
 #: C/synctex.page:30
+#| msgid ""
+#| "In the menu: <guiseq> <gui style=\"menu\">Search</gui> <gui style=\"menu"
+#| "\">Search Forward</gui> </guiseq>"
 msgid ""
 "In the menu: <guiseq> <gui style=\"menu\">Search</gui> <gui style=\"menu"
-"\">Search Forward</gui> </guiseq>"
+"\">Jump to PDF</gui> </guiseq>"
 msgstr ""
 "За допомогою меню: <guiseq> <gui style=\"menu\">Пошук</gui> <gui style=\"menu"
-"\">Прямий пошук</gui> </guiseq>"
+"\">Перейти до PDF</gui> </guiseq>"
 
 #. (itstool) path: item/p
 #: C/synctex.page:36
 msgid "By pressing <keyseq> <key>Ctrl</key> <key>left click</key> </keyseq>"
 msgstr ""
-"За допомогою комбінації <keyseq> <key>Ctrl</key> <key>клацання лівою</key> <"
-"/keyseq>"
+"За допомогою комбінації <keyseq> <key>Ctrl</key> <key>клацання лівою</key> </"
+"keyseq>"
 
 #. (itstool) path: section/p
 #: C/synctex.page:44
+#| msgid ""
+#| "If a document is split into several .tex files, create a <link xref="
+#| "\"projects\">project</link>. There is no need to mention the main file "
+#| "with a LaTeX comment in each secondary .tex file, like it is explained in "
+#| "the <link href=\"help:evince/synctex-search#forward-search\"> "
+#| "<app>Evince</app> documentation. </link>"
 msgid ""
 "If a document is split into several .tex files, create a <link xref="
-"\"projects\">project</link>. There is no need to mention the main file with "
-"a LaTeX comment in each secondary .tex file, like it is explained in the "
-"<link href=\"help:evince/synctex-search#forward-search\"> <app>Evince</app> "
-"documentation. </link>"
+"\"projects\">project</link>. Unlike what is explained in the <link href="
+"\"help:evince/synctex-search#forward-search\"> <app>Evince</app> "
+"documentation </link>, there is no need to mention the main file with a "
+"LaTeX comment in each secondary .tex file."
 msgstr ""
-"Якщо документ поділено на декілька файлів .tex, створіть <link "
-"xref=\"projects\">проект</link>. Вам не треба вказувати основний файл LaTeX у "
-"коментарі у кожному з підлеглих файлів .tex, як це рекомендовано у <link "
-"href=\"help:evince/synctex-search#forward-search\">документації до <app>"
-"Evince</app></link>."
+"Якщо документ поділено на декілька файлів .tex, створіть <link xref="
+"\"projects\">проєкт</link>. Хоча це і вказано у <link href="
+"\"help:evince/synctex-search#forward-search\">документації до <app>Evince<"
+"/app></link>, вам не потрібно вказувати основний файл LaTeX у "
+"коментарі у кожному з підлеглих файлів .tex."
 
 #. (itstool) path: section/title
 #: C/synctex.page:53
-msgid "Backward Search"
-msgstr "Зворотний пошук"
+msgid "Jumping from PDF to .tex"
+msgstr "Перехід між PDF і .tex"
 
 #. (itstool) path: section/p
 #: C/synctex.page:55
+#| msgid ""
+#| "From a certain position in the .tex source file, jump to the "
+#| "corresponding position in the PDF file."
+msgid ""
+"From a certain position in the PDF file, jump to the corresponding position "
+"in the .tex source file. Also called “backward search”."
+msgstr ""
+"Перехід від певного місця у файлі PDF до відповідного "
+"місця у файлі .tex із початковим кодом. Такий перехід називають «зворотним"
+" пошуком»."
+
+#. (itstool) path: section/p
+#: C/synctex.page:58
+#| msgid ""
+#| "In <app>Evince</app>, press <keyseq> <key>Ctrl</key> <key>left click</"
+#| "key> </keyseq>, and the corresponding position in the .tex file will be "
+#| "opened in <app>LaTeXila</app>."
 msgid ""
 "In <app>Evince</app>, press <keyseq> <key>Ctrl</key> <key>left click</key> </"
 "keyseq>, and the corresponding position in the .tex file will be opened in "
-"<app>LaTeXila</app>."
+"<app>GNOME LaTeX</app>."
 msgstr ""
-"У вікні <app>Evince</app> натисніть комбінацію <keyseq> <key>Ctrl</key> <key>"
-"ліва кнопка миші</key> </"
-"keyseq>, і відповідне місце у файлі .tex буде відкрито у <app>LaTeXila</app>."
+"У вікні <app>Evince</app> натисніть комбінацію <keyseq> <key>Ctrl</key> "
+"<key>ліва кнопка миші</key> </keyseq>, і відповідне місце у файлі .tex буде "
+"відкрито у <app>GNOME LaTeX</app>."
 
 #. (itstool) path: section/p
-#: C/synctex.page:63
+#: C/synctex.page:66
+#| msgid ""
+#| "<app>Evince</app> have to be launched by <app>LaTeXila</app>. Else, the "
+#| "backward search will not work."
 msgid ""
-"<app>Evince</app> have to be launched by <app>LaTeXila</app>. Else, the "
-"backward search will not work."
+"<app>Evince</app> has to be launched by <app>GNOME LaTeX</app>. Else, "
+"jumping from the PDF to the .tex file will not work."
 msgstr ""
-"<app>Evince</app> має бути запущено <app>LaTeXila</app>. Якщо програму "
-"запущено у якийсь інший спосіб, зворотний пошук не працюватиме."
+"<app>GNOME LaTeX</app> має запустити <app>Evince</app>. Якщо це не вдасться"
+" зробити, перехід з PDF до .tex не працюватиме."
 
+#~ msgid ""
+#~ "<link href=\"http://www.abisource.com/projects/enchant/\">Enchant</link> "
+#~ "is used for the spell checking in LaTeXila. Enchant uses one or several "
+#~ "backends such as Hunspell or Aspell for the dictionaries."
+#~ msgstr ""
+#~ "Для перевірки правопису у LaTeXila використовується <link href=\"http://"
+#~ "www.abisource.com/projects/enchant/\">Enchant</link>. У Enchant "
+#~ "використовуються словники одного із модулів перевірки правопису, зокрема "
+#~ "Hunspell або Aspell."
 
+#~ msgid "Forward and Backward Search"
+#~ msgstr "Прямий і зворотний пошук"
+
+#~ msgid "Backward Search"
+#~ msgstr "Зворотний пошук"

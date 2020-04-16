@@ -26,14 +26,6 @@ G_BEGIN_DECLS
 
 /* File utilities */
 
-void		latexila_utils_file_query_exists_async		(GFile               *file,
-								 GCancellable        *cancellable,
-								 GAsyncReadyCallback  callback,
-								 gpointer             user_data);
-
-gboolean	latexila_utils_file_query_exists_finish		(GFile        *file,
-								 GAsyncResult *result);
-
 void		latexila_utils_show_uri				(GtkWidget    *widget,
 								 const gchar  *uri,
 								 guint32       timestamp,

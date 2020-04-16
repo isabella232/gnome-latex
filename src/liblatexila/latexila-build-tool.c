@@ -530,7 +530,7 @@ query_exists_cb (GFile        *file,
 	gchar *uri = NULL;
 	GError *error = NULL;
 
-	file_exists = latexila_utils_file_query_exists_finish (file, result);
+	file_exists = tepl_utils_file_query_exists_finish (file, result);
 
 	cancellable = g_task_get_cancellable (task);
 	if (g_cancellable_is_cancelled (cancellable))
@@ -697,10 +697,10 @@ open_file (GTask *task)
 
 	file = g_file_new_for_uri (uri);
 
-	latexila_utils_file_query_exists_async (file,
-						g_task_get_cancellable (task),
-						(GAsyncReadyCallback) query_exists_cb,
-						task);
+	tepl_utils_file_query_exists_async (file,
+					    g_task_get_cancellable (task),
+					    (GAsyncReadyCallback) query_exists_cb,
+					    task);
 
 	g_free (filename);
 	g_free (filename_for_display);

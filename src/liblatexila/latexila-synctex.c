@@ -562,7 +562,7 @@ synctex_file_query_exists_cb (GFile             *synctex_file,
 {
 	gboolean synctex_file_exists;
 
-	synctex_file_exists = latexila_utils_file_query_exists_finish (synctex_file, result);
+	synctex_file_exists = tepl_utils_file_query_exists_finish (synctex_file, result);
 
 	if (!synctex_file_exists)
 	{
@@ -596,7 +596,7 @@ pdf_file_query_exists_cb (GFile             *pdf_file,
 	gchar *synctex_uri;
 	GFile *synctex_file;
 
-	pdf_file_exists = latexila_utils_file_query_exists_finish (pdf_file, result);
+	pdf_file_exists = tepl_utils_file_query_exists_finish (pdf_file, result);
 	g_object_unref (pdf_file);
 
 	if (!pdf_file_exists)
@@ -612,10 +612,10 @@ pdf_file_query_exists_cb (GFile             *pdf_file,
 	g_free (short_uri);
 	g_free (synctex_uri);
 
-	latexila_utils_file_query_exists_async (synctex_file,
-						NULL,
-						(GAsyncReadyCallback) synctex_file_query_exists_cb,
-						data);
+	tepl_utils_file_query_exists_async (synctex_file,
+					    NULL,
+					    (GAsyncReadyCallback) synctex_file_query_exists_cb,
+					    data);
 }
 
 /**
@@ -666,8 +666,8 @@ latexila_synctex_forward_search (LatexilaSynctex *synctex,
 
 	pdf_file = g_file_new_for_uri (data->pdf_uri);
 
-	latexila_utils_file_query_exists_async (pdf_file,
-						NULL,
-						(GAsyncReadyCallback) pdf_file_query_exists_cb,
-						data);
+	tepl_utils_file_query_exists_async (pdf_file,
+					    NULL,
+					    (GAsyncReadyCallback) pdf_file_query_exists_cb,
+					    data);
 }

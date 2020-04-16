@@ -267,8 +267,6 @@ LATEXILA_TYPE_TEMPLATES_PERSONAL
 
 <SECTION>
 <FILE>utils</FILE>
-latexila_utils_file_query_exists_async
-latexila_utils_file_query_exists_finish
 latexila_utils_show_uri
 latexila_utils_get_dialog_component
 latexila_utils_join_widgets

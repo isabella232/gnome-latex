@@ -1,5 +1,13 @@
 GNOME LaTeX NEWS
 
+Release 3.x.y, 2020-xx-yy (not yet released)
+-------------------------
+* Move more utils functions to Tepl.
+* Use some Tepl I/O error info bars.
+* Require Tepl 5.
+* Remove some dead code.
+* Translation updates.
+
 Release 3.36.0, 2020-03-31, “Corona”
 ------------------------------------
 * Fix compilation error with valac >= 0.42.

@@ -15,7 +15,6 @@ src/document_structure.c
 src/document_tab.c
 src/document_view.c
 src/encodings.c
-src/error_entry.c
 src/file_browser.c
 src/glatex_app.c
 src/latex_menu.c

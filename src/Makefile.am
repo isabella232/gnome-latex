@@ -36,7 +36,6 @@ vala_files =				\
 	document.vala			\
 	document_view.vala		\
 	encodings.vala			\
-	error_entry.vala		\
 	factory.vala			\
 	file_browser.vala		\
 	glatex_app.vala			\

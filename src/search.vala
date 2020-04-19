@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright © 2010-2012, 2017 Sébastien Wilmet
+ * Copyright © 2010-2020 Sébastien Wilmet
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -63,9 +63,11 @@ public class GotoLine : Grid
 
     private void on_changed ()
     {
+        StyleContext style_context = entry.get_style_context ();
+
         if (entry.text_length == 0)
         {
-            ErrorEntry.remove_error (entry);
+            style_context.remove_class (STYLE_CLASS_ERROR);
             return;
         }
 
@@ -77,7 +79,7 @@ public class GotoLine : Grid
             unichar c = text[i];
             if (!c.isdigit ())
             {
-                ErrorEntry.add_error (entry);
+                style_context.add_class (STYLE_CLASS_ERROR);
                 return;
             }
         }
@@ -85,9 +87,9 @@ public class GotoLine : Grid
         int line = int.parse (text) - 1;
 
         if (main_window.active_view.goto_line (line))
-            ErrorEntry.remove_error (entry);
+            style_context.remove_class (STYLE_CLASS_ERROR);
         else
-            ErrorEntry.add_error (entry);
+            style_context.add_class (STYLE_CLASS_ERROR);
     }
 }
 
@@ -406,12 +408,14 @@ public class SearchAndReplace : GLib.Object
 
         _search_context.notify["occurrences-count"].connect (() =>
         {
+            StyleContext style_context = _entry_find.get_style_context ();
+
             if (_search_context.occurrences_count == 0 &&
                 _search_settings.get_search_text () != null)
-                ErrorEntry.add_error (_entry_find);
+                style_context.add_class (STYLE_CLASS_ERROR);
 
             else if (_search_context.occurrences_count >= 0)
-                ErrorEntry.remove_error (_entry_find);
+                style_context.remove_class (STYLE_CLASS_ERROR);
 
             update_info_label ();
         });

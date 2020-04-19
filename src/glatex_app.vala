@@ -324,10 +324,9 @@ public class GlatexApp : Gtk.Application
 
     public MainWindow create_window ()
     {
-        Tepl.AbstractFactoryVala factory = Tepl.AbstractFactory.get_singleton ()
-            as Tepl.AbstractFactoryVala;
+        Tepl.AbstractFactory factory = Tepl.AbstractFactory.get_singleton ();
 
-        return factory.create_main_window_vala (this) as MainWindow;
+        return factory.create_main_window (this) as MainWindow;
     }
 
     public void open_documents (File[] files)

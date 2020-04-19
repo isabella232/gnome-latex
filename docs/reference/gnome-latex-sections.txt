@@ -131,6 +131,21 @@ latexila_build_view_get_type
 </SECTION>
 
 <SECTION>
+<FILE>factory</FILE>
+LatexilaFactory
+latexila_factory_new
+<SUBSECTION Standard>
+LATEXILA_FACTORY
+LATEXILA_FACTORY_CLASS
+LATEXILA_FACTORY_GET_CLASS
+LATEXILA_IS_FACTORY
+LATEXILA_IS_FACTORY_CLASS
+LATEXILA_TYPE_FACTORY
+LatexilaFactoryClass
+latexila_factory_get_type
+</SECTION>
+
+<SECTION>
 <FILE>latex-commands</FILE>
 latexila_latex_commands_add_action_infos
 latexila_latex_commands_add_actions

@@ -47,11 +47,8 @@ public class BottomPanel : Grid
 
     private Button get_close_button ()
     {
-        Button close_button = new Button ();
-        close_button.relief = ReliefStyle.NONE;
-        close_button.focus_on_click = false;
+        Button close_button = Tepl.utils_create_close_button () as Button;
         close_button.tooltip_text = _("Hide panel");
-        close_button.add (new Image.from_icon_name ("window-close", IconSize.MENU));
         close_button.clicked.connect (() => this.hide ());
 
         return close_button;

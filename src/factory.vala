@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright © 2017 Sébastien Wilmet
+ * Copyright © 2017-2020 Sébastien Wilmet
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,13 +17,13 @@
  * along with GNOME LaTeX.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class Factory : Tepl.AbstractFactoryVala
+public class Factory : Tepl.AbstractFactory
 {
     public Factory ()
     {
     }
 
-    public override Gtk.ApplicationWindow? create_main_window_vala (Gtk.Application gtk_app)
+    public override unowned Gtk.ApplicationWindow? create_main_window (Gtk.Application gtk_app)
     {
         return_val_if_fail (gtk_app is GlatexApp, null);
         GlatexApp app = gtk_app as GlatexApp;
@@ -38,7 +38,7 @@ public class Factory : Tepl.AbstractFactoryVala
         if (first_window)
             reopen_files (app);
 
-        return new_window;
+        return new_window.ref () as MainWindow;
     }
 
     private void reopen_files (GlatexApp app)

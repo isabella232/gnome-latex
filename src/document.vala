@@ -544,7 +544,7 @@ public class Document : Tepl.Buffer
         save_metadata ();
     }
 
-    public string? get_metadata (string key)
+    public new string? get_metadata (string key)
     {
         return_val_if_fail (_metadata_info != null, null);
 

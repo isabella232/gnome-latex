@@ -84,7 +84,7 @@ public class MainWindow : ApplicationWindow
 
     public string default_location = Environment.get_home_dir ();
     private DocumentsPanel _documents_panel;
-    private CustomStatusbar _statusbar;
+    private Tepl.Statusbar _statusbar;
     private GotoLine _goto_line;
     private SearchAndReplace _search_and_replace;
     private Paned _main_hpaned;
@@ -252,7 +252,7 @@ public class MainWindow : ApplicationWindow
 
         /* Statusbar */
 
-        _statusbar = new CustomStatusbar ();
+        _statusbar = new Tepl.Statusbar ();
         _statusbar.show_all ();
         main_vgrid.add (_statusbar);
 
@@ -890,7 +890,7 @@ public class MainWindow : ApplicationWindow
     {
         if (active_view == null)
         {
-            _statusbar.set_cursor_position (-1, -1);
+            _statusbar.hide_cursor_position ();
             return;
         }
 
@@ -898,7 +898,7 @@ public class MainWindow : ApplicationWindow
         active_document.get_iter_at_mark (out iter, active_document.get_insert ());
         int row = (int) iter.get_line ();
         int col = (int) active_view.get_visual_column (iter);
-        _statusbar.set_cursor_position (row + 1, col + 1);
+        _statusbar.show_cursor_position (row + 1, col + 1);
     }
 
     public void save_state ()

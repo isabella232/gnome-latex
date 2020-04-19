@@ -28,7 +28,6 @@ vala_files =				\
 	build_tools_preferences.vala	\
 	clean_build_files.vala		\
 	completion.vala			\
-	custom_statusbar.vala		\
 	dialogs.vala			\
 	documents_panel.vala		\
 	document_structure.vala		\

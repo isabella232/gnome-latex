@@ -7,7 +7,6 @@ src/build_tool_runner.c
 src/build_tools_preferences.c
 src/clean_build_files.c
 src/completion.c
-src/custom_statusbar.c
 src/dialogs.c
 src/document.c
 src/documents_panel.c

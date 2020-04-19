@@ -12,7 +12,6 @@ src/build_tool_dialog.vala
 src/build_tools_preferences.vala
 src/clean_build_files.vala
 src/completion.vala
-src/custom_statusbar.vala
 src/dialogs.vala
 src/documents_panel.vala
 src/document_structure.vala

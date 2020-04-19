@@ -49,6 +49,8 @@ public class BottomPanel : Grid
     {
         Button close_button = Tepl.utils_create_close_button () as Button;
         close_button.tooltip_text = _("Hide panel");
+        close_button.margin = 3;
+
         close_button.clicked.connect (() => this.hide ());
 
         return close_button;

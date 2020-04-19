@@ -48,6 +48,7 @@ public class GlatexApp : Gtk.Application
 
         Tepl.Application tepl_app = Tepl.Application.get_from_gtk_application (this);
         tepl_app.handle_activate ();
+        tepl_app.handle_metadata ();
     }
 
     public static GlatexApp get_instance ()

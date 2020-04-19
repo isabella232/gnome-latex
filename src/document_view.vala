@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright © 2010-2016 Sébastien Wilmet
+ * Copyright © 2010-2020 Sébastien Wilmet
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,10 +21,8 @@ using Gtk;
 
 public class DocumentView : Tepl.View
 {
-    private const string METADATA_ATTRIBUTE_SPELL_LANGUAGE =
-        "metadata::latexila-spell-language";
-    private const string METADATA_ATTRIBUTE_INLINE_SPELL =
-        "metadata::latexila-inline-spell";
+    private const string METADATA_KEY_SPELL_LANGUAGE = "gnome-latex-spell-language";
+    private const string METADATA_KEY_INLINE_SPELL = "gnome-latex-inline-spell";
     private const string INLINE_SPELL_ENABLED_STR = "1";
     private const string INLINE_SPELL_DISABLED_STR = "0";
 
@@ -187,7 +185,7 @@ public class DocumentView : Tepl.View
     {
         Document doc = get_buffer () as Document;
 
-        string? lang_code = doc.get_metadata (METADATA_ATTRIBUTE_SPELL_LANGUAGE);
+        string? lang_code = doc.get_metadata ().get (METADATA_KEY_SPELL_LANGUAGE);
         if (lang_code == null)
             lang_code = _editor_settings.get_string ("spell-checking-language");
 
@@ -211,7 +209,7 @@ public class DocumentView : Tepl.View
 
         bool enabled;
 
-        string? metadata = doc.get_metadata (METADATA_ATTRIBUTE_INLINE_SPELL);
+        string? metadata = doc.get_metadata ().get (METADATA_KEY_INLINE_SPELL);
         if (metadata != null)
             enabled = metadata == INLINE_SPELL_ENABLED_STR;
         else
@@ -261,9 +259,9 @@ public class DocumentView : Tepl.View
 
         unowned Gspell.Language? lang = spell_checker.get_language ();
         if (lang != null)
-            doc.set_metadata (METADATA_ATTRIBUTE_SPELL_LANGUAGE, lang.get_code ());
+            doc.set_metadata (METADATA_KEY_SPELL_LANGUAGE, lang.get_code ());
         else
-            doc.set_metadata (METADATA_ATTRIBUTE_SPELL_LANGUAGE, null);
+            doc.set_metadata (METADATA_KEY_SPELL_LANGUAGE, null);
     }
 
     public void save_inline_spell_metadata ()
@@ -275,13 +273,11 @@ public class DocumentView : Tepl.View
 
         if (gspell_view.inline_spell_checking)
         {
-            doc.set_metadata (METADATA_ATTRIBUTE_INLINE_SPELL,
-                INLINE_SPELL_ENABLED_STR);
+            doc.set_metadata (METADATA_KEY_INLINE_SPELL, INLINE_SPELL_ENABLED_STR);
         }
         else
         {
-            doc.set_metadata (METADATA_ATTRIBUTE_INLINE_SPELL,
-                INLINE_SPELL_DISABLED_STR);
+            doc.set_metadata (METADATA_KEY_INLINE_SPELL, INLINE_SPELL_DISABLED_STR);
         }
     }
 

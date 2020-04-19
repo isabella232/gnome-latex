@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright © 2010-2011 Sébastien Wilmet
+ * Copyright © 2010-2020 Sébastien Wilmet
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,7 +30,6 @@ public class Document : Tepl.Buffer
     private string? encoding = null;
     private bool new_file = true;
     private DocumentStructure _structure = null;
-    private FileInfo _metadata_info = new FileInfo ();
 
     public Document ()
     {
@@ -58,6 +57,11 @@ public class Document : Tepl.Buffer
         // Document:location property.
         this.bind_property ("location", get_file (), "location",
             BindingFlags.DEFAULT | BindingFlags.SYNC_CREATE);
+
+        get_file ().notify["location"].connect (() =>
+        {
+            load_metadata_from_metadata_manager ();
+        });
     }
 
     public new void insert (ref TextIter iter, string text, int len)
@@ -85,18 +89,6 @@ public class Document : Tepl.Buffer
 
     public void load (File location)
     {
-        // First load metadata so when the notify::location signal is emitted,
-        // get_metadata() works.
-        try
-        {
-            _metadata_info = location.query_info ("metadata::*", FileQueryInfoFlags.NONE);
-        }
-        catch (Error e)
-        {
-            warning ("Get document metadata failed: %s", e.message);
-            _metadata_info = new FileInfo ();
-        }
-
         this.location = location;
 
         try
@@ -201,7 +193,7 @@ public class Document : Tepl.Buffer
             RecentManager.get_default ().add_item (location.get_uri ());
             backup_made = true;
 
-            save_metadata ();
+            save_metadata_into_metadata_manager ();
         }
         catch (Error e)
         {
@@ -513,45 +505,9 @@ public class Document : Tepl.Buffer
         return true;
     }
 
-    private void save_metadata ()
-    {
-        return_if_fail (_metadata_info != null);
-
-        if (this.location == null)
-            return;
-
-        try
-        {
-            this.location.set_attributes_from_info (_metadata_info,
-                FileQueryInfoFlags.NONE);
-        }
-        catch (Error error)
-        {
-            warning ("Set document metadata failed: %s", error.message);
-        }
-    }
-
     public void set_metadata (string key, string? val)
     {
-        return_if_fail (_metadata_info != null);
-
-        if (val != null)
-            _metadata_info.set_attribute_string (key, val);
-        else
-            // Unset the key
-            _metadata_info.set_attribute (key, FileAttributeType.INVALID, null);
-
-        save_metadata ();
-    }
-
-    public new string? get_metadata (string key)
-    {
-        return_val_if_fail (_metadata_info != null, null);
-
-        if (_metadata_info.has_attribute (key) &&
-            _metadata_info.get_attribute_type (key) == FileAttributeType.STRING)
-            return _metadata_info.get_attribute_string (key);
-
-        return null;
+        get_metadata ().set (key, val);
+        save_metadata_into_metadata_manager ();
     }
 }

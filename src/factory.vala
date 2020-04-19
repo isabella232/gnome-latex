@@ -17,7 +17,7 @@
  * along with GNOME LaTeX.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class Factory : Tepl.AbstractFactory
+public class Factory : Latexila.Factory
 {
     public Factory ()
     {
@@ -61,11 +61,5 @@ public class Factory : Tepl.AbstractFactory
 
             app.open_documents (files);
         }
-    }
-
-    public override File? create_metadata_manager_file ()
-    {
-        return File.new_build_filename (Environment.get_user_data_dir (), "gnome-latex",
-            "gnome-latex-metadata.xml", null);
     }
 }

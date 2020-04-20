@@ -253,6 +253,7 @@ public class MainWindow : ApplicationWindow
         /* Statusbar */
 
         _statusbar = new Tepl.Statusbar ();
+        _statusbar.set_tab_group (_documents_panel);
         _statusbar.show_all ();
         main_vgrid.add (_statusbar);
 
@@ -264,7 +265,6 @@ public class MainWindow : ApplicationWindow
         {
             update_file_actions_sensitivity ();
             update_config_project_sensitivity ();
-            update_cursor_position_statusbar ();
 
             if (this.active_tab == null)
             {
@@ -711,7 +711,6 @@ public class MainWindow : ApplicationWindow
 
         doc.modified_changed.connect (() => sync_name (tab));
         doc.notify["readonly"].connect (() => sync_name (tab));
-        doc.tepl_cursor_moved.connect (update_cursor_position_statusbar);
 
         tab.show ();
 
@@ -884,21 +883,6 @@ public class MainWindow : ApplicationWindow
     public void remove_all_tabs ()
     {
         _documents_panel.remove_all_tabs ();
-    }
-
-    private void update_cursor_position_statusbar ()
-    {
-        if (active_view == null)
-        {
-            _statusbar.hide_cursor_position ();
-            return;
-        }
-
-        TextIter iter;
-        active_document.get_iter_at_mark (out iter, active_document.get_insert ());
-        int row = (int) iter.get_line ();
-        int col = (int) active_view.get_visual_column (iter);
-        _statusbar.show_cursor_position (row + 1, col + 1);
     }
 
     public void save_state ()

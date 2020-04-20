@@ -121,10 +121,10 @@
       <summary>Bottom panel is Visible</summary>
       <description>Whether the bottom panel containing the build view should be visible.</description>
     </key>
-    <key name="side-panel-component" type="i">
-      <default>0</default>
+    <key name="side-panel-component" type="s">
+      <default>''</default>
       <summary>Side panel component</summary>
-      <description>Side panel’s active component. 0: Symbols. 1: File browser. 2: Structure.</description>
+      <description>Side panel’s active component.</description>
     </key>
     <key name="show-build-warnings" type="b">
       <default>true</default>

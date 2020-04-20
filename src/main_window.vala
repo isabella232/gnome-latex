@@ -443,16 +443,17 @@ public class MainWindow : ApplicationWindow
 
         // Symbols
         SymbolsView symbols = new SymbolsView (this);
-        side_panel.add_component (_("Symbols"), "symbol_greek", symbols);
+        side_panel.add_component (symbols, "symbols", _("Symbols"), "symbol_greek");
 
         // File browser
         FileBrowser file_browser = new FileBrowser (this);
-        side_panel.add_component (_("File Browser"), "document-open", file_browser);
+        side_panel.add_component (file_browser, "file-browser", _("File Browser"),
+            "document-open");
 
         // Structure
         Structure structure = new Structure (this);
         _main_window_structure.set_structure (structure);
-        side_panel.add_component (_("Structure"), Stock.INDEX, structure); // FIXME don't use Stock
+        side_panel.add_component (structure, "structure", _("Structure"), Stock.INDEX); // FIXME don't use Stock
 
         side_panel.restore_state ();
 

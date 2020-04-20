@@ -21,108 +21,45 @@ using Gtk;
 
 public class SidePanel : Grid
 {
-    private enum SidePanelColumn
-    {
-        PIXBUF,
-        NAME,
-        N_COLUMNS
-    }
-
-    private GLib.Settings _settings;
-    private Gee.ArrayList<Grid?> _components;
-    private ComboBox _combo_box;
-    private Gtk.ListStore _list_store;
-    private int _current_component = -1;
+    private Gtk.Stack _stack;
 
     public SidePanel ()
     {
-        _settings = new GLib.Settings ("org.gnome.gnome-latex.preferences.ui");
-        _components = new Gee.ArrayList<Grid?> ();
+        _stack = new Gtk.Stack ();
 
         margin_start = 6;
-        margin_top = 3;
-        column_spacing = 3;
-        row_spacing = 3;
 
-        init_combo_box ();
-        Button close_button = get_close_button ();
+        Gtk.StackSwitcher stack_switcher = new Gtk.StackSwitcher ();
+        stack_switcher.set_stack (_stack);
 
-        attach (_combo_box, 0, 0, 1, 1);
-        attach (close_button, 1, 0, 1, 1);
+        Gtk.ActionBar action_bar = new Gtk.ActionBar ();
+        action_bar.set_center_widget (stack_switcher);
+        action_bar.pack_end (get_close_button ());
+
+        attach (action_bar, 0, 0, 1, 1);
+        attach (_stack, 0, 1, 1, 1);
         show_all ();
-    }
-
-    private void init_combo_box ()
-    {
-        _list_store = new Gtk.ListStore (SidePanelColumn.N_COLUMNS,
-            typeof (string), // pixbuf (icon-name)
-            typeof (string)  // name
-        );
-
-        _combo_box = new ComboBox.with_model (_list_store);
-        _combo_box.hexpand = true;
-
-        CellRendererPixbuf pixbuf_renderer = new CellRendererPixbuf ();
-        _combo_box.pack_start (pixbuf_renderer, false);
-        _combo_box.set_attributes (pixbuf_renderer,
-            "icon-name", SidePanelColumn.PIXBUF, null);
-
-        CellRendererText text_renderer = new CellRendererText ();
-        text_renderer.ellipsize_set = true;
-        text_renderer.ellipsize = Pango.EllipsizeMode.END;
-        _combo_box.pack_start (text_renderer, true);
-        _combo_box.set_attributes (text_renderer, "text", SidePanelColumn.NAME, null);
-
-        /* signals */
-        _combo_box.changed.connect (show_active_component);
     }
 
     private Button get_close_button ()
     {
         Button close_button = Tepl.utils_create_close_button () as Button;
         close_button.tooltip_text = _("Hide panel");
-        close_button.margin_end = 3;
 
         close_button.clicked.connect (() => this.hide ());
 
         return close_button;
     }
 
-    public void add_component (string name, string icon_name, Grid component)
+    public void add_component (Grid component, string name, string title, string icon_name)
     {
-        TreeIter iter;
-        _list_store.append (out iter);
-        _list_store.set (iter,
-            SidePanelColumn.PIXBUF, icon_name,
-            SidePanelColumn.NAME, name);
-
-        _components.add (component);
-        attach (component, 0, _components.size, 2, 1);
+        component.show ();
+        Tepl.stack_add_component (_stack, component, name, title, icon_name);
     }
 
     public void restore_state ()
     {
-        foreach (Grid component in _components)
-            component.hide ();
-
-        int num = _settings.get_int ("side-panel-component");
-        num = num.clamp (0, _components.size - 1);
-        _combo_box.set_active (num);
-
-        // Save which component is displayed. Since the component can be different
-        // on each window, we make only a SET (not a GET).
-        // The setting is bind only after getting the old value, otherwise the old value
-        // is overwritten.
-        _settings.bind ("side-panel-component", _combo_box, "active",
-            SettingsBindFlags.SET);
-    }
-
-    private void show_active_component ()
-    {
-        if (0 <= _current_component && _current_component < _components.size)
-            _components[_current_component].hide ();
-
-        _current_component = _combo_box.active;
-        _components[_current_component].show ();
+        GLib.Settings settings = new GLib.Settings ("org.gnome.gnome-latex.preferences.ui");
+        Tepl.stack_bind_setting (_stack, settings, "side-panel-component");
     }
 }

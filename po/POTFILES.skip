@@ -32,7 +32,6 @@ src/preferences_dialog.c
 src/project_dialogs.c
 src/projects.c
 src/search.c
-src/side_panel.c
 src/stock_icons.c
 src/structure.c
 src/structure_model.c

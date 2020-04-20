@@ -57,7 +57,6 @@ src/preferences_dialog.vala
 src/project_dialogs.vala
 src/projects.vala
 src/search.vala
-src/side_panel.vala
 src/stock_icons.vala
 src/structure_model.vala
 src/structure.vala

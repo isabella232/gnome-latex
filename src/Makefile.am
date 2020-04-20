@@ -53,7 +53,6 @@ vala_files =				\
 	project_dialogs.vala		\
 	projects.vala			\
 	search.vala			\
-	side_panel.vala			\
 	stock_icons.vala		\
 	structure_model.vala		\
 	structure.vala			\

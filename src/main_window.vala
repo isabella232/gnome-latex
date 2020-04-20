@@ -210,7 +210,7 @@ public class MainWindow : ApplicationWindow
 
         /* Side panel */
 
-        SidePanel side_panel = get_side_panel ();
+        Widget side_panel = get_side_panel ();
         _main_hpaned.pack1 (side_panel, false, false);
 
         /* Vertical paned.
@@ -429,10 +429,32 @@ public class MainWindow : ApplicationWindow
         return edit_toolbar;
     }
 
-    private SidePanel get_side_panel ()
+    private Widget get_side_panel ()
     {
-        SidePanel side_panel = new SidePanel ();
-        side_panel.show ();
+        Gtk.Stack stack = new Gtk.Stack ();
+
+        // Symbols
+        SymbolsView symbols = new SymbolsView (this);
+        Tepl.stack_add_component (stack, symbols, "symbols", _("Symbols"),
+            "symbol_greek");
+
+        // File browser
+        FileBrowser file_browser = new FileBrowser (this);
+        Tepl.stack_add_component (stack, file_browser, "file-browser", _("File Browser"),
+            "document-open");
+
+        // Structure
+        Structure structure = new Structure (this);
+        _main_window_structure.set_structure (structure);
+        Tepl.stack_add_component (stack, structure, "structure", _("Structure"),
+            Stock.INDEX); // FIXME don't use GtkStock
+
+        // Side panel
+        Widget side_panel = Tepl.side_panel_new (stack);
+
+        // Restore/save state
+        GLib.Settings settings = new GLib.Settings ("org.gnome.gnome-latex.preferences.ui");
+        Tepl.stack_bind_setting (stack, settings, "side-panel-component");
 
         // Bind the toggle action to show/hide the side panel
         ToggleAction action = _action_group.get_action ("ViewSidePanel") as ToggleAction;
@@ -440,22 +462,6 @@ public class MainWindow : ApplicationWindow
 
         side_panel.bind_property ("visible", action, "active",
             BindingFlags.BIDIRECTIONAL);
-
-        // Symbols
-        SymbolsView symbols = new SymbolsView (this);
-        side_panel.add_component (symbols, "symbols", _("Symbols"), "symbol_greek");
-
-        // File browser
-        FileBrowser file_browser = new FileBrowser (this);
-        side_panel.add_component (file_browser, "file-browser", _("File Browser"),
-            "document-open");
-
-        // Structure
-        Structure structure = new Structure (this);
-        _main_window_structure.set_structure (structure);
-        side_panel.add_component (structure, "structure", _("Structure"), Stock.INDEX); // FIXME don't use Stock
-
-        side_panel.restore_state ();
 
         return side_panel;
     }

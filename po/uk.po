@@ -2,13 +2,13 @@
 # Copyright (C) 2014 latexila's COPYRIGHT HOLDER
 # This file is distributed under the same license as the latexila package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2018.
+# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2018, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: latexila master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-latex/issues\n"
-"POT-Creation-Date: 2018-10-24 15:29+0000\n"
-"PO-Revision-Date: 2018-10-26 11:30+0200\n"
+"POT-Creation-Date: 2020-04-20 17:28+0000\n"
+"PO-Revision-Date: 2020-04-21 08:40+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 20.07.70\n"
 
 #. (itstool) path: tool/label
 #: build_tools.xml:43 ../src/build_tool_dialog.vala:165
@@ -172,11 +172,6 @@ msgid "Use Default Font"
 msgstr "Використовувати типовий шрифт"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:2
-#| msgid ""
-#| "Whether to use the system's default fixed width font for editing text "
-#| "instead of a font specific to GNOME LaTeX. If this option is turned off, "
-#| "then the font named in the \"Editor Font\" option will be used instead of "
-#| "the system font."
 msgid ""
 "Whether to use the system’s default fixed width font for editing text "
 "instead of a font specific to GNOME LaTeX. If this option is turned off, "
@@ -193,9 +188,6 @@ msgid "Editor Font"
 msgstr "Шрифт редактора"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:4
-#| msgid ""
-#| "A custom font that will be used for the editing area. This will only take "
-#| "effect if the \"Use Default Font\" option is turned off."
 msgid ""
 "A custom font that will be used for the editing area. This will only take "
 "effect if the “Use Default Font” option is turned off."
@@ -228,10 +220,6 @@ msgid "Autosave"
 msgstr "Автозбереження"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:10
-#| msgid ""
-#| "Whether GNOME LaTeX should automatically save modified files after a time "
-#| "interval. You can set the time interval with the \"Autosave Interval\" "
-#| "option."
 msgid ""
 "Whether GNOME LaTeX should automatically save modified files after a time "
 "interval. You can set the time interval with the “Autosave Interval” option."
@@ -245,10 +233,6 @@ msgid "Autosave Interval"
 msgstr "Інтервал автозбереження"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:12
-#| msgid ""
-#| "Number of minutes after which GNOME LaTeX will automatically save "
-#| "modified files. This will only take effect if the \"Autosave\" option is "
-#| "turned on."
 msgid ""
 "Number of minutes after which GNOME LaTeX will automatically save modified "
 "files. This will only take effect if the “Autosave” option is turned on."
@@ -348,8 +332,6 @@ msgid "Main toolbar is visible"
 msgstr "Головна панель є видимою"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:32
-#| msgid ""
-#| "Whether the main toolbar (file open, close, build, ...) should be visible."
 msgid "Whether the main toolbar (file open, close, build…) should be visible."
 msgstr ""
 "Визначає, чи слід показувати головну панель (панель з кнопками відкриття, "
@@ -360,9 +342,6 @@ msgid "Edit toolbar is visible"
 msgstr "Панель редагування є видимою"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:34
-#| msgid ""
-#| "Whether the edit toolbar (bold, italic, character sizes, ...) should be "
-#| "visible."
 msgid ""
 "Whether the edit toolbar (bold, italic, character sizes…) should be visible."
 msgstr ""
@@ -395,13 +374,9 @@ msgid "Side panel component"
 msgstr "Компонент бічної панелі"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:40
-#| msgid ""
-#| "Side panel's active component. 0: Symbols. 1: File browser. 2: Structure."
-msgid ""
-"Side panel’s active component. 0: Symbols. 1: File browser. 2: Structure."
-msgstr ""
-"Активний компонент бічної панелі. 0: символи. 1: навігатор файловою "
-"системою. 2: структура документа."
+#| msgid "Side panel component"
+msgid "Side panel’s active component."
+msgstr "Активний компонент бічної панелі."
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:41
 msgid "Show build output warnings"
@@ -424,9 +399,6 @@ msgid "Minimum number of characters for interactive completion"
 msgstr "Мінімальна кількість символів для інтерактивного доповнення"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:46
-#| msgid ""
-#| "Minimum number of characters after \"\\\" for the interactive completion "
-#| "of LaTeX commands"
 msgid ""
 "Minimum number of characters after “\\” for the interactive completion of "
 "LaTeX commands"
@@ -573,7 +545,7 @@ msgstr ""
 "\\end{letter}\n"
 "\\end{document}\n"
 
-#: ../src/bottom_panel.vala:53 ../src/side_panel.vala:85
+#: ../src/bottom_panel.vala:51 ../src/side_panel.vala:47
 msgid "Hide panel"
 msgstr "Сховати панель"
 
@@ -583,12 +555,11 @@ msgstr "Особистий засіб збирання"
 
 #: ../src/build_tool_dialog.vala:72 ../src/build_tools_preferences.vala:335
 #: ../src/clean_build_files.vala:242 ../src/dialogs.vala:41
-#: ../src/document_tab.vala:178
 #: ../src/liblatexila/latexila-templates-dialogs.c:130
 #: ../src/liblatexila/latexila-templates-dialogs.c:238
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:147
-#: ../src/main_window_file.vala:157 ../src/main_window.vala:754
-#: ../src/main_window.vala:811 ../src/preferences_dialog.vala:114
+#: ../src/main_window_file.vala:157 ../src/main_window.vala:746
+#: ../src/main_window.vala:803 ../src/preferences_dialog.vala:114
 #: ../src/project_dialogs.vala:31 ../src/project_dialogs.vala:122
 #: ../src/project_dialogs.vala:276 ../src/project_dialogs.vala:296
 msgid "_Cancel"
@@ -685,7 +656,6 @@ msgid "Placeholders:"
 msgstr "Заповнювачі:"
 
 #: ../src/build_tool_dialog.vala:620
-#| msgid "The active document's filename."
 msgid "The active document’s filename."
 msgstr "Назва файла активного документа."
 
@@ -695,7 +665,6 @@ msgstr ""
 "Якщо активний документ належить до проекту, буде вибрано основний файл."
 
 #: ../src/build_tool_dialog.vala:625
-#| msgid "The active document's filename without its extension."
 msgid "The active document’s filename without its extension."
 msgstr "Назва файла активного документа без суфікса."
 
@@ -754,7 +723,6 @@ msgstr "%s [копія]"
 
 #: ../src/build_tools_preferences.vala:332
 #, c-format
-#| msgid "Do you really want to delete the build tool \"%s\"?"
 msgid "Do you really want to delete the build tool “%s”?"
 msgstr "Ви справді хочете вилучити засіб збирання «%s»?"
 
@@ -782,19 +750,12 @@ msgstr "Немає тимчасових файлів для вилучення."
 msgid "No matching proposal"
 msgstr "Немає відповідних варіантів"
 
-#. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for
-#. "Column". Please, use abbreviations if possible.
-#: ../src/custom_statusbar.vala:45
-#, c-format
-msgid "Ln %d, Col %d"
-msgstr "Ряд: %d, Поз: %d"
-
-#: ../src/dialogs.vala:40 ../src/main_window.vala:753
+#: ../src/dialogs.vala:40 ../src/main_window.vala:745
 msgid "Close _without Saving"
 msgstr "_Не зберігати"
 
 #: ../src/dialogs.vala:42 ../src/main_window_file.vala:41
-#: ../src/main_window.vala:759 ../src/main_window.vala:812
+#: ../src/main_window.vala:751 ../src/main_window.vala:804
 msgid "_Save"
 msgstr "З_берегти"
 
@@ -810,7 +771,6 @@ msgid "Select the documents you want to save:"
 msgstr "Виберіть документи, які ви хочете зберегти:"
 
 #: ../src/dialogs.vala:129
-#| msgid "If you don't save, all your changes will be permanently lost."
 msgid "If you don’t save, all your changes will be permanently lost."
 msgstr "Якщо ви не збережете усі внесені зміни, їх буде втрачено остаточно."
 
@@ -820,62 +780,42 @@ msgstr "Елемент структури вже містить підпараг
 
 #: ../src/document_tab.vala:147
 #, c-format
-#| msgid "Activate '%s'"
 msgid "Activate “%s”"
 msgstr "Задіяти «%s»"
 
-#: ../src/document_tab.vala:166
+#: ../src/document.vala:120
 #, c-format
-msgid "The file %s changed on disk."
-msgstr "Файл %s змінено на диску."
-
-#: ../src/document_tab.vala:171
-msgid "Do you want to drop your changes and reload the file?"
-msgstr "Хочете відкинути внесені вами зміни і перезавантажити цей файл?"
-
-#: ../src/document_tab.vala:173
-msgid "Do you want to reload the file?"
-msgstr "Хочете перезавантажити файл?"
-
-#: ../src/document_tab.vala:177
-msgid "_Reload"
-msgstr "П_ерезавантажити"
-
-#: ../src/document.vala:133
-#, c-format
-#| msgid "Impossible to load the file '%s'."
 msgid "Impossible to load the file “%s”."
 msgstr "Завантаження файла «%s» неможливе."
 
-#: ../src/document.vala:215
+#: ../src/document.vala:202
 #, c-format
 msgid "The file %s has been modified since reading it."
 msgstr "До файла %s з моменту його читання було внесено зміни."
 
-#: ../src/document.vala:218
+#: ../src/document.vala:205
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
 "Якщо ви збережете його, зміни, внесені зовнішньою програмою, буде втрачено. "
 "Зберегти файл попри це?"
 
-#: ../src/document.vala:222
+#: ../src/document.vala:209
 msgid "_Save Anyway"
 msgstr "З_берегти попри це"
 
-#: ../src/document.vala:223
-#| msgid "_Don't Save"
+#: ../src/document.vala:210
 msgid "_Don’t Save"
 msgstr "_Не зберігати"
 
-#: ../src/document.vala:240
+#: ../src/document.vala:227
 msgid "Impossible to save the file."
 msgstr "Збереження файла неможливе."
 
-#: ../src/document.vala:268
+#: ../src/document.vala:255
 msgid "Error trying to convert the document to UTF-8"
 msgstr "Помилка під час спроби перетворити дані документа у кодування UTF-8"
 
-#: ../src/document.vala:497
+#: ../src/document.vala:484
 msgid ""
 "The file has a temporary location. The data can be lost after rebooting your "
 "computer."
@@ -883,29 +823,29 @@ msgstr ""
 "Файл зберігається у тимчасовому каталозі. Дані буде втрачено під час "
 "перезавантаження системи."
 
-#: ../src/document.vala:498
+#: ../src/document.vala:485
 msgid "Do you want to save the file in a safer place?"
 msgstr "Хочете зберегти файл у безпечнішому місці?"
 
-#: ../src/document.vala:499 ../src/main_window_file.vala:44
-#: ../src/main_window.vala:757
+#: ../src/document.vala:486 ../src/main_window_file.vala:44
+#: ../src/main_window.vala:749
 msgid "Save _As"
 msgstr "Зберегти _як"
 
-#: ../src/document.vala:500
+#: ../src/document.vala:487
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: ../src/document_view.vala:312
+#: ../src/document_view.vala:308
 msgid "No dictionaries available for the spell-checking."
 msgstr "Не встановлено жодних словників для перевірки правопису."
 
 #. Help
-#: ../src/document_view.vala:314 ../src/main_window.vala:63
+#: ../src/document_view.vala:310 ../src/main_window.vala:63
 msgid "_Help"
 msgstr "_Довідка"
 
-#: ../src/document_view.vala:315
+#: ../src/document_view.vala:311
 msgid "_OK"
 msgstr "_Гаразд"
 
@@ -946,28 +886,27 @@ msgstr "Файлова система"
 msgid "File Browser"
 msgstr "Навігація файлами"
 
-#: ../src/glatex_app.vala:78
-#| msgid "Show the application's version"
+#: ../src/glatex_app.vala:79
 msgid "Show the application’s version"
 msgstr "Показати дані щодо версії програми"
 
-#: ../src/glatex_app.vala:81
+#: ../src/glatex_app.vala:82
 msgid "Create new document"
 msgstr "Створити новий документ"
 
-#: ../src/glatex_app.vala:84
+#: ../src/glatex_app.vala:85
 msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
 msgstr "Створити нове вікно верхнього рівня у наявному екземплярі GNOME LaTeX"
 
-#: ../src/glatex_app.vala:195
+#: ../src/glatex_app.vala:196
 msgid "GNOME LaTeX is a LaTeX editor for the GNOME desktop"
 msgstr "GNOME LaTeX — редактор LaTeX для GNOME"
 
-#: ../src/glatex_app.vala:224 ../src/main_window.vala:69
+#: ../src/glatex_app.vala:225 ../src/main_window.vala:69
 msgid "About GNOME LaTeX"
 msgstr "Про GNOME LaTeX"
 
-#: ../src/glatex_app.vala:225
+#: ../src/glatex_app.vala:226
 msgid "translator-credits"
 msgstr "Юрій Чорноіван <yurchor@ukr.net>"
 
@@ -1075,26 +1014,23 @@ msgstr "Середовища для презентацій"
 msgid "Math Environments"
 msgstr "Математичні середовища"
 
-#: ../src/liblatexila/latexila-build-job.c:365
+#: ../src/liblatexila/latexila-build-job.c:366
 #, c-format
-#| msgid "%s doesn't seem to be installed."
 msgid "%s doesn’t seem to be installed."
 msgstr "Здається, не встановлено %s."
 
-#: ../src/liblatexila/latexila-build-tool.c:555
-#: ../src/liblatexila/latexila-synctex.c:569
+#: ../src/liblatexila/latexila-build-tool.c:556
+#: ../src/liblatexila/latexila-synctex.c:570
 #, c-format
-#| msgid "The file '%s' doesn't exist."
 msgid "The file “%s” doesn’t exist."
 msgstr "Файла «%s» не існує."
 
-#: ../src/liblatexila/latexila-build-tool.c:583
+#: ../src/liblatexila/latexila-build-tool.c:584
 #, c-format
-#| msgid "Failed to open '%s':"
 msgid "Failed to open “%s”:"
 msgstr "Не вдалося відкрити «%s»:"
 
-#: ../src/liblatexila/latexila-build-tool.c:689
+#: ../src/liblatexila/latexila-build-tool.c:690
 #, c-format
 msgid "Open %s"
 msgstr "Відкрити %s"
@@ -1148,212 +1084,170 @@ msgid "Reference to a bibliography item"
 msgstr "Посилання на запис бібліографії"
 
 #: ../src/liblatexila/latexila-latex-commands.c:86
-#| msgid "Center - \\begin{center}"
 msgid "Center — \\begin{center}"
 msgstr "По середині — \\begin{center}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:88
-#| msgid "Align Left - \\begin{flushleft}"
 msgid "Align Left — \\begin{flushleft}"
 msgstr "Вирівняти ліворуч — \\begin{flushleft}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:90
-#| msgid "Align Right - \\begin{flushright}"
 msgid "Align Right — \\begin{flushright}"
 msgstr "Вирівняти праворуч — \\begin{flushright}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:92
-#| msgid "Figure - \\begin{figure}"
 msgid "Figure — \\begin{figure}"
 msgstr "Рисунок — \\begin{figure}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:94
-#| msgid "Table - \\begin{table}"
 msgid "Table — \\begin{table}"
 msgstr "Таблиця — \\begin{table}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:96
-#| msgid "Quote - \\begin{quote}"
 msgid "Quote — \\begin{quote}"
 msgstr "Цитата — \\begin{quote}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:98
-#| msgid "Quotation - \\begin{quotation}"
 msgid "Quotation — \\begin{quotation}"
 msgstr "Цитування — \\begin{quotation}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:100
-#| msgid "Verse - \\begin{verse}"
 msgid "Verse — \\begin{verse}"
 msgstr "Вірші — \\begin{verse}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:102
-#| msgid "Verbatim - \\begin{verbatim}"
 msgid "Verbatim — \\begin{verbatim}"
 msgstr "Дослівно — \\begin{verbatim}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:104
-#| msgid "Minipage - \\begin{minipage}"
 msgid "Minipage — \\begin{minipage}"
 msgstr "Міністорінка — \\begin{minipage}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:106
-#| msgid "Title page - \\begin{titlepage}"
 msgid "Title page — \\begin{titlepage}"
 msgstr "Титульна сторінка — \\begin{titlepage}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:111
-#| msgid "Bulleted List - \\begin{itemize}"
 msgid "Bulleted List — \\begin{itemize}"
 msgstr "Список з позначками — \\begin{itemize}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:113
-#| msgid "Enumeration - \\begin{enumerate}"
 msgid "Enumeration — \\begin{enumerate}"
 msgstr "Перелік — \\begin{enumerate}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:115
-#| msgid "Description - \\begin{description}"
 msgid "Description — \\begin{description}"
 msgstr "Опис — \\begin{description}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:117
-#| msgid "Custom list - \\begin{list}"
 msgid "Custom list — \\begin{list}"
 msgstr "Нетиповий список — \\begin{list}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:119
-#| msgid "List item - \\item"
 msgid "List item — \\item"
 msgstr "Пункт у списку – \\item"
 
 #: ../src/liblatexila/latexila-latex-commands.c:137
-#| msgid "Bold - \\textbf"
 msgid "Bold — \\textbf"
 msgstr "Напівжирний – \\textbf"
 
 #: ../src/liblatexila/latexila-latex-commands.c:139
-#| msgid "Italic - \\textit"
 msgid "Italic — \\textit"
 msgstr "Курсивний – \\textit"
 
 #: ../src/liblatexila/latexila-latex-commands.c:141
-#| msgid "Typewriter - \\texttt"
 msgid "Typewriter — \\texttt"
 msgstr "Друкарська машинка — \\texttt"
 
 #: ../src/liblatexila/latexila-latex-commands.c:143
-#| msgid "Slanted - \\textsl"
 msgid "Slanted — \\textsl"
 msgstr "Нахилений — \\textsl"
 
 #: ../src/liblatexila/latexila-latex-commands.c:145
-#| msgid "Small Capitals - \\textsc"
 msgid "Small Capitals — \\textsc"
 msgstr "Мала капітель – \\textsc"
 
 #: ../src/liblatexila/latexila-latex-commands.c:147
-#| msgid "Sans Serif - \\textsf"
 msgid "Sans Serif — \\textsf"
 msgstr "Без засічок – \\textsf"
 
 #: ../src/liblatexila/latexila-latex-commands.c:149
-#| msgid "Emphasized - \\emph"
 msgid "Emphasized — \\emph"
 msgstr "Виділений — \\emph"
 
 #: ../src/liblatexila/latexila-latex-commands.c:151
-#| msgid "Underline - \\underline"
 msgid "Underline — \\underline"
 msgstr "Підкреслення — \\underline"
 
 #: ../src/liblatexila/latexila-latex-commands.c:154
-#| msgid "Roman - \\rmfamily"
 msgid "Roman — \\rmfamily"
 msgstr "Прямий — \\rmfamily"
 
 #: ../src/liblatexila/latexila-latex-commands.c:156
-#| msgid "Sans Serif - \\sffamily"
 msgid "Sans Serif — \\sffamily"
 msgstr "Без засічок — \\sffamily"
 
 #: ../src/liblatexila/latexila-latex-commands.c:158
-#| msgid "Monospace - \\ttfamily"
 msgid "Monospace — \\ttfamily"
 msgstr "Моноширинний — \\ttfamily"
 
 #: ../src/liblatexila/latexila-latex-commands.c:161
-#| msgid "Medium - \\mdseries"
 msgid "Medium — \\mdseries"
 msgstr "Середній — \\mdseries"
 
 #: ../src/liblatexila/latexila-latex-commands.c:163
-#| msgid "Bold - \\bfseries"
 msgid "Bold — \\bfseries"
 msgstr "Напівжирний — \\bfseries"
 
 #: ../src/liblatexila/latexila-latex-commands.c:166
-#| msgid "Upright - \\upshape"
 msgid "Upright — \\upshape"
 msgstr "Вертикальний — \\upshape"
 
 #: ../src/liblatexila/latexila-latex-commands.c:168
-#| msgid "Italic - \\itshape"
 msgid "Italic — \\itshape"
 msgstr "Курсив — \\itshape"
 
 #: ../src/liblatexila/latexila-latex-commands.c:170
-#| msgid "Slanted - \\slshape"
 msgid "Slanted — \\slshape"
 msgstr "Нахилений — \\slshape"
 
 #: ../src/liblatexila/latexila-latex-commands.c:172
-#| msgid "Small Capitals - \\scshape"
 msgid "Small Capitals — \\scshape"
 msgstr "Мала капітель – \\scshape"
 
 #: ../src/liblatexila/latexila-latex-commands.c:177
-#| msgid "Tabbing - \\begin{tabbing}"
 msgid "Tabbing — \\begin{tabbing}"
 msgstr "Табуляція — \\begin{tabbing}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:179
-#| msgid "Tabular - \\begin{tabular}"
 msgid "Tabular — \\begin{tabular}"
 msgstr "Табличне середовище — \\begin{tabular}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:181
-#| msgid "Multicolumn - \\multicolumn"
 msgid "Multicolumn — \\multicolumn"
 msgstr "Декілька стовпців – \\multicolumn"
 
 #: ../src/liblatexila/latexila-latex-commands.c:183
-#| msgid "Horizontal line - \\hline"
 msgid "Horizontal line — \\hline"
 msgstr "Горизонтальна лінія — \\hline"
 
 #: ../src/liblatexila/latexila-latex-commands.c:185
-#| msgid "Vertical line - \\vline"
 msgid "Vertical line — \\vline"
 msgstr "Вертикальна лінія — \\vline"
 
 #: ../src/liblatexila/latexila-latex-commands.c:187
-#| msgid "Horizontal line (columns specified) - \\cline"
 msgid "Horizontal line (columns specified) — \\cline"
 msgstr "Горизонтальна лінія (із вказаними стовпчиками) - \\cline"
 
 #: ../src/liblatexila/latexila-latex-commands.c:192
-#| msgid "Frame - \\begin{frame}"
 msgid "Frame — \\begin{frame}"
 msgstr "Рамка – \\begin{frame}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:194
-#| msgid "Block - \\begin{block}"
 msgid "Block — \\begin{block}"
 msgstr "Блок – \\begin{block}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:196
-#| msgid "Two columns - \\begin{columns}"
 msgid "Two columns — \\begin{columns}"
 msgstr "Два стовпці – \\begin{columns}"
 
@@ -1363,138 +1257,111 @@ msgid "New _Line"
 msgstr "Новий _рядок"
 
 #: ../src/liblatexila/latexila-latex-commands.c:201
-#| msgid "New Line - \\\\"
 msgid "New Line — \\\\"
 msgstr "З нового рядка – \\\\"
 
 #: ../src/liblatexila/latexila-latex-commands.c:203
-#| msgid "New page - \\newpage"
 msgid "New page — \\newpage"
 msgstr "З нової сторінки – \\newpage"
 
 #: ../src/liblatexila/latexila-latex-commands.c:205
-#| msgid "Line break - \\linebreak"
 msgid "Line break — \\linebreak"
 msgstr "Розрив рядка — \\linebreak"
 
 #: ../src/liblatexila/latexila-latex-commands.c:207
-#| msgid "Page break - \\pagebreak"
 msgid "Page break — \\pagebreak"
 msgstr "Розрив сторінки — \\pagebreak"
 
 #: ../src/liblatexila/latexila-latex-commands.c:209
-#| msgid "Big skip - \\bigskip"
 msgid "Big skip — \\bigskip"
 msgstr "Великий проміжок – \\bigskip"
 
 #: ../src/liblatexila/latexila-latex-commands.c:211
-#| msgid "Medium skip - \\medskip"
 msgid "Medium skip — \\medskip"
 msgstr "Середній проміжок – \\medskip"
 
 #: ../src/liblatexila/latexila-latex-commands.c:213
-#| msgid "Horizontal space - \\hspace"
 msgid "Horizontal space — \\hspace"
 msgstr "Горизонтальний проміжок — \\hspace"
 
 #: ../src/liblatexila/latexila-latex-commands.c:215
-#| msgid "Vertical space - \\vspace"
 msgid "Vertical space — \\vspace"
 msgstr "Вертикальний проміжок — \\vspace"
 
 #: ../src/liblatexila/latexila-latex-commands.c:217
-#| msgid "No paragraph indentation - \\noindent"
 msgid "No paragraph indentation — \\noindent"
 msgstr "Без абзацного відступу – \\noindent"
 
 #. LaTeX: International accents
 #: ../src/liblatexila/latexila-latex-commands.c:221
-#| msgid "Acute accent - \\'"
 msgid "Acute accent — \\'"
 msgstr "Гострий наголос – \\'"
 
 #: ../src/liblatexila/latexila-latex-commands.c:222
-#| msgid "Grave accent - \\`"
 msgid "Grave accent — \\`"
 msgstr "М’який наголос – \\`"
 
 #: ../src/liblatexila/latexila-latex-commands.c:223
-#| msgid "Circumflex accent - \\^"
 msgid "Circumflex accent — \\^"
 msgstr "Циркумфлекс – \\^"
 
 #: ../src/liblatexila/latexila-latex-commands.c:224
-#| msgid "Trema - \\\""
 msgid "Trema — \\\""
 msgstr "Трема – \\\""
 
 #: ../src/liblatexila/latexila-latex-commands.c:225
-#| msgid "Tilde - \\~"
 msgid "Tilde — \\~"
 msgstr "Тильда – \\~"
 
 #: ../src/liblatexila/latexila-latex-commands.c:226
-#| msgid "Macron - \\="
 msgid "Macron — \\="
 msgstr "Макрон – \\="
 
 #: ../src/liblatexila/latexila-latex-commands.c:227
-#| msgid "Dot above - \\."
 msgid "Dot above — \\."
 msgstr "Крапка згори — \\."
 
 #: ../src/liblatexila/latexila-latex-commands.c:228
-#| msgid "Caron - \\v"
 msgid "Caron — \\v"
 msgstr "Перевернути циркумфлекс – \\v"
 
 #: ../src/liblatexila/latexila-latex-commands.c:229
-#| msgid "Breve - \\u"
 msgid "Breve — \\u"
 msgstr "Значок короткості — \\u"
 
 #: ../src/liblatexila/latexila-latex-commands.c:231
-#| msgid "Double acute accent - \\H"
 msgid "Double acute accent — \\H"
 msgstr "Подвійний гострий наголос — \\H"
 
 #: ../src/liblatexila/latexila-latex-commands.c:232
-#| msgid "Cedilla - \\c"
 msgid "Cedilla — \\c"
 msgstr "Седиль — \\c"
 
 #: ../src/liblatexila/latexila-latex-commands.c:233
-#| msgid "Ogonek - \\k"
 msgid "Ogonek — \\k"
 msgstr "Хвостик — \\k"
 
 #: ../src/liblatexila/latexila-latex-commands.c:234
-#| msgid "Dot below - \\d"
 msgid "Dot below — \\d"
 msgstr "Крапка знизу — \\d"
 
 #: ../src/liblatexila/latexila-latex-commands.c:235
-#| msgid "Macron below - \\b"
 msgid "Macron below — \\b"
 msgstr "Макрон знизу — \\b"
 
 #: ../src/liblatexila/latexila-latex-commands.c:236
-#| msgid "Ring - \\r"
 msgid "Ring — \\r"
 msgstr "Кільце — \\r"
 
 #: ../src/liblatexila/latexila-latex-commands.c:237
-#| msgid "Tie - \\t"
 msgid "Tie — \\t"
 msgstr "Зв’язок — \\t"
 
 #: ../src/liblatexila/latexila-latex-commands.c:242
-#| msgid "Document class - \\documentclass"
 msgid "Document class — \\documentclass"
 msgstr "Клас документа — \\documentclass"
 
 #: ../src/liblatexila/latexila-latex-commands.c:244
-#| msgid "Use package - \\usepackage"
 msgid "Use package — \\usepackage"
 msgstr "Використати пакунок — \\usepackage"
 
@@ -1507,184 +1374,148 @@ msgid "AMS packages"
 msgstr "Пакунки AMS"
 
 #: ../src/liblatexila/latexila-latex-commands.c:247
-#| msgid "Author - \\author"
 msgid "Author — \\author"
 msgstr "Автор – \\author"
 
 #: ../src/liblatexila/latexila-latex-commands.c:248
-#| msgid "Title - \\title"
 msgid "Title — \\title"
 msgstr "Заголовок – \\title"
 
 #: ../src/liblatexila/latexila-latex-commands.c:250
-#| msgid "Content of the document - \\begin{document}"
 msgid "Content of the document — \\begin{document}"
 msgstr "Вміст документа – \\begin{document}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:252
-#| msgid "Make title - \\maketitle"
 msgid "Make title — \\maketitle"
 msgstr "Створити титульні написи — \\maketitle"
 
 #: ../src/liblatexila/latexila-latex-commands.c:254
-#| msgid "Table of contents - \\tableofcontents"
 msgid "Table of contents — \\tableofcontents"
 msgstr "Зміст — \\tableofcontents"
 
 #: ../src/liblatexila/latexila-latex-commands.c:256
-#| msgid "Abstract - \\begin{abstract}"
 msgid "Abstract — \\begin{abstract}"
 msgstr "Резюме — \\begin{abstract}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:258
-#| msgid "Include an image (graphicx package) - \\includegraphics"
 msgid "Include an image (graphicx package) — \\includegraphics"
 msgstr "Включити зображення (пакунок graphicx) — \\includegraphics"
 
 #: ../src/liblatexila/latexila-latex-commands.c:260
-#| msgid "Include a file - \\input"
 msgid "Include a file — \\input"
 msgstr "Включити файл — \\input"
 
 #. Math Environments
 #: ../src/liblatexila/latexila-latex-commands.c:264
-#| msgid "_Mathematical Environment - $...$"
 msgid "_Mathematical Environment — $…$"
 msgstr "_Математичне середовище — $...$"
 
 #: ../src/liblatexila/latexila-latex-commands.c:265
-#| msgid "Mathematical Environment - $...$"
 msgid "Mathematical Environment — $…$"
 msgstr "Математичне середовище — $...$"
 
 #: ../src/liblatexila/latexila-latex-commands.c:266
-#| msgid "_Centered Formula - \\[...\\]"
 msgid "_Centered Formula — \\[…\\]"
 msgstr "_Центрована формула — \\[...\\]"
 
 #: ../src/liblatexila/latexila-latex-commands.c:267
-#| msgid "Centered Formula - \\[...\\]"
 msgid "Centered Formula — \\[…\\]"
 msgstr "Центрована формула — \\[...\\]"
 
 #: ../src/liblatexila/latexila-latex-commands.c:269
-#| msgid "_Numbered Equation - \\begin{equation}"
 msgid "_Numbered Equation — \\begin{equation}"
 msgstr "_Нумероване рівняння — \\begin{equation}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:270
-#| msgid "Numbered Equation - \\begin{equation}"
 msgid "Numbered Equation — \\begin{equation}"
 msgstr "Нумероване рівняння — \\begin{equation}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:271
-#| msgid "_Array of Equations - \\begin{align*}"
 msgid "_Array of Equations — \\begin{align*}"
 msgstr "_Масив з рівнянь — \\begin{align*}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:272
-#| msgid "Array of Equations - \\begin{align*}"
 msgid "Array of Equations — \\begin{align*}"
 msgstr "Масив з рівнянь — \\begin{align*}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:274
-#| msgid "Numbered Array of _Equations - \\begin{align}"
 msgid "Numbered Array of _Equations — \\begin{align}"
 msgstr "Нумерований масив _рівнянь — \\begin{align}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:275
-#| msgid "Numbered Array of Equations - \\begin{align}"
 msgid "Numbered Array of Equations — \\begin{align}"
 msgstr "Нумерований масив з рівнянь — \\begin{align}"
 
 #. Math misc
 #: ../src/liblatexila/latexila-latex-commands.c:279
-#| msgid "_Superscript - ^{}"
 msgid "_Superscript — ^{}"
 msgstr "_Верхній індекс — ^{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:280
-#| msgid "Superscript - ^{}"
 msgid "Superscript — ^{}"
 msgstr "Верхній індекс — ^{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:281
-#| msgid "Su_bscript - __{}"
 msgid "Su_bscript — __{}"
 msgstr "_Нижній індекс — __{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:282
-#| msgid "Subscript - _{}"
 msgid "Subscript — _{}"
 msgstr "Нижній індекс — _{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:283
-#| msgid "_Fraction - \\frac{}{}"
 msgid "_Fraction — \\frac{}{}"
 msgstr "_Дріб — \\frac{}{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:284
-#| msgid "Fraction - \\frac{}{}"
 msgid "Fraction — \\frac{}{}"
 msgstr "Дріб — \\frac{}{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:285
-#| msgid "Square _Root - \\sqrt{}"
 msgid "Square _Root — \\sqrt{}"
 msgstr "Квадратний _корінь — \\sqrt{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:286
-#| msgid "Square Root - \\sqrt{}"
 msgid "Square Root — \\sqrt{}"
 msgstr "Квадратний корінь — \\sqrt{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:287
-#| msgid "_N-th Root - \\sqrt[]{}"
 msgid "_N-th Root — \\sqrt[]{}"
 msgstr "К_орінь n-го степеня — \\sqrt[]{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:288
-#| msgid "N-th Root - \\sqrt[]{}"
 msgid "N-th Root — \\sqrt[]{}"
 msgstr "Корінь n-го степеня — \\sqrt[]{}"
 
 #: ../src/liblatexila/latexila-latex-commands.c:326
-#| msgid "Roman - \\mathrm"
 msgid "Roman — \\mathrm"
 msgstr "Прямий — \\mathrm"
 
 #: ../src/liblatexila/latexila-latex-commands.c:328
-#| msgid "Italic - \\mathit"
 msgid "Italic — \\mathit"
 msgstr "Курсив — \\mathit"
 
 #: ../src/liblatexila/latexila-latex-commands.c:330
-#| msgid "Bold - \\mathbf"
 msgid "Bold — \\mathbf"
 msgstr "Напівжирний — \\mathbf"
 
 #: ../src/liblatexila/latexila-latex-commands.c:332
-#| msgid "Sans Serif - \\mathsf"
 msgid "Sans Serif — \\mathsf"
 msgstr "Без засічок — \\mathsf"
 
 #: ../src/liblatexila/latexila-latex-commands.c:334
-#| msgid "Typewriter - \\mathtt"
 msgid "Typewriter — \\mathtt"
 msgstr "Друкарський — \\mathtt"
 
 #: ../src/liblatexila/latexila-latex-commands.c:336
-#| msgid "Calligraphic - \\mathcal"
 msgid "Calligraphic — \\mathcal"
 msgstr "Каліграфічний — \\mathcal"
 
 #: ../src/liblatexila/latexila-latex-commands.c:338
-#| msgid "Blackboard (uppercase only)  - \\mathbb (amsfonts package)"
 msgid "Blackboard (uppercase only) — \\mathbb (amsfonts package)"
 msgstr "Дошковий (лише верхній регістр) — \\mathbb (пакунок amsfonts)"
 
 #: ../src/liblatexila/latexila-latex-commands.c:340
-#| msgid "Euler Fraktur - \\mathfrak (amsfonts package)"
 msgid "Euler Fraktur — \\mathfrak (amsfonts package)"
 msgstr "Готичний Euler — \\mathfrak (пакунок amsfonts)"
 
@@ -1694,7 +1525,6 @@ msgid "_Small"
 msgstr "_Малий"
 
 #: ../src/liblatexila/latexila-latex-commands.c:358
-#| msgid "Small - \\,"
 msgid "Small — \\,"
 msgstr "Малий — \\,"
 
@@ -1703,7 +1533,6 @@ msgid "_Medium"
 msgstr "С_ередній"
 
 #: ../src/liblatexila/latexila-latex-commands.c:359
-#| msgid "Medium - \\:"
 msgid "Medium — \\:"
 msgstr "Середній – \\:"
 
@@ -1712,7 +1541,6 @@ msgid "_Large"
 msgstr "_Великий"
 
 #: ../src/liblatexila/latexila-latex-commands.c:360
-#| msgid "Large - \\;"
 msgid "Large — \\;"
 msgstr "Великий – \\;"
 
@@ -1790,20 +1618,19 @@ msgstr "права <"
 msgid "right ."
 msgstr "права ."
 
-#: ../src/liblatexila/latexila-synctex.c:194
+#: ../src/liblatexila/latexila-synctex.c:195
 msgid "Impossible to do the forward search."
 msgstr "Не вдалося виконати прямий пошук."
 
-#: ../src/liblatexila/latexila-synctex.c:539
+#: ../src/liblatexila/latexila-synctex.c:540
 msgid "Can not communicate with evince."
 msgstr "Не вдалося встановити зв’язок з evince."
 
-#: ../src/liblatexila/latexila-synctex.c:603
-#| msgid "The PDF file doesn't exist."
+#: ../src/liblatexila/latexila-synctex.c:604
 msgid "The PDF file doesn’t exist."
 msgstr "Файла PDF не існує."
 
-#: ../src/liblatexila/latexila-synctex.c:654
+#: ../src/liblatexila/latexila-synctex.c:655
 msgid "The document is not saved."
 msgstr "Документ не збережено."
 
@@ -1840,7 +1667,6 @@ msgid "Personal Templates"
 msgstr "Особисті шаблони"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:124
-#| msgid "New file"
 msgid "New File…"
 msgstr "Створити файл"
 
@@ -1850,7 +1676,6 @@ msgid "_New"
 msgstr "_Створити"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:232
-#| msgid "New Template..."
 msgid "New Template…"
 msgstr "Створити шаблон…"
 
@@ -2078,7 +1903,6 @@ msgid "_Comment"
 msgstr "За_коментувати"
 
 #: ../src/main_window_edit.vala:64
-#| msgid "Comment the selected lines (add the character \"%\")"
 msgid "Comment the selected lines (add the character “%”)"
 msgstr "Закоментувати позначені рядки (додати на початку символ «%»)"
 
@@ -2087,7 +1911,6 @@ msgid "_Uncomment"
 msgstr "_Розкоментувати"
 
 #: ../src/main_window_edit.vala:68
-#| msgid "Uncomment the selected lines (remove the character \"%\")"
 msgid "Uncomment the selected lines (remove the character “%”)"
 msgstr "Зняти коментування позначених рядків (вилучити символ «%»)"
 
@@ -2140,7 +1963,6 @@ msgid "Save the current file with a different name"
 msgstr "Зберегти поточний файл під іншою назвою"
 
 #: ../src/main_window_file.vala:47
-#| msgid "Create _Template From Document..."
 msgid "Create _Template From Document…"
 msgstr "Створити _шаблон на основі документа…"
 
@@ -2149,7 +1971,6 @@ msgid "Create a new template from the current document"
 msgstr "Створити новий шаблон на основі поточного документа"
 
 #: ../src/main_window_file.vala:50
-#| msgid "Manage Personal Templates"
 msgid "_Manage Personal Templates…"
 msgstr "_Керування особистими шаблонами…"
 
@@ -2333,7 +2154,6 @@ msgid "Search for and replace text"
 msgstr "Знайти і замінити фрагмент тексту"
 
 #: ../src/main_window.vala:46
-#| msgid "Go to Line:"
 msgid "_Go to Line…"
 msgstr "_Перейти до рядка…"
 
@@ -2440,39 +2260,16 @@ msgstr "Показати або сховати нижню панель"
 msgid "Symbols"
 msgstr "Символи"
 
-#: ../src/main_window.vala:455
+#: ../src/main_window.vala:456
 msgid "Structure"
 msgstr "Структура"
 
-#: ../src/main_window.vala:648
+#: ../src/main_window.vala:742
 #, c-format
-msgid "This file (%s) is already opened in another GNOME LaTeX window."
-msgstr "Цей файл (%s) вже відкрито у іншому вікні GNOME LaTeX."
-
-#: ../src/main_window.vala:650
-msgid ""
-"GNOME LaTeX opened this instance of the file in a non-editable way. Do you "
-"want to edit it anyway?"
-msgstr ""
-"У GNOME LaTeX цей екземпляр файла відкрито у режимі лише читання. Хочете "
-"редагувати його попри це?"
-
-#: ../src/main_window.vala:654
-msgid "Edit Anyway"
-msgstr "Редагувати попри це"
-
-#: ../src/main_window.vala:655
-#| msgid "Don't Edit"
-msgid "Don’t Edit"
-msgstr "Не редагувати"
-
-#: ../src/main_window.vala:750
-#, c-format
-#| msgid "Save changes to document \"%s\" before closing?"
 msgid "Save changes to document “%s” before closing?"
 msgstr "Зберегти зміни у документі «%s» до закриття вікна програми?"
 
-#: ../src/main_window.vala:809
+#: ../src/main_window.vala:801
 msgid "Save File"
 msgstr "Зберегти файл"
 
@@ -2533,7 +2330,6 @@ msgstr "Основний файл"
 
 #: ../src/project_dialogs.vala:102
 #, c-format
-#| msgid "There is a conflict with the project \"%s\"."
 msgid "There is a conflict with the project “%s”."
 msgstr "Конфлікт з проектом «%s»."
 
@@ -2555,7 +2351,6 @@ msgstr "Ви_лучити все"
 
 #: ../src/project_dialogs.vala:273
 #, c-format
-#| msgid "Do you really want to delete the project \"%s\"?"
 msgid "Do you really want to delete the project “%s”?"
 msgstr "Ви справді хочете вилучити проект «%s»?"
 
@@ -2579,49 +2374,49 @@ msgstr "Перейти до рядка:"
 msgid "Line you want to move the cursor to"
 msgstr "Рядок, до якого слід пересунути курсор"
 
-#: ../src/search.vala:172
+#: ../src/search.vala:174
 msgid "Replace with"
 msgstr "Замінити на"
 
-#: ../src/search.vala:180
+#: ../src/search.vala:182
 msgid "Replace"
 msgstr "Замінити"
 
 #. replace all: image + label
-#: ../src/search.vala:184
+#: ../src/search.vala:186
 msgid "Replace All"
 msgstr "Замінити все"
 
-#: ../src/search.vala:194
+#: ../src/search.vala:196
 msgid "All"
 msgstr "Все"
 
-#: ../src/search.vala:290
+#: ../src/search.vala:292
 msgid "Search for"
 msgstr "Шукати"
 
-#: ../src/search.vala:301
+#: ../src/search.vala:303
 msgid "Case sensitive"
 msgstr "З врахуванням регістру"
 
-#: ../src/search.vala:304
+#: ../src/search.vala:306
 msgid "Entire words only"
 msgstr "Лише цілі слова"
 
-#: ../src/search.vala:451
+#: ../src/search.vala:455
 msgid "Not found"
 msgstr "Не знайдено"
 
 #. Translators: the first %d is the position of the current search occurrence,
 #. * and the second %d is the total number of search occurrences.
 #.
-#: ../src/search.vala:468
+#: ../src/search.vala:472
 #, c-format
 msgid "Match %d of %d"
 msgstr "Відповідник %d з %d"
 
 #. Translators: %d is the total number of search occurrences.
-#: ../src/search.vala:473
+#: ../src/search.vala:477
 #, c-format
 msgid "%d match"
 msgid_plural "%d matches"
@@ -2839,7 +2634,6 @@ msgid "Interactive completion after"
 msgstr "Інтерактивне доповнення після"
 
 #: ../src/ui/preferences_dialog.ui.h:19
-#| msgid "Number of characters after '\\'"
 msgid "Number of characters after “\\”"
 msgstr "Кількість символів після «\\»"
 
@@ -2874,113 +2668,3 @@ msgstr "Позначати слова з помилками у правопис�
 #: ../src/ui/preferences_dialog.ui.h:27
 msgid "Other"
 msgstr "Інше"
-
-#~ msgid "Add..."
-#~ msgstr "Додати..."
-
-#~ msgid "The file \"%s\" doesn't exist."
-#~ msgstr "Файла «%s» не існує."
-
-#~ msgid "New File..."
-#~ msgstr "Створити файл…"
-
-#~ msgid "_Manage Personal Templates..."
-#~ msgstr "_Керування особистими шаблонами…"
-
-#~ msgid "_Go to Line..."
-#~ msgstr "Пере_йти до рядка…"
-
-#~ msgid "_New Window"
-#~ msgstr "_Нове вікно"
-
-#~ msgid "Number of characters after &apos;\\&apos;"
-#~ msgstr "Кількість символів після «\\»"
-
-#~| msgid "Integrated LaTeX Environment"
-#~ msgid "Integrated LaTeX environment"
-#~ msgstr "Комплексне середовище роботи з LaTeX"
-
-#~ msgid ""
-#~ "LaTeXila is an integrated LaTeX environment for the GNOME desktop. The "
-#~ "idea of LaTeXila is to always deal directly with the LaTeX code, while "
-#~ "simplifying as most as possible the writing of this LaTeX code."
-#~ msgstr ""
-#~ "LaTeXila — комплексне середовище роботи з LaTeX для середовища GNOME. У "
-#~ "LaTeXila ви можете зосередитися над роботою з кодом LaTeX. Програма "
-#~ "максимально спрощує створення документів за допомогою LaTeX."
-
-#~ msgid "Integrated LaTeX Environment"
-#~ msgstr "Комплексне середовище роботи з LaTeX"
-
-#~ msgid "Close document"
-#~ msgstr "Закрити документ"
-
-#~ msgid "Main File:"
-#~ msgstr "Основний файл:"
-
-#~ msgid "Untitled Document"
-#~ msgstr "Документ без назви"
-
-#~ msgid "Read-Only"
-#~ msgstr "Лише читання"
-
-#~ msgid ""
-#~ "To help the writing of the LaTeX markup, auto-completion is available as "
-#~ "well as menus and toolbars with the principal commands."
-#~ msgstr ""
-#~ "Для спрощення використання розмітки LaTeX у програмі передбачено засоби "
-#~ "автоматичного доповнення коду, а також меню та панелі інструментів для "
-#~ "основних команд."
-
-#~ msgid "_Search Forward"
-#~ msgstr "П_рямий пошук"
-
-#~ msgid "Jump to the associated position in the PDF file"
-#~ msgstr "Перейти до пов’язаного місця у файлі PDF"
-
-#~ msgid "- Integrated LaTeX Environment for GNOME"
-#~ msgstr "— комплексне середовище LaTeX для GNOME"
-
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options.\n"
-#~ msgstr ""
-#~ "Щоб переглянути повний список можливих параметрів командного рядка, "
-#~ "віддайте команду «%s --help».\n"
-
-#~ msgid "A file named \"%s\" already exists. Do you want to replace it?"
-#~ msgstr "Файл з назвою «%s» вже існує. Замінити його?"
-
-#~| msgid "Replace"
-#~ msgid "_Replace"
-#~ msgstr "_Замінити"
-
-#~ msgid "Build Tool"
-#~ msgstr "Засіб збирання"
-
-#~ msgid "Left Delimiters"
-#~ msgstr "Ліві роздільники"
-
-#~ msgid "Right Delimiters"
-#~ msgstr "Праві роздільники"
-
-#~ msgid "_Delete Template..."
-#~ msgstr "Ви_лучити шаблон…"
-
-#~ msgid "Delete personal template(s)"
-#~ msgstr "Вилучити особисті шаблони"
-
-#~ msgid "_Donate"
-#~ msgstr "_Підтримати фінансово"
-
-#~ msgid ""
-#~ "Donate to demonstrate your appreciation of LaTeXila and help its future "
-#~ "development"
-#~ msgstr ""
-#~ "Підтримайте проект фінансово, щоб продемонструвати вашу оцінку LaTeXila і "
-#~ "допомогти подальшому розвитку програми"
-
-#~ msgid "Latexmk messages"
-#~ msgstr "Повідомлення latexmk"
-
-#~ msgid "Delete Template(s)..."
-#~ msgstr "Вилучити шаблони…"

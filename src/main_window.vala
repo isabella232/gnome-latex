@@ -450,8 +450,8 @@ public class MainWindow : ApplicationWindow
 
         // Restore state
         GLib.Settings settings = new GLib.Settings ("org.gnome.gnome-latex.preferences.ui");
-        side_panel.set_active_component_setting (settings, "side-panel-component");
-        side_panel.restore_settings ();
+        side_panel.provide_active_component_gsetting (settings, "side-panel-component");
+        side_panel.restore_state_from_gsettings ();
 
         // Bind the toggle action to show/hide the side panel
         ToggleAction action = _action_group.get_action ("ViewSidePanel") as ToggleAction;
@@ -928,7 +928,7 @@ public class MainWindow : ApplicationWindow
 
         _main_window_build_tools.save_state ();
 
-        _side_panel.save_settings ();
+        _side_panel.save_state_to_gsettings ();
     }
 
     // start_line and end_line begins at 0.

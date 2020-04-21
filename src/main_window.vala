@@ -87,6 +87,7 @@ public class MainWindow : ApplicationWindow
     private Tepl.Statusbar _statusbar;
     private GotoLine _goto_line;
     private SearchAndReplace _search_and_replace;
+    private Tepl.Panel _side_panel;
     private Paned _main_hpaned;
     private Paned _vpaned;
 
@@ -210,8 +211,8 @@ public class MainWindow : ApplicationWindow
 
         /* Side panel */
 
-        Widget side_panel = get_side_panel ();
-        _main_hpaned.pack1 (side_panel, false, false);
+        _side_panel = get_side_panel ();
+        _main_hpaned.pack1 (_side_panel, false, false);
 
         /* Vertical paned.
          * Top: documents, search and replace, ...
@@ -429,37 +430,32 @@ public class MainWindow : ApplicationWindow
         return edit_toolbar;
     }
 
-    private Widget get_side_panel ()
+    private Tepl.Panel get_side_panel ()
     {
-        Gtk.Stack stack = new Gtk.Stack ();
+        Tepl.Panel side_panel = new Tepl.Panel.for_left_side_panel ();
 
         // Symbols
         SymbolsView symbols = new SymbolsView (this);
-        Tepl.stack_add_component (stack, symbols, "symbols", _("Symbols"),
-            "symbol_greek");
+        side_panel.add_component (symbols, "symbols", _("Symbols"), "symbol_greek");
 
         // File browser
         FileBrowser file_browser = new FileBrowser (this);
-        Tepl.stack_add_component (stack, file_browser, "file-browser", _("File Browser"),
+        side_panel.add_component (file_browser, "file-browser", _("File Browser"),
             "document-open");
 
         // Structure
         Structure structure = new Structure (this);
         _main_window_structure.set_structure (structure);
-        Tepl.stack_add_component (stack, structure, "structure", _("Structure"),
-            Stock.INDEX); // FIXME don't use GtkStock
+        side_panel.add_component (structure, "structure", _("Structure"), Stock.INDEX); // FIXME don't use GtkStock
 
-        // Side panel
-        Widget side_panel = Tepl.side_panel_new (stack);
-
-        // Restore/save state
+        // Restore state
         GLib.Settings settings = new GLib.Settings ("org.gnome.gnome-latex.preferences.ui");
-        Tepl.stack_bind_setting (stack, settings, "side-panel-component");
+        side_panel.set_active_component_setting (settings, "side-panel-component");
+        side_panel.restore_settings ();
 
         // Bind the toggle action to show/hide the side panel
         ToggleAction action = _action_group.get_action ("ViewSidePanel") as ToggleAction;
         action.active = true;
-
         side_panel.bind_property ("visible", action, "active",
             BindingFlags.BIDIRECTIONAL);
 
@@ -931,6 +927,8 @@ public class MainWindow : ApplicationWindow
         settings_ui.set_boolean ("bottom-panel-visible", action.active);
 
         _main_window_build_tools.save_state ();
+
+        _side_panel.save_settings ();
     }
 
     // start_line and end_line begins at 0.

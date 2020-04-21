@@ -221,51 +221,10 @@ public class PreferencesDialog : Dialog
             BindingFlags.DEFAULT | BindingFlags.SYNC_CREATE |
             BindingFlags.INVERT_BOOLEAN);
 
-        TreeView schemes_treeview = builder.get_object ("schemes_treeview") as TreeView;
-        string current_scheme_id = settings.get_string ("scheme");
-        init_schemes_treeview (schemes_treeview, current_scheme_id);
-
-        // the scheme has changed in the treeview -> update gsettings
-        TreeSelection schemes_select = schemes_treeview.get_selection ();
-        schemes_select.changed.connect (() =>
-        {
-            unowned TreeModel model;
-            GLib.List<TreePath> rows = schemes_select.get_selected_rows (out model);
-            if (rows.length () != 1)
-                return;
-
-            TreePath path = rows.nth_data (0);
-            TreeIter iter;
-            model.get_iter (out iter, path);
-
-            string id;
-            model.get (iter, StyleSchemes.ID, out id);
-
-            settings.set_string ("scheme", id);
-        });
-
-        // the scheme has changed in gsettings -> update the treeview
-        settings.changed["scheme"].connect ((setting, key) =>
-        {
-            string val = setting.get_string (key);
-
-            TreeModel model = schemes_treeview.model;
-            TreeIter iter;
-            bool valid = model.get_iter_first (out iter);
-
-            while (valid)
-            {
-                string scheme;
-                model.get (iter, StyleSchemes.ID, out scheme, -1);
-                if (scheme == val)
-                {
-                    TreeSelection select = schemes_treeview.get_selection ();
-                    select.select_iter (iter);
-                    return;
-                }
-                valid = model.iter_next (ref iter);
-            }
-        });
+        Tepl.StyleSchemeChooserWidget style_scheme_chooser =
+            builder.get_object ("style_scheme_chooser") as Tepl.StyleSchemeChooserWidget;
+        settings.bind ("scheme", style_scheme_chooser, "tepl-style-scheme-id",
+            SettingsBindFlags.DEFAULT);
     }
 
     private void init_interactive_completion_setting (Builder builder)
@@ -376,46 +335,5 @@ public class PreferencesDialog : Dialog
         Adjustment adjustment = new Adjustment ((double) cur_value, (double) min,
             (double) max, 1.0, 0, 0);
         spin_button.set_adjustment (adjustment);
-    }
-
-    private enum StyleSchemes
-    {
-        ID,
-        DESC,
-        N_COLUMNS
-    }
-
-    private void init_schemes_treeview (TreeView treeview, string current_id)
-    {
-        Gtk.ListStore list_store = new Gtk.ListStore (StyleSchemes.N_COLUMNS, typeof (string),
-            typeof (string));
-        list_store.set_sort_column_id (StyleSchemes.ID, SortType.ASCENDING);
-        treeview.set_model (list_store);
-
-        CellRendererText renderer = new CellRendererText ();
-        TreeViewColumn column = new TreeViewColumn.with_attributes (
-            "Name and description", renderer,
-            "markup", StyleSchemes.DESC, null);
-        treeview.append_column (column);
-
-        TreeSelection select = treeview.get_selection ();
-        select.set_mode (SelectionMode.SINGLE);
-
-        /* fill style scheme list store */
-        SourceStyleSchemeManager manager = SourceStyleSchemeManager.get_default ();
-        foreach (string id in manager.get_scheme_ids ())
-        {
-            SourceStyleScheme scheme = manager.get_scheme (id);
-            string desc = "<b>%s</b> - %s".printf (scheme.name, scheme.description);
-            TreeIter iter;
-            list_store.append (out iter);
-            list_store.set (iter,
-                StyleSchemes.ID, scheme.id,
-                StyleSchemes.DESC, desc,
-                -1);
-
-            if (id == current_id)
-                select.select_iter (iter);
-        }
     }
 }

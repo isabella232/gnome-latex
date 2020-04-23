@@ -48,8 +48,8 @@ public class Document : Tepl.Buffer
             new_file = false;
         });
 
-        GLib.Settings editor_settings =
-            new GLib.Settings ("org.gnome.gnome-latex.preferences.editor");
+        Latexila.Settings settings = Latexila.Settings.get_singleton ();
+        GLib.Settings editor_settings = settings.peek_editor_settings ();
         editor_settings.bind ("scheme", this, "tepl-style-scheme-id",
             SettingsBindFlags.GET);
 

@@ -197,12 +197,12 @@ public class PreferencesDialog : Dialog
 
     private void init_font_and_colors_tab (Builder builder)
     {
-        GLib.Settings settings =
-            new GLib.Settings ("org.gnome.gnome-latex.preferences.editor");
+        Latexila.Settings settings = Latexila.Settings.get_singleton ();
+        GLib.Settings editor_settings = settings.peek_editor_settings ();
 
         var default_font_checkbutton =
             builder.get_object ("default_font_checkbutton") as Button;
-        settings.bind ("use-default-font", default_font_checkbutton, "active",
+        editor_settings.bind ("use-default-font", default_font_checkbutton, "active",
             SettingsBindFlags.DEFAULT);
         set_system_font_label (default_font_checkbutton);
 
@@ -213,7 +213,7 @@ public class PreferencesDialog : Dialog
         });
 
         var font_button = builder.get_object ("font_button");
-        settings.bind ("editor-font", font_button, "font-name",
+        editor_settings.bind ("editor-font", font_button, "font-name",
             SettingsBindFlags.DEFAULT);
 
         var font_hbox = builder.get_object ("font_hbox") as Widget;
@@ -223,7 +223,7 @@ public class PreferencesDialog : Dialog
 
         Tepl.StyleSchemeChooserWidget style_scheme_chooser =
             builder.get_object ("style_scheme_chooser") as Tepl.StyleSchemeChooserWidget;
-        settings.bind ("scheme", style_scheme_chooser, "tepl-style-scheme-id",
+        editor_settings.bind ("scheme", style_scheme_chooser, "tepl-style-scheme-id",
             SettingsBindFlags.DEFAULT);
     }
 

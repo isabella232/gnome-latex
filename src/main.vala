@@ -40,6 +40,7 @@ int main (string[] argv)
     int status = app.run (argv);
 
     Tepl.finalize ();
+    Latexila.Settings.unref_singleton ();
 
     return status;
 }

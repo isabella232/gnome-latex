@@ -35,6 +35,7 @@ src/liblatexila/latexila-post-processor-all-output.c
 src/liblatexila/latexila-post-processor.c
 src/liblatexila/latexila-post-processor-latex.c
 src/liblatexila/latexila-post-processor-latexmk.c
+src/liblatexila/latexila-settings.c
 src/liblatexila/latexila-synctex.c
 src/liblatexila/latexila-templates-common.c
 src/liblatexila/latexila-templates-default.c

@@ -37,6 +37,7 @@ liblatexila_public_headers =			\
 	latexila-post-processor-all-output.h	\
 	latexila-post-processor-latex.h		\
 	latexila-post-processor-latexmk.h	\
+	latexila-settings.h			\
 	latexila-synctex.h			\
 	latexila-templates-default.h		\
 	latexila-templates-dialogs.h		\
@@ -60,6 +61,7 @@ liblatexila_public_c_files =			\
 	latexila-post-processor-all-output.c	\
 	latexila-post-processor-latex.c		\
 	latexila-post-processor-latexmk.c	\
+	latexila-settings.c			\
 	latexila-synctex.c			\
 	latexila-templates-default.c		\
 	latexila-templates-dialogs.c		\

@@ -15,6 +15,7 @@
     <chapter>
       <title>Main Classes</title>
       <xi:include href="xml/factory.xml"/>
+      <xi:include href="xml/settings.xml"/>
       <xi:include href="xml/view.xml"/>
     </chapter>
 

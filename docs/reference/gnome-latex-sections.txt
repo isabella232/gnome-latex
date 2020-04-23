@@ -226,6 +226,24 @@ latexila_post_processor_latexmk_get_type
 </SECTION>
 
 <SECTION>
+<FILE>settings</FILE>
+LatexilaSettings
+latexila_settings_get_singleton
+latexila_settings_unref_singleton
+latexila_settings_peek_editor_settings
+<SUBSECTION Standard>
+LATEXILA_IS_SETTINGS
+LATEXILA_IS_SETTINGS_CLASS
+LATEXILA_SETTINGS
+LATEXILA_SETTINGS_CLASS
+LATEXILA_SETTINGS_GET_CLASS
+LATEXILA_TYPE_SETTINGS
+LatexilaSettingsClass
+LatexilaSettingsPrivate
+latexila_settings_get_type
+</SECTION>
+
+<SECTION>
 <FILE>synctex</FILE>
 LatexilaSynctex
 latexila_synctex_get_instance

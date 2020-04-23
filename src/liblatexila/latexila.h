@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright (C) 2014-2015 - Sébastien Wilmet <swilmet@gnome.org>
+ * Copyright (C) 2014-2020 - Sébastien Wilmet <swilmet@gnome.org>
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -38,6 +38,7 @@
 #include "latexila-post-processor.h"
 #include "latexila-post-processor-all-output.h"
 #include "latexila-post-processor-latex.h"
+#include "latexila-settings.h"
 #include "latexila-synctex.h"
 #include "latexila-templates-default.h"
 #include "latexila-templates-personal.h"

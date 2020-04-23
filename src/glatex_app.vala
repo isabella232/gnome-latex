@@ -125,7 +125,6 @@ public class GlatexApp : Gtk.Application
         Latexila.latex_commands_add_action_infos (this);
 
         Latexila.utils_register_icons ();
-        StockIcons.register_stock_icons ();
         setup_theme_extensions ();
         AppSettings.get_default ();
         support_backward_search ();

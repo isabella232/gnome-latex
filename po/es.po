@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the latexila package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2011.
 # miguel <bokerones.fritos@gmail.com>, 2012.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011-2019.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: latexila 2.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-latex/issues\n"
-"POT-Creation-Date: 2019-03-09 11:32+0000\n"
-"PO-Revision-Date: 2019-09-16 10:35+0200\n"
+"POT-Creation-Date: 2020-04-20 17:28+0000\n"
+"PO-Revision-Date: 2020-04-24 09:41+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.34.0\n"
+"X-Generator: Gtranslator 3.36.0\n"
 
 #. (itstool) path: tool/label
 #: build_tools.xml:43 ../src/build_tool_dialog.vala:165
@@ -367,11 +367,9 @@ msgid "Side panel component"
 msgstr "Panel lateral"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:40
-msgid ""
-"Side panel’s active component. 0: Symbols. 1: File browser. 2: Structure."
-msgstr ""
-"Componente activo del panel lateral. 0: símbolos. 1: explorador de archivos. "
-"2: estructura."
+#| msgid "Side panel component"
+msgid "Side panel’s active component."
+msgstr "Componente activo del panel lateral."
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:41
 msgid "Show build output warnings"
@@ -540,7 +538,7 @@ msgstr ""
 "\\end{letter}\n"
 "\\end{document}\n"
 
-#: ../src/bottom_panel.vala:53 ../src/side_panel.vala:85
+#: ../src/bottom_panel.vala:51 ../src/side_panel.vala:47
 msgid "Hide panel"
 msgstr "Ocultar panel"
 
@@ -550,12 +548,11 @@ msgstr "Herramienta de construcción personal"
 
 #: ../src/build_tool_dialog.vala:72 ../src/build_tools_preferences.vala:335
 #: ../src/clean_build_files.vala:242 ../src/dialogs.vala:41
-#: ../src/document_tab.vala:178
 #: ../src/liblatexila/latexila-templates-dialogs.c:130
 #: ../src/liblatexila/latexila-templates-dialogs.c:238
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:147
-#: ../src/main_window_file.vala:157 ../src/main_window.vala:754
-#: ../src/main_window.vala:811 ../src/preferences_dialog.vala:114
+#: ../src/main_window_file.vala:157 ../src/main_window.vala:746
+#: ../src/main_window.vala:803 ../src/preferences_dialog.vala:114
 #: ../src/project_dialogs.vala:31 ../src/project_dialogs.vala:122
 #: ../src/project_dialogs.vala:276 ../src/project_dialogs.vala:296
 msgid "_Cancel"
@@ -751,19 +748,12 @@ msgstr "Ningún archivo de construcción que limpiar."
 msgid "No matching proposal"
 msgstr "No hay propuesta equivalente"
 
-#. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for
-#. "Column". Please, use abbreviations if possible.
-#: ../src/custom_statusbar.vala:45
-#, c-format
-msgid "Ln %d, Col %d"
-msgstr "Ln %d, Col %d"
-
-#: ../src/dialogs.vala:40 ../src/main_window.vala:753
+#: ../src/dialogs.vala:40 ../src/main_window.vala:745
 msgid "Close _without Saving"
 msgstr "Cerrar _sin guardar"
 
 #: ../src/dialogs.vala:42 ../src/main_window_file.vala:41
-#: ../src/main_window.vala:759 ../src/main_window.vala:812
+#: ../src/main_window.vala:751 ../src/main_window.vala:804
 msgid "_Save"
 msgstr "_Guardar"
 
@@ -792,56 +782,39 @@ msgstr "El elemento de estructura ya contiene un subpárrafo."
 msgid "Activate “%s”"
 msgstr "Activar «%s»"
 
-#: ../src/document_tab.vala:166
-#, c-format
-msgid "The file %s changed on disk."
-msgstr "El archivo %s ha cambiado en el disco."
-
-#: ../src/document_tab.vala:171
-msgid "Do you want to drop your changes and reload the file?"
-msgstr "¿Quiere perder sus cambios y volver a cargar el archivo?"
-
-#: ../src/document_tab.vala:173
-msgid "Do you want to reload the file?"
-msgstr "¿Quiere volver a cargar el archivo?"
-
-#: ../src/document_tab.vala:177
-msgid "_Reload"
-msgstr "_Recargar"
-
-#: ../src/document.vala:133
+#: ../src/document.vala:120
 #, c-format
 msgid "Impossible to load the file “%s”."
 msgstr "No se puede cargar el archivo «%s»."
 
-#: ../src/document.vala:215
+#: ../src/document.vala:202
 #, c-format
 msgid "The file %s has been modified since reading it."
 msgstr "El archivo %s se ha modificado desde que lo leyó."
 
-#: ../src/document.vala:218
+#: ../src/document.vala:205
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
 "Si lo guarda, todos los cambios externos se perderán. ¿Quiere guardarlo de "
 "todas formas?"
 
-#: ../src/document.vala:222
+#: ../src/document.vala:209
 msgid "_Save Anyway"
 msgstr "_Guardar de todos modos"
 
-#: ../src/document.vala:223
+#: ../src/document.vala:210
 msgid "_Don’t Save"
 msgstr "_No guardar"
 
-#: ../src/document.vala:240
+#: ../src/document.vala:227
 msgid "Impossible to save the file."
 msgstr "No es posible guardar el archivo."
 
-#: ../src/document.vala:268
+#: ../src/document.vala:255
 msgid "Error trying to convert the document to UTF-8"
 msgstr "Error al tratar de convertir el documento a UTF-8"
 
-#: ../src/document.vala:497
+#: ../src/document.vala:484
 msgid ""
 "The file has a temporary location. The data can be lost after rebooting your "
 "computer."
@@ -849,29 +822,29 @@ msgstr ""
 "El archivo está en una ubicación temporal. Los datos se pueden perder tras "
 "reiniciar el equipo."
 
-#: ../src/document.vala:498
+#: ../src/document.vala:485
 msgid "Do you want to save the file in a safer place?"
 msgstr "¿Quiere guardar el archivo en un lugar más seguro?"
 
-#: ../src/document.vala:499 ../src/main_window_file.vala:44
-#: ../src/main_window.vala:757
+#: ../src/document.vala:486 ../src/main_window_file.vala:44
+#: ../src/main_window.vala:749
 msgid "Save _As"
 msgstr "Guardar _como"
 
-#: ../src/document.vala:500
+#: ../src/document.vala:487
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../src/document_view.vala:312
+#: ../src/document_view.vala:308
 msgid "No dictionaries available for the spell-checking."
 msgstr "No hay diccionarios disponibles para la revisión ortográfica."
 
 #. Help
-#: ../src/document_view.vala:314 ../src/main_window.vala:63
+#: ../src/document_view.vala:310 ../src/main_window.vala:63
 msgid "_Help"
 msgstr "Ay_uda"
 
-#: ../src/document_view.vala:315
+#: ../src/document_view.vala:311
 msgid "_OK"
 msgstr "_Aceptar"
 
@@ -912,29 +885,29 @@ msgstr "Sistema de archivos"
 msgid "File Browser"
 msgstr "Explorador de archivos"
 
-#: ../src/glatex_app.vala:78
+#: ../src/glatex_app.vala:79
 msgid "Show the application’s version"
 msgstr "Mostrar la versión de la aplicación"
 
-#: ../src/glatex_app.vala:81
+#: ../src/glatex_app.vala:82
 msgid "Create new document"
 msgstr "Crear un documento nuevo"
 
-#: ../src/glatex_app.vala:84
+#: ../src/glatex_app.vala:85
 msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
 msgstr ""
 "Crear una ventana nueva de nivel superior en una instancia existente de "
 "GNOME LaTeX"
 
-#: ../src/glatex_app.vala:195
+#: ../src/glatex_app.vala:196
 msgid "GNOME LaTeX is a LaTeX editor for the GNOME desktop"
 msgstr "GNOME LaTeX es un editor LaTeX para el escritorio GNOME"
 
-#: ../src/glatex_app.vala:224 ../src/main_window.vala:69
+#: ../src/glatex_app.vala:225 ../src/main_window.vala:69
 msgid "About GNOME LaTeX"
 msgstr "Acerca de GNOME LaTeX"
 
-#: ../src/glatex_app.vala:225
+#: ../src/glatex_app.vala:226
 msgid "translator-credits"
 msgstr ""
 "Daniel Mustieles García <daniel.mustieles@gmail.com>, 2011\n"
@@ -1044,23 +1017,23 @@ msgstr "Entornos de presentación"
 msgid "Math Environments"
 msgstr "Entornos matemáticos"
 
-#: ../src/liblatexila/latexila-build-job.c:365
+#: ../src/liblatexila/latexila-build-job.c:366
 #, c-format
 msgid "%s doesn’t seem to be installed."
 msgstr "parece que %s no está instalado."
 
-#: ../src/liblatexila/latexila-build-tool.c:555
-#: ../src/liblatexila/latexila-synctex.c:569
+#: ../src/liblatexila/latexila-build-tool.c:556
+#: ../src/liblatexila/latexila-synctex.c:570
 #, c-format
 msgid "The file “%s” doesn’t exist."
 msgstr "El archivo «%s» no existe."
 
-#: ../src/liblatexila/latexila-build-tool.c:583
+#: ../src/liblatexila/latexila-build-tool.c:584
 #, c-format
 msgid "Failed to open “%s”:"
 msgstr "Falló al abrir «%s»:"
 
-#: ../src/liblatexila/latexila-build-tool.c:689
+#: ../src/liblatexila/latexila-build-tool.c:690
 #, c-format
 msgid "Open %s"
 msgstr "Abrir %s"
@@ -1648,19 +1621,19 @@ msgstr "< derecho"
 msgid "right ."
 msgstr ". derecho"
 
-#: ../src/liblatexila/latexila-synctex.c:194
+#: ../src/liblatexila/latexila-synctex.c:195
 msgid "Impossible to do the forward search."
 msgstr "No se puede hacer la búsqueda hacia adelante."
 
-#: ../src/liblatexila/latexila-synctex.c:539
+#: ../src/liblatexila/latexila-synctex.c:540
 msgid "Can not communicate with evince."
 msgstr "No se puede comunicar con Evince."
 
-#: ../src/liblatexila/latexila-synctex.c:603
+#: ../src/liblatexila/latexila-synctex.c:604
 msgid "The PDF file doesn’t exist."
 msgstr "El archivo PDF no existe."
 
-#: ../src/liblatexila/latexila-synctex.c:654
+#: ../src/liblatexila/latexila-synctex.c:655
 msgid "The document is not saved."
 msgstr "No se ha guardado el documento."
 
@@ -2294,37 +2267,16 @@ msgstr "Mostrar u ocultar el panel inferior"
 msgid "Symbols"
 msgstr "Símbolos"
 
-#: ../src/main_window.vala:455
+#: ../src/main_window.vala:456
 msgid "Structure"
 msgstr "Estructura"
 
-#: ../src/main_window.vala:648
-#, c-format
-msgid "This file (%s) is already opened in another GNOME LaTeX window."
-msgstr "Este archivo (%s) ya esta abierto en otra ventana de GNOME LaTeX."
-
-#: ../src/main_window.vala:650
-msgid ""
-"GNOME LaTeX opened this instance of the file in a non-editable way. Do you "
-"want to edit it anyway?"
-msgstr ""
-"GNOME LaTeX abrió esta instancia del archivo en una forma no editable."
-"¿Quiere editarlo de todas formas?"
-
-#: ../src/main_window.vala:654
-msgid "Edit Anyway"
-msgstr "Editar de todas formas"
-
-#: ../src/main_window.vala:655
-msgid "Don’t Edit"
-msgstr "No editar"
-
-#: ../src/main_window.vala:750
+#: ../src/main_window.vala:742
 #, c-format
 msgid "Save changes to document “%s” before closing?"
 msgstr "¿Guardar los cambios del documento «%s» antes de cerrar?"
 
-#: ../src/main_window.vala:809
+#: ../src/main_window.vala:801
 msgid "Save File"
 msgstr "Guardar Archivo"
 
@@ -2425,49 +2377,49 @@ msgstr "Ir a la línea:"
 msgid "Line you want to move the cursor to"
 msgstr "Línea a la quiere mover el cursor"
 
-#: ../src/search.vala:172
+#: ../src/search.vala:174
 msgid "Replace with"
 msgstr "Reemplazar con"
 
-#: ../src/search.vala:180
+#: ../src/search.vala:182
 msgid "Replace"
 msgstr "Reemplazar"
 
 #. replace all: image + label
-#: ../src/search.vala:184
+#: ../src/search.vala:186
 msgid "Replace All"
 msgstr "Reemplazar todo"
 
-#: ../src/search.vala:194
+#: ../src/search.vala:196
 msgid "All"
 msgstr "Todo"
 
-#: ../src/search.vala:290
+#: ../src/search.vala:292
 msgid "Search for"
 msgstr "Buscar"
 
-#: ../src/search.vala:301
+#: ../src/search.vala:303
 msgid "Case sensitive"
 msgstr "Sensible a capitalización"
 
-#: ../src/search.vala:304
+#: ../src/search.vala:306
 msgid "Entire words only"
 msgstr "Solo palabras completas"
 
-#: ../src/search.vala:451
+#: ../src/search.vala:455
 msgid "Not found"
 msgstr "No encontrado"
 
 #. Translators: the first %d is the position of the current search occurrence,
 #. * and the second %d is the total number of search occurrences.
 #.
-#: ../src/search.vala:468
+#: ../src/search.vala:472
 #, c-format
 msgid "Match %d of %d"
 msgstr "%d de %d coincidencias"
 
 #. Translators: %d is the total number of search occurrences.
-#: ../src/search.vala:473
+#: ../src/search.vala:477
 #, c-format
 msgid "%d match"
 msgid_plural "%d matches"
@@ -2715,6 +2667,43 @@ msgstr "Resaltar las palabras mal escritas"
 #: ../src/ui/preferences_dialog.ui.h:27
 msgid "Other"
 msgstr "Otros"
+
+#~ msgid ""
+#~ "Side panel’s active component. 0: Symbols. 1: File browser. 2: Structure."
+#~ msgstr ""
+#~ "Componente activo del panel lateral. 0: símbolos. 1: explorador de "
+#~ "archivos. 2: estructura."
+
+#~ msgid "Ln %d, Col %d"
+#~ msgstr "Ln %d, Col %d"
+
+#~ msgid "The file %s changed on disk."
+#~ msgstr "El archivo %s ha cambiado en el disco."
+
+#~ msgid "Do you want to drop your changes and reload the file?"
+#~ msgstr "¿Quiere perder sus cambios y volver a cargar el archivo?"
+
+#~ msgid "Do you want to reload the file?"
+#~ msgstr "¿Quiere volver a cargar el archivo?"
+
+#~ msgid "_Reload"
+#~ msgstr "_Recargar"
+
+#~ msgid "This file (%s) is already opened in another GNOME LaTeX window."
+#~ msgstr "Este archivo (%s) ya esta abierto en otra ventana de GNOME LaTeX."
+
+#~ msgid ""
+#~ "GNOME LaTeX opened this instance of the file in a non-editable way. Do "
+#~ "you want to edit it anyway?"
+#~ msgstr ""
+#~ "GNOME LaTeX abrió esta instancia del archivo en una forma no editable."
+#~ "¿Quiere editarlo de todas formas?"
+
+#~ msgid "Edit Anyway"
+#~ msgstr "Editar de todas formas"
+
+#~ msgid "Don’t Edit"
+#~ msgstr "No editar"
 
 #~ msgid "_New Window"
 #~ msgstr "_Ventana nueva"

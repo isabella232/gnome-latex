@@ -43,8 +43,6 @@ public class MainWindow : ApplicationWindow
             N_("Search for text"), on_search_find },
         { "SearchReplace", "edit-find-replace", N_("Find and _Replace"), "<Control>H",
             N_("Search for and replace text"), on_search_replace },
-        { "SearchGoToLine", "go-jump", N_("_Go to Line…"), "<Control>L",
-            N_("Go to a specific line"), on_search_goto_line },
         { "SearchForward", null, N_("_Jump to PDF"), "<Control><Alt>F",
             N_("Jump to the associated position in the PDF file. Another shortcut: Ctrl+click, which works in both directions."),
             on_search_forward },
@@ -85,7 +83,6 @@ public class MainWindow : ApplicationWindow
     public string default_location = Environment.get_home_dir ();
     private DocumentsPanel _documents_panel;
     private Tepl.Statusbar _statusbar;
-    private GotoLine _goto_line;
     private SearchAndReplace _search_and_replace;
     private Tepl.Panel _side_panel;
     private Paned _main_hpaned;
@@ -223,7 +220,7 @@ public class MainWindow : ApplicationWindow
         _vpaned.show ();
         _main_hpaned.add2 (_vpaned);
 
-        /* Vertical grid: documents, goto line, search and replace */
+        /* Vertical grid: documents, search and replace */
 
         Grid docs_vgrid = new Grid ();
         docs_vgrid.orientation = Orientation.VERTICAL;
@@ -233,10 +230,6 @@ public class MainWindow : ApplicationWindow
         // Documents panel
         init_documents_panel ();
         docs_vgrid.add (_documents_panel);
-
-        // Goto Line
-        _goto_line = new GotoLine (this);
-        docs_vgrid.add (_goto_line);
 
         // Search and Replace
         _search_and_replace = new SearchAndReplace (this);
@@ -269,7 +262,6 @@ public class MainWindow : ApplicationWindow
 
             if (this.active_tab == null)
             {
-                _goto_line.hide ();
                 _search_and_replace.hide ();
             }
 
@@ -325,6 +317,9 @@ public class MainWindow : ApplicationWindow
         _action_group.set_translation_domain (Config.GETTEXT_PACKAGE);
         _action_group.add_actions (_action_entries, this);
         _action_group.add_toggle_actions (_toggle_action_entries, this);
+
+        Amtk.utils_create_gtk_action (this, "win.tepl-goto-line",
+            _action_group, "SearchGoToLine");
 
         _latex_action_group = new LatexMenu (this);
 
@@ -962,7 +957,6 @@ public class MainWindow : ApplicationWindow
             "ViewZoomReset",
             "SearchFind",
             "SearchReplace",
-            "SearchGoToLine",
             "SearchForward",
             "ProjectsConfigCurrent"
         };
@@ -1047,12 +1041,6 @@ public class MainWindow : ApplicationWindow
     {
         return_if_fail (active_tab != null);
         _search_and_replace.show_search_and_replace ();
-    }
-
-    public void on_search_goto_line ()
-    {
-        return_if_fail (active_tab != null);
-        _goto_line.show ();
     }
 
     public void on_search_forward ()

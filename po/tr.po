@@ -1,19 +1,26 @@
+# Turkish translation of gnome-latex
+# Copyright (C) 2015-2019 gnome-latex'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-latex package.
+#
 # Kaan Özdinçer <kaanozdincer@gmail.com>, 2015.
+# Serdar Sağlam <teknomobil@yandex.com>, 2019.
+# Sabri Ünal <libreajans@gmail.com>, 2019.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2020.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: latexilla master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=latexila&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-03-11 13:01+0000\n"
-"PO-Revision-Date: 2015-05-12 10:01+0000\n"
-"Last-Translator: Kaan Özdinçer <kaanozdincer@gmail.com>\n"
+"Project-Id-Version: gnome-latex master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-latex/issues\n"
+"POT-Creation-Date: 2020-04-23 18:50+0000\n"
+"PO-Revision-Date: 2020-04-24 23:17+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.5.1.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.3\n"
 "X-POOTLE-MTIME: 1431424873.000000\n"
 
 #. (itstool) path: tool/label
@@ -50,14 +57,13 @@ msgstr "PostScript dosyasını görüntüle"
 #: build_tools.xml:64
 msgid "Create a PDF file from LaTeX sources with the \"pdflatex\" command"
 msgstr ""
-"LaTeX kaynaklarından, \"pdflatex\" komutunu kullanarak bir PDF dosyası "
-"oluştur"
+"LaTeX kaynaklarından, \"pdflatex\" komutunu kullanarak PDF dosyası oluştur"
 
 #. (itstool) path: tool/description
 #: build_tools.xml:70
 msgid "Create a DVI file from LaTeX sources with the \"latex\" command"
 msgstr ""
-"LaTeX kaynaklarından, \"latex\" komutunu kullanarak bir DVI dosyası oluştur"
+"LaTeX kaynaklarından, \"latex\" komutunu kullanarak DVI dosyası oluştur"
 
 #. (itstool) path: tool/description
 #: build_tools.xml:78
@@ -84,368 +90,377 @@ msgstr "DVI belgesini, PostScript biçimine dönüştür"
 msgid "Convert the PostScript document to the PDF format"
 msgstr "PostScript belgesini, PDF biçimine dönüştür"
 
-#: ../data/org.gnome.latexila.appdata.xml.in.h:1
-msgid ""
-"LaTeXila is an integrated LaTeX environment for the GNOME desktop. The idea "
-"of LaTeXila is to always deal directly with the LaTeX code, while "
-"simplifying as most as possible the writing of this LaTeX code."
-msgstr ""
-"LaTeXila, Gnome masa üstü için tümleşik bir LaTeX ortamıdır. LaTeXilla "
-"fikri, mümkün olduğunca kolay şekilde LaTeX kodu yazmayı sağlayarak, LaTeX "
-"kodu ile ile doğrudan uğraşmaya olanak tanır."
+#: ../data/org.gnome.gnome-latex.appdata.xml.in.h:1
+msgid "LaTeX editor"
+msgstr "LaTeX düzenleyici"
 
-#: ../data/org.gnome.latexila.appdata.xml.in.h:2
+#: ../data/org.gnome.gnome-latex.appdata.xml.in.h:2
+msgid ""
+"GNOME LaTeX is a LaTeX editor for the GNOME desktop, previously named "
+"LaTeXila. GNOME LaTeX permits to concentrate on the content and the "
+"structure of the document instead of being distracted by its presentation."
+msgstr ""
+"GNOME LaTeX, eski adı LaTeXila olan GNOME masaüstü için LaTeX "
+"düzenleyicidir. GNOME LaTeX, sunumuyla dikkat dağıtmak yerine belgenin "
+"içeriğine ve yapısına odaklanmayı sağlar."
+
+#: ../data/org.gnome.gnome-latex.appdata.xml.in.h:3
 msgid ""
 "To help the writing of the LaTeX markup, auto-completion is available as "
-"well as menus and toolbars with the principal commands."
+"well as menus and toolbars with the principal commands. New documents are "
+"created from templates. There are buttons to compile, convert and view a "
+"document in one click. And projects containing several .tex files are "
+"managed easily."
 msgstr ""
-"LaTeX biçiminin yazımına yardımcı olmak için, temel komutlar ile menüler ve "
-"araç çubukları kadar otomatik tamamlama da mevcuttur"
+"LaTeX işaretlemesinin yazılmasına yardımcı olmak için, ana komutlarla "
+"birlikte menüler ve araç çubuklarının yanı sıra kendiliğinden tamamlama da "
+"kullanılabilir. Yeni belgeler şablonlardan oluşturulur. Tek tıkla belgeyi "
+"derlemek, dönüştürmek ve görüntülemek için düğmeler bulunur. Ve birkaç .tex "
+"dosyası içeren projeler kolayca yönetilir."
 
-#: ../data/org.gnome.latexila.appdata.xml.in.h:3
-msgid ""
-"New documents are created from templates. There are buttons to compile, "
-"convert and view a document in one click. And projects containing several ."
-"tex files are managed easily."
-msgstr ""
-"Yeni belgeler, şablonlardan oluşturulurlar. Belgeleri derleme, dönüştürme ve "
-"görüntüleme için tek tıklık tuşlar vardır. Ve birkaç .tex dosyalarını içeren "
-"projeler kolayca yönetilirler."
-
-#: ../data/org.gnome.latexila.appdata.xml.in.h:4
+#: ../data/org.gnome.gnome-latex.appdata.xml.in.h:4
 msgid ""
 "A side panel contains three components: the document structure to easily "
-"navigate in it; lists of symbols to insert them in a document; and an "
-"integrated file browser."
+"navigate in it; lists of symbols to insert them in a document; and a file "
+"browser."
 msgstr ""
-"Bir yan pano, üç bileşen içerir: belge yapısı içinde kolayca gezinmek için; "
-"sembollerin listesini belge içine eklemek için; ve tümleşik bir dosya "
-"tarayıcısı."
+"Yan panel üç bileşen içerir: içinde kolayca gezinilecek belge yapısı; "
+"belgeye eklenebilecek simgelerin listesi; ve dosya tarayıcısı."
 
-#: ../data/org.gnome.latexila.appdata.xml.in.h:5
+#: ../data/org.gnome.gnome-latex.appdata.xml.in.h:5
 msgid ""
-"LaTeXila has also other features like the spell checking, or the forward and "
-"backward search to switch between the .tex and the PDF."
+"GNOME LaTeX has also other features like the spell-checking, or jumping to "
+"the associated position between the .tex file and the PDF."
 msgstr ""
-"LaTeXila, yazım denetimi veya .tex ve PDF dosyaları içinde ileri ve geri "
-"arama yapabilme gibi başka özelliklere de sahiptir."
+"GNOME LaTeX’in yazım denetimi veya .tex dosyası ile PDF arasındaki ilişkili "
+"konuma atlaması gibi başka özellikleri de vardır."
 
-#: ../data/org.gnome.latexila.desktop.in.in.h:1
-msgid "Integrated LaTeX Environment"
-msgstr "Tümleşik LaTeX Ortamı"
+#: ../data/org.gnome.gnome-latex.appdata.xml.in.h:6
+msgid "Completion of LaTeX commands"
+msgstr "LaTeX komutlarını tamamla"
 
-#: ../data/org.gnome.latexila.desktop.in.in.h:2
+#: ../data/org.gnome.gnome-latex.appdata.xml.in.h:7
+msgid "Generating the PDF file"
+msgstr "PDF dosyası oluştur"
+
+#: ../data/org.gnome.gnome-latex.appdata.xml.in.h:8
+msgid "Document structure in the side panel"
+msgstr "Yan paneldeki belge yapısı"
+
+#: ../data/org.gnome.gnome-latex.desktop.in.h:1
+msgid "LaTeX Editor"
+msgstr "LaTeX Düzenleyici"
+
+#: ../data/org.gnome.gnome-latex.desktop.in.h:2
 msgid "Edit LaTeX documents"
 msgstr "LaTeX belgelerini düzenle"
 
-#: ../data/org.gnome.latexila.desktop.in.in.h:3
+#: ../data/org.gnome.gnome-latex.desktop.in.h:3
 msgid "text;tex;latex;editor;documents;"
 msgstr "text;metin;tex;latex;editor;düzenleyici;documents;belge;"
 
-#: ../data/org.gnome.latexila.desktop.in.in.h:4
+#: ../data/org.gnome.gnome-latex.desktop.in.h:4
 msgid "Open a New Window"
 msgstr "Yeni Pencere Aç"
 
-#: ../data/org.gnome.latexila.desktop.in.in.h:5
+#: ../data/org.gnome.gnome-latex.desktop.in.h:5
 msgid "Open a New Document"
 msgstr "Yeni Belge Aç"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:1
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:1
 msgid "Use Default Font"
-msgstr "Varsayılan Yazı Tipini Kullan"
+msgstr "Öntanımlı Yazı Tipini Kullan"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:2
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:2
 msgid ""
-"Whether to use the system's default fixed width font for editing text "
-"instead of a font specific to LaTeXila. If this option is turned off, then "
-"the font named in the \"Editor Font\" option will be used instead of the "
+"Whether to use the system’s default fixed width font for editing text "
+"instead of a font specific to GNOME LaTeX. If this option is turned off, "
+"then the font named in the “Editor Font” option will be used instead of the "
 "system font."
 msgstr ""
-"Metin düzenleme için sistemin öntanımlı yazı tipi yerine LaTeXilla da "
-"belirtilen yazı tipinin kullanılması. Bu seçenek kapalı ise, sistem yazı "
-"tipi yerine \"Düzenleyici Yazı Tipi\" seçeneğinde belirlenmiş olan yazı tipi "
-"kullanılır."
+"GNOME LaTeX’e özgü yazı tipi yerine metin düzenlemek için sistemin öntanımlı "
+"sabit genişlikli yazı tipinin kullanılıp kullanılmayacağı. Bu seçenek "
+"kapalıysa, sistem yazı tipi yerine “Düzenleyici Yazı Tipi” seçeneğinde "
+"belirtilen yazı tipi kullanılacaktır."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:3
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:3
 msgid "Editor Font"
 msgstr "Düzenleyici Yazı Tipi"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:4
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:4
 msgid ""
 "A custom font that will be used for the editing area. This will only take "
-"effect if the \"Use Default Font\" option is turned off."
+"effect if the “Use Default Font” option is turned off."
 msgstr ""
-"Düzenleme bölgesi için kullanılacak özel bir yazıtipi. Bu, sadece "
-"\"Varsayılan Yazı Tipini Kullan\" seçeneği kapalı ise etki gösterir."
+"Düzenleme bölgesi için kullanılacak özel yazı tipi. Bu, yalnızca “Öntanımlı "
+"Yazı Tipini Kullan“ seçeneği kapalı ise etki gösterir."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:5
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:5
 msgid "Style Scheme"
 msgstr "Biçem Şeması"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:6
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:6
 msgid "The ID of a GtkSourceView Style Scheme used to color the text."
 msgstr ""
 "Metni renklendirmek için kullanılacak GtkSourceView Biçem şemasının kimliği."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:7
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:7
 msgid "Create Backup Copies"
 msgstr "Yedekleme Kopyaları Oluştur"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:8
-msgid "Whether LaTeXila should create backup copies for the files it saves."
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:8
+msgid "Whether GNOME LaTeX should create backup copies for the files it saves."
 msgstr ""
-"Kaydedilen dosyalar için, LaTeXila nın yedekleme kopyalarını oluşuturup "
-"oluşturmayacağı."
+"GNOME LaTeX’in kaydettiği dosyalar için yedek kopyalar oluşturması gerekip "
+"gerekmediği."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:9
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:9
 msgid "Autosave"
-msgstr "Otomatik Kaydetme"
+msgstr "Kendiliğinden Kaydetme"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:10
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:10
 msgid ""
-"Whether LaTeXila should automatically save modified files after a time "
-"interval. You can set the time interval with the \"Autosave Interval\" "
-"option."
+"Whether GNOME LaTeX should automatically save modified files after a time "
+"interval. You can set the time interval with the “Autosave Interval” option."
 msgstr ""
-"LaTeXila nın değiştirilen dosyaların bir zaman aralığı içinde otomatik "
-"olarak kaydedip kaydetmiyeceği. Bu zaman aralığını \"Otmatik Kaydetme Sıklığı"
-"\" seçeneği ile ayarlayabilirsiniz."
+"GNOME LaTeX’in değiştirilmiş dosyaları bir süre sonra kendiliğinden "
+"kaydetmesi gerekip gerekmediği. Zaman aralığını “Kendiliğinden Kaydetme "
+"Sıklığı” seçeneğiyle ayarlayabilirsiniz."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:11
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:11
 msgid "Autosave Interval"
-msgstr "Otomatik Kaydetme Sıklığı"
+msgstr "Kendiliğinden Kaydetme Sıklığı"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:12
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:12
 msgid ""
-"Number of minutes after which LaTeXila will automatically save modified "
-"files. This will only take effect if the \"Autosave\" option is turned on."
+"Number of minutes after which GNOME LaTeX will automatically save modified "
+"files. This will only take effect if the “Autosave” option is turned on."
 msgstr ""
-"LaTeXila 'nın değiştirilmiş dosyaları kaç dakika sonra kendiliğinden "
-"kaydedeceği. Bu, sadece \"Otomatik Kaydetme\" seçeneği açık ise etki "
+"GNOME LaTeX’in değiştirilmiş dosyaları kaç dakika sonra kendiliğinden "
+"kaydedeceği. Bu, yalnızca “Kendiliğinden Kaydetme” seçeneği açık ise etki "
 "gösterir."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:13
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:13
 #: ../src/ui/preferences_dialog.ui.h:9
 msgid "Reopen files on startup"
 msgstr "Başlangıçta dosyaları yeniden aç"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:14
-msgid "Whether LaTeXila should reopen the files that was opened the last time."
-msgstr "LaTeXila 'nın en son açılan dosyaları yeniden açıp açmayacağı."
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:14
+msgid ""
+"Whether GNOME LaTeX should reopen the files that was opened the last time."
+msgstr "GNOME LaTeX’in en son açılan dosyaları yeniden açıp açmayacağı."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:15
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:15
 msgid "Tab Size"
 msgstr "Sekme Boyutu"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:16
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:16
 msgid ""
 "Specifies the number of spaces that should be displayed instead of Tab "
 "characters."
 msgstr "Sekme karakteri yerine görüntülenecek boşluk sayısını belirtir."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:17
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:17
 msgid "Insert spaces"
 msgstr "Boşluk ekle"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:18
-msgid "Whether LaTeXila should insert spaces instead of tabs."
-msgstr "LaTeXila 'nın sekmelerin yerine boşluk ekleyip eklemeyeceği."
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:18
+msgid "Whether GNOME LaTeX should insert spaces instead of tabs."
+msgstr "GNOME LaTeX’in sekmelerin yerine boşluk ekleyip eklemeyeceği."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:19
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:19
 msgid "Forget lack of tabulations"
 msgstr "Sekmelerin olmamasını unut"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:20
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:20
 msgid "Forget you are not using tabulations."
-msgstr "Sekmeleri kullandığınızı unutun"
+msgstr "Sekmeleri kullandığınızı unutun."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:21
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:21
 msgid "Display Line Numbers"
 msgstr "Satır Numaralarını Göster"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:22
-msgid "Whether LaTeXila should display line numbers in the editing area."
-msgstr "LaTeXila 'nın düzenleme alanında satır sayılarını göstermesi."
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:22
+msgid "Whether GNOME LaTeX should display line numbers in the editing area."
+msgstr "GNOME LaTeX’in düzenleme alanında satır sayılarını göstermesi."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:23
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:23
 msgid "Highlight Current Line"
-msgstr "Mevcut Satırı Vurgula"
+msgstr "Geçerli Satırı Vurgula"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:24
-msgid "Whether LaTeXila should highlight the current line."
-msgstr "LaTeXila 'nın mevcut satırı vurgulayıp vurgulamayacağı."
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:24
+msgid "Whether GNOME LaTeX should highlight the current line."
+msgstr "GNOME LaTeX’in geçerli satırı vurgulayıp vurgulamayacağı."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:25
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:25
 msgid "Highlight Matching Brackets"
 msgstr "Eşleşen Parantezleri Vurgula"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:26
-msgid "Whether LaTeXila should highlight matching brackets."
-msgstr "LaTeXila 'nın eşleşen parantezleri vurgulayıp vurgulamayacağı."
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:26
+msgid "Whether GNOME LaTeX should highlight matching brackets."
+msgstr "GNOME LaTeX’in eşleşen parantezleri vurgulayıp vurgulamayacağı."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:27
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:27
 msgid "Highlight Misspelled Words"
-msgstr ""
+msgstr "Yanlış Yazılmış Sözcükleri Vurgula"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:28
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:28
 msgid "Whether misspelled words are highlighted by default."
-msgstr ""
+msgstr "Yanlış yazılmış sözcükler öntanımlı olarak vurgulanır."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:29
-#, fuzzy
-#| msgid "Spell checking"
-msgid "Spell Checking Language"
-msgstr "Yazım denetimi"
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:29
+msgid "Spell-Checking Language"
+msgstr "Yazım Denetleme Dili"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:30
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:30
 msgid ""
-"The default language used for the spell checking. Set to the empty string to "
+"The default language used for the spell-checking. Set to the empty string to "
 "take the best language available based on the environment."
 msgstr ""
+"Yazım denetimi için kullanılan öntanımlı dil. Ortamdaki kullanılabilen en "
+"iyi dili almak için dizgeyi boş olarak belirleyin."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:31
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:31
 msgid "Main toolbar is visible"
 msgstr "Ana araç çubuğu görünür"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:32
-msgid ""
-"Whether the main toolbar (file open, close, build, ...) should be visible."
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:32
+msgid "Whether the main toolbar (file open, close, build…) should be visible."
 msgstr ""
-"Ana araç çubuğunun (dosya aç, kapat, inşa et, ...) görünür olup olmayacağı."
+"Ana araç çubuğunun (dosya aç, kapat, inşa et…) görünür olup olmayacağı."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:33
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:33
 msgid "Edit toolbar is visible"
 msgstr "Düzenleme araç çubuğunu görünür"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:34
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:34
 msgid ""
-"Whether the edit toolbar (bold, italic, character sizes, ...) should be "
-"visible."
+"Whether the edit toolbar (bold, italic, character sizes…) should be visible."
 msgstr ""
-"Düzenleme araç çubuğunun (kalın, yatık, karakter boyutu, ...) görünür olup "
+"Düzenleme araç çubuğunun (kalın, yatık, karakter boyutu…) görünür olup "
 "olmayacağı."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:35
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:35
 msgid "Side panel is Visible"
 msgstr "Yan pano görünür"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:36
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:36
 msgid ""
 "Whether the side panel at the left of editing windows should be visible."
 msgstr "Düzenleme penceresinin solundaki yan panonun görünür olup olmayacağı."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:37
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:37
 msgid "Bottom panel is Visible"
 msgstr "Alt pano görünür"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:38
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:38
 msgid "Whether the bottom panel containing the build view should be visible."
 msgstr "İnşa etme görünümünü içeren alt panonun görünür olup olmayacağı."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:39
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:39
 msgid "Side panel component"
 msgstr "Yan pano bileşeni"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:40
-msgid ""
-"Side panel's active component. 0: Symbols. 1: File browser. 2: Structure."
-msgstr ""
-"Yano panonun etkin bileşeni. 0: Semboller. 1: Dosya tarayıcısı. 2: Yapı"
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:40
+msgid "Side panel’s active component."
+msgstr "Yan panonun aktif bileşeni."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:41
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:41
 msgid "Show build output warnings"
 msgstr "İnşa etme uyarıları çıktısını göster"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:42
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:42
 msgid "Show build output badboxes"
 msgstr "İnşa etme kötü kutuları çıktısını göster"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:43
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:43
 msgid "Interactive completion"
 msgstr "Etkileşimli tamamlama"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:44
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:44
 msgid "Automatically show LaTeX commands proposals"
-msgstr "LaTeX komut önerilerini otomatik göster"
+msgstr "LaTeX komut önerilerini kendiliğinden göster"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:45
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:45
 msgid "Minimum number of characters for interactive completion"
 msgstr "Etkileşimli tamamlama için olan karakterlerin asgari sayısı"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:46
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:46
 msgid ""
-"Minimum number of characters after \"\\\" for the interactive completion of "
+"Minimum number of characters after “\\” for the interactive completion of "
 "LaTeX commands"
 msgstr ""
-"LaTeX komutlarının etkileşimli tamamlaması için \"\\\" den sonraki "
+"LaTeX komutlarının etkileşimli tamamlaması için “\\” den sonraki "
 "karakterlerin asgari sayısı"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:47
-#: ../src/ui/preferences_dialog.ui.h:22
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:47
+#: ../src/ui/preferences_dialog.ui.h:21
 msgid "No confirmation when cleaning-up"
 msgstr "Temizleme yapılırlen onaylama olmasın"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:48
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:48
 msgid "Automatic clean-up"
-msgstr "Otomatik temizleme"
+msgstr "Kendiliğinden temizleme"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:49
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:49
 msgid ""
 "Automatically clean-up files after close. no-confirm-clean must be true."
 msgstr ""
-"Kapattıktan sonra dosyaları otomatik olarak temizle. no-confirm-clean true "
+"Kapattıktan sonra dosyaları kendiliğinden temizle. no-confirm-clean true "
 "olmalıdır."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:50
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:50
 msgid "File extensions for the clean-up"
 msgstr "Temizleme için gereken dosya uzantısı"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:51
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:51
 msgid "The list of file extensions for the clean-up, separated by spaces"
 msgstr ""
 "Temizleme için gerekn dosya uzantılarının listesi, boşluklar ile ayrılmış "
 "şekilde"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:52
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:52
 msgid "Enabled default build tools"
-msgstr "Varsayılan etkin inşa araçları"
+msgstr "Etkin öntanımlı inşa araçları"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:53
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:53
 msgid "The list of the default build tools that are enabled"
-msgstr "Varsayılan etkin inşa araçlarının listesi"
+msgstr "Etkin öntanımlı inşa araçlarının listesi"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:54
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:54
 msgid "Disabled default build tools"
-msgstr "Varsayılan kapalı inşa araçları"
+msgstr "Devre dışı öntanımlı inşa araçları"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:55
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:55
 msgid "The list of the default build tools that are disabled"
-msgstr "Varsayılan kapalı inşa araçlarının listesi"
+msgstr "Devre dışı öntanımlı inşa araçlarının listesi"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:56
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:56
 msgid "Current directory"
-msgstr "Mevcut dizin"
+msgstr "Geçerli dizin"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:57
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:57
 msgid "URI of the file browser current directory"
-msgstr "Mevcut dizinin dosya tarayıcısının URI si"
+msgstr "Geçerli dizinin dosya tarayıcısının URI’si"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:58 ../src/file_browser.vala:361
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:58
+#: ../src/file_browser.vala:348
 msgid "Show build files"
 msgstr "İnşa dosyalarını göster"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:59
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:59
 msgid ""
 "Show files with an extension present in preferences.latex.clean-extensions."
 msgstr ""
 "preferences.latex.clean-extensions içindeki dosyaları uzantısıyla birlikte "
-"göster"
+"göster."
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:60 ../src/file_browser.vala:369
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:60
+#: ../src/file_browser.vala:356
 msgid "Show hidden files"
 msgstr "Gizli dosyaları göster"
 
-#: ../data/org.gnome.latexila.gschema.xml.in.h:61
+#: ../data/org.gnome.gnome-latex.gschema.xml.in.h:61
 msgid "Show files beginning with a dot."
 msgstr "Nokta işareti ile başlayan dosyaları göster."
 
@@ -516,24 +531,21 @@ msgstr ""
 "\\end{letter}\n"
 "\\end{document}\n"
 
-#: ../src/bottom_panel.vala:53 ../src/side_panel.vala:85
+#: ../src/bottom_panel.vala:51
 msgid "Hide panel"
 msgstr "Panoyu gizle"
 
 #: ../src/build_tool_dialog.vala:71
-#, fuzzy
-#| msgid "Personal Build Tools"
 msgid "Personal Build Tool"
-msgstr "Kişisel İnşa Araçları"
+msgstr "Kişisel İnşa Aracı"
 
 #: ../src/build_tool_dialog.vala:72 ../src/build_tools_preferences.vala:335
 #: ../src/clean_build_files.vala:242 ../src/dialogs.vala:41
-#: ../src/document_tab.vala:291
-#: ../src/liblatexila/latexila-templates-dialogs.c:128
+#: ../src/liblatexila/latexila-templates-dialogs.c:130
 #: ../src/liblatexila/latexila-templates-dialogs.c:238
-#: ../src/liblatexila/latexila-templates-manage-dialog.c:145
-#: ../src/main_window_file.vala:153 ../src/main_window.vala:757
-#: ../src/main_window.vala:853 ../src/preferences_dialog.vala:114
+#: ../src/liblatexila/latexila-templates-manage-dialog.c:147
+#: ../src/main_window_file.vala:157 ../src/main_window.vala:748
+#: ../src/main_window.vala:805 ../src/preferences_dialog.vala:114
 #: ../src/project_dialogs.vala:31 ../src/project_dialogs.vala:122
 #: ../src/project_dialogs.vala:276 ../src/project_dialogs.vala:296
 msgid "_Cancel"
@@ -541,13 +553,11 @@ msgstr "_İptal"
 
 #: ../src/build_tool_dialog.vala:73 ../src/project_dialogs.vala:123
 msgid "_Apply"
-msgstr ""
+msgstr "_Uygula"
 
 #: ../src/build_tool_dialog.vala:77
-#, fuzzy
-#| msgid "Build Tool (read-only)"
 msgid "Default Build Tool (read-only)"
-msgstr "İnşa Aracı (salt-okunur)"
+msgstr "Öntanımlı İnşa Aracı (salt-okunur)"
 
 #. icon-name
 #. label
@@ -576,25 +586,25 @@ msgid "Post Processor"
 msgstr "Sonrası İşlemci"
 
 #: ../src/build_tool_dialog.vala:271 ../src/build_tools_preferences.vala:297
-msgid "Add..."
-msgstr "Ekle..."
+msgid "Add…"
+msgstr "Ekle…"
 
 #: ../src/build_tool_dialog.vala:288 ../src/build_tools_preferences.vala:314
 msgid "Remove"
 msgstr "Çıkar"
 
 #: ../src/build_tool_dialog.vala:318 ../src/build_tools_preferences.vala:354
-#: ../src/liblatexila/latexila-templates-manage-dialog.c:282
+#: ../src/liblatexila/latexila-templates-manage-dialog.c:286
 msgid "Move up"
 msgstr "Yukarı taşı"
 
 #: ../src/build_tool_dialog.vala:369 ../src/build_tools_preferences.vala:406
-#: ../src/liblatexila/latexila-templates-manage-dialog.c:294
+#: ../src/liblatexila/latexila-templates-manage-dialog.c:298
 msgid "Move down"
 msgstr "Aşağı taşı"
 
 #: ../src/build_tool_dialog.vala:573 ../src/build_tools_preferences.vala:177
-#: ../src/latex_menu.vala:52 ../src/structure.vala:783
+#: ../src/liblatexila/latexila-latex-commands.c:71 ../src/structure.vala:783
 msgid "Label"
 msgstr "Etiket"
 
@@ -608,7 +618,7 @@ msgstr "Açıklama"
 
 #: ../src/build_tool_dialog.vala:600
 msgid "File extensions for which the build tool can be executed."
-msgstr "Yürütülecek olan inşa aracının dosya uzantıları"
+msgstr "Yürütülecek olan inşa aracının dosya uzantıları."
 
 #: ../src/build_tool_dialog.vala:601
 msgid "The extensions are separated by spaces."
@@ -632,15 +642,15 @@ msgid "Placeholders:"
 msgstr "Yer Tutucular:"
 
 #: ../src/build_tool_dialog.vala:620
-msgid "The active document's filename."
+msgid "The active document’s filename."
 msgstr "Etkin belgenin dosya adı."
 
 #: ../src/build_tool_dialog.vala:621 ../src/build_tool_dialog.vala:626
 msgid "If the active document belongs to a project, the main file is chosen."
-msgstr "Etkin belge bir projeye ait ise, ana dosya seçilmiştir."
+msgstr "Etkin belge bir projeye ait ise, ana dosya seçilir."
 
 #: ../src/build_tool_dialog.vala:625
-msgid "The active document's filename without its extension."
+msgid "The active document’s filename without its extension."
 msgstr "Etkin belgenin uzantısız dosya adı."
 
 #: ../src/build_tool_dialog.vala:675
@@ -669,7 +679,7 @@ msgstr "İnşa Araçları"
 
 #: ../src/build_tools_preferences.vala:113
 msgid "Default Build Tools"
-msgstr "Varsayıla İnşa Araçları"
+msgstr "Öntanımlı İnşa Araçları"
 
 #: ../src/build_tools_preferences.vala:134
 msgid "Personal Build Tools"
@@ -681,19 +691,15 @@ msgstr "Etkin"
 
 #: ../src/build_tools_preferences.vala:241
 msgid "View the properties (read-only)"
-msgstr ""
+msgstr "Özellikleri görüntüle (salt okunur)"
 
 #: ../src/build_tools_preferences.vala:246
-#, fuzzy
-#| msgid "Quit the program"
 msgid "Edit the properties"
-msgstr "Programdan çık"
+msgstr "Özellikleri düzenle"
 
 #: ../src/build_tools_preferences.vala:266
-#, fuzzy
-#| msgid "Create Backup Copies"
 msgid "Create a copy"
-msgstr "Yedekleme Kopyaları Oluştur"
+msgstr "Kopya oluştur"
 
 #: ../src/build_tools_preferences.vala:281
 #, c-format
@@ -702,11 +708,11 @@ msgstr "%s [kopyala]"
 
 #: ../src/build_tools_preferences.vala:332
 #, c-format
-msgid "Do you really want to delete the build tool \"%s\"?"
-msgstr "\"%s\" inşa aracını gerçekten silmek istiyor musunuz?"
+msgid "Do you really want to delete the build tool “%s”?"
+msgstr "“%s” inşa aracını gerçekten silmek istiyor musunuz?"
 
 #: ../src/build_tools_preferences.vala:336 ../src/clean_build_files.vala:243
-#: ../src/liblatexila/latexila-templates-manage-dialog.c:146
+#: ../src/liblatexila/latexila-templates-manage-dialog.c:148
 #: ../src/main_window_edit.vala:51 ../src/main_window_structure.vala:38
 #: ../src/project_dialogs.vala:242 ../src/project_dialogs.vala:277
 msgid "_Delete"
@@ -725,23 +731,16 @@ msgstr "Silmek istediğiniz dosyaları seçin:"
 msgid "No build file to clean up."
 msgstr "Temizlemek için gereken inşa dosyası yok."
 
-#: ../src/completion.vala:330
+#: ../src/completion.vala:334
 msgid "No matching proposal"
-msgstr "Eşleşen bir öneri yok"
+msgstr "Eşleşen öneri yok"
 
-#. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for
-#. "Column". Please, use abbreviations if possible.
-#: ../src/custom_statusbar.vala:45
-#, c-format
-msgid "Ln %d, Col %d"
-msgstr "Ln %d, Col %d"
-
-#: ../src/dialogs.vala:40 ../src/main_window.vala:756
+#: ../src/dialogs.vala:40 ../src/main_window.vala:747
 msgid "Close _without Saving"
 msgstr "Kaydet_meden Kapat"
 
 #: ../src/dialogs.vala:42 ../src/main_window_file.vala:41
-#: ../src/main_window.vala:762 ../src/main_window.vala:854
+#: ../src/main_window.vala:753 ../src/main_window.vala:806
 msgid "_Save"
 msgstr "_Kaydet"
 
@@ -758,122 +757,81 @@ msgid "Select the documents you want to save:"
 msgstr "Kaydetmek istediğiniz belgeleri seçin:"
 
 #: ../src/dialogs.vala:129
-msgid "If you don't save, all your changes will be permanently lost."
+msgid "If you don’t save, all your changes will be permanently lost."
 msgstr "Kaydetmediğiniz takdirde, yaptığınız tüm değişiklikler kaybolacak."
 
-#: ../src/document_structure.vala:720
+#: ../src/document_structure.vala:745
 msgid "The structure item already contains a sub-paragraph."
-msgstr "Yapı öğesi zaten bir alt paragraf içeriyor."
+msgstr "Yapı ögesi zaten alt paragraf içeriyor."
 
-#: ../src/document_tab.vala:174
-msgid "Close document"
-msgstr "Belgeyi kapat"
-
-#. main file
-#: ../src/document_tab.vala:234 ../src/project_dialogs.vala:46
-#: ../src/project_dialogs.vala:48 ../src/project_dialogs.vala:142
-#: ../src/project_dialogs.vala:144 ../src/project_dialogs.vala:217
-msgid "Main File"
-msgstr "Ana Dosya"
-
-#: ../src/document_tab.vala:236
-msgid "Main File:"
-msgstr "Ana Dosya:"
-
-#: ../src/document_tab.vala:260
+#: ../src/document_tab.vala:147
 #, c-format
-msgid "Activate '%s'"
-msgstr "'%s' öğesini etkinleştir"
+msgid "Activate “%s”"
+msgstr "Etkinleştir “%s”"
 
-#: ../src/document_tab.vala:279
+#: ../src/document.vala:120
 #, c-format
-msgid "The file %s changed on disk."
-msgstr "%s dosyası disk üzerinde değişmiş."
+msgid "Impossible to load the file “%s”."
+msgstr "“%s” dosyası yüklemek imkansız."
 
-#: ../src/document_tab.vala:284
-msgid "Do you want to drop your changes and reload the file?"
-msgstr "Değişiklikleri bırakıp dosyayı yeniden yüklemek ister misiniz?"
-
-#: ../src/document_tab.vala:286
-msgid "Do you want to reload the file?"
-msgstr "Dosyayı yeniden yüklemek istiyor musunuz?"
-
-#: ../src/document_tab.vala:290
-msgid "_Reload"
-msgstr "_Yeniden Yükle"
-
-#: ../src/document.vala:134
-#, c-format
-msgid "Impossible to load the file '%s'."
-msgstr "'%s' dosyası yüklemek imkansız."
-
-#: ../src/document.vala:212
+#: ../src/document.vala:202
 #, c-format
 msgid "The file %s has been modified since reading it."
 msgstr "%s dosyası son okunmasından sonra değiştirilmiş."
 
-#: ../src/document.vala:215
+#: ../src/document.vala:205
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
 "Eğer kaydederseniz, harici olarak yapılmış tüm değişiklikler kaybolacak. "
 "Yine de kaydedilsin mi?"
 
-#: ../src/document.vala:218
+#: ../src/document.vala:209
 msgid "_Save Anyway"
 msgstr "_Yine de Kaydet"
 
-#: ../src/document.vala:219
-msgid "_Don't Save"
+#: ../src/document.vala:210
+msgid "_Don’t Save"
 msgstr "_Kaydetme"
 
-#: ../src/document.vala:231
+#: ../src/document.vala:227
 msgid "Impossible to save the file."
 msgstr "Dosyanın kaydedilmesi imkansız."
 
-#: ../src/document.vala:256
+#: ../src/document.vala:255
 msgid "Error trying to convert the document to UTF-8"
 msgstr "Belge UTF-8 olarak dönüştürülürken hata oluştu"
 
-#: ../src/document.vala:310
-#, fuzzy
-#| msgid "Unsaved Document"
-msgid "Untitled Document"
-msgstr "Kaydedilmemiş Belge"
-
-#: ../src/document.vala:594
+#: ../src/document.vala:484
 msgid ""
 "The file has a temporary location. The data can be lost after rebooting your "
 "computer."
 msgstr ""
-"Dosya geçici bir konuma sahip. Bilgisayarınızı yeniden başlatınca veri "
+"Dosyanın konumu geçicidir. Bilgisayarınızı yeniden başlatınca veri "
 "kaybolabilir."
 
-#: ../src/document.vala:595
+#: ../src/document.vala:485
 msgid "Do you want to save the file in a safer place?"
-msgstr "Dosyayı daha güvenli bir alana kaydetme istiyor musunuz?"
+msgstr "Dosyayı daha güvenli alana kaydetmek istiyor musunuz?"
 
-#: ../src/document.vala:598 ../src/main_window_file.vala:44
-#: ../src/main_window.vala:760
+#: ../src/document.vala:486 ../src/main_window_file.vala:44
+#: ../src/main_window.vala:751
 msgid "Save _As"
 msgstr "_Faklı Kaydet"
 
-#: ../src/document.vala:599
+#: ../src/document.vala:487
 msgid "Cancel"
 msgstr "İptal"
 
-#: ../src/document_view.vala:367
-#, fuzzy
-#| msgid "Activate or disable the spell checking"
-msgid "No dictionaries available for the spell checking."
-msgstr "Yazım denetimi etkinleştir veya kapat"
+#: ../src/document_view.vala:308
+msgid "No dictionaries available for the spell-checking."
+msgstr "Yazım denetimi için sözlük yok."
 
 #. Help
-#: ../src/document_view.vala:369 ../src/main_window.vala:62
-#: ../src/ui/menus.ui.h:4
+#: ../src/document_view.vala:310 ../src/main_window.vala:63
 msgid "_Help"
 msgstr "_Yardım"
 
-#: ../src/document_view.vala:370 ../src/tab_info_bar.vala:77
+#: ../src/document_view.vala:311
 msgid "_OK"
 msgstr "_Tamam"
 
@@ -889,795 +847,779 @@ msgstr "Üst dizine git"
 msgid "Go to the active document directory"
 msgstr "Etkin belge dizinine git"
 
-#: ../src/file_browser.vala:303
-#, fuzzy
-#| msgid "Open a file"
+#: ../src/file_browser.vala:290
 msgid "Open in a file manager"
-msgstr "Bir dosya aç"
+msgstr "Dosya yöneticisinde aç"
 
-#: ../src/file_browser.vala:305
-#, fuzzy
-#| msgid "Save the current file with a different name"
+#: ../src/file_browser.vala:292
 msgid "Open the current directory in a file manager"
-msgstr "Mevcut dosyayı farklı bir isimle kaydet"
+msgstr "Geçerli dizini dosya yöneticisinde aç"
 
-#: ../src/file_browser.vala:327
-#, fuzzy
-#| msgid "Open a file"
+#: ../src/file_browser.vala:314
 msgid "Open in a terminal"
-msgstr "Bir dosya aç"
+msgstr "Uçbirimde aç"
 
-#: ../src/file_browser.vala:328
-#, fuzzy
-#| msgid "Save the current file with a different name"
+#: ../src/file_browser.vala:315
 msgid "Open the current directory in a terminal"
-msgstr "Mevcut dosyayı farklı bir isimle kaydet"
+msgstr "Geçerli dizini uçbirimde aç"
 
-#: ../src/file_browser.vala:417
+#: ../src/file_browser.vala:405
 msgid "File System"
 msgstr "Dosya Sistemi"
 
 #. File browser
-#: ../src/file_browser.vala:536 ../src/main_window.vala:406
+#: ../src/file_browser.vala:524 ../src/main_window.vala:443
 msgid "File Browser"
 msgstr "Dosya Tarayıcısı"
 
-#: ../src/latexila_app.vala:77
-msgid "Show the application's version"
+#: ../src/glatex_app.vala:79
+msgid "Show the application’s version"
 msgstr "Uygulamanın sürümünü göster"
 
-#: ../src/latexila_app.vala:80
+#: ../src/glatex_app.vala:82
 msgid "Create new document"
 msgstr "Yeni belge oluştur"
 
-#: ../src/latexila_app.vala:83
-msgid "Create a new top-level window in an existing instance of LaTeXila"
-msgstr "LaTeXila 'nın mevcut bir örneğinde yeni bir en üst düzey pencere yarat"
+#: ../src/glatex_app.vala:85
+msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
+msgstr "GNOME LaTeX’in var olan örneğinde yeni en üst düzey pencere oluştur"
 
-#: ../src/latexila_app.vala:217
-msgid "LaTeXila is an Integrated LaTeX Environment for the GNOME Desktop"
-msgstr "LaTeXila, Gnome Masaüstü için Tümleşik LaTeX Ortamı"
+#: ../src/glatex_app.vala:195
+msgid "GNOME LaTeX is a LaTeX editor for the GNOME desktop"
+msgstr "GNOME LaTeX, GNOME masaüstü için LaTeX düzenleyicidir"
 
-#: ../src/latexila_app.vala:256 ../src/main_window.vala:68
-msgid "About LaTeXila"
-msgstr "LaTeXila Hakkında"
+#: ../src/glatex_app.vala:224 ../src/main_window.vala:69
+msgid "About GNOME LaTeX"
+msgstr "GNOME LaTeX Hakkında"
 
-#: ../src/latexila_app.vala:257
+#: ../src/glatex_app.vala:225
 msgid "translator-credits"
-msgstr "Kaan Özdinçer <kaanozdincer@gmail.com>"
+msgstr ""
+"Kaan Özdinçer <kaanozdincer@gmail.com>\n"
+"Serdar Sağlam <teknomobil@yandex.com>\n"
+"Emin Tufan Çetin <etcetin@gmail.com>"
 
-#. LaTeX: Sectioning
-#: ../src/latex_menu.vala:32
+#. Sections and sub-sections
+#. LaTeX
+#: ../src/latex_menu.vala:30
 msgid "_Sectioning"
 msgstr "_Bölümlendirme"
 
-#: ../src/latex_menu.vala:34 ../src/structure.vala:776
-msgid "Part"
-msgstr "Parça"
-
-#: ../src/latex_menu.vala:36 ../src/structure.vala:777
-msgid "Chapter"
-msgstr "Bölüm"
-
-#: ../src/latex_menu.vala:38 ../src/structure.vala:778
-msgid "Section"
-msgstr "Kısım"
-
-#: ../src/latex_menu.vala:40 ../src/structure.vala:779
-msgid "Sub-section"
-msgstr "Alt Kısım"
-
-#: ../src/latex_menu.vala:42 ../src/structure.vala:780
-msgid "Sub-sub-section"
-msgstr "Altın altındaki kısım"
-
-#: ../src/latex_menu.vala:44 ../src/structure.vala:781
-msgid "Paragraph"
-msgstr "Paragraf"
-
-#: ../src/latex_menu.vala:46 ../src/structure.vala:782
-msgid "Sub-paragraph"
-msgstr "Alt Paragraf"
-
-#. LaTeX: References
-#: ../src/latex_menu.vala:50
+#: ../src/latex_menu.vala:31
 msgid "_References"
 msgstr "_Kaynaklar"
 
-#: ../src/latex_menu.vala:54
-msgid "Reference to a label"
-msgstr "Etikete kaynak"
-
-#: ../src/latex_menu.vala:56
-msgid "Page reference to a label"
-msgstr "Etikete sayfa kaynağı"
-
-#: ../src/latex_menu.vala:58
-msgid "Add a word to the index"
-msgstr "Dizine bir sözcük ekle"
-
-#: ../src/latex_menu.vala:60
-msgid "Footnote"
-msgstr "Dipnot"
-
-#: ../src/latex_menu.vala:62
-msgid "Reference to a bibliography item"
-msgstr "Bibliyografi öğesine kaynak"
-
-#: ../src/latex_menu.vala:68
-msgid "Center - \\begin{center}"
-msgstr "Ortala - \\begin{center}"
-
-#: ../src/latex_menu.vala:70
-msgid "Align Left - \\begin{flushleft}"
-msgstr "Align Left - \\begin{flushleft}"
-
-#: ../src/latex_menu.vala:72
-msgid "Align Right - \\begin{flushright}"
-msgstr "Sağa hizala - \\begin{flushright}"
-
-#: ../src/latex_menu.vala:74
-msgid "Figure - \\begin{figure}"
-msgstr "Şekil - \\begin{figure}"
-
-#: ../src/latex_menu.vala:76
-msgid "Table - \\begin{table}"
-msgstr "Tablo - \\begin{table}"
-
-#: ../src/latex_menu.vala:78
-msgid "Quote - \\begin{quote}"
-msgstr "Alıntı - \\begin{quote}"
-
-#: ../src/latex_menu.vala:80
-msgid "Quotation - \\begin{quotation}"
-msgstr "Alıntılama - \\begin{quotation}"
-
-#: ../src/latex_menu.vala:82
-msgid "Verse - \\begin{verse}"
-msgstr "Şiir - \\begin{verse}"
-
-#: ../src/latex_menu.vala:84
-msgid "Verbatim - \\begin{verbatim}"
-msgstr "Harfiyen - \\begin{verbatim}"
-
-#: ../src/latex_menu.vala:86
-msgid "Minipage - \\begin{minipage}"
-msgstr "Minisayfa - \\begin{minipage}"
-
-#: ../src/latex_menu.vala:88
-msgid "Title page - \\begin{titlepage}"
-msgstr "Başlık sayfası - \\begin{titlepage}"
-
-#. LaTeX: list environments
-#: ../src/latex_menu.vala:92
+#: ../src/latex_menu.vala:33
 msgid "_List Environments"
 msgstr "Ortamları _Listele"
 
-#: ../src/latex_menu.vala:94
-msgid "Bulleted List - \\begin{itemize}"
-msgstr "Madde imli liste - \\begin{itemize}"
-
-#: ../src/latex_menu.vala:96
-msgid "Enumeration - \\begin{enumerate}"
-msgstr "Numaralandırma - \\begin{enumerate}"
-
-#: ../src/latex_menu.vala:98
-msgid "Description - \\begin{description}"
-msgstr "Tanımlama - \\begin{description}"
-
-#: ../src/latex_menu.vala:100
-msgid "Custom list - \\begin{list}"
-msgstr "Özel liste - \\begin{list}"
-
-#: ../src/latex_menu.vala:102
-msgid "List item - \\item"
-msgstr "Öğe liste - \\item"
-
-#. LaTeX: character sizes
-#: ../src/latex_menu.vala:106
+#: ../src/latex_menu.vala:34
 msgid "_Characters Sizes"
-msgstr "_Karakterleri Boyutları"
+msgstr "_Karakter Boyutları"
 
-#. LaTeX: font styles
-#: ../src/latex_menu.vala:130
+#: ../src/latex_menu.vala:35
 msgid "_Font Styles"
 msgstr "_Yazı Tipleri"
 
-#: ../src/latex_menu.vala:132
-msgid "Bold - \\textbf"
-msgstr "Kalın - \\textbf"
-
-#: ../src/latex_menu.vala:134
-msgid "Italic - \\textit"
-msgstr "Yatık - \\textit"
-
-#: ../src/latex_menu.vala:136
-msgid "Typewriter - \\texttt"
-msgstr "Daktilo - \\texttt"
-
-#: ../src/latex_menu.vala:138
-msgid "Slanted - \\textsl"
-msgstr "Eğik - \\textsl"
-
-#: ../src/latex_menu.vala:140
-msgid "Small Capitals - \\textsc"
-msgstr "Küçültülmüş Büyük Harfler - \\textsc"
-
-#: ../src/latex_menu.vala:142
-msgid "Sans Serif - \\textsf"
-msgstr "Sans Serif - \\textsf"
-
-#: ../src/latex_menu.vala:144
-msgid "Emphasized - \\emph"
-msgstr "Vurgulu - \\emph"
-
-#: ../src/latex_menu.vala:146
-msgid "Underline - \\underline"
-msgstr "Altı çizili - \\underline"
-
-#: ../src/latex_menu.vala:148
+#: ../src/latex_menu.vala:36
 msgid "_Font Family"
 msgstr "_Yazı Tipi Ailesi"
 
-#: ../src/latex_menu.vala:150
-msgid "Roman - \\rmfamily"
-msgstr "Roman - \\rmfamily"
-
-#: ../src/latex_menu.vala:152
-msgid "Sans Serif - \\sffamily"
-msgstr "Sans Serif - \\sffamily"
-
-#: ../src/latex_menu.vala:154
-msgid "Monospace - \\ttfamily"
-msgstr "Monospace - \\ttfamily"
-
-#: ../src/latex_menu.vala:156
+#: ../src/latex_menu.vala:37
 msgid "F_ont Series"
 msgstr "Ya_zı Tipi Dizileri"
 
-#: ../src/latex_menu.vala:158
-msgid "Medium - \\mdseries"
-msgstr "Medium - \\mdseries"
-
-#: ../src/latex_menu.vala:160
-msgid "Bold - \\bfseries"
-msgstr "Kalın - \\bfseries"
-
-#: ../src/latex_menu.vala:162
+#: ../src/latex_menu.vala:38
 msgid "Fo_nt Shape"
 msgstr "Yaz_ı Tipi Şekli"
 
-#: ../src/latex_menu.vala:164
-msgid "Upright - \\upshape"
-msgstr "Dik - \\upshape"
-
-#: ../src/latex_menu.vala:166
-msgid "Italic - \\itshape"
-msgstr "Yatık - \\itshape"
-
-#: ../src/latex_menu.vala:168
-msgid "Slanted - \\slshape"
-msgstr "Eğimli - \\slshape"
-
-#: ../src/latex_menu.vala:170
-msgid "Small Capitals - \\scshape"
-msgstr "Küçültülmüş Büyük Harfler - \\scshape"
-
-#. LaTeX: Tabular
-#: ../src/latex_menu.vala:174
+#: ../src/latex_menu.vala:39
 msgid "_Tabular"
 msgstr "_Sekmeli"
 
-#: ../src/latex_menu.vala:176
-msgid "Tabbing - \\begin{tabbing}"
-msgstr "Sekmeler - \\begin{tabbing}"
-
-#: ../src/latex_menu.vala:178
-msgid "Tabular - \\begin{tabular}"
-msgstr "Tablo - \\begin{tabular}"
-
-#: ../src/latex_menu.vala:180
-msgid "Multicolumn - \\multicolumn"
-msgstr "Çoklu sütun - \\multicolumn"
-
-#: ../src/latex_menu.vala:182
-msgid "Horizontal line - \\hline"
-msgstr "Yatay çizgi - \\hline"
-
-#: ../src/latex_menu.vala:184
-msgid "Vertical line - \\vline"
-msgstr "Düşey çizgi - \\vline"
-
-#: ../src/latex_menu.vala:186
-msgid "Horizontal line (columns specified) - \\cline"
-msgstr "Dikey çizgi (sütunlar belirtilmiş) - \\cline"
-
-#: ../src/latex_menu.vala:192
-msgid "Frame - \\begin{frame}"
-msgstr "Çerçeve - \\begin{frame}"
-
-#: ../src/latex_menu.vala:194
-msgid "Block - \\begin{block}"
-msgstr "Blok - \\begin{block}"
-
-#: ../src/latex_menu.vala:196
-msgid "Two columns - \\begin{columns}"
-msgstr "İki sütun - \\begin{sütunlar}"
-
-#. LaTeX: Spacing
-#: ../src/latex_menu.vala:200
+#: ../src/latex_menu.vala:41
 msgid "_Spacing"
 msgstr "_Boşluk"
 
-#: ../src/latex_menu.vala:201
-msgid "New _Line"
-msgstr "Yeni _Satır"
-
-#: ../src/latex_menu.vala:202
-msgid "New Line - \\\\"
-msgstr "Yeni Satır - \\\\"
-
-#: ../src/latex_menu.vala:204
-msgid "New page - \\newpage"
-msgstr "Yeni Sayfa - \\newpage"
-
-#: ../src/latex_menu.vala:206
-msgid "Line break - \\linebreak"
-msgstr "Satır Sonu - \\linebreak"
-
-#: ../src/latex_menu.vala:208
-msgid "Page break - \\pagebreak"
-msgstr "Sayfa Sonu - \\pagebreak"
-
-#: ../src/latex_menu.vala:210
-msgid "Big skip - \\bigskip"
-msgstr "Büyük atlama - \\bigskip"
-
-#: ../src/latex_menu.vala:212
-msgid "Medium skip - \\medskip"
-msgstr "Ortam atlama - \\medskip"
-
-#: ../src/latex_menu.vala:214
-msgid "Horizontal space - \\hspace"
-msgstr "Yatay boşluk - \\hspace{}"
-
-#: ../src/latex_menu.vala:216
-msgid "Vertical space - \\vspace"
-msgstr "Düşey boşluk - \\vspace{}"
-
-#: ../src/latex_menu.vala:218
-msgid "No paragraph indentation - \\noindent"
-msgstr "Paragraf girdisi yok - \\noindent"
-
-#. LaTeX: International accents
-#: ../src/latex_menu.vala:222
+#: ../src/latex_menu.vala:42
 msgid "International _Accents"
 msgstr "Uluslararası _Vurgular"
 
-#: ../src/latex_menu.vala:223
-msgid "Acute accent - \\'"
-msgstr "Acute - \\'"
-
-#: ../src/latex_menu.vala:224
-msgid "Grave accent - \\`"
-msgstr "Grave - \\`"
-
-#: ../src/latex_menu.vala:225
-msgid "Circumflex accent - \\^"
-msgstr "Circumflex - \\^"
-
-#: ../src/latex_menu.vala:226
-msgid "Trema - \\\""
-msgstr "Trema - \\\""
-
-#: ../src/latex_menu.vala:227
-msgid "Tilde - \\~"
-msgstr "Tilde - \\~"
-
-#: ../src/latex_menu.vala:228
-msgid "Macron - \\="
-msgstr "Macron - \\="
-
-#: ../src/latex_menu.vala:229
-msgid "Dot above - \\."
-msgstr "Dot above - \\."
-
-#: ../src/latex_menu.vala:230
-msgid "Caron - \\v"
-msgstr "Caron - \\v"
-
-#: ../src/latex_menu.vala:231
-msgid "Breve - \\u"
-msgstr "Breve - \\u"
-
-#: ../src/latex_menu.vala:233
-msgid "Double acute accent - \\H"
-msgstr "Double acute - \\H"
-
-#: ../src/latex_menu.vala:234
-msgid "Cedilla - \\c"
-msgstr "Cedilla - \\c"
-
-#: ../src/latex_menu.vala:235
-msgid "Ogonek - \\k"
-msgstr "Ogonek - \\k"
-
-#: ../src/latex_menu.vala:236
-msgid "Dot below - \\d"
-msgstr "Dot - \\d"
-
-#: ../src/latex_menu.vala:237
-msgid "Macron below - \\b"
-msgstr "Macron - \\b"
-
-#: ../src/latex_menu.vala:238
-msgid "Ring - \\r"
-msgstr "Ring - \\r"
-
-#: ../src/latex_menu.vala:239
-msgid "Tie - \\t"
-msgstr "Tie - \\t"
-
-#. LaTeX: Others
-#: ../src/latex_menu.vala:243
+#: ../src/latex_menu.vala:43
 msgid "_Misc"
 msgstr "_Çeşitli"
 
-#: ../src/latex_menu.vala:245
-msgid "Document class - \\documentclass"
-msgstr "Belge sınıfı - \\documentclass"
-
-#: ../src/latex_menu.vala:247
-msgid "Use package - \\usepackage"
-msgstr "Paket kullan - \\usepackage"
-
-#: ../src/latex_menu.vala:248
-msgid "_AMS packages"
-msgstr "_AMS paketleri"
-
-#: ../src/latex_menu.vala:249
-msgid "AMS packages"
-msgstr "AMS paketleri"
-
-#: ../src/latex_menu.vala:250
-msgid "Author - \\author"
-msgstr "Yazar - \\author"
-
-#: ../src/latex_menu.vala:251
-msgid "Title - \\title"
-msgstr "Başlık - \\title"
-
-#: ../src/latex_menu.vala:253
-msgid "Content of the document - \\begin{document}"
-msgstr "Belgenin içeriği - \\begin{document}"
-
-#: ../src/latex_menu.vala:255
-msgid "Make title - \\maketitle"
-msgstr "Başlık Oluştur - \\maketitle"
-
-#: ../src/latex_menu.vala:257
-msgid "Table of contents - \\tableofcontents"
-msgstr "İçindekiler - \\tableofcontents"
-
-#: ../src/latex_menu.vala:259
-msgid "Abstract - \\begin{abstract}"
-msgstr "Özet - \\begin{abstract}"
-
-#: ../src/latex_menu.vala:261
-msgid "Include an image (graphicx package) - \\includegraphics"
-msgstr "Bir görüntü göster (graphicx paketi) - \\includegraphics"
-
-#: ../src/latex_menu.vala:264
-msgid "Include a file - \\input"
-msgstr "Bir dosya dahil et - \\input"
-
 #. Math
-#: ../src/latex_menu.vala:268
+#: ../src/latex_menu.vala:46
 msgid "_Math"
 msgstr "_Matematik"
 
-#. Math Environments
-#: ../src/latex_menu.vala:272
+#: ../src/latex_menu.vala:47
 msgid "_Math Environments"
 msgstr "_Matematik Ortamları"
 
-#: ../src/latex_menu.vala:273
-msgid "_Mathematical Environment - $...$"
-msgstr "_Matematiksel Ortam - $...$"
-
-#: ../src/latex_menu.vala:274
-msgid "Mathematical Environment - $...$"
-msgstr "Matematiksel Ortam - $...$"
-
-#: ../src/latex_menu.vala:275
-msgid "_Centered Formula - \\[...\\]"
-msgstr "_Ortalanmış Formül - \\[...\\]"
-
-#: ../src/latex_menu.vala:276
-msgid "Centered Formula - \\[...\\]"
-msgstr "Ortalanmış Formül - \\[...\\]"
-
-#: ../src/latex_menu.vala:278
-msgid "_Numbered Equation - \\begin{equation}"
-msgstr "_Numaralandırılmış Denklem - \\begin{equation}"
-
-#: ../src/latex_menu.vala:279
-msgid "Numbered Equation - \\begin{equation}"
-msgstr "Numaralandırılmış Denklem - \\begin{equation}"
-
-#: ../src/latex_menu.vala:280
-msgid "_Array of Equations - \\begin{align*}"
-msgstr "_Denklemlerin Dizisi - \\begin{align*}"
-
-#: ../src/latex_menu.vala:281
-msgid "Array of Equations - \\begin{align*}"
-msgstr "Denklemlerin Dizisi - \\begin{align*}"
-
-#: ../src/latex_menu.vala:283
-msgid "Numbered Array of _Equations - \\begin{align}"
-msgstr "Denklemlerin Numaralandırılmış _Dizisi - \\begin{align}"
-
-#: ../src/latex_menu.vala:284
-msgid "Numbered Array of Equations - \\begin{align}"
-msgstr "Denklemlerin Numaralandırılmış Dizisi - \\begin{align}"
-
-#: ../src/latex_menu.vala:287
-msgid "_Superscript - ^{}"
-msgstr "_Üstsimge - ^{}"
-
-#: ../src/latex_menu.vala:288
-msgid "Superscript - ^{}"
-msgstr "Üstsimge - ^{} "
-
-#: ../src/latex_menu.vala:289
-msgid "Su_bscript - __{}"
-msgstr "Ü_stsimge - __{}"
-
-#: ../src/latex_menu.vala:290
-msgid "Subscript - _{}"
-msgstr "Üstsimge - _{}"
-
-#: ../src/latex_menu.vala:291
-msgid "_Fraction - \\frac{}{}"
-msgstr "_Kesir - \\frac{}{}"
-
-#: ../src/latex_menu.vala:292
-msgid "Fraction - \\frac{}{}"
-msgstr "Kesir - \\frac{}{}"
-
-#: ../src/latex_menu.vala:293
-msgid "Square _Root - \\sqrt{}"
-msgstr "Kare _Kök - \\sqrt{}"
-
-#: ../src/latex_menu.vala:294
-msgid "Square Root - \\sqrt{}"
-msgstr "Kare Kök - \\sqrt{}"
-
-#: ../src/latex_menu.vala:295
-msgid "_N-th Root - \\sqrt[]{}"
-msgstr "_N Kök - \\sqrt[]{}"
-
-#: ../src/latex_menu.vala:296
-msgid "N-th Root - \\sqrt[]{}"
-msgstr "N Kök - \\sqrt[]{}"
-
-#. Math functions
-#: ../src/latex_menu.vala:300
+#: ../src/latex_menu.vala:48
 msgid "Math _Functions"
 msgstr "Matematik _Fonksiyonları"
 
-#. Math Font Styles
-#: ../src/latex_menu.vala:334
+#: ../src/latex_menu.vala:49
 msgid "Math Font _Styles"
 msgstr "Matematik Yazı _Tipleri"
 
-#: ../src/latex_menu.vala:336
-msgid "Roman - \\mathrm"
-msgstr "Roman - \\mathrm"
-
-#: ../src/latex_menu.vala:338
-msgid "Italic - \\mathit"
-msgstr "Yatık - \\mathit"
-
-#: ../src/latex_menu.vala:340
-msgid "Bold - \\mathbf"
-msgstr "Kalın - \\mathbf"
-
-#: ../src/latex_menu.vala:342
-msgid "Sans Serif - \\mathsf"
-msgstr "Sans Serif - \\mathsf"
-
-#: ../src/latex_menu.vala:344
-msgid "Typewriter - \\mathtt"
-msgstr "Typewriter - \\mathtt"
-
-#: ../src/latex_menu.vala:346
-msgid "Calligraphic - \\mathcal"
-msgstr "Calligraphic - \\mathcal"
-
-#: ../src/latex_menu.vala:348
-msgid "Blackboard (uppercase only)  - \\mathbb (amsfonts package)"
-msgstr "Blackboard (sadece büyük harf)  - \\mathbb (amsfonts paketi)"
-
-#: ../src/latex_menu.vala:351
-msgid "Euler Fraktur - \\mathfrak (amsfonts package)"
-msgstr "Euler Fraktur - \\mathfrak (amsfonts paketi)"
-
-#. Math Accents
-#: ../src/latex_menu.vala:356
+#: ../src/latex_menu.vala:50
 msgid "Math _Accents"
 msgstr "Matematik _Vurguları"
 
-#. Math Spaces
-#: ../src/latex_menu.vala:377
+#: ../src/latex_menu.vala:51
 msgid "Math _Spaces"
 msgstr "Matematik _Boşlukları"
 
-#: ../src/latex_menu.vala:378
-msgid "_Small"
-msgstr "_Küçük"
-
-#: ../src/latex_menu.vala:379
-msgid "Small - \\,"
-msgstr "Küçük - \\,"
-
-#: ../src/latex_menu.vala:380
-msgid "_Medium"
-msgstr "_Orta"
-
-#: ../src/latex_menu.vala:381
-msgid "Medium - \\:"
-msgstr "Orta - \\:"
-
-#: ../src/latex_menu.vala:382
-msgid "_Large"
-msgstr "_Büyük"
-
-#: ../src/latex_menu.vala:383
-msgid "Large - \\;"
-msgstr "Büyük - \\;"
-
-#. Math: Left Delimiters
-#: ../src/latex_menu.vala:389
+#: ../src/latex_menu.vala:52
 msgid "_Left Delimiters"
 msgstr "_Sol Sınırlandırıcılar"
 
-#: ../src/latex_menu.vala:390
-msgid "left ("
-msgstr "sol ("
-
-#: ../src/latex_menu.vala:392
-msgid "left ["
-msgstr "sol ["
-
-#: ../src/latex_menu.vala:394
-msgid "left { "
-msgstr "sol { "
-
-#: ../src/latex_menu.vala:396
-msgid "left <"
-msgstr "sol <"
-
-#: ../src/latex_menu.vala:398
-msgid "left )"
-msgstr "sol )"
-
-#: ../src/latex_menu.vala:400
-msgid "left ]"
-msgstr "sol ]"
-
-#: ../src/latex_menu.vala:402
-msgid "left  }"
-msgstr "sol  }"
-
-#: ../src/latex_menu.vala:404
-msgid "left >"
-msgstr "sol >"
-
-#: ../src/latex_menu.vala:406
-msgid "left ."
-msgstr "sol ."
-
-#. Math: Right Delimiters
-#: ../src/latex_menu.vala:411
+#: ../src/latex_menu.vala:53
 msgid "Right _Delimiters"
 msgstr "_Sağ Sınırlandırıcılar"
 
-#: ../src/latex_menu.vala:412
-msgid "right )"
-msgstr "sağ )"
-
-#: ../src/latex_menu.vala:414
-msgid "right ]"
-msgstr "sağ ]"
-
-#: ../src/latex_menu.vala:416
-msgid "right  }"
-msgstr "sağ  }"
-
-#: ../src/latex_menu.vala:418
-msgid "right >"
-msgstr "sağ >"
-
-#: ../src/latex_menu.vala:420
-msgid "right ("
-msgstr "sağ ("
-
-#: ../src/latex_menu.vala:422
-msgid "right ["
-msgstr "sağ ["
-
-#: ../src/latex_menu.vala:424
-msgid "right { "
-msgstr "sağ { "
-
-#: ../src/latex_menu.vala:426
-msgid "right <"
-msgstr "sağ <"
-
-#: ../src/latex_menu.vala:428
-msgid "right ."
-msgstr "sağ ."
-
 #. menus under toolitems
-#: ../src/latex_menu.vala:443
+#: ../src/latex_menu.vala:67
 msgid "Sectioning"
 msgstr "Bölümlendirme"
 
-#: ../src/latex_menu.vala:446
+#: ../src/latex_menu.vala:70
 msgid "Characters Sizes"
 msgstr "Karakter Boyutları"
 
-#: ../src/latex_menu.vala:449
+#: ../src/latex_menu.vala:73
 msgid "References"
 msgstr "Kaynaklar"
 
-#: ../src/latex_menu.vala:452
+#: ../src/latex_menu.vala:76
 msgid "Presentation Environments"
 msgstr "Sunum Ortamları"
 
-#: ../src/latex_menu.vala:455
+#: ../src/latex_menu.vala:79
 msgid "Math Environments"
 msgstr "Matematik Ortamları"
 
-#: ../src/liblatexila/latexila-build-job.c:359
+#: ../src/liblatexila/latexila-build-job.c:366
 #, c-format
-msgid "%s doesn't seem to be installed."
+msgid "%s doesn’t seem to be installed."
 msgstr "%s yüklenmiş gibi görünmüyor."
 
-#: ../src/liblatexila/latexila-build-tool.c:547
+#: ../src/liblatexila/latexila-build-tool.c:556
+#: ../src/liblatexila/latexila-synctex.c:570
 #, c-format
-msgid "The file '%s' doesn't exist."
-msgstr "'%s' dosyası mevcut değil."
+msgid "The file “%s” doesn’t exist."
+msgstr "“%s” dosyası yok."
 
-#: ../src/liblatexila/latexila-build-tool.c:575
+#: ../src/liblatexila/latexila-build-tool.c:584
 #, c-format
-msgid "Failed to open '%s':"
-msgstr "'%s' açılamadı:"
+msgid "Failed to open “%s”:"
+msgstr "“%s” açılamadı:"
 
-#: ../src/liblatexila/latexila-build-tool.c:677
+#: ../src/liblatexila/latexila-build-tool.c:690
 #, c-format
 msgid "Open %s"
 msgstr "%s dosyasını aç"
 
-#: ../src/liblatexila/latexila-synctex.c:189
+#: ../src/liblatexila/latexila-latex-commands.c:54 ../src/structure.vala:776
+msgid "Part"
+msgstr "Parça"
+
+#: ../src/liblatexila/latexila-latex-commands.c:56 ../src/structure.vala:777
+msgid "Chapter"
+msgstr "Bölüm"
+
+#: ../src/liblatexila/latexila-latex-commands.c:58 ../src/structure.vala:778
+msgid "Section"
+msgstr "Kısım"
+
+#: ../src/liblatexila/latexila-latex-commands.c:60 ../src/structure.vala:779
+msgid "Sub-section"
+msgstr "Alt Kısım"
+
+#: ../src/liblatexila/latexila-latex-commands.c:62 ../src/structure.vala:780
+msgid "Sub-sub-section"
+msgstr "Altın altındaki kısım"
+
+#: ../src/liblatexila/latexila-latex-commands.c:64 ../src/structure.vala:781
+msgid "Paragraph"
+msgstr "Paragraf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:66 ../src/structure.vala:782
+msgid "Sub-paragraph"
+msgstr "Alt Paragraf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:73
+msgid "Reference to a label"
+msgstr "Etikete kaynak"
+
+#: ../src/liblatexila/latexila-latex-commands.c:75
+msgid "Page reference to a label"
+msgstr "Etikete sayfa kaynağı"
+
+#: ../src/liblatexila/latexila-latex-commands.c:77
+msgid "Add a word to the index"
+msgstr "Dizine sözcük ekle"
+
+#: ../src/liblatexila/latexila-latex-commands.c:79
+msgid "Footnote"
+msgstr "Dipnot"
+
+#: ../src/liblatexila/latexila-latex-commands.c:81
+msgid "Reference to a bibliography item"
+msgstr "Bibliyografi ögesine atıf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:86
+msgid "Center — \\begin{center}"
+msgstr "Ortala — \\begin{center}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:88
+msgid "Align Left — \\begin{flushleft}"
+msgstr "Sola Hizala — \\begin{flushleft}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:90
+msgid "Align Right — \\begin{flushright}"
+msgstr "Sağa Hizala — \\begin{flushright}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:92
+msgid "Figure — \\begin{figure}"
+msgstr "Şekil — \\begin{figure}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:94
+msgid "Table — \\begin{table}"
+msgstr "Tablo — \\begin{table}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:96
+msgid "Quote — \\begin{quote}"
+msgstr "Alıntı — \\begin{quote}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:98
+msgid "Quotation — \\begin{quotation}"
+msgstr "Alıntılama — \\begin{quotation}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:100
+msgid "Verse — \\begin{verse}"
+msgstr "Şiir — \\begin{verse}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:102
+msgid "Verbatim — \\begin{verbatim}"
+msgstr "Harfiyen — \\begin{verbatim}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:104
+msgid "Minipage — \\begin{minipage}"
+msgstr "Minisayfa — \\begin{minipage}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:106
+msgid "Title page — \\begin{titlepage}"
+msgstr "Başlık sayfası — \\begin{titlepage}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:111
+msgid "Bulleted List — \\begin{itemize}"
+msgstr "Madde İmli Listesi — \\begin{itemize}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:113
+msgid "Enumeration — \\begin{enumerate}"
+msgstr "Numaralandırma — \\begin{enumerate}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:115
+msgid "Description — \\begin{description}"
+msgstr "Tanımlama — \\begin{description}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:117
+msgid "Custom list — \\begin{list}"
+msgstr "Özel liste — \\begin{list}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:119
+msgid "List item — \\item"
+msgstr "Liste ögesi — \\item"
+
+#: ../src/liblatexila/latexila-latex-commands.c:137
+msgid "Bold — \\textbf"
+msgstr "Kalın — \\textbf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:139
+msgid "Italic — \\textit"
+msgstr "Yatık — \\textit"
+
+#: ../src/liblatexila/latexila-latex-commands.c:141
+msgid "Typewriter — \\texttt"
+msgstr "Daktilo — \\texttt"
+
+#: ../src/liblatexila/latexila-latex-commands.c:143
+msgid "Slanted — \\textsl"
+msgstr "Eğik — \\textsl"
+
+#: ../src/liblatexila/latexila-latex-commands.c:145
+msgid "Small Capitals — \\textsc"
+msgstr "Küçültülmüş Büyük Harfler — \\textsc"
+
+#: ../src/liblatexila/latexila-latex-commands.c:147
+msgid "Sans Serif — \\textsf"
+msgstr "Sans Serif — \\textsf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:149
+msgid "Emphasized — \\emph"
+msgstr "Vurgulu — \\emph"
+
+#: ../src/liblatexila/latexila-latex-commands.c:151
+msgid "Underline — \\underline"
+msgstr "Altı çizili — \\underline"
+
+#: ../src/liblatexila/latexila-latex-commands.c:154
+msgid "Roman — \\rmfamily"
+msgstr "Roman — \\rmfamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:156
+msgid "Sans Serif — \\sffamily"
+msgstr "Sans Serif — \\sffamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:158
+msgid "Monospace — \\ttfamily"
+msgstr "Monospace — \\ttfamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:161
+msgid "Medium — \\mdseries"
+msgstr "Medium — \\mdseries"
+
+#: ../src/liblatexila/latexila-latex-commands.c:163
+msgid "Bold — \\bfseries"
+msgstr "Kalın — \\bfseries"
+
+#: ../src/liblatexila/latexila-latex-commands.c:166
+msgid "Upright — \\upshape"
+msgstr "Dik — \\upshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:168
+msgid "Italic — \\itshape"
+msgstr "Yatık — \\itshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:170
+msgid "Slanted — \\slshape"
+msgstr "Eğimli — \\slshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:172
+msgid "Small Capitals — \\scshape"
+msgstr "Küçültülmüş Büyük Harfler — \\scshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:177
+msgid "Tabbing — \\begin{tabbing}"
+msgstr "Sekmeler — \\begin{tabbing}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:179
+msgid "Tabular — \\begin{tabular}"
+msgstr "Tablo — \\begin{tabular}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:181
+msgid "Multicolumn — \\multicolumn"
+msgstr "Çoklu sütun — \\multicolumn"
+
+#: ../src/liblatexila/latexila-latex-commands.c:183
+msgid "Horizontal line — \\hline"
+msgstr "Yatay çizgi — \\hline"
+
+#: ../src/liblatexila/latexila-latex-commands.c:185
+msgid "Vertical line — \\vline"
+msgstr "Düşey çizgi — \\vline"
+
+#: ../src/liblatexila/latexila-latex-commands.c:187
+msgid "Horizontal line (columns specified) — \\cline"
+msgstr "Dikey çizgi (sütunlar belirtilmiş) — \\cline"
+
+#: ../src/liblatexila/latexila-latex-commands.c:192
+msgid "Frame — \\begin{frame}"
+msgstr "Çerçeve — \\begin{frame}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:194
+msgid "Block — \\begin{block}"
+msgstr "Blok — \\begin{block}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:196
+msgid "Two columns — \\begin{columns}"
+msgstr "İki sütun — \\begin{columns}"
+
+#. LaTeX: Spacing
+#: ../src/liblatexila/latexila-latex-commands.c:200
+msgid "New _Line"
+msgstr "Yeni _Satır"
+
+#: ../src/liblatexila/latexila-latex-commands.c:201
+msgid "New Line — \\\\"
+msgstr "Yeni Satır — \\\\"
+
+#: ../src/liblatexila/latexila-latex-commands.c:203
+msgid "New page — \\newpage"
+msgstr "Yeni sayfa — \\newpage"
+
+#: ../src/liblatexila/latexila-latex-commands.c:205
+msgid "Line break — \\linebreak"
+msgstr "Satır sonu — \\linebreak"
+
+#: ../src/liblatexila/latexila-latex-commands.c:207
+msgid "Page break — \\pagebreak"
+msgstr "Sayfa sonu — \\pagebreak"
+
+#: ../src/liblatexila/latexila-latex-commands.c:209
+msgid "Big skip — \\bigskip"
+msgstr "Büyük atlama — \\bigskip"
+
+#: ../src/liblatexila/latexila-latex-commands.c:211
+msgid "Medium skip — \\medskip"
+msgstr "Orta atlama — \\medskip"
+
+#: ../src/liblatexila/latexila-latex-commands.c:213
+msgid "Horizontal space — \\hspace"
+msgstr "Yatay boşluk — \\hspace"
+
+#: ../src/liblatexila/latexila-latex-commands.c:215
+msgid "Vertical space — \\vspace"
+msgstr "Düşey boşluk — \\vspace"
+
+#: ../src/liblatexila/latexila-latex-commands.c:217
+msgid "No paragraph indentation — \\noindent"
+msgstr "Paragraf girdisi yok — \\noindent"
+
+#. LaTeX: International accents
+#: ../src/liblatexila/latexila-latex-commands.c:221
+msgid "Acute accent — \\'"
+msgstr "Vurgu imi — \\'"
+
+#: ../src/liblatexila/latexila-latex-commands.c:222
+msgid "Grave accent — \\`"
+msgstr "Aksan imi — \\`"
+
+#: ../src/liblatexila/latexila-latex-commands.c:223
+msgid "Circumflex accent — \\^"
+msgstr "Düzeltme imi — \\^"
+
+#: ../src/liblatexila/latexila-latex-commands.c:224
+msgid "Trema — \\\""
+msgstr "Çiftnokta imi — \\\""
+
+#: ../src/liblatexila/latexila-latex-commands.c:225
+msgid "Tilde — \\~"
+msgstr "Dalga imi — \\~"
+
+#: ../src/liblatexila/latexila-latex-commands.c:226
+msgid "Macron — \\="
+msgstr "Uzatma imi — \\="
+
+#: ../src/liblatexila/latexila-latex-commands.c:227
+msgid "Dot above — \\."
+msgstr "Üstte nokta — \\."
+
+#: ../src/liblatexila/latexila-latex-commands.c:228
+msgid "Caron — \\v"
+msgstr "Yumuşatma imi — \\v"
+
+#: ../src/liblatexila/latexila-latex-commands.c:229
+msgid "Breve — \\u"
+msgstr "Kısaltma imi — \\u"
+
+#: ../src/liblatexila/latexila-latex-commands.c:231
+msgid "Double acute accent — \\H"
+msgstr "Çift vurgu imi — \\H"
+
+#: ../src/liblatexila/latexila-latex-commands.c:232
+msgid "Cedilla — \\c"
+msgstr "Çengel — \\c"
+
+#: ../src/liblatexila/latexila-latex-commands.c:233
+msgid "Ogonek — \\k"
+msgstr "Kanca — \\k"
+
+#: ../src/liblatexila/latexila-latex-commands.c:234
+msgid "Dot below — \\d"
+msgstr "Altta nokta — \\d"
+
+#: ../src/liblatexila/latexila-latex-commands.c:235
+msgid "Macron below — \\b"
+msgstr "Altta uzatma imi — \\b"
+
+#: ../src/liblatexila/latexila-latex-commands.c:236
+msgid "Ring — \\r"
+msgstr "Halka — \\r"
+
+#: ../src/liblatexila/latexila-latex-commands.c:237
+msgid "Tie — \\t"
+msgstr "Bağ imi — \\t"
+
+#: ../src/liblatexila/latexila-latex-commands.c:242
+msgid "Document class — \\documentclass"
+msgstr "Belge sınıfı — \\documentclass"
+
+#: ../src/liblatexila/latexila-latex-commands.c:244
+msgid "Use package — \\usepackage"
+msgstr "Paket kullan — \\usepackage"
+
+#: ../src/liblatexila/latexila-latex-commands.c:245
+msgid "_AMS packages"
+msgstr "_AMS paketleri"
+
+#: ../src/liblatexila/latexila-latex-commands.c:246
+msgid "AMS packages"
+msgstr "AMS paketleri"
+
+#: ../src/liblatexila/latexila-latex-commands.c:247
+msgid "Author — \\author"
+msgstr "Yazar — \\author"
+
+#: ../src/liblatexila/latexila-latex-commands.c:248
+msgid "Title — \\title"
+msgstr "Başlık — \\title"
+
+#: ../src/liblatexila/latexila-latex-commands.c:250
+msgid "Content of the document — \\begin{document}"
+msgstr "Belgenin içeriği — \\begin{document}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:252
+msgid "Make title — \\maketitle"
+msgstr "Başlık oluştur — \\maketitle"
+
+#: ../src/liblatexila/latexila-latex-commands.c:254
+msgid "Table of contents — \\tableofcontents"
+msgstr "İçindekiler — \\tableofcontents"
+
+#: ../src/liblatexila/latexila-latex-commands.c:256
+msgid "Abstract — \\begin{abstract}"
+msgstr "Özet — \\begin{abstract}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:258
+msgid "Include an image (graphicx package) — \\includegraphics"
+msgstr "Görüntü içer (graphicx paketi) — \\includegraphics"
+
+#: ../src/liblatexila/latexila-latex-commands.c:260
+msgid "Include a file — \\input"
+msgstr "Dosya içer — \\input"
+
+#. Math Environments
+#: ../src/liblatexila/latexila-latex-commands.c:264
+msgid "_Mathematical Environment — $…$"
+msgstr "_Matematiksel Ortam — $…$"
+
+#: ../src/liblatexila/latexila-latex-commands.c:265
+msgid "Mathematical Environment — $…$"
+msgstr "Matematiksel Ortam — $…$"
+
+#: ../src/liblatexila/latexila-latex-commands.c:266
+msgid "_Centered Formula — \\[…\\]"
+msgstr "_Ortalanmış Formül — \\[…\\]"
+
+#: ../src/liblatexila/latexila-latex-commands.c:267
+msgid "Centered Formula — \\[…\\]"
+msgstr "Ortalanmış Formül — \\[…\\]"
+
+#: ../src/liblatexila/latexila-latex-commands.c:269
+msgid "_Numbered Equation — \\begin{equation}"
+msgstr "_Numaralandırılmış Denklem — \\begin{equation}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:270
+msgid "Numbered Equation — \\begin{equation}"
+msgstr "Numaralandırılmış Denklem — \\begin{equation}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:271
+msgid "_Array of Equations — \\begin{align*}"
+msgstr "_Denklemlerin Dizisi — \\begin{align*}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:272
+msgid "Array of Equations — \\begin{align*}"
+msgstr "Denklemlerin Dizisi — \\begin{align*}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:274
+msgid "Numbered Array of _Equations — \\begin{align}"
+msgstr "Denklemlerin Numaralandırılmış _Dizisi — \\begin{align}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:275
+msgid "Numbered Array of Equations — \\begin{align}"
+msgstr "Denklemlerin Numaralandırılmış Dizisi — \\begin{align}"
+
+#. Math misc
+#: ../src/liblatexila/latexila-latex-commands.c:279
+msgid "_Superscript — ^{}"
+msgstr "_Üstsimge — ^{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:280
+msgid "Superscript — ^{}"
+msgstr "Üstsimge — ^{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:281
+msgid "Su_bscript — __{}"
+msgstr "Ü_stsimge — __{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:282
+msgid "Subscript — _{}"
+msgstr "Üstsimge — _{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:283
+msgid "_Fraction — \\frac{}{}"
+msgstr "_Kesir — \\frac{}{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:284
+msgid "Fraction — \\frac{}{}"
+msgstr "Kesir — \\frac{}{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:285
+msgid "Square _Root — \\sqrt{}"
+msgstr "Kare _Kök — \\sqrt{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:286
+msgid "Square Root — \\sqrt{}"
+msgstr "Kare Kök — \\sqrt{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:287
+msgid "_N-th Root — \\sqrt[]{}"
+msgstr "_N Kök — \\sqrt[]{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:288
+msgid "N-th Root — \\sqrt[]{}"
+msgstr "N Kök — \\sqrt[]{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:326
+msgid "Roman — \\mathrm"
+msgstr "Roman — \\mathrm"
+
+#: ../src/liblatexila/latexila-latex-commands.c:328
+msgid "Italic — \\mathit"
+msgstr "Yatık — \\mathit"
+
+#: ../src/liblatexila/latexila-latex-commands.c:330
+msgid "Bold — \\mathbf"
+msgstr "Kalın — \\mathbf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:332
+msgid "Sans Serif — \\mathsf"
+msgstr "Sans Serif — \\mathsf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:334
+msgid "Typewriter — \\mathtt"
+msgstr "Daktilo — \\mathtt"
+
+#: ../src/liblatexila/latexila-latex-commands.c:336
+msgid "Calligraphic — \\mathcal"
+msgstr "Kaligrafi — \\mathcal"
+
+#: ../src/liblatexila/latexila-latex-commands.c:338
+msgid "Blackboard (uppercase only) — \\mathbb (amsfonts package)"
+msgstr "Kara Tahta (yalnızca büyük harf) — \\mathbb (amsfonts paketi)"
+
+#: ../src/liblatexila/latexila-latex-commands.c:340
+msgid "Euler Fraktur — \\mathfrak (amsfonts package)"
+msgstr "Euler Fraktur — \\mathfrak (amsfonts paketi)"
+
+#. Math Spaces
+#: ../src/liblatexila/latexila-latex-commands.c:358
+msgid "_Small"
+msgstr "_Küçük"
+
+#: ../src/liblatexila/latexila-latex-commands.c:358
+msgid "Small — \\,"
+msgstr "Küçük — \\,"
+
+#: ../src/liblatexila/latexila-latex-commands.c:359
+msgid "_Medium"
+msgstr "_Orta"
+
+#: ../src/liblatexila/latexila-latex-commands.c:359
+msgid "Medium — \\:"
+msgstr "Orta — \\:"
+
+#: ../src/liblatexila/latexila-latex-commands.c:360
+msgid "_Large"
+msgstr "_Büyük"
+
+#: ../src/liblatexila/latexila-latex-commands.c:360
+msgid "Large — \\;"
+msgstr "Büyük — \\;"
+
+#. Math: Left Delimiters
+#: ../src/liblatexila/latexila-latex-commands.c:366
+msgid "left ("
+msgstr "sol ("
+
+#: ../src/liblatexila/latexila-latex-commands.c:367
+msgid "left ["
+msgstr "sol ["
+
+#: ../src/liblatexila/latexila-latex-commands.c:368
+msgid "left { "
+msgstr "sol { "
+
+#: ../src/liblatexila/latexila-latex-commands.c:369
+msgid "left <"
+msgstr "sol <"
+
+#: ../src/liblatexila/latexila-latex-commands.c:370
+msgid "left )"
+msgstr "sol )"
+
+#: ../src/liblatexila/latexila-latex-commands.c:371
+msgid "left ]"
+msgstr "sol ]"
+
+#: ../src/liblatexila/latexila-latex-commands.c:372
+msgid "left  }"
+msgstr "sol  }"
+
+#: ../src/liblatexila/latexila-latex-commands.c:373
+msgid "left >"
+msgstr "sol >"
+
+#: ../src/liblatexila/latexila-latex-commands.c:374
+msgid "left ."
+msgstr "sol ."
+
+#. Math: Right Delimiters
+#: ../src/liblatexila/latexila-latex-commands.c:378
+msgid "right )"
+msgstr "sağ )"
+
+#: ../src/liblatexila/latexila-latex-commands.c:379
+msgid "right ]"
+msgstr "sağ ]"
+
+#: ../src/liblatexila/latexila-latex-commands.c:380
+msgid "right  }"
+msgstr "sağ  }"
+
+#: ../src/liblatexila/latexila-latex-commands.c:381
+msgid "right >"
+msgstr "sağ >"
+
+#: ../src/liblatexila/latexila-latex-commands.c:382
+msgid "right ("
+msgstr "sağ ("
+
+#: ../src/liblatexila/latexila-latex-commands.c:383
+msgid "right ["
+msgstr "sağ ["
+
+#: ../src/liblatexila/latexila-latex-commands.c:384
+msgid "right { "
+msgstr "sağ { "
+
+#: ../src/liblatexila/latexila-latex-commands.c:385
+msgid "right <"
+msgstr "sağ <"
+
+#: ../src/liblatexila/latexila-latex-commands.c:386
+msgid "right ."
+msgstr "sağ ."
+
+#: ../src/liblatexila/latexila-synctex.c:195
 msgid "Impossible to do the forward search."
 msgstr "İleri doğru arama yapmak imkansız."
 
-#: ../src/liblatexila/latexila-synctex.c:526
+#: ../src/liblatexila/latexila-synctex.c:540
 msgid "Can not communicate with evince."
 msgstr "Evince ile iletişim kurulamıyor."
 
-#: ../src/liblatexila/latexila-synctex.c:556
-#, c-format
-msgid "The file \"%s\" doesn't exist."
-msgstr "\"%s\" dosyası mevcut değil."
+#: ../src/liblatexila/latexila-synctex.c:604
+msgid "The PDF file doesn’t exist."
+msgstr "PDF dosyası yok."
 
-#: ../src/liblatexila/latexila-synctex.c:590
-msgid "The PDF file doesn't exist."
-msgstr "PDF dosyası mevcut değil."
-
-#: ../src/liblatexila/latexila-synctex.c:641
+#: ../src/liblatexila/latexila-synctex.c:655
 msgid "The document is not saved."
 msgstr "Belge kaydedilmemiş."
 
@@ -1706,34 +1648,30 @@ msgid "Presentation"
 msgstr "Sunum"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:50
-#, fuzzy
-#| msgid "Default templates"
 msgid "Default Templates"
-msgstr "Varsayılan şablonlar"
+msgstr "Öntanımlı Şablonlar"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:62
-#, fuzzy
-#| msgid "Personal templates"
 msgid "Personal Templates"
-msgstr "Kişisel şablonlar"
+msgstr "Kişisel Şablonlar"
 
-#: ../src/liblatexila/latexila-templates-dialogs.c:122
-msgid "New File..."
-msgstr "Yeni Dosya..."
+#: ../src/liblatexila/latexila-templates-dialogs.c:124
+msgid "New File…"
+msgstr "Yeni Dosya…"
 
-#: ../src/liblatexila/latexila-templates-dialogs.c:129
+#: ../src/liblatexila/latexila-templates-dialogs.c:131
 #: ../src/main_window_file.vala:32
 msgid "_New"
 msgstr "_Yeni"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:232
-msgid "New Template..."
-msgstr "Yeni Şablon..."
+msgid "New Template…"
+msgstr "Yeni Şablon…"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:239
 #: ../src/project_dialogs.vala:32
 msgid "Crea_te"
-msgstr ""
+msgstr "Oluş_tur"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:249
 msgid "Name of the new template"
@@ -1741,40 +1679,33 @@ msgstr "Yeni şablonun adı"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:267
 msgid "Choose an icon"
-msgstr "Bir simge seç"
+msgstr "Simge seç"
 
-#: ../src/liblatexila/latexila-templates-dialogs.c:332
-#, fuzzy
-#| msgid "Impossible to save the file."
+#: ../src/liblatexila/latexila-templates-dialogs.c:336
 msgid "Impossible to create the personal template."
-msgstr "Dosyanın kaydedilmesi imkansız."
+msgstr "Kişisel şablonu oluşturmak imkansız."
 
-#: ../src/liblatexila/latexila-templates-manage-dialog.c:141
-#, fuzzy, c-format
-#| msgid "Do you really want to delete these files?"
+#: ../src/liblatexila/latexila-templates-manage-dialog.c:143
+#, c-format
 msgid "Do you really want to delete the template “%s”?"
-msgstr "Bu dosyaları gerçekten silmek istiyor musunuz?"
+msgstr "Bu şablonları gerçekten silmek istiyor musunuz “%s”?"
 
-#: ../src/liblatexila/latexila-templates-manage-dialog.c:168
+#: ../src/liblatexila/latexila-templates-manage-dialog.c:170
 #, c-format
 msgid "Error when deleting the template “%s”."
-msgstr ""
+msgstr "“%s” şablonu silinirken hata oluştu."
 
-#: ../src/liblatexila/latexila-templates-manage-dialog.c:226
+#: ../src/liblatexila/latexila-templates-manage-dialog.c:230
 msgid "Error when moving the template."
-msgstr ""
+msgstr "Şablon taşınırken hata oluştu."
 
-#: ../src/liblatexila/latexila-templates-manage-dialog.c:270
-#, fuzzy
-#| msgid "_Delete"
+#: ../src/liblatexila/latexila-templates-manage-dialog.c:274
 msgid "Delete"
-msgstr "_Sil"
+msgstr "Sil"
 
-#: ../src/liblatexila/latexila-templates-manage-dialog.c:362
-#, fuzzy
-#| msgid "Personal templates"
+#: ../src/liblatexila/latexila-templates-manage-dialog.c:366
 msgid "Manage Personal Templates"
-msgstr "Kişisel şablonlar"
+msgstr "Kişisel Şablonları Yönet"
 
 #: ../src/main_window_build_tools.vala:28
 msgid "_Build"
@@ -1804,7 +1735,7 @@ msgstr "_Günlüğü Görüntüle"
 msgid "View Log"
 msgstr "Günlüğü Görüntüle"
 
-#: ../src/main_window_build_tools.vala:40 ../src/ui/menus.ui.h:3
+#: ../src/main_window_build_tools.vala:40
 msgid "_Manage Build Tools"
 msgstr "İnşa Araçlarını _Yönet"
 
@@ -1878,7 +1809,7 @@ msgstr "Yeni Pencereye _Taşı"
 
 #: ../src/main_window_documents.vala:45
 msgid "Move the current document to a new window"
-msgstr "Mevcut belgeyi yeni bir pencereye taşı"
+msgstr "Geçerli belgeyi yeni pencereye taşı"
 
 #: ../src/main_window_edit.vala:30
 msgid "_Edit"
@@ -1942,40 +1873,36 @@ msgstr "Tüm belgeyi seç"
 
 #: ../src/main_window_edit.vala:57
 msgid "_Indent"
-msgstr ""
+msgstr "_Girinti"
 
 #: ../src/main_window_edit.vala:58
-#, fuzzy
-#| msgid "Delete the selected text"
 msgid "Indent the selected lines"
-msgstr "Seçili metni sil"
+msgstr "Seçili çizgileri girintile"
 
 #: ../src/main_window_edit.vala:60
 msgid "_Unindent"
-msgstr ""
+msgstr "_Girintisiz"
 
 #: ../src/main_window_edit.vala:61
-#, fuzzy
-#| msgid "Delete the selected text"
 msgid "Unindent the selected lines"
-msgstr "Seçili metni sil"
+msgstr "Seçili çizgilerin girintisini geri al"
 
 #: ../src/main_window_edit.vala:63 ../src/main_window_structure.vala:44
 msgid "_Comment"
 msgstr "_Yorum Satırı Yap"
 
 #: ../src/main_window_edit.vala:64
-msgid "Comment the selected lines (add the character \"%\")"
-msgstr "Seçili satırları yorum satırı yap (\"%\" karakterini ekler)"
+msgid "Comment the selected lines (add the character “%”)"
+msgstr "Seçili satırları yorum satırı yap (“%” karakterini ekler)"
 
 #: ../src/main_window_edit.vala:67
 msgid "_Uncomment"
 msgstr "_Yorum Satırını Kaldır"
 
 #: ../src/main_window_edit.vala:68
-msgid "Uncomment the selected lines (remove the character \"%\")"
+msgid "Uncomment the selected lines (remove the character “%”)"
 msgstr ""
-"Seçili satırlardaki yorum satırlarını kaldırır (\"%s\" karakterini kaldırır)"
+"Seçili satırlardaki yorum satırlarını kaldırır (“%” karakterini kaldırır)"
 
 #: ../src/main_window_edit.vala:71
 msgid "_Completion"
@@ -1985,7 +1912,7 @@ msgstr "_Tamamlama"
 msgid "Complete the LaTeX command"
 msgstr "LaTeX komutunu tamamla"
 
-#: ../src/main_window_edit.vala:74 ../src/ui/menus.ui.h:2
+#: ../src/main_window_edit.vala:74
 msgid "_Preferences"
 msgstr "_Tercihler"
 
@@ -2007,43 +1934,39 @@ msgstr "Yeni _Pencere"
 
 #: ../src/main_window_file.vala:36
 msgid "Create a new window"
-msgstr "Yeni bir pencere oluştur"
+msgstr "Yeni pencere oluştur"
 
-#: ../src/main_window_file.vala:38 ../src/main_window_file.vala:154
+#: ../src/main_window_file.vala:38 ../src/main_window_file.vala:158
 msgid "_Open"
 msgstr "_Aç"
 
-#: ../src/main_window_file.vala:39 ../src/main_window_file.vala:86
+#: ../src/main_window_file.vala:39 ../src/main_window_file.vala:90
 msgid "Open a file"
-msgstr "Bir dosya aç"
+msgstr "Dosya aç"
 
 #: ../src/main_window_file.vala:42
 msgid "Save the current file"
-msgstr "Mevcut dosyayı kaydet"
+msgstr "Geçerli dosyayı kaydet"
 
 #: ../src/main_window_file.vala:45
 msgid "Save the current file with a different name"
-msgstr "Mevcut dosyayı farklı bir isimle kaydet"
+msgstr "Geçerli dosyayı başka adla kaydet"
 
 #: ../src/main_window_file.vala:47
-msgid "Create _Template From Document..."
-msgstr "Belgeden _Şablon Oluştur..."
+msgid "Create _Template From Document…"
+msgstr "Belgeden _Şablon Oluştur…"
 
 #: ../src/main_window_file.vala:48
 msgid "Create a new template from the current document"
-msgstr "Mevcut dosyayı kullanarak yeni bir şablon oluştur"
+msgstr "Geçerli dosyayı kullanarak yeni şablon oluştur"
 
 #: ../src/main_window_file.vala:50
-#, fuzzy
-#| msgid "Personal templates"
-msgid "_Manage Personal Templates..."
-msgstr "Kişisel şablonlar"
+msgid "_Manage Personal Templates…"
+msgstr "Kişisel Şablonları _Yönet…"
 
 #: ../src/main_window_file.vala:51
-#, fuzzy
-#| msgid "Your personal templates"
 msgid "Manage personal templates"
-msgstr "Kişisel şablonlarınız"
+msgstr "Kişisel şablonları yönet"
 
 #: ../src/main_window_file.vala:53
 msgid "_Close"
@@ -2051,7 +1974,7 @@ msgstr "_Kapat"
 
 #: ../src/main_window_file.vala:54
 msgid "Close the current file"
-msgstr "Mevcut dosyayı kapat"
+msgstr "Geçerli dosyayı kapat"
 
 #. recent documents
 #: ../src/main_window_file.vala:69
@@ -2062,21 +1985,21 @@ msgstr "Son _Kullanılanı Aç"
 msgid "Open recently used files"
 msgstr "Son kullanılan dosyaları aç"
 
-#: ../src/main_window_file.vala:87
+#: ../src/main_window_file.vala:91
 msgid "Open a recently used file"
-msgstr "Son kullanılan bir dosyayı aç"
+msgstr "Son kullanılan dosyayı aç"
 
-#: ../src/main_window_file.vala:150
+#: ../src/main_window_file.vala:154
 msgid "Open Files"
 msgstr "Dosyaları Aç"
 
 #. Filter: by default show only .tex and .bib files
-#: ../src/main_window_file.vala:173
+#: ../src/main_window_file.vala:177
 msgid "All LaTeX Files"
 msgstr "Tüm LaTeX Dosyaları"
 
 #. All files filter
-#: ../src/main_window_file.vala:180
+#: ../src/main_window_file.vala:184
 msgid "All Files"
 msgstr "Tüm Dosyalar"
 
@@ -2086,15 +2009,15 @@ msgstr "_Yapı"
 
 #: ../src/main_window_structure.vala:33
 msgid "Cut the selected structure item"
-msgstr "Seçili yapı öğesini kes"
+msgstr "Seçili yapı ögesini kes"
 
 #: ../src/main_window_structure.vala:36
 msgid "Copy the selected structure item"
-msgstr "Seçili yapı öğesini kopyala"
+msgstr "Seçili yapı ögesini kopyala"
 
 #: ../src/main_window_structure.vala:39
 msgid "Delete the selected structure item"
-msgstr "Seçili yapı öğesini sil"
+msgstr "Seçili yapı ögesini sil"
 
 #: ../src/main_window_structure.vala:41
 msgid "_Select"
@@ -2102,11 +2025,11 @@ msgstr "_Seç"
 
 #: ../src/main_window_structure.vala:42
 msgid "Select the contents of the selected structure item"
-msgstr "Seçili yapı öğesinin içeriğini seç"
+msgstr "Seçili yapı ögesinin içeriğini seç"
 
 #: ../src/main_window_structure.vala:45
 msgid "Comment the selected structure item"
-msgstr "Seçili yapı öğesini yorumla"
+msgstr "Seçili yapı ögesini yorumla"
 
 #: ../src/main_window_structure.vala:47
 msgid "Shift _Left"
@@ -2114,7 +2037,7 @@ msgstr "_Sola Kaydır"
 
 #: ../src/main_window_structure.vala:48
 msgid "Shift the selected structure item to the left (e.g. section → chapter)"
-msgstr "Seçili yapı öğesini sola kaydır (örn. kısım → bölüm)"
+msgstr "Seçili yapı ögesini sola kaydır (örn. kısım → bölüm)"
 
 #: ../src/main_window_structure.vala:51
 msgid "Shift _Right"
@@ -2122,7 +2045,7 @@ msgstr "_Sağa Kaydır"
 
 #: ../src/main_window_structure.vala:52
 msgid "Shift the selected structure item to the right (e.g. chapter → section)"
-msgstr "Seçili yapı öğesini sağa kaydır (örn. bölüm → kısım)"
+msgstr "Seçili yapı ögesini sağa kaydır (örn. bölüm → kısım)"
 
 #: ../src/main_window_structure.vala:55
 msgid "_Open File"
@@ -2130,9 +2053,37 @@ msgstr "Dosya _Aç"
 
 #: ../src/main_window_structure.vala:56
 msgid "Open the file referenced by the selected structure item"
-msgstr "Seçili yapı öğesi tarafından başvurulan dosyayı aç"
+msgstr "Seçili yapı ögesi tarafından başvurulan dosyayı aç"
 
-#: ../src/main_window.vala:28 ../src/ui/menus.ui.h:6
+#: ../src/main_window_tools.vala:28
+msgid "_Tools"
+msgstr "_Araçlar"
+
+#: ../src/main_window_tools.vala:29
+msgid "_Check Spelling…"
+msgstr "Yazım _Denetimi…"
+
+#: ../src/main_window_tools.vala:30
+msgid "Check the spelling of the current document"
+msgstr "Geçerli belgenin yazımını denetleyin"
+
+#: ../src/main_window_tools.vala:31
+msgid "_Set Language…"
+msgstr "Dili _Ayarla…"
+
+#: ../src/main_window_tools.vala:32
+msgid "Set the language used for the spell-checking for the current document"
+msgstr "Geçerli belgenin yazım denetimi için kullanılan dili ayarlayın"
+
+#: ../src/main_window_tools.vala:38
+msgid "_Highlight Misspelled Words"
+msgstr "Yanlış Yazılmış Sözcükleri _Vurgula"
+
+#: ../src/main_window_tools.vala:39
+msgid "Highlight misspelled words in the current document"
+msgstr "Geçerli belgede yanlış yazılmış sözcükleri vurgulayın"
+
+#: ../src/main_window.vala:28
 msgid "_Quit"
 msgstr "_Çık"
 
@@ -2191,145 +2142,122 @@ msgid "Search for and replace text"
 msgstr "Metin ara ve değiştir"
 
 #: ../src/main_window.vala:46
-msgid "_Go to Line..."
-msgstr "Satıra _Git..."
+msgid "_Go to Line…"
+msgstr "Satıra _Git…"
 
 #: ../src/main_window.vala:47
 msgid "Go to a specific line"
-msgstr "Belirtilen bir satıra git"
+msgstr "Belirtilen satıra git"
 
 #: ../src/main_window.vala:48
-msgid "_Search Forward"
-msgstr "İleri Doğru _Ara"
+msgid "_Jump to PDF"
+msgstr "PDF’ye _Atla"
 
 #: ../src/main_window.vala:49
-msgid "Jump to the associated position in the PDF file"
-msgstr "PDF dosyasında ilişkili konuma sıçra"
+msgid ""
+"Jump to the associated position in the PDF file. Another shortcut: Ctrl"
+"+click, which works in both directions."
+msgstr ""
+"PDF dosyasındaki ilişkili konuma geçin. Başka kısayol: CTRL+tıklama, her iki "
+"yönde de çalışır."
 
 #. Projects
-#: ../src/main_window.vala:52
+#: ../src/main_window.vala:53
 msgid "_Projects"
 msgstr "_Projeler"
 
-#: ../src/main_window.vala:53
+#: ../src/main_window.vala:54
 msgid "_New Project"
 msgstr "_Yeni Proje"
 
-#: ../src/main_window.vala:54
-msgid "Create a new project"
-msgstr "Yeni bir proje oluştur"
-
 #: ../src/main_window.vala:55
-msgid "_Configure Current Project"
-msgstr "Mevcut Projeyi _Yapılandır"
+msgid "Create a new project"
+msgstr "Yeni proje oluştur"
 
 #: ../src/main_window.vala:56
-msgid "Change the main file of the current project"
-msgstr "Mevcut projenin ana dosyasını değiştir"
+msgid "_Configure Current Project"
+msgstr "Geçerli Projeyi _Yapılandır"
 
-#: ../src/main_window.vala:58
+#: ../src/main_window.vala:57
+msgid "Change the main file of the current project"
+msgstr "Geçerli projenin ana dosyasını değiştir"
+
+#: ../src/main_window.vala:59
 msgid "_Manage Projects"
 msgstr "Projeleri _Yönet"
 
-#: ../src/main_window.vala:59 ../src/project_dialogs.vala:187
+#: ../src/main_window.vala:60 ../src/project_dialogs.vala:187
 msgid "Manage Projects"
 msgstr "Projeleri Yönet"
 
-#: ../src/main_window.vala:63
+#: ../src/main_window.vala:64
 msgid "_Contents"
 msgstr "_İçerik"
 
-#: ../src/main_window.vala:64
-msgid "Open the LaTeXila documentation"
-msgstr "LaTeXila belgelendirmesini aç"
-
 #: ../src/main_window.vala:65
+msgid "Open the GNOME LaTeX documentation"
+msgstr "GNOME LaTeX belgelendirmesini aç"
+
+#: ../src/main_window.vala:66
 msgid "_LaTeX Reference"
 msgstr "_LaTeX Kaynağı"
 
-#: ../src/main_window.vala:66
+#: ../src/main_window.vala:67
 msgid "The Kile LaTeX Reference"
 msgstr "Kile LaTeX Kaynağı"
 
-#: ../src/main_window.vala:67 ../src/ui/menus.ui.h:5
+#: ../src/main_window.vala:68
 msgid "_About"
 msgstr "_Hakkında"
 
-#: ../src/main_window.vala:73
+#: ../src/main_window.vala:74
 msgid "_Main Toolbar"
 msgstr "_Ana Araç Çubuğu"
 
-#: ../src/main_window.vala:74
+#: ../src/main_window.vala:75
 msgid "Show or hide the main toolbar"
 msgstr "Ana araç çubuğunu göster veya gizle"
 
 #. Translators: "Edit" here is an adjective.
-#: ../src/main_window.vala:76
+#: ../src/main_window.vala:77
 msgid "_Edit Toolbar"
 msgstr "Araç Çubuğunu _Düzenle"
 
-#: ../src/main_window.vala:77
+#: ../src/main_window.vala:78
 msgid "Show or hide the edit toolbar"
 msgstr "Düzenleme araç çubuğunu gizle veya göster"
 
-#: ../src/main_window.vala:78
+#: ../src/main_window.vala:79
 msgid "_Side panel"
 msgstr "_Yan pano"
 
-#: ../src/main_window.vala:79
+#: ../src/main_window.vala:80
 msgid "Show or hide the side panel"
 msgstr "Yan panoyu göster veya gizle"
 
-#: ../src/main_window.vala:80
+#: ../src/main_window.vala:81
 msgid "_Bottom panel"
 msgstr "_Alt pano"
 
-#: ../src/main_window.vala:81
+#: ../src/main_window.vala:82
 msgid "Show or hide the bottom panel"
 msgstr "Alt panoyu göster veya gizle"
 
 #. Symbols
-#: ../src/main_window.vala:402
+#: ../src/main_window.vala:439
 msgid "Symbols"
-msgstr "Semboller"
+msgstr "Simgeler"
 
-#: ../src/main_window.vala:411
+#: ../src/main_window.vala:449
 msgid "Structure"
 msgstr "Yapı"
 
-#: ../src/main_window.vala:645
+#: ../src/main_window.vala:744
 #, c-format
-msgid "This file (%s) is already opened in another LaTeXila window."
-msgstr "Dosya (%s) başka bir LaTeXila penceresinde zaten açık."
+msgid "Save changes to document “%s” before closing?"
+msgstr "Kapatmadan önce “%s” belgesindeki değişiklikleri kaydedilsin mi?"
 
-#: ../src/main_window.vala:647
-msgid ""
-"LaTeXila opened this instance of the file in a non-editable way. Do you want "
-"to edit it anyway?"
-msgstr ""
-"LaTeXila, dosyayının bu oturumunu düzenlenemeyecek bir yolla açtı. Yine de "
-"dosyayı düzenlemek istiyor musunuz?"
-
-#: ../src/main_window.vala:650
-msgid "Edit Anyway"
-msgstr "Yine de Düzenle"
-
-#: ../src/main_window.vala:651
-msgid "Don't Edit"
-msgstr "Düzenleme"
-
-#: ../src/main_window.vala:753
-#, c-format
-msgid "Save changes to document \"%s\" before closing?"
-msgstr ""
-"Kapatmadan önce \"%s\" belgesinde yaptığınız değişiklikleri kaydetmek ister "
-"misiniz?"
-
-#: ../src/main_window.vala:833
-msgid "Read-Only"
-msgstr "Salt Okunur"
-
-#: ../src/main_window.vala:851
+#: ../src/main_window.vala:803
 msgid "Save File"
 msgstr "Dosyayı Kaydet"
 
@@ -2350,19 +2278,17 @@ msgstr "Tüm tercihleri sıfırla"
 msgid "Do you really want to reset all preferences?"
 msgstr "Tüm tercihleri sıfırlamak istediğinize emin misiniz?"
 
-#: ../src/preferences_dialog.vala:189
+#: ../src/preferences_dialog.vala:191
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "dakika"
-msgstr[1] ""
 
-#: ../src/preferences_dialog.vala:289
+#: ../src/preferences_dialog.vala:253
 msgid "character"
 msgid_plural "characters"
 msgstr[0] "karakter"
-msgstr[1] "karakterler"
 
-#: ../src/preferences_dialog.vala:344
+#: ../src/preferences_dialog.vala:296
 #, c-format
 msgid "Use the system fixed width font (%s)"
 msgstr "Sistem sabit genişlikli yazı tipini (%s) kullan"
@@ -2377,10 +2303,17 @@ msgstr "Yeni Proje"
 msgid "Directory"
 msgstr "Dizin"
 
+#. main file
+#: ../src/project_dialogs.vala:46 ../src/project_dialogs.vala:48
+#: ../src/project_dialogs.vala:142 ../src/project_dialogs.vala:144
+#: ../src/project_dialogs.vala:217
+msgid "Main File"
+msgstr "Ana Dosya"
+
 #: ../src/project_dialogs.vala:102
 #, c-format
-msgid "There is a conflict with the project \"%s\"."
-msgstr "\"%s\" projesiyle bir çakışma var."
+msgid "There is a conflict with the project “%s”."
+msgstr "“%s” projesiyle çakışma var."
 
 #: ../src/project_dialogs.vala:119
 msgid "Configure Project"
@@ -2400,8 +2333,8 @@ msgstr "_Tümünü Temizle"
 
 #: ../src/project_dialogs.vala:273
 #, c-format
-msgid "Do you really want to delete the project \"%s\"?"
-msgstr "\"%s\" projesini gerçekten sıfırlamak istiyor musunuz?"
+msgid "Do you really want to delete the project “%s”?"
+msgstr "“%s” projesini gerçekten silmek istiyor musunuz?"
 
 #: ../src/project_dialogs.vala:294
 msgid "Do you really want to clear all projects?"
@@ -2436,43 +2369,40 @@ msgstr "Değiştir"
 msgid "Replace All"
 msgstr "Tümünü Değiştir"
 
-#: ../src/search.vala:195
+#: ../src/search.vala:196
 msgid "All"
 msgstr "Hepsi"
 
-#: ../src/search.vala:309
+#: ../src/search.vala:292
 msgid "Search for"
 msgstr "Ara"
 
-#: ../src/search.vala:320
+#: ../src/search.vala:303
 msgid "Case sensitive"
 msgstr "Büyük küçük haf duyarlı"
 
-#: ../src/search.vala:323
+#: ../src/search.vala:306
 msgid "Entire words only"
-msgstr "Sadece tüm kelimeler"
+msgstr "Yalnızca tüm sözcükler"
 
-#: ../src/search.vala:469
+#: ../src/search.vala:455
 msgid "Not found"
 msgstr "Bulunamadı"
 
 #. Translators: the first %d is the position of the current search occurrence,
 #. * and the second %d is the total number of search occurrences.
 #.
-#: ../src/search.vala:486
+#: ../src/search.vala:472
 #, c-format
 msgid "Match %d of %d"
 msgstr "Eşleşme %d, toplam %d"
 
 #. Translators: %d is the total number of search occurrences.
-#: ../src/search.vala:491
-#, fuzzy, c-format
-#| msgid "%d match"
-#| msgid_plural "%d matches"
+#: ../src/search.vala:477
+#, c-format
 msgid "%d match"
 msgid_plural "%d matches"
 msgstr[0] "%d eşleşme"
-msgstr[1] ""
 
 #: ../src/structure.vala:164
 msgid "Refresh"
@@ -2569,7 +2499,7 @@ msgstr "Eklenmiş dosya"
 
 #: ../src/symbols.vala:59
 msgid "Greek"
-msgstr "Yünan"
+msgstr "Yunan"
 
 #: ../src/symbols.vala:60
 msgid "Arrows"
@@ -2605,13 +2535,15 @@ msgstr "_Temizle"
 
 #: ../src/symbols_view.vala:159
 msgid "Clear most used symbols"
-msgstr ""
+msgstr "En çok kullanılan simgeleri temizle"
 
-#: ../src/ui/menus.ui.h:1
-#, fuzzy
-#| msgid "New _Window"
-msgid "_New Window"
-msgstr "Yeni _Pencere"
+#: ../src/tab_label.vala:48
+msgid "Project main file"
+msgstr "Proje ana dosyası"
+
+#: ../src/tab_label.vala:51
+msgid "Project main file:"
+msgstr "Proje ana dosyası:"
 
 #: ../src/ui/preferences_dialog.ui.h:1
 msgid "Display line numbers"
@@ -2631,7 +2563,7 @@ msgstr "Sekmeleri kullandığınızı unut"
 
 #: ../src/ui/preferences_dialog.ui.h:5
 msgid "Highlight current line"
-msgstr "Mevcut satırı vurgula"
+msgstr "Geçerli satırı vurgula"
 
 #: ../src/ui/preferences_dialog.ui.h:6
 msgid "Highlight matching brackets"
@@ -2643,7 +2575,7 @@ msgstr "Dosyaları kaydetmeden önce yedekleme kopyası oluştur"
 
 #: ../src/ui/preferences_dialog.ui.h:8
 msgid "Autosave files every"
-msgstr "Dosyaları otomatik kaydetme sıklığı"
+msgstr "Dosyaları kendiliğinden kaydetme sıklığı"
 
 #: ../src/ui/preferences_dialog.ui.h:10
 msgid "Editor"
@@ -2679,45 +2611,140 @@ msgid "Interactive completion after"
 msgstr "Sonrasında etkileşimli tamamlama"
 
 #: ../src/ui/preferences_dialog.ui.h:19
-msgid "Number of characters after &apos;\\&apos;"
-msgstr "&apos;\\&apos; karakterinden sonra gelecek karakterlerin sayısı"
+msgid "Number of characters after “\\”"
+msgstr "“\\” karakterinden sonra gelecek karakterlerin sayısı"
 
 #: ../src/ui/preferences_dialog.ui.h:20
-msgid "Number of characters after '\\'"
-msgstr "'\\' karakterinden sonra gelecek karakterlerin sayısı"
-
-#: ../src/ui/preferences_dialog.ui.h:21
 msgid "File Clean-Up"
 msgstr "Dosya Temizle"
 
-#: ../src/ui/preferences_dialog.ui.h:23
+#: ../src/ui/preferences_dialog.ui.h:22
 msgid "Automatically clean-up files after close"
-msgstr "Kapattıktan sonra dosyaları otomatik olarak temizle."
+msgstr "Kapattıktan sonra dosyaları kendiliğinden temizle"
 
-#: ../src/ui/preferences_dialog.ui.h:24
+#: ../src/ui/preferences_dialog.ui.h:23
 msgid ""
-"The spell checking settings can also be changed on a file-by-file basis via "
+"The spell-checking settings can also be changed on a file-by-file basis via "
 "the Tools menu."
 msgstr ""
+"Yazım denetimi ayarları, Araçlar menüsü aracılığıyla dosyalar için ayrı ayrı "
+"değiştirilebilir."
+
+#: ../src/ui/preferences_dialog.ui.h:24
+msgid "Default Spell-Checking Settings"
+msgstr "Öntanımlı Yazım Denetimi Ayarları"
 
 #: ../src/ui/preferences_dialog.ui.h:25
-msgid "Default Spell Checking Settings"
-msgstr ""
+msgid "Language:"
+msgstr "Dil:"
 
 #: ../src/ui/preferences_dialog.ui.h:26
-msgid "Language:"
-msgstr ""
+msgid "Highlight misspelled words"
+msgstr "Yanlış yazılan sözcükleri vurgula"
 
 #: ../src/ui/preferences_dialog.ui.h:27
-msgid "Highlight misspelled words"
-msgstr ""
-
-#: ../src/ui/preferences_dialog.ui.h:28
 msgid "Other"
 msgstr "Diğer"
 
-#~ msgid "LaTeXila"
-#~ msgstr "LaTeXila"
+#~ msgid ""
+#~ "Side panel’s active component. 0: Symbols. 1: File browser. 2: Structure."
+#~ msgstr ""
+#~ "Yan panelin aktif bileşeni. 0: Semboller. 1: Dosya tarayıcısı. 2: Yapı."
+
+#~ msgid "Ln %d, Col %d"
+#~ msgstr "Ln %d, Col %d"
+
+#~ msgid "The file %s changed on disk."
+#~ msgstr "%s dosyası disk üzerinde değişmiş."
+
+#~ msgid "Do you want to drop your changes and reload the file?"
+#~ msgstr "Değişiklikleri bırakıp dosyayı yeniden yüklemek ister misiniz?"
+
+#~ msgid "Do you want to reload the file?"
+#~ msgstr "Dosyayı yeniden yüklemek istiyor musunuz?"
+
+#~ msgid "_Reload"
+#~ msgstr "_Yeniden Yükle"
+
+#~ msgid "This file (%s) is already opened in another GNOME LaTeX window."
+#~ msgstr "Dosya (%s) başka bir GNOME LaTeX penceresinde zaten açık."
+
+#~ msgid ""
+#~ "GNOME LaTeX opened this instance of the file in a non-editable way. Do "
+#~ "you want to edit it anyway?"
+#~ msgstr ""
+#~ "GNOME LaTeX, dosyanın bu örneğini düzenlenemez biçimde açtı. Yine de "
+#~ "düzenlemek ister misiniz?"
+
+#~ msgid "Edit Anyway"
+#~ msgstr "Yine de Düzenle"
+
+#~ msgid "Don’t Edit"
+#~ msgstr "Düzenleme"
+
+#~ msgid ""
+#~ "LaTeXila is an integrated LaTeX environment for the GNOME desktop. The "
+#~ "idea of LaTeXila is to always deal directly with the LaTeX code, while "
+#~ "simplifying as most as possible the writing of this LaTeX code."
+#~ msgstr ""
+#~ "LaTeXila, Gnome masa üstü için tümleşik bir LaTeX ortamıdır. LaTeXilla "
+#~ "fikri, mümkün olduğunca kolay şekilde LaTeX kodu yazmayı sağlayarak, "
+#~ "LaTeX kodu ile ile doğrudan uğraşmaya olanak tanır."
+
+#~ msgid ""
+#~ "To help the writing of the LaTeX markup, auto-completion is available as "
+#~ "well as menus and toolbars with the principal commands."
+#~ msgstr ""
+#~ "LaTeX biçiminin yazımına yardımcı olmak için, temel komutlar ile menüler "
+#~ "ve araç çubukları kadar otomatik tamamlama da mevcuttur"
+
+#~ msgid "Integrated LaTeX Environment"
+#~ msgstr "Tümleşik LaTeX Ortamı"
+
+#~ msgid "Add..."
+#~ msgstr "Ekle..."
+
+#~ msgid "Close document"
+#~ msgstr "Belgeyi kapat"
+
+#~ msgid "Main File:"
+#~ msgstr "Ana Dosya:"
+
+#, fuzzy
+#~| msgid "Unsaved Document"
+#~ msgid "Untitled Document"
+#~ msgstr "Kaydedilmemiş Belge"
+
+#~ msgid "The file \"%s\" doesn't exist."
+#~ msgstr "\"%s\" dosyası mevcut değil."
+
+#~ msgid "New File..."
+#~ msgstr "Yeni Dosya..."
+
+#, fuzzy
+#~| msgid "Personal templates"
+#~ msgid "_Manage Personal Templates..."
+#~ msgstr "Kişisel şablonlar"
+
+#~ msgid "_Go to Line..."
+#~ msgstr "Satıra _Git..."
+
+#~ msgid "_Search Forward"
+#~ msgstr "İleri Doğru _Ara"
+
+#~ msgid "Jump to the associated position in the PDF file"
+#~ msgstr "PDF dosyasında ilişkili konuma sıçra"
+
+#~ msgid "Read-Only"
+#~ msgstr "Salt Okunur"
+
+#, fuzzy
+#~| msgid "New _Window"
+#~ msgid "_New Window"
+#~ msgstr "Yeni _Pencere"
+
+#~ msgid "Number of characters after &apos;\\&apos;"
+#~ msgstr "&apos;\\&apos; karakterinden sonra gelecek karakterlerin sayısı"
 
 #~ msgid "_Spell Check"
 #~ msgstr "_Yazım Denetimi"

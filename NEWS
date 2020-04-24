@@ -1,12 +1,29 @@
 GNOME LaTeX NEWS
 
-Release 3.x.y, 2020-xx-yy (not yet released)
--------------------------
-* Move more utils functions to Tepl.
-* Use some Tepl I/O error info bars.
-* Require Tepl 5.
-* Remove some dead code.
-* Translation updates.
+Release 3.37.1, 2020-04-24
+--------------------------
+* User-visible changes:
+ - Use TeplPanel to create the side panel. This changes the UI for switching
+   between side panel components, it's now like a toolbar (so only a single
+   click is needed), before it was with a GtkComboBox list (so with two
+   clicks).
+ - Search and Go to line: better style for the text entry's not-found state.
+ - More beautiful close buttons at some places.
+ - Use some Tepl I/O error info bars.
+ - Translation updates.
+
+* Under the hood changes:
+ - Port to TeplMetadata.
+ - Use TeplStatusbar.
+ - Use TeplStyleSchemeChooserWidget in the preferences dialog.
+ - Subclass TeplAbstractFactory, not TeplAbstractFactoryVala.
+ - Move more utility functions to Tepl.
+ - Remove some dead code.
+ - Remove no longer useful code related to stock icons.
+ - New classes in the liblatexila (so in C): LatexilaFactory, LatexilaSettings.
+ - Statistics for the Vala code, compared to version 3.36.0:
+	- 4 fewer *.vala files.
+	- 579 fewer Vala lines of code.
 
 Release 3.36.0, 2020-03-31, “Corona”
 ------------------------------------

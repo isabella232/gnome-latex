@@ -76,7 +76,7 @@ public class SearchAndReplace : GLib.Object
         /* Buttons at the right of the find entry */
         Button button_previous = get_button ("go-up");
         Button button_next = get_button ("go-down");
-        Button button_close = get_button ("window-close");
+        Button button_close = Tepl.utils_create_close_button () as Button;
 
         find_grid.add (button_previous);
         find_grid.add (button_next);

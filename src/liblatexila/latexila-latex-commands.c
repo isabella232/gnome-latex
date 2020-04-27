@@ -1312,3 +1312,20 @@ latexila_latex_commands_add_actions (GtkApplicationWindow *gtk_window)
 						       G_N_ELEMENTS (entries),
 						       tepl_window);
 }
+
+/**
+ * latexila_latex_commands_get_edit_toolbar:
+ *
+ * Returns: (transfer floating): a new #GtkToolbar with the most common LaTeX
+ * actions.
+ */
+GtkToolbar *
+latexila_latex_commands_get_edit_toolbar (void)
+{
+	GtkToolbar *toolbar;
+
+	toolbar = GTK_TOOLBAR (gtk_toolbar_new ());
+	gtk_widget_show_all (GTK_WIDGET (toolbar));
+
+	return toolbar;
+}

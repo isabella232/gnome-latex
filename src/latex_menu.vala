@@ -62,28 +62,7 @@ public class LatexMenu : Gtk.ActionGroup
 
         this.main_window = main_window;
 
-        // menus under toolitems
-        Gtk.Action sectioning = get_menu_tool_action ("SectioningToolItem",
-            _("Sectioning"), "sectioning");
-
-        Gtk.Action sizes = get_menu_tool_action ("CharacterSizeToolItem",
-            _("Characters Sizes"), "character-size");
-
-        Gtk.Action references = get_menu_tool_action ("ReferencesToolItem",
-            _("References"), "references");
-
-        Gtk.Action presentation_env = get_menu_tool_action ("PresentationToolItem",
-            _("Presentation Environments"), "x-office-presentation");
-
-        Gtk.Action math_env = get_menu_tool_action ("MathEnvironmentsToolItem",
-            _("Math Environments"), "math");
-
         add_actions (latex_action_entries, this);
-        add_action (sectioning);
-        add_action (sizes);
-        add_action (references);
-        add_action (presentation_env);
-        add_action (math_env);
 
         /* GActions */
 
@@ -495,13 +474,5 @@ public class LatexMenu : Gtk.ActionGroup
             this, "MathRightDelimiter8");
         Amtk.utils_create_gtk_action (main_window, "win.math-command-delimiter-right9",
             this, "MathRightDelimiter9");
-    }
-
-    private Gtk.Action get_menu_tool_action (string name, string? label, string? icon_name)
-    {
-        Gtk.Action action = new MenuToolAction (name, label, label, icon_name);
-        MenuToolButton menu_tool_button = new MenuToolButton (null, null);
-        menu_tool_button.set_related_action (action);
-        return action;
     }
 }

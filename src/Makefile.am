@@ -47,7 +47,6 @@ vala_files =				\
 	main_window_structure.vala	\
 	main_window_tools.vala		\
 	main_window.vala		\
-	menu_in_toolbar.vala		\
 	most_used_symbols.vala		\
 	preferences_dialog.vala		\
 	project_dialogs.vala		\

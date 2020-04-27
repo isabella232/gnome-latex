@@ -25,7 +25,6 @@ src/main_window_edit.c
 src/main_window_file.c
 src/main_window_structure.c
 src/main_window_tools.c
-src/menu_in_toolbar.c
 src/most_used_symbols.c
 src/post_processors.c
 src/preferences_dialog.c

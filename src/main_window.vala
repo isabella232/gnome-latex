@@ -407,13 +407,7 @@ public class MainWindow : ApplicationWindow
 
     private Toolbar get_edit_toolbar ()
     {
-        Toolbar edit_toolbar = _ui_manager.get_widget ("/EditToolbar") as Toolbar;
-        edit_toolbar.set_style (ToolbarStyle.ICONS);
-
-        StyleContext context = edit_toolbar.get_style_context ();
-        context.add_class ("gnome-latex-edit-toolbar");
-
-        edit_toolbar.show_all ();
+        Toolbar edit_toolbar = Latexila.latex_commands_get_edit_toolbar ();
 
         ToggleAction action =
             _action_group.get_action ("ViewEditToolbar") as ToggleAction;

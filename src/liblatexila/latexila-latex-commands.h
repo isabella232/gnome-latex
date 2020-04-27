@@ -24,9 +24,11 @@
 
 G_BEGIN_DECLS
 
-void	latexila_latex_commands_add_action_infos	(GtkApplication *gtk_app);
+void		latexila_latex_commands_add_action_infos	(GtkApplication *gtk_app);
 
-void	latexila_latex_commands_add_actions		(GtkApplicationWindow *gtk_window);
+void		latexila_latex_commands_add_actions		(GtkApplicationWindow *gtk_window);
+
+GtkToolbar *	latexila_latex_commands_get_edit_toolbar	(void);
 
 G_END_DECLS
 

@@ -177,6 +177,9 @@ public class MainWindow : ApplicationWindow
         /* Menu */
 
         Widget menu = _ui_manager.get_widget ("/MainMenu");
+        Gtk.MenuItem latex_menu_item =
+            _ui_manager.get_widget ("/MainMenu/Latex") as Gtk.MenuItem;
+        latex_menu_item.set_submenu (Latexila.latex_commands_create_latex_menu (this));
 
         // Allow the menu to shrink below its minimum width
         Paned menu_paned = new Paned (Orientation.HORIZONTAL);

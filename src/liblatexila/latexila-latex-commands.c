@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright (C) 2017-2018 - Sébastien Wilmet <swilmet@gnome.org>
+ * Copyright (C) 2017-2020 - Sébastien Wilmet <swilmet@gnome.org>
  * Copyright (C) 2018 - Robert Griesel <r.griesel@gmail.com>
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
@@ -62,6 +62,23 @@ static const AmtkActionInfoEntry action_info_entries_latex_character_sizes[] = {
 	{ NULL }
 };
 
+/* LaTeX: Tabular */
+static const AmtkActionInfoEntry action_info_entries_latex_tabular[] = {
+	{ "win.latex-command-env-simple::tabbing", NULL, "\\begin{ta_bbing}", NULL,
+	  N_("Tabbing — \\begin{tabbing}") },
+	{ "win.latex-command-tabular-tabular", NULL, "\\begin{_tabular}", NULL,
+	  N_("Tabular — \\begin{tabular}") },
+	{ "win.latex-command-tabular-multicolumn", NULL, "\\_multicolumn", NULL,
+	  N_("Multicolumn — \\multicolumn") },
+	{ "win.latex-command-with-space::hline", NULL, "\\_hline", NULL,
+	  N_("Horizontal line — \\hline") },
+	{ "win.latex-command-with-space::vline", NULL, "\\_vline", NULL,
+	  N_("Vertical line — \\vline") },
+	{ "win.latex-command-tabular-cline", NULL, "\\_cline", NULL,
+	  N_("Horizontal line (columns specified) — \\cline") },
+	{ NULL }
+};
+
 /* LaTeX: Presentation */
 static const AmtkActionInfoEntry action_info_entries_latex_presentation[] = {
 	{ "win.latex-command-presentation-frame", NULL, "\\begin{frame}", NULL,
@@ -70,6 +87,51 @@ static const AmtkActionInfoEntry action_info_entries_latex_presentation[] = {
 	  N_("Block — \\begin{block}") },
 	{ "win.latex-command-presentation-columns", NULL, "\\begin{columns}", NULL,
 	  N_("Two columns — \\begin{columns}") },
+	{ NULL }
+};
+
+/* LaTeX: Spacing */
+static const AmtkActionInfoEntry action_info_entries_latex_spacing[] = {
+	{ "win.latex-command-spacing-new-line", NULL, N_("New _Line"), NULL,
+	  N_("New Line — \\\\") },
+	{ "win.latex-command-with-newline::newpage", NULL, "\\new_page", NULL,
+	  N_("New page — \\newpage") },
+	{ "win.latex-command-with-newline::linebreak", NULL, "\\l_inebreak", NULL,
+	  N_("Line break — \\linebreak") },
+	{ "win.latex-command-with-newline::pagebreak", NULL, "\\p_agebreak", NULL,
+	  N_("Page break — \\pagebreak") },
+	{ "win.latex-command-with-space::bigskip", NULL, "\\_bigskip", NULL,
+	  N_("Big skip — \\bigskip") },
+	{ "win.latex-command-with-space::medskip", NULL, "\\_medskip", NULL,
+	  N_("Medium skip — \\medskip") },
+	{ "win.latex-command-with-braces::hspace", NULL, "\\_hspace", NULL,
+	  N_("Horizontal space — \\hspace") },
+	{ "win.latex-command-with-braces::vspace", NULL, "\\_vspace", NULL,
+	  N_("Vertical space — \\vspace") },
+	{ "win.latex-command-with-space::noindent", NULL, "\\_noindent", NULL,
+	  N_("No paragraph indentation — \\noindent") },
+	{ NULL }
+};
+
+/* LaTeX: International accents */
+static const AmtkActionInfoEntry action_info_entries_latex_accents[] = {
+	{ "win.latex-command-with-braces('\\'')", "accent0", "\\'", NULL, N_("Acute accent — \\'") },
+	{ "win.latex-command-with-braces('`')", "accent1", "\\`", NULL, N_("Grave accent — \\`") },
+	{ "win.latex-command-with-braces('^')", "accent2", "\\^", NULL, N_("Circumflex accent — \\^") },
+	{ "win.latex-command-with-braces('\"')", "accent3", "\\\"", NULL, N_("Trema — \\\"") },
+	{ "win.latex-command-with-braces('~')", "accent4", "\\~", NULL, N_("Tilde — \\~") },
+	{ "win.latex-command-with-braces('=')", "accent5", "\\=", NULL, N_("Macron — \\=") },
+	{ "win.latex-command-with-braces('.')", "accent6", "\\.", NULL, N_("Dot above — \\.") },
+	{ "win.latex-command-with-braces('v')", "accent7", "\\v", NULL, N_("Caron — \\v") },
+	{ "win.latex-command-with-braces('u')", "accent8", "\\u", NULL, N_("Breve — \\u") },
+	{ "win.latex-command-with-braces('H')", "accent9", "\\H", NULL,
+	  N_("Double acute accent — \\H") },
+	{ "win.latex-command-with-braces('c')", "accent10", "\\c", NULL, N_("Cedilla — \\c") },
+	{ "win.latex-command-with-braces('k')", "accent11", "\\k", NULL, N_("Ogonek — \\k") },
+	{ "win.latex-command-with-braces('d')", "accent12", "\\d", NULL, N_("Dot below — \\d") },
+	{ "win.latex-command-with-braces('b')", "accent13", "\\b", NULL, N_("Macron below — \\b") },
+	{ "win.latex-command-with-braces('r')", "accent14", "\\r", NULL, N_("Ring — \\r") },
+	{ "win.latex-command-with-braces('t')", "accent15", "\\t", NULL, N_("Tie — \\t") },
 	{ NULL }
 };
 
@@ -107,6 +169,21 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 	const AmtkActionInfoEntry entries[] =
 	{
 		/* action, icon, label, accel, tooltip */
+
+		{ "no-gaction-latex-sectioning", "sectioning", N_("_Sectioning") },
+		{ "no-gaction-latex-references", "references", N_("_References") },
+		{ "no-gaction-latex-environments", "format-justify-center", N_("_Environments") },
+		{ "no-gaction-latex-list-environments", "list-itemize", N_("_List Environments") },
+		{ "no-gaction-latex-character-size", "character-size", N_("_Characters Sizes") },
+		{ "no-gaction-latex-font-styles", "bold", N_("_Font Styles") },
+		{ "no-gaction-latex-font-family", NULL, N_("_Font Family") },
+		{ "no-gaction-latex-font-series", NULL, N_("F_ont Series") },
+		{ "no-gaction-latex-font-shape", NULL, N_("Fo_nt Shape") },
+		{ "no-gaction-latex-tabular", "table", N_("_Tabular") },
+		{ "no-gaction-latex-presentation", "x-office-presentation", N_("_Presentation") },
+		{ "no-gaction-latex-spacing", NULL, N_("_Spacing") },
+		{ "no-gaction-latex-accents", NULL, N_("International _Accents") },
+		{ "no-gaction-latex-misc", NULL, N_("_Misc") },
 
 		/* LaTeX: Sectioning */
 
@@ -202,62 +279,6 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 		  N_("Slanted — \\slshape") },
 		{ "win.latex-command-char-style::scshape", "small_caps", "\\s_cshape", NULL,
 		  N_("Small Capitals — \\scshape") },
-
-		/* LaTeX: Tabular */
-
-		{ "win.latex-command-env-simple::tabbing", NULL, "\\begin{ta_bbing}", NULL,
-		  N_("Tabbing — \\begin{tabbing}") },
-		{ "win.latex-command-tabular-tabular", NULL, "\\begin{_tabular}", NULL,
-		  N_("Tabular — \\begin{tabular}") },
-		{ "win.latex-command-tabular-multicolumn", NULL, "\\_multicolumn", NULL,
-		  N_("Multicolumn — \\multicolumn") },
-		{ "win.latex-command-with-space::hline", NULL, "\\_hline", NULL,
-		  N_("Horizontal line — \\hline") },
-		{ "win.latex-command-with-space::vline", NULL, "\\_vline", NULL,
-		  N_("Vertical line — \\vline") },
-		{ "win.latex-command-tabular-cline", NULL, "\\_cline", NULL,
-		  N_("Horizontal line (columns specified) — \\cline") },
-
-		/* LaTeX: Spacing */
-
-		{ "win.latex-command-spacing-new-line", NULL, N_("New _Line"), NULL,
-		  N_("New Line — \\\\") },
-		{ "win.latex-command-with-newline::newpage", NULL, "\\new_page", NULL,
-		  N_("New page — \\newpage") },
-		{ "win.latex-command-with-newline::linebreak", NULL, "\\l_inebreak", NULL,
-		  N_("Line break — \\linebreak") },
-		{ "win.latex-command-with-newline::pagebreak", NULL, "\\p_agebreak", NULL,
-		  N_("Page break — \\pagebreak") },
-		{ "win.latex-command-with-space::bigskip", NULL, "\\_bigskip", NULL,
-		  N_("Big skip — \\bigskip") },
-		{ "win.latex-command-with-space::medskip", NULL, "\\_medskip", NULL,
-		  N_("Medium skip — \\medskip") },
-		{ "win.latex-command-with-braces::hspace", NULL, "\\_hspace", NULL,
-		  N_("Horizontal space — \\hspace") },
-		{ "win.latex-command-with-braces::vspace", NULL, "\\_vspace", NULL,
-		  N_("Vertical space — \\vspace") },
-		{ "win.latex-command-with-space::noindent", NULL, "\\_noindent", NULL,
-		  N_("No paragraph indentation — \\noindent") },
-
-		/* LaTeX: International accents */
-
-		{ "win.latex-command-with-braces('\\'')", "accent0", "\\'", NULL, N_("Acute accent — \\'") },
-		{ "win.latex-command-with-braces('`')", "accent1", "\\`", NULL, N_("Grave accent — \\`") },
-		{ "win.latex-command-with-braces('^')", "accent2", "\\^", NULL, N_("Circumflex accent — \\^") },
-		{ "win.latex-command-with-braces('\"')", "accent3", "\\\"", NULL, N_("Trema — \\\"") },
-		{ "win.latex-command-with-braces('~')", "accent4", "\\~", NULL, N_("Tilde — \\~") },
-		{ "win.latex-command-with-braces('=')", "accent5", "\\=", NULL, N_("Macron — \\=") },
-		{ "win.latex-command-with-braces('.')", "accent6", "\\.", NULL, N_("Dot above — \\.") },
-		{ "win.latex-command-with-braces('v')", "accent7", "\\v", NULL, N_("Caron — \\v") },
-		{ "win.latex-command-with-braces('u')", "accent8", "\\u", NULL, N_("Breve — \\u") },
-		{ "win.latex-command-with-braces('H')", "accent9", "\\H", NULL,
-		  N_("Double acute accent — \\H") },
-		{ "win.latex-command-with-braces('c')", "accent10", "\\c", NULL, N_("Cedilla — \\c") },
-		{ "win.latex-command-with-braces('k')", "accent11", "\\k", NULL, N_("Ogonek — \\k") },
-		{ "win.latex-command-with-braces('d')", "accent12", "\\d", NULL, N_("Dot below — \\d") },
-		{ "win.latex-command-with-braces('b')", "accent13", "\\b", NULL, N_("Macron below — \\b") },
-		{ "win.latex-command-with-braces('r')", "accent14", "\\r", NULL, N_("Ring — \\r") },
-		{ "win.latex-command-with-braces('t')", "accent15", "\\t", NULL, N_("Tie — \\t") },
 
 		/* LaTeX: Misc */
 
@@ -399,30 +420,15 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 	tepl_app = tepl_application_get_from_gtk_application (gtk_app);
 	store = tepl_application_get_app_action_info_store (tepl_app);
 
-	amtk_action_info_store_add_entries (store,
-					    entries,
-					    G_N_ELEMENTS (entries),
-					    GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, entries, G_N_ELEMENTS (entries), GETTEXT_PACKAGE);
 
-	amtk_action_info_store_add_entries (store,
-					    action_info_entries_latex_references,
-					    -1,
-					    GETTEXT_PACKAGE);
-
-	amtk_action_info_store_add_entries (store,
-					    action_info_entries_latex_character_sizes,
-					    -1,
-					    GETTEXT_PACKAGE);
-
-	amtk_action_info_store_add_entries (store,
-					    action_info_entries_latex_presentation,
-					    -1,
-					    GETTEXT_PACKAGE);
-
-	amtk_action_info_store_add_entries (store,
-					    action_info_entries_math_environments,
-					    -1,
-					    GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_latex_references, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_latex_character_sizes, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_latex_tabular, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_latex_presentation, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_latex_spacing, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_latex_accents, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_math_environments, -1, GETTEXT_PACKAGE);
 }
 
 /* Util functions */
@@ -1461,7 +1467,7 @@ create_tool_item_with_dropdown_menu (GtkApplicationWindow *gtk_window,
 }
 
 static GtkWidget *
-create_submenu_sectioning (void)
+create_submenu_latex_sectioning (void)
 {
 	GtkMenuShell *menu;
 	AmtkFactory *factory;
@@ -1506,7 +1512,7 @@ latexila_latex_commands_get_edit_toolbar (GtkApplicationWindow *gtk_window)
 
 	factory = amtk_factory_new (NULL);
 
-	item = create_tool_item_with_dropdown_menu (gtk_window, "sectioning", _("Sectioning"), create_submenu_sectioning ());
+	item = create_tool_item_with_dropdown_menu (gtk_window, "sectioning", _("Sectioning"), create_submenu_latex_sectioning ());
 	gtk_toolbar_insert (toolbar, item, -1);
 
 	menu = amtk_factory_create_simple_menu (factory, action_info_entries_latex_references, -1);
@@ -1554,4 +1560,220 @@ latexila_latex_commands_get_edit_toolbar (GtkApplicationWindow *gtk_window)
 	gtk_widget_show_all (GTK_WIDGET (toolbar));
 
 	return toolbar;
+}
+
+static GtkWidget *
+create_submenu_latex_environments (void)
+{
+	GtkMenuShell *menu;
+	AmtkFactory *factory;
+
+	menu = GTK_MENU_SHELL (gtk_menu_new ());
+
+	factory = amtk_factory_new_with_default_application ();
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::center"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::flushleft"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::flushright"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-figure"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-table"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::quote"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::quotation"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::verse"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::verbatim"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::minipage"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::titlepage"));
+	g_object_unref (factory);
+
+	return GTK_WIDGET (menu);
+}
+
+static GtkWidget *
+create_submenu_latex_list_environments (void)
+{
+	GtkMenuShell *menu;
+	AmtkFactory *factory;
+
+	menu = GTK_MENU_SHELL (gtk_menu_new ());
+
+	factory = amtk_factory_new_with_default_application ();
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-list-env-simple::itemize"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-list-env-simple::enumerate"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-list-env-description"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-list-env-list"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-space::item"));
+	g_object_unref (factory);
+
+	return GTK_WIDGET (menu);
+}
+
+static GtkWidget *
+create_submenu_latex_font_styles (void)
+{
+	GtkMenuShell *menu;
+	GtkMenuShell *submenu;
+	GtkWidget *menu_item;
+	AmtkFactory *factory;
+	AmtkFactory *factory_no_gaction;
+
+	menu = GTK_MENU_SHELL (gtk_menu_new ());
+	factory = amtk_factory_new_with_default_application ();
+
+	factory_no_gaction = amtk_factory_new_with_default_application ();
+	amtk_factory_set_default_flags (factory_no_gaction, AMTK_FACTORY_IGNORE_GACTION);
+
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::textbf"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::textit"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::texttt"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::textsl"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::textsc"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::textsf"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::emph"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::underline"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-font-family");
+	submenu = GTK_MENU_SHELL (gtk_menu_new ());
+	gtk_menu_shell_append (submenu, amtk_factory_create_menu_item (factory, "win.latex-command-char-style::rmfamily"));
+	gtk_menu_shell_append (submenu, amtk_factory_create_menu_item (factory, "win.latex-command-char-style::sffamily"));
+	gtk_menu_shell_append (submenu, amtk_factory_create_menu_item (factory, "win.latex-command-char-style::ttfamily"));
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), GTK_WIDGET (submenu));
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-font-series");
+	submenu = GTK_MENU_SHELL (gtk_menu_new ());
+	gtk_menu_shell_append (submenu, amtk_factory_create_menu_item (factory, "win.latex-command-char-style::mdseries"));
+	gtk_menu_shell_append (submenu, amtk_factory_create_menu_item (factory, "win.latex-command-char-style::bfseries"));
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), GTK_WIDGET (submenu));
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-font-shape");
+	submenu = GTK_MENU_SHELL (gtk_menu_new ());
+	gtk_menu_shell_append (submenu, amtk_factory_create_menu_item (factory, "win.latex-command-char-style::upshape"));
+	gtk_menu_shell_append (submenu, amtk_factory_create_menu_item (factory, "win.latex-command-char-style::itshape"));
+	gtk_menu_shell_append (submenu, amtk_factory_create_menu_item (factory, "win.latex-command-char-style::slshape"));
+	gtk_menu_shell_append (submenu, amtk_factory_create_menu_item (factory, "win.latex-command-char-style::scshape"));
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), GTK_WIDGET (submenu));
+	gtk_menu_shell_append (menu, menu_item);
+
+	g_object_unref (factory);
+	g_object_unref (factory_no_gaction);
+
+	return GTK_WIDGET (menu);
+}
+
+static GtkWidget *
+create_submenu_latex_misc (void)
+{
+	GtkMenuShell *menu;
+	AmtkFactory *factory;
+
+	menu = GTK_MENU_SHELL (gtk_menu_new ());
+
+	factory = amtk_factory_new_with_default_application ();
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::documentclass"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::usepackage"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-ams-packages"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::author"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::title"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::document"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-simple::maketitle"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-simple::tableofcontents"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-env-simple::abstract"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::includegraphics"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::input"));
+	g_object_unref (factory);
+
+	return GTK_WIDGET (menu);
+}
+
+/**
+ * latexila_latex_commands_create_latex_menu:
+ * @gtk_window: a #GtkApplicationWindow.
+ *
+ * Returns: (transfer floating): a new #GtkMenu with a lot of LaTeX commands.
+ */
+GtkMenu *
+latexila_latex_commands_create_latex_menu (GtkApplicationWindow *gtk_window)
+{
+	GtkMenuShell *menu;
+	GtkWidget *menu_item;
+	AmtkFactory *factory;
+	AmtkFactory *factory_no_gaction;
+	AmtkApplicationWindow *amtk_window;
+
+	g_return_val_if_fail (GTK_IS_APPLICATION_WINDOW (gtk_window), NULL);
+
+	menu = GTK_MENU_SHELL (gtk_menu_new ());
+
+	factory = amtk_factory_new_with_default_application ();
+
+	factory_no_gaction = amtk_factory_new_with_default_application ();
+	amtk_factory_set_default_flags (factory_no_gaction, AMTK_FACTORY_IGNORE_GACTION);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-sectioning");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_sectioning ());
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-references");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
+				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_references, -1));
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-environments");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_environments ());
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-list-environments");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_list_environments ());
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-character-size");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
+				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_character_sizes, -1));
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-font-styles");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_font_styles ());
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-tabular");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
+				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_tabular, -1));
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-presentation");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
+				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_presentation, -1));
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-spacing");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
+				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_spacing, -1));
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-accents");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
+				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_accents, -1));
+	gtk_menu_shell_append (menu, menu_item);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-misc");
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_misc ());
+	gtk_menu_shell_append (menu, menu_item);
+
+	amtk_window = amtk_application_window_get_from_gtk_application_window (gtk_window);
+	amtk_application_window_connect_menu_to_statusbar (amtk_window, menu);
+
+	gtk_widget_show_all (GTK_WIDGET (menu));
+
+	g_object_unref (factory);
+	g_object_unref (factory_no_gaction);
+
+	return GTK_MENU (menu);
 }

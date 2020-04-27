@@ -251,6 +251,10 @@ public class MainWindow : ApplicationWindow
         _statusbar.show_all ();
         main_vgrid.add (_statusbar);
 
+        Amtk.ApplicationWindow amtk_window =
+            Amtk.ApplicationWindow.get_from_gtk_application_window (this);
+        amtk_window.set_statusbar (_statusbar);
+
         _tip_message_cid = _statusbar.get_context_id ("tip_message");
 
         /* TeplApplicationWindow */
@@ -407,7 +411,7 @@ public class MainWindow : ApplicationWindow
 
     private Toolbar get_edit_toolbar ()
     {
-        Toolbar edit_toolbar = Latexila.latex_commands_get_edit_toolbar ();
+        Toolbar edit_toolbar = Latexila.latex_commands_get_edit_toolbar (this);
 
         ToggleAction action =
             _action_group.get_action ("ViewEditToolbar") as ToggleAction;

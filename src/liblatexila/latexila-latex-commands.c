@@ -30,6 +30,66 @@
 #include "latexila-utils.h"
 #include "latexila-view.h"
 
+/* LaTeX: References */
+static const AmtkActionInfoEntry action_info_entries_latex_references[] = {
+	{ "win.latex-command-with-braces::label", NULL, "\\_label", NULL,
+	  N_("Label") },
+	{ "win.latex-command-with-braces::ref", NULL, "\\_ref", NULL,
+	  N_("Reference to a label") },
+	{ "win.latex-command-with-braces::pageref", NULL, "\\_pageref", NULL,
+	  N_("Page reference to a label") },
+	{ "win.latex-command-with-braces::index", NULL, "\\_index", NULL,
+	  N_("Add a word to the index") },
+	{ "win.latex-command-with-braces::footnote", NULL, "\\_footnote", NULL,
+	  N_("Footnote") },
+	{ "win.latex-command-with-braces::cite", NULL, "\\_cite", NULL,
+	  N_("Reference to a bibliography item") },
+	{ NULL }
+};
+
+/* LaTeX: character sizes */
+static const AmtkActionInfoEntry action_info_entries_latex_character_sizes[] = {
+	{ "win.latex-command-char-style::tiny", NULL, "_tiny", NULL, "tiny" },
+	{ "win.latex-command-char-style::scriptsize", NULL, "_scriptsize", NULL, "scriptsize" },
+	{ "win.latex-command-char-style::footnotesize", NULL, "_footnotesize", NULL, "footnotesize" },
+	{ "win.latex-command-char-style::small", NULL, "s_mall", NULL, "small" },
+	{ "win.latex-command-char-style::normalsize", NULL, "_normalsize", NULL, "normalsize" },
+	{ "win.latex-command-char-style::large", NULL, "_large", NULL, "large" },
+	{ "win.latex-command-char-style::Large", NULL, "L_arge", NULL, "Large" },
+	{ "win.latex-command-char-style::LARGE", NULL, "LA_RGE", NULL, "LARGE" },
+	{ "win.latex-command-char-style::huge", NULL, "_huge", NULL, "huge" },
+	{ "win.latex-command-char-style::Huge", NULL, "H_uge", NULL, "Huge" },
+	{ NULL }
+};
+
+/* LaTeX: Presentation */
+static const AmtkActionInfoEntry action_info_entries_latex_presentation[] = {
+	{ "win.latex-command-presentation-frame", NULL, "\\begin{frame}", NULL,
+	  N_("Frame — \\begin{frame}") },
+	{ "win.latex-command-presentation-block", NULL, "\\begin{block}", NULL,
+	  N_("Block — \\begin{block}") },
+	{ "win.latex-command-presentation-columns", NULL, "\\begin{columns}", NULL,
+	  N_("Two columns — \\begin{columns}") },
+	{ NULL }
+};
+
+/* Math Environments */
+static const AmtkActionInfoEntry action_info_entries_math_environments[] = {
+	{ "win.math-command-env-normal", NULL, N_("_Mathematical Environment — $…$"),
+	  "<Alt><Shift>M", N_("Mathematical Environment — $…$") },
+	{ "win.math-command-env-centered", NULL, N_("_Centered Formula — \\[…\\]"),
+	  "<Alt><Shift>E", N_("Centered Formula — \\[…\\]") },
+	{ "win.latex-command-env-simple::equation", NULL,
+	  N_("_Numbered Equation — \\begin{equation}"), NULL,
+	  N_("Numbered Equation — \\begin{equation}") },
+	{ "win.math-command-env-array", NULL, N_("_Array of Equations — \\begin{align*}"), NULL,
+	  N_("Array of Equations — \\begin{align*}") },
+	{ "win.latex-command-env-simple::align", NULL,
+	  N_("Numbered Array of _Equations — \\begin{align}"), NULL,
+	  N_("Numbered Array of Equations — \\begin{align}") },
+	{ NULL }
+};
+
 /**
  * latexila_latex_commands_add_action_infos:
  * @gtk_app: the #GtkApplication instance.
@@ -64,21 +124,6 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 		  N_("Paragraph") },
 		{ "win.latex-command-with-braces::subparagraph", NULL, "\\subpa_ragraph", NULL,
 		  N_("Sub-paragraph") },
-
-		/* LaTeX: References */
-
-		{ "win.latex-command-with-braces::label", NULL, "\\_label", NULL,
-		  N_("Label") },
-		{ "win.latex-command-with-braces::ref", NULL, "\\_ref", NULL,
-		  N_("Reference to a label") },
-		{ "win.latex-command-with-braces::pageref", NULL, "\\_pageref", NULL,
-		  N_("Page reference to a label") },
-		{ "win.latex-command-with-braces::index", NULL, "\\_index", NULL,
-		  N_("Add a word to the index") },
-		{ "win.latex-command-with-braces::footnote", NULL, "\\_footnote", NULL,
-		  N_("Footnote") },
-		{ "win.latex-command-with-braces::cite", NULL, "\\_cite", NULL,
-		  N_("Reference to a bibliography item") },
 
 		/* LaTeX: Environments */
 
@@ -117,19 +162,6 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 		  N_("Custom list — \\begin{list}") },
 		{ "win.latex-command-with-space::item", "list-item", "\\i_tem", "<Alt><Shift>H",
 		  N_("List item — \\item") },
-
-		/* LaTeX: character sizes */
-
-		{ "win.latex-command-char-style::tiny", NULL, "_tiny", NULL, "tiny" },
-		{ "win.latex-command-char-style::scriptsize", NULL, "_scriptsize", NULL, "scriptsize" },
-		{ "win.latex-command-char-style::footnotesize", NULL, "_footnotesize", NULL, "footnotesize" },
-		{ "win.latex-command-char-style::small", NULL, "s_mall", NULL, "small" },
-		{ "win.latex-command-char-style::normalsize", NULL, "_normalsize", NULL, "normalsize" },
-		{ "win.latex-command-char-style::large", NULL, "_large", NULL, "large" },
-		{ "win.latex-command-char-style::Large", NULL, "L_arge", NULL, "Large" },
-		{ "win.latex-command-char-style::LARGE", NULL, "LA_RGE", NULL, "LARGE" },
-		{ "win.latex-command-char-style::huge", NULL, "_huge", NULL, "huge" },
-		{ "win.latex-command-char-style::Huge", NULL, "H_uge", NULL, "Huge" },
 
 		/* LaTeX: font styles */
 
@@ -185,15 +217,6 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 		  N_("Vertical line — \\vline") },
 		{ "win.latex-command-tabular-cline", NULL, "\\_cline", NULL,
 		  N_("Horizontal line (columns specified) — \\cline") },
-
-		/* LaTeX: Presentation */
-
-		{ "win.latex-command-presentation-frame", NULL, "\\begin{frame}", NULL,
-		  N_("Frame — \\begin{frame}") },
-		{ "win.latex-command-presentation-block", NULL, "\\begin{block}", NULL,
-		  N_("Block — \\begin{block}") },
-		{ "win.latex-command-presentation-columns", NULL, "\\begin{columns}", NULL,
-		  N_("Two columns — \\begin{columns}") },
 
 		/* LaTeX: Spacing */
 
@@ -258,21 +281,6 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 		  N_("Include an image (graphicx package) — \\includegraphics") },
 		{ "win.latex-command-with-braces::input", NULL, "\\_input", NULL,
 		  N_("Include a file — \\input") },
-
-		/* Math Environments */
-
-		{ "win.math-command-env-normal", NULL, N_("_Mathematical Environment — $…$"),
-		  "<Alt><Shift>M", N_("Mathematical Environment — $…$") },
-		{ "win.math-command-env-centered", NULL, N_("_Centered Formula — \\[…\\]"),
-		  "<Alt><Shift>E", N_("Centered Formula — \\[…\\]") },
-		{ "win.latex-command-env-simple::equation", NULL,
-		  N_("_Numbered Equation — \\begin{equation}"), NULL,
-		  N_("Numbered Equation — \\begin{equation}") },
-		{ "win.math-command-env-array", NULL, N_("_Array of Equations — \\begin{align*}"), NULL,
-		  N_("Array of Equations — \\begin{align*}") },
-		{ "win.latex-command-env-simple::align", NULL,
-		  N_("Numbered Array of _Equations — \\begin{align}"), NULL,
-		  N_("Numbered Array of Equations — \\begin{align}") },
 
 		/* Math misc */
 
@@ -394,6 +402,26 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 	amtk_action_info_store_add_entries (store,
 					    entries,
 					    G_N_ELEMENTS (entries),
+					    GETTEXT_PACKAGE);
+
+	amtk_action_info_store_add_entries (store,
+					    action_info_entries_latex_references,
+					    -1,
+					    GETTEXT_PACKAGE);
+
+	amtk_action_info_store_add_entries (store,
+					    action_info_entries_latex_character_sizes,
+					    -1,
+					    GETTEXT_PACKAGE);
+
+	amtk_action_info_store_add_entries (store,
+					    action_info_entries_latex_presentation,
+					    -1,
+					    GETTEXT_PACKAGE);
+
+	amtk_action_info_store_add_entries (store,
+					    action_info_entries_math_environments,
+					    -1,
 					    GETTEXT_PACKAGE);
 }
 
@@ -1241,6 +1269,87 @@ math_command_delimiter_right9_cb (GSimpleAction *action,
 	insert_text (tepl_window, "\\right. ", "", NULL);
 }
 
+static const GActionEntry action_entries[] = {
+	{ "latex-command-simple", latex_command_simple_cb, "s" },
+	{ "latex-command-with-braces", latex_command_with_braces_cb, "s" },
+	{ "latex-command-with-space", latex_command_with_space_cb, "s" },
+	{ "latex-command-with-newline", latex_command_with_newline_cb, "s" },
+	{ "latex-command-env-simple", latex_command_env_simple_cb, "s" },
+	{ "latex-command-env-figure", latex_command_env_figure_cb },
+	{ "latex-command-env-table", latex_command_env_table_cb },
+	{ "latex-command-list-env-simple", latex_command_list_env_simple_cb, "s" },
+	{ "latex-command-list-env-description", latex_command_list_env_description_cb },
+	{ "latex-command-list-env-list", latex_command_list_env_list_cb },
+	{ "latex-command-char-style", latex_command_char_style_cb, "s" },
+	{ "latex-command-tabular-tabular", latex_command_tabular_tabular_cb },
+	{ "latex-command-tabular-multicolumn", latex_command_tabular_multicolumn_cb },
+	{ "latex-command-tabular-cline", latex_command_tabular_cline_cb },
+	{ "latex-command-presentation-frame", latex_command_presentation_frame_cb },
+	{ "latex-command-presentation-block", latex_command_presentation_block_cb },
+	{ "latex-command-presentation-columns", latex_command_presentation_columns_cb },
+	{ "latex-command-spacing-new-line", latex_command_spacing_new_line_cb },
+	{ "latex-command-ams-packages", latex_command_ams_packages_cb },
+	{ "math-command-env-normal", math_command_env_normal_cb },
+	{ "math-command-env-centered", math_command_env_centered_cb },
+	{ "math-command-env-array", math_command_env_array_cb },
+	{ "math-command-misc-superscript", math_command_misc_superscript_cb },
+	{ "math-command-misc-subscript", math_command_misc_subscript_cb },
+	{ "math-command-misc-frac", math_command_misc_frac_cb },
+	{ "math-command-misc-nth-root", math_command_misc_nth_root_cb },
+	{ "math-command-spaces-small", math_command_spaces_small_cb },
+	{ "math-command-spaces-medium", math_command_spaces_medium_cb },
+	{ "math-command-spaces-large", math_command_spaces_large_cb },
+	{ "math-command-delimiter-left1", math_command_delimiter_left1_cb },
+	{ "math-command-delimiter-left2", math_command_delimiter_left2_cb },
+	{ "math-command-delimiter-left3", math_command_delimiter_left3_cb },
+	{ "math-command-delimiter-left4", math_command_delimiter_left4_cb },
+	{ "math-command-delimiter-left5", math_command_delimiter_left5_cb },
+	{ "math-command-delimiter-left6", math_command_delimiter_left6_cb },
+	{ "math-command-delimiter-left7", math_command_delimiter_left7_cb },
+	{ "math-command-delimiter-left8", math_command_delimiter_left8_cb },
+	{ "math-command-delimiter-left9", math_command_delimiter_left9_cb },
+	{ "math-command-delimiter-right1", math_command_delimiter_right1_cb },
+	{ "math-command-delimiter-right2", math_command_delimiter_right2_cb },
+	{ "math-command-delimiter-right3", math_command_delimiter_right3_cb },
+	{ "math-command-delimiter-right4", math_command_delimiter_right4_cb },
+	{ "math-command-delimiter-right5", math_command_delimiter_right5_cb },
+	{ "math-command-delimiter-right6", math_command_delimiter_right6_cb },
+	{ "math-command-delimiter-right7", math_command_delimiter_right7_cb },
+	{ "math-command-delimiter-right8", math_command_delimiter_right8_cb },
+	{ "math-command-delimiter-right9", math_command_delimiter_right9_cb },
+};
+
+static void
+update_actions_sensitivity (TeplApplicationWindow *tepl_window)
+{
+	GtkApplicationWindow *gtk_window;
+	TeplTab *active_tab;
+	gboolean sensitive;
+	guint i;
+
+	gtk_window = tepl_application_window_get_application_window (tepl_window);
+
+	active_tab = tepl_tab_group_get_active_tab (TEPL_TAB_GROUP (tepl_window));
+	sensitive = active_tab != NULL;
+
+	for (i = 0; i < G_N_ELEMENTS (action_entries); i++)
+	{
+		const gchar *action_name = action_entries[i].name;
+		GAction *action;
+
+		action = g_action_map_lookup_action (G_ACTION_MAP (gtk_window), action_name);
+		g_simple_action_set_enabled (G_SIMPLE_ACTION (action), sensitive);
+	}
+}
+
+static void
+actions__active_tab_notify_cb (TeplApplicationWindow *tepl_window,
+			       GParamSpec            *pspec,
+			       gpointer               user_data)
+{
+	update_actions_sensitivity (tepl_window);
+}
+
 /**
  * latexila_latex_commands_add_actions:
  * @gtk_window: a #GtkApplicationWindow.
@@ -1253,78 +1362,195 @@ latexila_latex_commands_add_actions (GtkApplicationWindow *gtk_window)
 {
 	TeplApplicationWindow *tepl_window;
 
-	const GActionEntry entries[] = {
-		{ "latex-command-simple", latex_command_simple_cb, "s" },
-		{ "latex-command-with-braces", latex_command_with_braces_cb, "s" },
-		{ "latex-command-with-space", latex_command_with_space_cb, "s" },
-		{ "latex-command-with-newline", latex_command_with_newline_cb, "s" },
-		{ "latex-command-env-simple", latex_command_env_simple_cb, "s" },
-		{ "latex-command-env-figure", latex_command_env_figure_cb },
-		{ "latex-command-env-table", latex_command_env_table_cb },
-		{ "latex-command-list-env-simple", latex_command_list_env_simple_cb, "s" },
-		{ "latex-command-list-env-description", latex_command_list_env_description_cb },
-		{ "latex-command-list-env-list", latex_command_list_env_list_cb },
-		{ "latex-command-char-style", latex_command_char_style_cb, "s" },
-		{ "latex-command-tabular-tabular", latex_command_tabular_tabular_cb },
-		{ "latex-command-tabular-multicolumn", latex_command_tabular_multicolumn_cb },
-		{ "latex-command-tabular-cline", latex_command_tabular_cline_cb },
-		{ "latex-command-presentation-frame", latex_command_presentation_frame_cb },
-		{ "latex-command-presentation-block", latex_command_presentation_block_cb },
-		{ "latex-command-presentation-columns", latex_command_presentation_columns_cb },
-		{ "latex-command-spacing-new-line", latex_command_spacing_new_line_cb },
-		{ "latex-command-ams-packages", latex_command_ams_packages_cb },
-		{ "math-command-env-normal", math_command_env_normal_cb },
-		{ "math-command-env-centered", math_command_env_centered_cb },
-		{ "math-command-env-array", math_command_env_array_cb },
-		{ "math-command-misc-superscript", math_command_misc_superscript_cb },
-		{ "math-command-misc-subscript", math_command_misc_subscript_cb },
-		{ "math-command-misc-frac", math_command_misc_frac_cb },
-		{ "math-command-misc-nth-root", math_command_misc_nth_root_cb },
-		{ "math-command-spaces-small", math_command_spaces_small_cb },
-		{ "math-command-spaces-medium", math_command_spaces_medium_cb },
-		{ "math-command-spaces-large", math_command_spaces_large_cb },
-		{ "math-command-delimiter-left1", math_command_delimiter_left1_cb },
-		{ "math-command-delimiter-left2", math_command_delimiter_left2_cb },
-		{ "math-command-delimiter-left3", math_command_delimiter_left3_cb },
-		{ "math-command-delimiter-left4", math_command_delimiter_left4_cb },
-		{ "math-command-delimiter-left5", math_command_delimiter_left5_cb },
-		{ "math-command-delimiter-left6", math_command_delimiter_left6_cb },
-		{ "math-command-delimiter-left7", math_command_delimiter_left7_cb },
-		{ "math-command-delimiter-left8", math_command_delimiter_left8_cb },
-		{ "math-command-delimiter-left9", math_command_delimiter_left9_cb },
-		{ "math-command-delimiter-right1", math_command_delimiter_right1_cb },
-		{ "math-command-delimiter-right2", math_command_delimiter_right2_cb },
-		{ "math-command-delimiter-right3", math_command_delimiter_right3_cb },
-		{ "math-command-delimiter-right4", math_command_delimiter_right4_cb },
-		{ "math-command-delimiter-right5", math_command_delimiter_right5_cb },
-		{ "math-command-delimiter-right6", math_command_delimiter_right6_cb },
-		{ "math-command-delimiter-right7", math_command_delimiter_right7_cb },
-		{ "math-command-delimiter-right8", math_command_delimiter_right8_cb },
-		{ "math-command-delimiter-right9", math_command_delimiter_right9_cb },
-	};
-
 	g_return_if_fail (GTK_IS_APPLICATION_WINDOW (gtk_window));
 
 	tepl_window = tepl_application_window_get_from_gtk_application_window (gtk_window);
 
 	amtk_action_map_add_action_entries_check_dups (G_ACTION_MAP (gtk_window),
-						       entries,
-						       G_N_ELEMENTS (entries),
+						       action_entries,
+						       G_N_ELEMENTS (action_entries),
 						       tepl_window);
+
+	g_signal_connect (tepl_window,
+			  "notify::active-tab",
+			  G_CALLBACK (actions__active_tab_notify_cb),
+			  NULL);
+
+	update_actions_sensitivity (tepl_window);
+}
+
+static void
+tool_button_clicked_cb (GtkToolButton *tool_button,
+			gpointer       user_data)
+{
+	GList *menus_list;
+	GtkMenu *menu;
+
+	menus_list = gtk_menu_get_for_attach_widget (GTK_WIDGET (tool_button));
+	g_return_if_fail (menus_list != NULL);
+
+	menu = GTK_MENU (menus_list->data);
+
+	gtk_menu_popup_at_widget (menu,
+				  GTK_WIDGET (tool_button),
+				  GDK_GRAVITY_SOUTH_WEST,
+				  GDK_GRAVITY_NORTH_WEST,
+				  NULL);
+}
+
+static void
+update_tool_item_sensitivity (TeplApplicationWindow *tepl_window,
+			      GtkToolItem           *item)
+{
+	TeplTab *active_tab;
+
+	active_tab = tepl_tab_group_get_active_tab (TEPL_TAB_GROUP (tepl_window));
+	gtk_widget_set_sensitive (GTK_WIDGET (item), active_tab != NULL);
+}
+
+static void
+tool_item__active_tab_notify_cb (TeplApplicationWindow *tepl_window,
+				 GParamSpec            *pspec,
+				 GtkToolItem           *item)
+{
+	update_tool_item_sensitivity (tepl_window, item);
+}
+
+static GtkToolItem *
+create_tool_item_with_dropdown_menu (GtkApplicationWindow *gtk_window,
+				     const gchar          *icon_name,
+				     const gchar          *tooltip,
+				     GtkWidget            *menu)
+{
+	AmtkApplicationWindow *amtk_window;
+	TeplApplicationWindow *tepl_window;
+	GtkToolItem *item;
+	GtkWidget *hgrid;
+	GtkWidget *image;
+
+	amtk_window = amtk_application_window_get_from_gtk_application_window (gtk_window);
+	tepl_window = tepl_application_window_get_from_gtk_application_window (gtk_window);
+
+	hgrid = gtk_grid_new ();
+	image = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_LARGE_TOOLBAR);
+	gtk_container_add (GTK_CONTAINER (hgrid), image);
+	image = gtk_image_new_from_icon_name ("pan-down-symbolic", GTK_ICON_SIZE_BUTTON);
+	gtk_container_add (GTK_CONTAINER (hgrid), image);
+
+	item = gtk_tool_button_new (hgrid, NULL);
+	gtk_tool_item_set_homogeneous (item, FALSE);
+	gtk_widget_set_tooltip_text (GTK_WIDGET (item), tooltip);
+
+	gtk_widget_show_all (menu);
+	gtk_menu_attach_to_widget (GTK_MENU (menu), GTK_WIDGET (item), NULL);
+	amtk_application_window_connect_menu_to_statusbar (amtk_window, GTK_MENU_SHELL (menu));
+
+	g_signal_connect (item,
+			  "clicked",
+			  G_CALLBACK (tool_button_clicked_cb),
+			  NULL);
+
+	g_signal_connect (tepl_window,
+			  "notify::active-tab",
+			  G_CALLBACK (tool_item__active_tab_notify_cb),
+			  item);
+
+	update_tool_item_sensitivity (tepl_window, item);
+
+	return item;
+}
+
+static GtkWidget *
+create_submenu_sectioning (void)
+{
+	GtkMenuShell *menu;
+	AmtkFactory *factory;
+
+	menu = GTK_MENU_SHELL (gtk_menu_new ());
+
+	factory = amtk_factory_new (NULL);
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::part"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::chapter"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::section"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::subsection"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::subsubsection"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::paragraph"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::subparagraph"));
+	g_object_unref (factory);
+
+	return GTK_WIDGET (menu);
 }
 
 /**
  * latexila_latex_commands_get_edit_toolbar:
+ * @gtk_window: a #GtkApplicationWindow.
  *
  * Returns: (transfer floating): a new #GtkToolbar with the most common LaTeX
  * actions.
  */
 GtkToolbar *
-latexila_latex_commands_get_edit_toolbar (void)
+latexila_latex_commands_get_edit_toolbar (GtkApplicationWindow *gtk_window)
 {
 	GtkToolbar *toolbar;
+	GtkStyleContext *style_context;
+	AmtkFactory *factory;
+	GtkToolItem *item;
+	GtkWidget *menu;
+
+	g_return_val_if_fail (GTK_IS_APPLICATION_WINDOW (gtk_window), NULL);
 
 	toolbar = GTK_TOOLBAR (gtk_toolbar_new ());
+	style_context = gtk_widget_get_style_context (GTK_WIDGET (toolbar));
+	gtk_style_context_add_class (style_context, "gnome-latex-edit-toolbar");
+
+	factory = amtk_factory_new (NULL);
+
+	item = create_tool_item_with_dropdown_menu (gtk_window, "sectioning", _("Sectioning"), create_submenu_sectioning ());
+	gtk_toolbar_insert (toolbar, item, -1);
+
+	menu = amtk_factory_create_simple_menu (factory, action_info_entries_latex_references, -1);
+	item = create_tool_item_with_dropdown_menu (gtk_window, "references", _("References"), menu);
+	gtk_toolbar_insert (toolbar, item, -1);
+
+	menu = amtk_factory_create_simple_menu (factory, action_info_entries_latex_character_sizes, -1);
+	item = create_tool_item_with_dropdown_menu (gtk_window, "character-size", _("Characters Sizes"), menu);
+	gtk_toolbar_insert (toolbar, item, -1);
+
+	gtk_toolbar_insert (toolbar, gtk_separator_tool_item_new (), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-with-braces::textbf"), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-with-braces::textit"), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-with-braces::texttt"), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-with-braces::underline"), -1);
+	gtk_toolbar_insert (toolbar, gtk_separator_tool_item_new (), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-env-simple::center"), -1);
+	gtk_toolbar_insert (toolbar, gtk_separator_tool_item_new (), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-list-env-simple::itemize"), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-list-env-simple::enumerate"), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-list-env-description"), -1);
+	gtk_toolbar_insert (toolbar, gtk_separator_tool_item_new (), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-env-figure"), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-env-table"), -1);
+	gtk_toolbar_insert (toolbar, gtk_separator_tool_item_new (), -1);
+
+	menu = amtk_factory_create_simple_menu (factory, action_info_entries_latex_presentation, -1);
+	item = create_tool_item_with_dropdown_menu (gtk_window, "x-office-presentation", _("Presentation Environments"), menu);
+	gtk_toolbar_insert (toolbar, item, -1);
+
+	gtk_toolbar_insert (toolbar, gtk_separator_tool_item_new (), -1);
+
+	menu = amtk_factory_create_simple_menu (factory, action_info_entries_math_environments, -1);
+	item = create_tool_item_with_dropdown_menu (gtk_window, "math", _("Math Environments"), menu);
+	gtk_toolbar_insert (toolbar, item, -1);
+
+	gtk_toolbar_insert (toolbar, gtk_separator_tool_item_new (), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.math-command-misc-superscript"), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.math-command-misc-subscript"), -1);
+	gtk_toolbar_insert (toolbar, gtk_separator_tool_item_new (), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.math-command-misc-frac"), -1);
+	gtk_toolbar_insert (toolbar, amtk_factory_create_tool_button (factory, "win.latex-command-with-braces::sqrt"), -1);
+	g_object_unref (factory);
+
 	gtk_widget_show_all (GTK_WIDGET (toolbar));
 
 	return toolbar;

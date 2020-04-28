@@ -113,6 +113,63 @@ add_action_entries (LatexilaApp *app)
 }
 
 static void
+add_main_option_entries (LatexilaApp *app)
+{
+	const GOptionEntry options[] =
+	{
+		{ "version", 'V', G_OPTION_FLAG_NONE, G_OPTION_ARG_NONE, NULL,
+		  N_("Show the application’s version") },
+
+		{ "new-window", '\0', G_OPTION_FLAG_NONE, G_OPTION_ARG_NONE, NULL,
+		  N_("Create a new top-level window in an existing instance of GNOME LaTeX") },
+
+		{ "new-document", 'n', G_OPTION_FLAG_NONE, G_OPTION_ARG_NONE, NULL,
+		  N_("Create a new document in an existing instance of GNOME LaTeX") },
+
+		{ NULL }
+	};
+
+	g_application_add_main_option_entries (G_APPLICATION (app), options);
+}
+
+static gint
+latexila_app_handle_local_options (GApplication *app,
+				   GVariantDict *options)
+{
+	GError *error = NULL;
+
+	if (g_variant_dict_contains (options, "version"))
+	{
+		g_print ("%s %s\n", g_get_application_name (), PACKAGE_VERSION);
+		return 0;
+	}
+
+	g_application_register (app, NULL, &error);
+	if (error != NULL)
+	{
+		g_warning ("Failed to register the application: %s", error->message);
+		g_clear_error (&error);
+	}
+
+	if (g_variant_dict_contains (options, "new-window"))
+	{
+		g_action_group_activate_action (G_ACTION_GROUP (app), "tepl-new-window", NULL);
+	}
+
+	if (g_variant_dict_contains (options, "new-document"))
+	{
+		g_action_group_activate_action (G_ACTION_GROUP (app), "new-document", NULL);
+	}
+
+	if (G_APPLICATION_CLASS (latexila_app_parent_class)->handle_local_options != NULL)
+	{
+		return G_APPLICATION_CLASS (latexila_app_parent_class)->handle_local_options (app, options);
+	}
+
+	return -1;
+}
+
+static void
 latexila_app_startup (GApplication *app)
 {
 	if (G_APPLICATION_CLASS (latexila_app_parent_class)->startup != NULL)
@@ -147,6 +204,7 @@ latexila_app_class_init (LatexilaAppClass *klass)
 
 	object_class->constructed = latexila_app_constructed;
 
+	gapp_class->handle_local_options = latexila_app_handle_local_options;
 	gapp_class->startup = latexila_app_startup;
 }
 
@@ -158,6 +216,8 @@ latexila_app_init (LatexilaApp *app)
 	g_application_set_flags (G_APPLICATION (app), G_APPLICATION_HANDLES_OPEN);
 	g_set_application_name (PACKAGE_NAME);
 	gtk_window_set_default_icon_name ("gnome-latex");
+
+	add_main_option_entries (app);
 
 	tepl_app = tepl_application_get_from_gtk_application (GTK_APPLICATION (app));
 	tepl_application_handle_activate (tepl_app);

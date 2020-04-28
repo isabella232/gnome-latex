@@ -33,8 +33,6 @@ public class GlatexApp : Latexila.App
 
     public GlatexApp ()
     {
-        setup_main_option_entries ();
-
         startup.connect (startup_cb);
         open.connect (open_documents);
         shutdown.connect (shutdown_cb);
@@ -54,54 +52,6 @@ public class GlatexApp : Latexila.App
             return null;
 
         return main_window as MainWindow;
-    }
-
-    private void setup_main_option_entries ()
-    {
-        bool show_version = false;
-        bool new_document = false;
-        bool new_window = false;
-
-        OptionEntry[] options = new OptionEntry[4];
-
-        options[0] = { "version", 'V', 0, OptionArg.NONE, ref show_version,
-            N_("Show the application’s version"), null };
-
-        options[1] = { "new-document", 'n', 0, OptionArg.NONE, ref new_document,
-            N_("Create new document"), null };
-
-        options[2] = { "new-window", 0, 0, OptionArg.NONE, ref new_window,
-            N_("Create a new top-level window in an existing instance of GNOME LaTeX"), null };
-
-        options[3] = { null };
-
-        add_main_option_entries (options);
-
-        handle_local_options.connect (() =>
-        {
-            if (show_version)
-            {
-                stdout.printf ("%s %s\n", Config.PACKAGE_NAME, Config.PACKAGE_VERSION);
-                return 0;
-            }
-
-            try
-            {
-                register ();
-            }
-            catch (Error e)
-            {
-                error ("Failed to register the application: %s", e.message);
-            }
-
-            if (new_window)
-                activate_action ("tepl-new-window", null);
-
-            if (new_document)
-                activate_action ("new-document", null);
-
-            return -1;
-        });
     }
 
     private void startup_cb ()

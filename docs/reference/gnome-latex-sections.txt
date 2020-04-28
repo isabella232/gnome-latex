@@ -151,6 +151,12 @@ latexila_factory_get_type
 </SECTION>
 
 <SECTION>
+<FILE>init</FILE>
+latexila_init
+latexila_finalize
+</SECTION>
+
+<SECTION>
 <FILE>latex-commands</FILE>
 latexila_latex_commands_add_action_infos
 latexila_latex_commands_add_actions

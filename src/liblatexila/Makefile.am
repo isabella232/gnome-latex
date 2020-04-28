@@ -33,6 +33,7 @@ liblatexila_public_headers =			\
 	latexila-build-tools-personal.h		\
 	latexila-build-view.h			\
 	latexila-factory.h			\
+	latexila-init.h				\
 	latexila-latex-commands.h		\
 	latexila-post-processor.h		\
 	latexila-post-processor-all-output.h	\
@@ -58,6 +59,7 @@ liblatexila_public_c_files =			\
 	latexila-build-tools-personal.c		\
 	latexila-build-view.c			\
 	latexila-factory.c			\
+	latexila-init.c				\
 	latexila-latex-commands.c		\
 	latexila-post-processor.c		\
 	latexila-post-processor-all-output.c	\

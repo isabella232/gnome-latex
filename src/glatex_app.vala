@@ -63,7 +63,6 @@ public class GlatexApp : Latexila.App
         setup_theme_extensions ();
         AppSettings.get_default ();
         support_backward_search ();
-        Gtk.AccelMap.load (get_accel_filename ());
 
         release ();
     }
@@ -71,23 +70,8 @@ public class GlatexApp : Latexila.App
     private void shutdown_cb ()
     {
         hold ();
-
         Projects.get_default ().save ();
         MostUsedSymbols.get_default ().save ();
-
-        /* Save accel file */
-        string accel_filename = get_accel_filename ();
-        File accel_file = File.new_for_path (accel_filename);
-        try
-        {
-            Tepl.utils_create_parent_directories (accel_file, null);
-            Gtk.AccelMap.save (accel_filename);
-        }
-        catch (Error error)
-        {
-            warning ("Error when saving accel file: %s", error.message);
-        }
-
         release ();
     }
 
@@ -225,12 +209,6 @@ public class GlatexApp : Latexila.App
         }
 
         main_window.present ();
-    }
-
-    private string get_accel_filename ()
-    {
-        return Path.build_filename (Environment.get_user_config_dir (),
-            "gnome-latex", "accels");
     }
 
     private void support_backward_search ()

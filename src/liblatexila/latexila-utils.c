@@ -43,13 +43,9 @@
 /**
  * latexila_utils_register_icons:
  *
- * Register the GNOME LaTeX icons to the #GtkIconTheme as built-in icons. For
- * example the icon located at data/images/stock-icons/badbox.png in the
- * GNOME LaTeX git repository will be available with the icon name "badbox". The
- * "stock-icons" directory name is for historical reasons and should be changed
- * when stock icons are no longer used in GNOME LaTeX.
+ * Register the GNOME LaTeX icons to the #GtkIconTheme as built-in icons.
  *
- * TODO: prefix icon names with "glatex-", so the badbox.png would be
+ * TODO: prefix icon names with "glatex-", so for example badbox.png would be
  * "glatex-badbox".
  */
 void

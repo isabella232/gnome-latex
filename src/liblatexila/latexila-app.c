@@ -21,6 +21,8 @@
 #include "latexila-app.h"
 #include <glib/gi18n.h>
 #include <tepl/tepl.h>
+#include "latexila-latex-commands.h"
+#include "latexila-utils.h"
 
 /**
  * SECTION:app
@@ -118,7 +120,12 @@ latexila_app_startup (GApplication *app)
 		G_APPLICATION_CLASS (latexila_app_parent_class)->startup (app);
 	}
 
+	latexila_utils_migrate_latexila_to_gnome_latex ();
+
 	add_action_entries (LATEXILA_APP (app));
+	latexila_latex_commands_add_action_infos (GTK_APPLICATION (app));
+
+	latexila_utils_register_icons ();
 }
 
 static void

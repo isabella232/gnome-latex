@@ -108,12 +108,8 @@ public class GlatexApp : Latexila.App
     {
         hold ();
 
-        Latexila.utils_migrate_latexila_to_gnome_latex ();
-
         add_action_entries (_app_actions, this);
-        Latexila.latex_commands_add_action_infos (this);
 
-        Latexila.utils_register_icons ();
         setup_theme_extensions ();
         AppSettings.get_default ();
         support_backward_search ();

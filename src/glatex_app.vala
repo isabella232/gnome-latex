@@ -28,7 +28,6 @@ public class GlatexApp : Latexila.App
         { "new-document", new_document_cb },
         { "preferences", preferences_cb },
         { "manage-build-tools", manage_build_tools_cb },
-        { "help", help_cb },
         { "quit", quit_cb }
     };
 
@@ -163,20 +162,6 @@ public class GlatexApp : Latexila.App
     private void manage_build_tools_cb ()
     {
         new BuildToolsPreferences (get_active_main_window ());
-    }
-
-    private void help_cb ()
-    {
-        MainWindow? window = get_active_main_window ();
-
-        try
-        {
-            Latexila.utils_show_uri (window, "help:gnome-latex", Gdk.CURRENT_TIME);
-        }
-        catch (Error e)
-        {
-            warning ("Impossible to open the documentation: %s", e.message);
-        }
     }
 
     private void quit_cb ()

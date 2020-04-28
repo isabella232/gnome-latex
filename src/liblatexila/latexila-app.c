@@ -70,11 +70,38 @@ about_activate_cb (GSimpleAction *about_action,
 }
 
 static void
+help_activate_cb (GSimpleAction *help_action,
+		  GVariant      *parameter,
+		  gpointer       user_data)
+{
+	LatexilaApp *app = LATEXILA_APP (user_data);
+	TeplApplication *tepl_app = tepl_application_get_from_gtk_application (GTK_APPLICATION (app));
+	GtkApplicationWindow *active_main_window;
+	GError *error = NULL;
+
+	active_main_window = tepl_application_get_active_main_window (tepl_app);
+
+	gtk_show_uri_on_window (GTK_WINDOW (active_main_window),
+				"help:gnome-latex",
+				GDK_CURRENT_TIME,
+				&error);
+
+	if (error != NULL)
+	{
+		tepl_utils_show_warning_dialog (GTK_WINDOW (active_main_window),
+						_("Impossible to open the documentation: %s"),
+						error->message);
+		g_clear_error (&error);
+	}
+}
+
+static void
 add_action_entries (LatexilaApp *app)
 {
 	const GActionEntry app_entries[] =
 	{
 		{ "about", about_activate_cb },
+		{ "help", help_activate_cb },
 	};
 
 	amtk_action_map_add_action_entries_check_dups (G_ACTION_MAP (app),

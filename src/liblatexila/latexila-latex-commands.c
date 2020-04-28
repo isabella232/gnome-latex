@@ -1693,6 +1693,36 @@ create_submenu_latex_misc (void)
 	return GTK_WIDGET (menu);
 }
 
+static void
+add_menu_item_with_submenu (GtkMenuShell *menu,
+			    const gchar  *action_name,
+			    GtkWidget    *submenu)
+{
+	AmtkFactory *factory_no_gaction;
+	GtkWidget *menu_item;
+
+	factory_no_gaction = amtk_factory_new_with_default_application ();
+	amtk_factory_set_default_flags (factory_no_gaction, AMTK_FACTORY_IGNORE_GACTION);
+
+	menu_item = amtk_factory_create_menu_item (factory_no_gaction, action_name);
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), submenu);
+	gtk_menu_shell_append (menu, menu_item);
+
+	g_object_unref (factory_no_gaction);
+}
+
+static void
+add_menu_item_with_subentries (GtkMenuShell              *menu,
+			       const gchar               *action_name,
+			       const AmtkActionInfoEntry *entries)
+{
+	AmtkFactory *factory;
+
+	factory = amtk_factory_new_with_default_application ();
+	add_menu_item_with_submenu (menu, action_name, amtk_factory_create_simple_menu (factory, entries, -1));
+	g_object_unref (factory);
+}
+
 /**
  * latexila_latex_commands_create_latex_menu:
  * @gtk_window: a #GtkApplicationWindow.
@@ -1703,77 +1733,27 @@ GtkMenu *
 latexila_latex_commands_create_latex_menu (GtkApplicationWindow *gtk_window)
 {
 	GtkMenuShell *menu;
-	GtkWidget *menu_item;
-	AmtkFactory *factory;
-	AmtkFactory *factory_no_gaction;
 	AmtkApplicationWindow *amtk_window;
 
 	g_return_val_if_fail (GTK_IS_APPLICATION_WINDOW (gtk_window), NULL);
 
 	menu = GTK_MENU_SHELL (gtk_menu_new ());
 
-	factory = amtk_factory_new_with_default_application ();
-
-	factory_no_gaction = amtk_factory_new_with_default_application ();
-	amtk_factory_set_default_flags (factory_no_gaction, AMTK_FACTORY_IGNORE_GACTION);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-sectioning");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_sectioning ());
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-references");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
-				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_references, -1));
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-environments");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_environments ());
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-list-environments");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_list_environments ());
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-character-size");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
-				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_character_sizes, -1));
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-font-styles");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_font_styles ());
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-tabular");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
-				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_tabular, -1));
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-presentation");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
-				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_presentation, -1));
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-spacing");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
-				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_spacing, -1));
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-accents");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item),
-				   amtk_factory_create_simple_menu (factory, action_info_entries_latex_accents, -1));
-	gtk_menu_shell_append (menu, menu_item);
-
-	menu_item = amtk_factory_create_menu_item (factory_no_gaction, "no-gaction-latex-misc");
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menu_item), create_submenu_latex_misc ());
-	gtk_menu_shell_append (menu, menu_item);
+	add_menu_item_with_submenu (menu,	"no-gaction-latex-sectioning", create_submenu_latex_sectioning ());
+	add_menu_item_with_subentries (menu,	"no-gaction-latex-references", action_info_entries_latex_references);
+	add_menu_item_with_submenu (menu,	"no-gaction-latex-environments", create_submenu_latex_environments ());
+	add_menu_item_with_submenu (menu,	"no-gaction-latex-list-environments", create_submenu_latex_list_environments ());
+	add_menu_item_with_subentries (menu,	"no-gaction-latex-character-size", action_info_entries_latex_character_sizes);
+	add_menu_item_with_submenu (menu,	"no-gaction-latex-font-styles", create_submenu_latex_font_styles ());
+	add_menu_item_with_subentries (menu,	"no-gaction-latex-tabular", action_info_entries_latex_tabular);
+	add_menu_item_with_subentries (menu,	"no-gaction-latex-presentation", action_info_entries_latex_presentation);
+	add_menu_item_with_subentries (menu,	"no-gaction-latex-spacing", action_info_entries_latex_spacing);
+	add_menu_item_with_subentries (menu,	"no-gaction-latex-accents", action_info_entries_latex_accents);
+	add_menu_item_with_submenu (menu,	"no-gaction-latex-misc", create_submenu_latex_misc ());
 
 	amtk_window = amtk_application_window_get_from_gtk_application_window (gtk_window);
 	amtk_application_window_connect_menu_to_statusbar (amtk_window, menu);
 
 	gtk_widget_show_all (GTK_WIDGET (menu));
-
-	g_object_unref (factory);
-	g_object_unref (factory_no_gaction);
-
 	return GTK_MENU (menu);
 }

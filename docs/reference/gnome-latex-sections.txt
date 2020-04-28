@@ -12,6 +12,7 @@ LATEXILA_IS_APP
 LATEXILA_IS_APP_CLASS
 LATEXILA_TYPE_APP
 LatexilaAppClass
+LatexilaAppPrivate
 latexila_app_get_type
 </SECTION>
 

@@ -33,10 +33,13 @@ G_BEGIN_DECLS
 
 typedef struct _LatexilaApp         LatexilaApp;
 typedef struct _LatexilaAppClass    LatexilaAppClass;
+typedef struct _LatexilaAppPrivate  LatexilaAppPrivate;
 
 struct _LatexilaApp
 {
 	GtkApplication parent;
+
+	LatexilaAppPrivate *priv;
 };
 
 struct _LatexilaAppClass

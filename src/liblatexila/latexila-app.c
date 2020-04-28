@@ -24,13 +24,18 @@
 #include "latexila-latex-commands.h"
 #include "latexila-utils.h"
 
+struct _LatexilaAppPrivate
+{
+	GtkCssProvider *adwaita_css_provider;
+};
+
 /**
  * SECTION:app
  * @title: LatexilaApp
  * @short_description: Subclass of #GtkApplication
  */
 
-G_DEFINE_TYPE (LatexilaApp, latexila_app, GTK_TYPE_APPLICATION)
+G_DEFINE_TYPE_WITH_PRIVATE (LatexilaApp, latexila_app, GTK_TYPE_APPLICATION)
 
 static void
 about_activate_cb (GSimpleAction *about_action,
@@ -170,19 +175,75 @@ latexila_app_handle_local_options (GApplication *app,
 }
 
 static void
-latexila_app_startup (GApplication *app)
+update_theme (LatexilaApp *app)
 {
+	GtkSettings *settings = gtk_settings_get_default ();
+	gchar *gtk_theme_name;
+
+	g_object_get (settings,
+		      "gtk-theme-name", &gtk_theme_name,
+		      NULL);
+
+	if (g_strcmp0 (gtk_theme_name, "Adwaita") == 0)
+	{
+		if (app->priv->adwaita_css_provider == NULL)
+		{
+			app->priv->adwaita_css_provider = gtk_css_provider_new ();
+			gtk_css_provider_load_from_resource (app->priv->adwaita_css_provider,
+							     "/org/gnome/gnome-latex/ui/gnome-latex.adwaita.css");
+		}
+
+		gtk_style_context_add_provider_for_screen (gdk_screen_get_default (),
+							   GTK_STYLE_PROVIDER (app->priv->adwaita_css_provider),
+							   GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+	}
+	else if (app->priv->adwaita_css_provider != NULL)
+	{
+		gtk_style_context_remove_provider_for_screen (gdk_screen_get_default (),
+							      GTK_STYLE_PROVIDER (app->priv->adwaita_css_provider));
+		g_clear_object (&app->priv->adwaita_css_provider);
+	}
+
+	g_free (gtk_theme_name);
+}
+
+static void
+gtk_theme_name_notify_cb (GtkSettings *settings,
+			  GParamSpec  *pspec,
+			  LatexilaApp *app)
+{
+	update_theme (app);
+}
+
+static void
+setup_theme_extension (LatexilaApp *app)
+{
+	GtkSettings *settings = gtk_settings_get_default ();
+
+	g_signal_connect_object (settings,
+				 "notify::gtk-theme-name",
+				 G_CALLBACK (gtk_theme_name_notify_cb),
+				 app,
+				 0);
+
+	update_theme (app);
+}
+
+static void
+latexila_app_startup (GApplication *g_app)
+{
+	LatexilaApp *app = LATEXILA_APP (g_app);
+
 	if (G_APPLICATION_CLASS (latexila_app_parent_class)->startup != NULL)
 	{
-		G_APPLICATION_CLASS (latexila_app_parent_class)->startup (app);
+		G_APPLICATION_CLASS (latexila_app_parent_class)->startup (g_app);
 	}
 
 	latexila_utils_migrate_latexila_to_gnome_latex ();
-
-	add_action_entries (LATEXILA_APP (app));
+	add_action_entries (app);
 	latexila_latex_commands_add_action_infos (GTK_APPLICATION (app));
-
 	latexila_utils_register_icons ();
+	setup_theme_extension (app);
 }
 
 static void
@@ -197,12 +258,23 @@ latexila_app_constructed (GObject *object)
 }
 
 static void
+latexila_app_dispose (GObject *object)
+{
+	LatexilaApp *app = LATEXILA_APP (object);
+
+	g_clear_object (&app->priv->adwaita_css_provider);
+
+	G_OBJECT_CLASS (latexila_app_parent_class)->dispose (object);
+}
+
+static void
 latexila_app_class_init (LatexilaAppClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
 	GApplicationClass *gapp_class = G_APPLICATION_CLASS (klass);
 
 	object_class->constructed = latexila_app_constructed;
+	object_class->dispose = latexila_app_dispose;
 
 	gapp_class->handle_local_options = latexila_app_handle_local_options;
 	gapp_class->startup = latexila_app_startup;
@@ -212,6 +284,8 @@ static void
 latexila_app_init (LatexilaApp *app)
 {
 	TeplApplication *tepl_app;
+
+	app->priv = latexila_app_get_instance_private (app);
 
 	g_application_set_flags (G_APPLICATION (app), G_APPLICATION_HANDLES_OPEN);
 	g_set_application_name (PACKAGE_NAME);

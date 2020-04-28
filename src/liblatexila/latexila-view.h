@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright (C) 2017 - Sébastien Wilmet <swilmet@gnome.org>
+ * Copyright (C) 2017-2020 - Sébastien Wilmet <swilmet@gnome.org>
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,9 +24,9 @@
 
 G_BEGIN_DECLS
 
-void          latexila_view_configure_space_drawer    (GtkSourceView *view);
+void	latexila_view_setup			(GtkSourceView *view);
 
-gchar *       latexila_view_get_indentation_style     (GtkSourceView *view);
+gchar *	latexila_view_get_indentation_style	(GtkSourceView *view);
 
 G_END_DECLS
 

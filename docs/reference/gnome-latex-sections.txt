@@ -312,6 +312,6 @@ latexila_utils_migrate_latexila_to_gnome_latex
 
 <SECTION>
 <FILE>view</FILE>
-latexila_view_configure_space_drawer
+latexila_view_setup
 latexila_view_get_indentation_style
 </SECTION>

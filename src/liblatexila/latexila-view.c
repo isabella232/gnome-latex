@@ -1,7 +1,7 @@
 /*
  * This file is part of GNOME LaTeX.
  *
- * Copyright (C) 2017 - Sébastien Wilmet <swilmet@gnome.org>
+ * Copyright (C) 2017-2020 - Sébastien Wilmet <swilmet@gnome.org>
  *
  * GNOME LaTeX is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,20 +26,12 @@
  */
 
 #include "latexila-view.h"
+#include "latexila-settings.h"
 
-/**
- * latexila_view_configure_space_drawer:
- * @view: a #GtkSourceView.
- *
- * Configures the #GtkSourceSpaceDrawer of @view, to draw non-breaking spaces at
- * all locations.
- */
-void
-latexila_view_configure_space_drawer (GtkSourceView *view)
+static void
+configure_space_drawer (GtkSourceView *view)
 {
 	GtkSourceSpaceDrawer *space_drawer;
-
-	g_return_if_fail (GTK_SOURCE_IS_VIEW (view));
 
 	space_drawer = gtk_source_view_get_space_drawer (view);
 
@@ -57,6 +49,53 @@ latexila_view_configure_space_drawer (GtkSourceView *view)
 							 GTK_SOURCE_SPACE_TYPE_NBSP);
 
 	gtk_source_space_drawer_set_enable_matrix (space_drawer, TRUE);
+}
+
+/**
+ * latexila_view_setup:
+ * @view: a #GtkSourceView widget.
+ *
+ * Setups a #GtkSourceView widget for GNOME LaTeX.
+ */
+void
+latexila_view_setup (GtkSourceView *view)
+{
+	GtkTextView *text_view;
+	LatexilaSettings *settings;
+	GSettings *editor_settings;
+
+	g_return_if_fail (GTK_SOURCE_IS_VIEW (view));
+
+	text_view = GTK_TEXT_VIEW (view);
+
+	configure_space_drawer (view);
+
+	gtk_text_view_set_wrap_mode (text_view, GTK_WRAP_WORD);
+	gtk_source_view_set_auto_indent (view, TRUE);
+	gtk_source_view_set_smart_home_end (view, GTK_SOURCE_SMART_HOME_END_AFTER);
+
+	settings = latexila_settings_get_singleton ();
+	editor_settings = latexila_settings_peek_editor_settings (settings);
+
+	g_settings_bind (editor_settings, "forget-no-tabs",
+			 view, "smart-backspace",
+			 G_SETTINGS_BIND_GET | G_SETTINGS_BIND_NO_SENSITIVITY);
+
+	g_settings_bind (editor_settings, "tabs-size",
+			 view, "tab-width",
+			 G_SETTINGS_BIND_GET | G_SETTINGS_BIND_NO_SENSITIVITY);
+
+	g_settings_bind (editor_settings, "insert-spaces",
+			 view, "insert-spaces-instead-of-tabs",
+			 G_SETTINGS_BIND_GET | G_SETTINGS_BIND_NO_SENSITIVITY);
+
+	g_settings_bind (editor_settings, "display-line-numbers",
+			 view, "show-line-numbers",
+			 G_SETTINGS_BIND_GET | G_SETTINGS_BIND_NO_SENSITIVITY);
+
+	g_settings_bind (editor_settings, "highlight-current-line",
+			 view, "highlight-current-line",
+			 G_SETTINGS_BIND_GET | G_SETTINGS_BIND_NO_SENSITIVITY);
 }
 
 /**

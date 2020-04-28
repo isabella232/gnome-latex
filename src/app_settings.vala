@@ -68,39 +68,6 @@ public class AppSettings : GLib.Settings
             set_font (setting.get_string (key));
         });
 
-        editor.changed["tabs-size"].connect ((setting, key) =>
-        {
-            uint val;
-            setting.get (key, "u", out val);
-
-            foreach (DocumentView view in GlatexApp.get_instance ().get_views ())
-                view.tab_width = val;
-        });
-
-        editor.changed["insert-spaces"].connect ((setting, key) =>
-        {
-            bool val = setting.get_boolean (key);
-
-            foreach (DocumentView view in GlatexApp.get_instance ().get_views ())
-                view.insert_spaces_instead_of_tabs = val;
-        });
-
-        editor.changed["display-line-numbers"].connect ((setting, key) =>
-        {
-            bool val = setting.get_boolean (key);
-
-            foreach (DocumentView view in GlatexApp.get_instance ().get_views ())
-                view.show_line_numbers = val;
-        });
-
-        editor.changed["highlight-current-line"].connect ((setting, key) =>
-        {
-            bool val = setting.get_boolean (key);
-
-            foreach (DocumentView view in GlatexApp.get_instance ().get_views ())
-                view.highlight_current_line = val;
-        });
-
         editor.changed["bracket-matching"].connect ((setting, key) =>
         {
             bool val = setting.get_boolean (key);

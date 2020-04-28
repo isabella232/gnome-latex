@@ -40,31 +40,15 @@ public class DocumentView : Tepl.View
             this.editable = !((Document) d).readonly;
         });
 
-        wrap_mode = WrapMode.WORD;
-        auto_indent = true;
-        indent_width = -1;
-
-        Latexila.view_configure_space_drawer (this);
+        Latexila.view_setup (this);
 
         /* settings */
         _editor_settings = new GLib.Settings ("org.gnome.gnome-latex.preferences.editor");
 
-        _editor_settings.bind ("forget-no-tabs", this, "smart-backspace",
-            SettingsBindFlags.GET);
-
         set_font_from_settings ();
 
-        // tab width
-        uint tmp;
-        _editor_settings.get ("tabs-size", "u", out tmp);
-        tab_width = tmp;
-
-        insert_spaces_instead_of_tabs = _editor_settings.get_boolean ("insert-spaces");
-        show_line_numbers = _editor_settings.get_boolean ("display-line-numbers");
-        highlight_current_line = _editor_settings.get_boolean ("highlight-current-line");
         doc.highlight_matching_brackets =
             _editor_settings.get_boolean ("bracket-matching");
-        set_smart_home_end (SourceSmartHomeEndType.AFTER);
 
         // completion
         try

@@ -242,7 +242,6 @@ latexila_post_processor_latexmk_get_type
 <FILE>settings</FILE>
 LatexilaSettings
 latexila_settings_get_singleton
-latexila_settings_unref_singleton
 latexila_settings_peek_editor_settings
 <SUBSECTION Standard>
 LATEXILA_IS_SETTINGS

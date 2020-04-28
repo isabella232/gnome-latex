@@ -52,7 +52,7 @@ GType		latexila_settings_get_type			(void);
 LatexilaSettings *
 		latexila_settings_get_singleton			(void);
 
-void		latexila_settings_unref_singleton		(void);
+void		_latexila_settings_unref_singleton		(void);
 
 GSettings *	latexila_settings_peek_editor_settings		(LatexilaSettings *self);
 

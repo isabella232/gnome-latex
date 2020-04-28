@@ -81,7 +81,7 @@ latexila_finalize (void)
 
 	if (!done)
 	{
-		latexila_settings_unref_singleton ();
+		_latexila_settings_unref_singleton ();
 		tepl_finalize ();
 
 		done = TRUE;

@@ -94,13 +94,8 @@ latexila_settings_get_singleton (void)
 	return singleton;
 }
 
-/**
- * latexila_settings_unref_singleton:
- *
- * Unrefs the #LatexilaSettings singleton instance.
- */
 void
-latexila_settings_unref_singleton (void)
+_latexila_settings_unref_singleton (void)
 {
 	if (singleton != NULL)
 	{

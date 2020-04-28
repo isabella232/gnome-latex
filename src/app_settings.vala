@@ -68,14 +68,6 @@ public class AppSettings : GLib.Settings
             set_font (setting.get_string (key));
         });
 
-        editor.changed["bracket-matching"].connect ((setting, key) =>
-        {
-            bool val = setting.get_boolean (key);
-
-            foreach (Document doc in GlatexApp.get_instance ().get_documents ())
-                doc.highlight_matching_brackets = val;
-        });
-
         editor.changed["auto-save"].connect ((setting, key) =>
         {
             bool val = setting.get_boolean (key);

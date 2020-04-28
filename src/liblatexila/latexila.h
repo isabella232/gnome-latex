@@ -27,6 +27,7 @@
 #include "latexila-types.h"
 #include "latexila-enum-types.h"
 
+#include "latexila-buffer.h"
 #include "latexila-build-job.h"
 #include "latexila-build-tool.h"
 #include "latexila-build-tools.h"

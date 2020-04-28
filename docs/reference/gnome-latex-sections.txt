@@ -1,6 +1,11 @@
 <INCLUDE>latexila.h</INCLUDE>
 
 <SECTION>
+<FILE>buffer</FILE>
+latexila_buffer_setup
+</SECTION>
+
+<SECTION>
 <FILE>build-tools</FILE>
 LatexilaBuildTools
 latexila_build_tools_load

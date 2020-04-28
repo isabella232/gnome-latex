@@ -47,9 +47,6 @@ public class DocumentView : Tepl.View
 
         set_font_from_settings ();
 
-        doc.highlight_matching_brackets =
-            _editor_settings.get_boolean ("bracket-matching");
-
         // completion
         try
         {

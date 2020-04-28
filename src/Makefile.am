@@ -59,10 +59,9 @@ vala_files =				\
 	tab_label.vala			\
 	utils.vala
 
-gnome_latex_SOURCES = 				\
-	$(vala_files)				\
-	$(vapidir)/config.vapi			\
-	$(vapidir)/menu_tool_action.vapi
+gnome_latex_SOURCES = 			\
+	$(vala_files)			\
+	$(vapidir)/config.vapi
 
 # -w: silence all warnings, because we already have the valac warnings. The
 # generated C code currently triggers a lot of warnings because deprecated

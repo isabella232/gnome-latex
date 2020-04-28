@@ -1,6 +1,21 @@
 <INCLUDE>latexila.h</INCLUDE>
 
 <SECTION>
+<FILE>app</FILE>
+LatexilaApp
+latexila_app_new
+<SUBSECTION Standard>
+LATEXILA_APP
+LATEXILA_APP_CLASS
+LATEXILA_APP_GET_CLASS
+LATEXILA_IS_APP
+LATEXILA_IS_APP_CLASS
+LATEXILA_TYPE_APP
+LatexilaAppClass
+latexila_app_get_type
+</SECTION>
+
+<SECTION>
 <FILE>buffer</FILE>
 latexila_buffer_setup
 </SECTION>

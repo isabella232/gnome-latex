@@ -25,6 +25,7 @@ liblatexila_la_LIBADD =		\
 
 liblatexila_public_headers =			\
 	latexila.h				\
+	latexila-app.h				\
 	latexila-buffer.h			\
 	latexila-build-job.h			\
 	latexila-build-tool.h			\
@@ -51,6 +52,7 @@ liblatexila_public_headers =			\
 	$(NULL)
 
 liblatexila_public_c_files =			\
+	latexila-app.c				\
 	latexila-buffer.c			\
 	latexila-build-job.c			\
 	latexila-build-tool.c			\

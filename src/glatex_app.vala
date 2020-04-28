@@ -19,7 +19,7 @@
  * Author: Sébastien Wilmet
  */
 
-public class GlatexApp : Gtk.Application
+public class GlatexApp : Latexila.App
 {
     static Gtk.CssProvider? _provider = null;
 

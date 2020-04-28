@@ -1489,14 +1489,14 @@ create_submenu_latex_sectioning (void)
 }
 
 /**
- * latexila_latex_commands_get_edit_toolbar:
+ * latexila_latex_commands_create_edit_toolbar:
  * @gtk_window: a #GtkApplicationWindow.
  *
  * Returns: (transfer floating): a new #GtkToolbar with the most common LaTeX
  * actions.
  */
 GtkToolbar *
-latexila_latex_commands_get_edit_toolbar (GtkApplicationWindow *gtk_window)
+latexila_latex_commands_create_edit_toolbar (GtkApplicationWindow *gtk_window)
 {
 	GtkToolbar *toolbar;
 	GtkStyleContext *style_context;

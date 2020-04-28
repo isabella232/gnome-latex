@@ -414,7 +414,7 @@ public class MainWindow : ApplicationWindow
 
     private Toolbar get_edit_toolbar ()
     {
-        Toolbar edit_toolbar = Latexila.latex_commands_get_edit_toolbar (this);
+        Toolbar edit_toolbar = Latexila.latex_commands_create_edit_toolbar (this);
 
         ToggleAction action =
             _action_group.get_action ("ViewEditToolbar") as ToggleAction;

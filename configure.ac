@@ -75,11 +75,6 @@ AC_DEFINE_UNQUOTED([DATA_DIR],
                    ["${DATA_DIR}"],
 		   [gnome-latex data directory])
 
-adl_RECURSIVE_EVAL(["${datadir}/icons/hicolor"], [ICONS_DIR])
-AC_DEFINE_UNQUOTED([ICONS_DIR],
-                   ["${ICONS_DIR}"],
-		   [icons directory])
-
 # Checks for programs
 AC_PROG_CC
 AC_PROG_INSTALL

@@ -5,5 +5,4 @@ namespace Config
     public const string PACKAGE_VERSION;
     public const string DATA_DIR;
     public const string GETTEXT_PACKAGE;
-    public const string ICONS_DIR;
 }

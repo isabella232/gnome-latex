@@ -47,6 +47,10 @@ public class MainWindow : ApplicationWindow
             N_("Jump to the associated position in the PDF file. Another shortcut: Ctrl+click, which works in both directions."),
             on_search_forward },
 
+        // LaTeX and Math
+        { "Latex", null, "_LaTeX" },
+        { "Math", null, N_("_Math") },
+
         // Projects
         { "Projects", null, N_("_Projects") },
         { "ProjectsNew", "document-new", N_("_New Project"), "",
@@ -90,7 +94,6 @@ public class MainWindow : ApplicationWindow
 
     private UIManager _ui_manager;
     private Gtk.ActionGroup _action_group;
-    private Gtk.ActionGroup _latex_action_group;
 
     private MainWindowFile _main_window_file;
     private MainWindowEdit _main_window_edit;
@@ -153,6 +156,8 @@ public class MainWindow : ApplicationWindow
         Tepl.ApplicationWindow tepl_window =
             Tepl.ApplicationWindow.get_from_gtk_application_window (this);
 
+        Latexila.latex_commands_add_actions (this);
+
         /* GtkUIManager */
 
         initialize_ui_manager ();
@@ -180,6 +185,9 @@ public class MainWindow : ApplicationWindow
         Gtk.MenuItem latex_menu_item =
             _ui_manager.get_widget ("/MainMenu/Latex") as Gtk.MenuItem;
         latex_menu_item.set_submenu (Latexila.latex_commands_create_latex_menu (this));
+        Gtk.MenuItem math_menu_item =
+            _ui_manager.get_widget ("/MainMenu/Math") as Gtk.MenuItem;
+        math_menu_item.set_submenu (Latexila.latex_commands_create_math_menu (this));
 
         // Allow the menu to shrink below its minimum width
         Paned menu_paned = new Paned (Orientation.HORIZONTAL);
@@ -328,11 +336,8 @@ public class MainWindow : ApplicationWindow
         Amtk.utils_create_gtk_action (this, "win.tepl-goto-line",
             _action_group, "SearchGoToLine");
 
-        _latex_action_group = new LatexMenu (this);
-
         _ui_manager = new UIManager ();
         _ui_manager.insert_action_group (_action_group, 0);
-        _ui_manager.insert_action_group (_latex_action_group, 0);
 
         try
         {
@@ -959,7 +964,9 @@ public class MainWindow : ApplicationWindow
             "SearchFind",
             "SearchReplace",
             "SearchForward",
-            "ProjectsConfigCurrent"
+            "ProjectsConfigCurrent",
+            "Latex",
+            "Math"
         };
 
         foreach (string file_action in file_actions)
@@ -967,8 +974,6 @@ public class MainWindow : ApplicationWindow
             Gtk.Action action = _action_group.get_action (file_action);
             action.set_sensitive (sensitive);
         }
-
-        _latex_action_group.set_sensitive (sensitive);
 
         _main_window_file.update_sensitivity ();
         _main_window_edit.update_sensitivity ();

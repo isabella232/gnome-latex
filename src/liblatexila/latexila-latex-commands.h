@@ -32,6 +32,8 @@ GtkToolbar *	latexila_latex_commands_create_edit_toolbar	(GtkApplicationWindow *
 
 GtkMenu *	latexila_latex_commands_create_latex_menu	(GtkApplicationWindow *gtk_window);
 
+GtkMenu *	latexila_latex_commands_create_math_menu	(GtkApplicationWindow *gtk_window);
+
 G_END_DECLS
 
 #endif /* LATEXILA_LATEX_COMMANDS_H */

@@ -178,6 +178,7 @@ latexila_latex_commands_add_action_infos
 latexila_latex_commands_add_actions
 latexila_latex_commands_create_edit_toolbar
 latexila_latex_commands_create_latex_menu
+latexila_latex_commands_create_math_menu
 </SECTION>
 
 <SECTION>

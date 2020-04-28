@@ -21,7 +21,6 @@ src/document_view.vala
 src/encodings.vala
 src/file_browser.vala
 src/glatex_app.vala
-src/latex_menu.vala
 src/liblatexila/dh-dconf-migration.c
 src/liblatexila/latexila-app.c
 src/liblatexila/latexila-buffer.c

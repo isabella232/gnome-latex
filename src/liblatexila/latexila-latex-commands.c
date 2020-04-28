@@ -152,6 +152,116 @@ static const AmtkActionInfoEntry action_info_entries_math_environments[] = {
 	{ NULL }
 };
 
+/* Math functions */
+static const AmtkActionInfoEntry action_info_entries_math_functions[] = {
+	{ "win.latex-command-with-space::arccos", NULL, "\\arccos", NULL, NULL },
+	{ "win.latex-command-with-space::arcsin", NULL, "\\arcsin", NULL, NULL },
+	{ "win.latex-command-with-space::arctan", NULL, "\\arctan", NULL, NULL },
+	{ "win.latex-command-with-space::cos", NULL, "\\cos", NULL, NULL },
+	{ "win.latex-command-with-space::cosh", NULL, "\\cosh", NULL, NULL },
+	{ "win.latex-command-with-space::cot", NULL, "\\cot", NULL, NULL },
+	{ "win.latex-command-with-space::coth", NULL, "\\coth", NULL, NULL },
+	{ "win.latex-command-with-space::csc", NULL, "\\csc", NULL, NULL },
+	{ "win.latex-command-with-space::deg", NULL, "\\deg", NULL, NULL },
+	{ "win.latex-command-with-space::det", NULL, "\\det", NULL, NULL },
+	{ "win.latex-command-with-space::dim", NULL, "\\dim", NULL, NULL },
+	{ "win.latex-command-with-space::exp", NULL, "\\exp", NULL, NULL },
+	{ "win.latex-command-with-space::gcd", NULL, "\\gcd", NULL, NULL },
+	{ "win.latex-command-with-space::hom", NULL, "\\hom", NULL, NULL },
+	{ "win.latex-command-with-space::inf", NULL, "\\inf", NULL, NULL },
+	{ "win.latex-command-with-space::ker", NULL, "\\ker", NULL, NULL },
+	{ "win.latex-command-with-space::lg", NULL, "\\lg", NULL, NULL },
+	{ "win.latex-command-with-space::lim", NULL, "\\lim", NULL, NULL },
+	{ "win.latex-command-with-space::liminf", NULL, "\\liminf", NULL, NULL },
+	{ "win.latex-command-with-space::limsup", NULL, "\\limsup", NULL, NULL },
+	{ "win.latex-command-with-space::ln", NULL, "\\ln", NULL, NULL },
+	{ "win.latex-command-with-space::log", NULL, "\\log", NULL, NULL },
+	{ "win.latex-command-with-space::max", NULL, "\\max", NULL, NULL },
+	{ "win.latex-command-with-space::min", NULL, "\\min", NULL, NULL },
+	{ "win.latex-command-with-space::sec", NULL, "\\sec", NULL, NULL },
+	{ "win.latex-command-with-space::sin", NULL, "\\sin", NULL, NULL },
+	{ "win.latex-command-with-space::sinh", NULL, "\\sinh", NULL, NULL },
+	{ "win.latex-command-with-space::sup", NULL, "\\sup", NULL, NULL },
+	{ "win.latex-command-with-space::tan", NULL, "\\tan", NULL, NULL },
+	{ "win.latex-command-with-space::tanh", NULL, "\\tanh", NULL, NULL },
+	{ NULL }
+};
+
+/* Math Font Styles */
+static const AmtkActionInfoEntry action_info_entries_math_font_styles[] = {
+	{ "win.latex-command-with-braces::mathrm", "roman", "\\math_rm", NULL,
+	  N_("Roman — \\mathrm") },
+	{ "win.latex-command-with-braces::mathit", "italic", "\\math_it", NULL,
+	  N_("Italic — \\mathit") },
+	{ "win.latex-command-with-braces::mathbf", "bold", "\\math_bf", NULL,
+	  N_("Bold — \\mathbf") },
+	{ "win.latex-command-with-braces::mathsf", "sans_serif", "\\math_sf", NULL,
+	  N_("Sans Serif — \\mathsf") },
+	{ "win.latex-command-with-braces::mathtt", "typewriter", "\\math_tt", NULL,
+	  N_("Typewriter — \\mathtt") },
+	{ "win.latex-command-with-braces::mathcal", "mathcal", "\\math_cal", NULL,
+	  N_("Calligraphic — \\mathcal") },
+	{ "win.latex-command-with-braces::mathbb", "blackboard", "\\_mathbb", NULL,
+	  N_("Blackboard (uppercase only) — \\mathbb (amsfonts package)") },
+	{ "win.latex-command-with-braces::mathfrak", "mathfrak", "\\math_frak", NULL,
+	  N_("Euler Fraktur — \\mathfrak (amsfonts package)") },
+	{ NULL }
+};
+
+/* Math Accents */
+static const AmtkActionInfoEntry action_info_entries_math_accents[] = {
+	{ "win.latex-command-with-braces::acute", "mathaccent0", "\\_acute", NULL, NULL },
+	{ "win.latex-command-with-braces::grave", "mathaccent1", "\\_grave", NULL, NULL },
+	{ "win.latex-command-with-braces::tilde", "mathaccent2", "\\_tilde", NULL, NULL },
+	{ "win.latex-command-with-braces::bar", "mathaccent3", "\\_bar", NULL, NULL },
+	{ "win.latex-command-with-braces::vec", "mathaccent4", "\\_vec", NULL, NULL },
+	{ "win.latex-command-with-braces::hat", "mathaccent5", "\\_hat", NULL, NULL },
+	{ "win.latex-command-with-braces::check", "mathaccent6", "\\_check", NULL, NULL },
+	{ "win.latex-command-with-braces::breve", "mathaccent7", "\\b_reve", NULL, NULL },
+	{ "win.latex-command-with-braces::dot", "mathaccent8", "\\_dot", NULL, NULL },
+	{ "win.latex-command-with-braces::ddot", "mathaccent9", "\\dd_ot", NULL, NULL },
+	{ "win.latex-command-with-braces::mathring", "mathaccent10", "\\_mathring", NULL, NULL },
+	{ NULL }
+};
+
+/* Math Spaces */
+static const AmtkActionInfoEntry action_info_entries_math_spaces[] = {
+	{ "win.math-command-spaces-small", NULL, N_("_Small"), NULL, N_("Small — \\,") },
+	{ "win.math-command-spaces-medium", NULL, N_("_Medium"), NULL, N_("Medium — \\:") },
+	{ "win.math-command-spaces-large", NULL, N_("_Large"), NULL, N_("Large — \\;") },
+	{ "win.latex-command-with-space::quad", NULL, "\\_quad", NULL, NULL },
+	{ "win.latex-command-with-space::qquad", NULL, "\\qqu_ad", NULL, NULL },
+	{ NULL }
+};
+
+/* Math: Left Delimiters */
+static const AmtkActionInfoEntry action_info_entries_math_left_delimiters[] = {
+	{ "win.math-command-delimiter-left1", NULL, N_("left ("), NULL, NULL },
+	{ "win.math-command-delimiter-left2", NULL, N_("left ["), NULL, NULL },
+	{ "win.math-command-delimiter-left3", NULL, N_("left { "), NULL, NULL },
+	{ "win.math-command-delimiter-left4", NULL, N_("left <"), NULL, NULL },
+	{ "win.math-command-delimiter-left5", NULL, N_("left )"), NULL, NULL },
+	{ "win.math-command-delimiter-left6", NULL, N_("left ]"), NULL, NULL },
+	{ "win.math-command-delimiter-left7", NULL, N_("left  }"), NULL, NULL },
+	{ "win.math-command-delimiter-left8", NULL, N_("left >"), NULL, NULL },
+	{ "win.math-command-delimiter-left9", NULL, N_("left ."), NULL, NULL },
+	{ NULL }
+};
+
+/* Math: Right Delimiters */
+static const AmtkActionInfoEntry action_info_entries_math_right_delimiters[] = {
+	{ "win.math-command-delimiter-right1", NULL, N_("right )"), NULL, NULL },
+	{ "win.math-command-delimiter-right2", NULL, N_("right ]"), NULL, NULL },
+	{ "win.math-command-delimiter-right3", NULL, N_("right  }"), NULL, NULL },
+	{ "win.math-command-delimiter-right4", NULL, N_("right >"), NULL, NULL },
+	{ "win.math-command-delimiter-right5", NULL, N_("right ("), NULL, NULL },
+	{ "win.math-command-delimiter-right6", NULL, N_("right ["), NULL, NULL },
+	{ "win.math-command-delimiter-right7", NULL, N_("right { "), NULL, NULL },
+	{ "win.math-command-delimiter-right8", NULL, N_("right <"), NULL, NULL },
+	{ "win.math-command-delimiter-right9", NULL, N_("right ."), NULL, NULL },
+	{ NULL }
+};
+
 /**
  * latexila_latex_commands_add_action_infos:
  * @gtk_app: the #GtkApplication instance.
@@ -184,6 +294,14 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 		{ "no-gaction-latex-spacing", NULL, N_("_Spacing") },
 		{ "no-gaction-latex-accents", NULL, N_("International _Accents") },
 		{ "no-gaction-latex-misc", NULL, N_("_Misc") },
+
+		{ "no-gaction-math-environments", NULL, N_("_Math Environments") },
+		{ "no-gaction-math-functions", NULL, N_("Math _Functions") },
+		{ "no-gaction-math-font-styles", NULL, N_("Math Font _Styles") },
+		{ "no-gaction-math-accents", NULL, N_("Math _Accents") },
+		{ "no-gaction-math-spaces", NULL, N_("Math _Spaces") },
+		{ "no-gaction-math-left-delimiters", "delimiters-left", N_("_Left Delimiters") },
+		{ "no-gaction-math-right-delimiters", "delimiters-right", N_("Right _Delimiters") },
 
 		/* LaTeX: Sectioning */
 
@@ -315,104 +433,6 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 		  N_("Square Root — \\sqrt{}") },
 		{ "win.math-command-misc-nth-root", "math-nth-root", N_("_N-th Root — \\sqrt[]{}"), NULL,
 		  N_("N-th Root — \\sqrt[]{}") },
-
-		/* Math functions */
-
-		{ "win.latex-command-with-space::arccos", NULL, "\\arccos", NULL, NULL },
-		{ "win.latex-command-with-space::arcsin", NULL, "\\arcsin", NULL, NULL },
-		{ "win.latex-command-with-space::arctan", NULL, "\\arctan", NULL, NULL },
-		{ "win.latex-command-with-space::cos", NULL, "\\cos", NULL, NULL },
-		{ "win.latex-command-with-space::cosh", NULL, "\\cosh", NULL, NULL },
-		{ "win.latex-command-with-space::cot", NULL, "\\cot", NULL, NULL },
-		{ "win.latex-command-with-space::coth", NULL, "\\coth", NULL, NULL },
-		{ "win.latex-command-with-space::csc", NULL, "\\csc", NULL, NULL },
-		{ "win.latex-command-with-space::deg", NULL, "\\deg", NULL, NULL },
-		{ "win.latex-command-with-space::det", NULL, "\\det", NULL, NULL },
-		{ "win.latex-command-with-space::dim", NULL, "\\dim", NULL, NULL },
-		{ "win.latex-command-with-space::exp", NULL, "\\exp", NULL, NULL },
-		{ "win.latex-command-with-space::gcd", NULL, "\\gcd", NULL, NULL },
-		{ "win.latex-command-with-space::hom", NULL, "\\hom", NULL, NULL },
-		{ "win.latex-command-with-space::inf", NULL, "\\inf", NULL, NULL },
-		{ "win.latex-command-with-space::ker", NULL, "\\ker", NULL, NULL },
-		{ "win.latex-command-with-space::lg", NULL, "\\lg", NULL, NULL },
-		{ "win.latex-command-with-space::lim", NULL, "\\lim", NULL, NULL },
-		{ "win.latex-command-with-space::liminf", NULL, "\\liminf", NULL, NULL },
-		{ "win.latex-command-with-space::limsup", NULL, "\\limsup", NULL, NULL },
-		{ "win.latex-command-with-space::ln", NULL, "\\ln", NULL, NULL },
-		{ "win.latex-command-with-space::log", NULL, "\\log", NULL, NULL },
-		{ "win.latex-command-with-space::max", NULL, "\\max", NULL, NULL },
-		{ "win.latex-command-with-space::min", NULL, "\\min", NULL, NULL },
-		{ "win.latex-command-with-space::sec", NULL, "\\sec", NULL, NULL },
-		{ "win.latex-command-with-space::sin", NULL, "\\sin", NULL, NULL },
-		{ "win.latex-command-with-space::sinh", NULL, "\\sinh", NULL, NULL },
-		{ "win.latex-command-with-space::sup", NULL, "\\sup", NULL, NULL },
-		{ "win.latex-command-with-space::tan", NULL, "\\tan", NULL, NULL },
-		{ "win.latex-command-with-space::tanh", NULL, "\\tanh", NULL, NULL },
-
-		/* Math Font Styles */
-
-		{ "win.latex-command-with-braces::mathrm", "roman", "\\math_rm", NULL,
-		  N_("Roman — \\mathrm") },
-		{ "win.latex-command-with-braces::mathit", "italic", "\\math_it", NULL,
-		  N_("Italic — \\mathit") },
-		{ "win.latex-command-with-braces::mathbf", "bold", "\\math_bf", NULL,
-		  N_("Bold — \\mathbf") },
-		{ "win.latex-command-with-braces::mathsf", "sans_serif", "\\math_sf", NULL,
-		  N_("Sans Serif — \\mathsf") },
-		{ "win.latex-command-with-braces::mathtt", "typewriter", "\\math_tt", NULL,
-		  N_("Typewriter — \\mathtt") },
-		{ "win.latex-command-with-braces::mathcal", "mathcal", "\\math_cal", NULL,
-		  N_("Calligraphic — \\mathcal") },
-		{ "win.latex-command-with-braces::mathbb", "blackboard", "\\_mathbb", NULL,
-		  N_("Blackboard (uppercase only) — \\mathbb (amsfonts package)") },
-		{ "win.latex-command-with-braces::mathfrak", "mathfrak", "\\math_frak", NULL,
-		  N_("Euler Fraktur — \\mathfrak (amsfonts package)") },
-
-		/* Math Accents */
-
-		{ "win.latex-command-with-braces::acute", "mathaccent0", "\\_acute", NULL, NULL },
-		{ "win.latex-command-with-braces::grave", "mathaccent1", "\\_grave", NULL, NULL },
-		{ "win.latex-command-with-braces::tilde", "mathaccent2", "\\_tilde", NULL, NULL },
-		{ "win.latex-command-with-braces::bar", "mathaccent3", "\\_bar", NULL, NULL },
-		{ "win.latex-command-with-braces::vec", "mathaccent4", "\\_vec", NULL, NULL },
-		{ "win.latex-command-with-braces::hat", "mathaccent5", "\\_hat", NULL, NULL },
-		{ "win.latex-command-with-braces::check", "mathaccent6", "\\_check", NULL, NULL },
-		{ "win.latex-command-with-braces::breve", "mathaccent7", "\\b_reve", NULL, NULL },
-		{ "win.latex-command-with-braces::dot", "mathaccent8", "\\_dot", NULL, NULL },
-		{ "win.latex-command-with-braces::ddot", "mathaccent9", "\\dd_ot", NULL, NULL },
-		{ "win.latex-command-with-braces::mathring", "mathaccent10", "\\_mathring", NULL, NULL },
-
-		/* Math Spaces */
-
-		{ "win.math-command-spaces-small", NULL, N_("_Small"), NULL, N_("Small — \\,") },
-		{ "win.math-command-spaces-medium", NULL, N_("_Medium"), NULL, N_("Medium — \\:") },
-		{ "win.math-command-spaces-large", NULL, N_("_Large"), NULL, N_("Large — \\;") },
-		{ "win.latex-command-with-space::quad", NULL, "\\_quad", NULL, NULL },
-		{ "win.latex-command-with-space::qquad", NULL, "\\qqu_ad", NULL, NULL },
-
-		/* Math: Left Delimiters */
-
-		{ "win.math-command-delimiter-left1", NULL, N_("left ("), NULL, NULL },
-		{ "win.math-command-delimiter-left2", NULL, N_("left ["), NULL, NULL },
-		{ "win.math-command-delimiter-left3", NULL, N_("left { "), NULL, NULL },
-		{ "win.math-command-delimiter-left4", NULL, N_("left <"), NULL, NULL },
-		{ "win.math-command-delimiter-left5", NULL, N_("left )"), NULL, NULL },
-		{ "win.math-command-delimiter-left6", NULL, N_("left ]"), NULL, NULL },
-		{ "win.math-command-delimiter-left7", NULL, N_("left  }"), NULL, NULL },
-		{ "win.math-command-delimiter-left8", NULL, N_("left >"), NULL, NULL },
-		{ "win.math-command-delimiter-left9", NULL, N_("left ."), NULL, NULL },
-
-		/* Math: Right Delimiters */
-
-		{ "win.math-command-delimiter-right1", NULL, N_("right )"), NULL, NULL },
-		{ "win.math-command-delimiter-right2", NULL, N_("right ]"), NULL, NULL },
-		{ "win.math-command-delimiter-right3", NULL, N_("right  }"), NULL, NULL },
-		{ "win.math-command-delimiter-right4", NULL, N_("right >"), NULL, NULL },
-		{ "win.math-command-delimiter-right5", NULL, N_("right ("), NULL, NULL },
-		{ "win.math-command-delimiter-right6", NULL, N_("right ["), NULL, NULL },
-		{ "win.math-command-delimiter-right7", NULL, N_("right { "), NULL, NULL },
-		{ "win.math-command-delimiter-right8", NULL, N_("right <"), NULL, NULL },
-		{ "win.math-command-delimiter-right9", NULL, N_("right ."), NULL, NULL },
 	};
 
 	g_return_if_fail (GTK_IS_APPLICATION (gtk_app));
@@ -429,6 +449,12 @@ latexila_latex_commands_add_action_infos (GtkApplication *gtk_app)
 	amtk_action_info_store_add_entries (store, action_info_entries_latex_spacing, -1, GETTEXT_PACKAGE);
 	amtk_action_info_store_add_entries (store, action_info_entries_latex_accents, -1, GETTEXT_PACKAGE);
 	amtk_action_info_store_add_entries (store, action_info_entries_math_environments, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_math_functions, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_math_font_styles, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_math_accents, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_math_spaces, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_math_left_delimiters, -1, GETTEXT_PACKAGE);
+	amtk_action_info_store_add_entries (store, action_info_entries_math_right_delimiters, -1, GETTEXT_PACKAGE);
 }
 
 /* Util functions */
@@ -1750,6 +1776,51 @@ latexila_latex_commands_create_latex_menu (GtkApplicationWindow *gtk_window)
 	add_menu_item_with_subentries (menu,	"no-gaction-latex-spacing", action_info_entries_latex_spacing);
 	add_menu_item_with_subentries (menu,	"no-gaction-latex-accents", action_info_entries_latex_accents);
 	add_menu_item_with_submenu (menu,	"no-gaction-latex-misc", create_submenu_latex_misc ());
+
+	amtk_window = amtk_application_window_get_from_gtk_application_window (gtk_window);
+	amtk_application_window_connect_menu_to_statusbar (amtk_window, menu);
+
+	gtk_widget_show_all (GTK_WIDGET (menu));
+	return GTK_MENU (menu);
+}
+
+/**
+ * latexila_latex_commands_create_math_menu:
+ * @gtk_window: a #GtkApplicationWindow.
+ *
+ * Returns: (transfer floating): a new #GtkMenu with a lot of math LaTeX
+ * commands.
+ */
+GtkMenu *
+latexila_latex_commands_create_math_menu (GtkApplicationWindow *gtk_window)
+{
+	GtkMenuShell *menu;
+	AmtkFactory *factory;
+	AmtkApplicationWindow *amtk_window;
+
+	g_return_val_if_fail (GTK_IS_APPLICATION_WINDOW (gtk_window), NULL);
+
+	menu = GTK_MENU_SHELL (gtk_menu_new ());
+
+	add_menu_item_with_subentries (menu, "no-gaction-math-environments", action_info_entries_math_environments);
+
+	factory = amtk_factory_new_with_default_application ();
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.math-command-misc-superscript"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.math-command-misc-subscript"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.math-command-misc-frac"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.latex-command-with-braces::sqrt"));
+	gtk_menu_shell_append (menu, amtk_factory_create_menu_item (factory, "win.math-command-misc-nth-root"));
+	gtk_menu_shell_append (menu, gtk_separator_menu_item_new ());
+	g_object_unref (factory);
+
+	add_menu_item_with_subentries (menu, "no-gaction-math-functions", action_info_entries_math_functions);
+	add_menu_item_with_subentries (menu, "no-gaction-math-font-styles", action_info_entries_math_font_styles);
+	add_menu_item_with_subentries (menu, "no-gaction-math-accents", action_info_entries_math_accents);
+	add_menu_item_with_subentries (menu, "no-gaction-math-spaces", action_info_entries_math_spaces);
+	add_menu_item_with_subentries (menu, "no-gaction-math-left-delimiters", action_info_entries_math_left_delimiters);
+	add_menu_item_with_subentries (menu, "no-gaction-math-right-delimiters", action_info_entries_math_right_delimiters);
 
 	amtk_window = amtk_application_window_get_from_gtk_application_window (gtk_window);
 	amtk_application_window_connect_menu_to_statusbar (amtk_window, menu);

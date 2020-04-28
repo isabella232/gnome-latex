@@ -29,7 +29,6 @@ public class GlatexApp : Latexila.App
         { "preferences", preferences_cb },
         { "manage-build-tools", manage_build_tools_cb },
         { "help", help_cb },
-        { "about", about_cb },
         { "quit", quit_cb }
     };
 
@@ -187,45 +186,6 @@ public class GlatexApp : Latexila.App
         {
             warning ("Impossible to open the documentation: %s", e.message);
         }
-    }
-
-    private void about_cb ()
-    {
-        string comments =
-            _("GNOME LaTeX is a LaTeX editor for the GNOME desktop");
-        string copyright = "Copyright 2009-2020 – Sébastien Wilmet";
-
-        string website = "https://wiki.gnome.org/Apps/GNOME-LaTeX";
-
-        string[] authors =
-        {
-            "Sébastien Wilmet <swilmet@gnome.org>",
-            null
-        };
-
-        string[] artists =
-        {
-            "Eric Forgeot <e.forgeot@laposte.net>",
-            "Sébastien Wilmet <swilmet@gnome.org>",
-            "Alexander Wilms <f.alexander.wilms@gmail.com>",
-            "The Kile Team http://kile.sourceforge.net/",
-            "Gedit LaTeX Plugin https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin",
-            null
-        };
-
-        Gtk.show_about_dialog (get_active_main_window (),
-            "program-name", Config.PACKAGE_NAME,
-            "version", Config.PACKAGE_VERSION,
-            "authors", authors,
-            "artists", artists,
-            "comments", comments,
-            "copyright", copyright,
-            "license-type", Gtk.License.GPL_3_0,
-            "title", _("About GNOME LaTeX"),
-            "translator-credits", _("translator-credits"),
-            "website", website,
-            "logo-icon-name", "gnome-latex"
-        );
     }
 
     private void quit_cb ()

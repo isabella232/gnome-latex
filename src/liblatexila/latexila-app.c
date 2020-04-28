@@ -17,7 +17,10 @@
  * along with GNOME LaTeX.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "config.h"
 #include "latexila-app.h"
+#include <glib/gi18n.h>
+#include <tepl/tepl.h>
 
 /**
  * SECTION:app
@@ -28,8 +31,75 @@
 G_DEFINE_TYPE (LatexilaApp, latexila_app, GTK_TYPE_APPLICATION)
 
 static void
+about_activate_cb (GSimpleAction *about_action,
+		   GVariant      *parameter,
+		   gpointer       user_data)
+{
+	LatexilaApp *app = LATEXILA_APP (user_data);
+	TeplApplication *tepl_app = tepl_application_get_from_gtk_application (GTK_APPLICATION (app));
+	GtkApplicationWindow *active_main_window;
+
+	const gchar *authors[] = {
+		"Sébastien Wilmet <swilmet@gnome.org>",
+		NULL
+	};
+
+	const gchar *artists[] = {
+		"Eric Forgeot <e.forgeot@laposte.net>",
+		"Sébastien Wilmet <swilmet@gnome.org>",
+		"Alexander Wilms <f.alexander.wilms@gmail.com>",
+		"The Kile Team http://kile.sourceforge.net/",
+		"Gedit LaTeX Plugin https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin",
+		NULL
+	};
+
+	active_main_window = tepl_application_get_active_main_window (tepl_app);
+
+	gtk_show_about_dialog (GTK_WINDOW (active_main_window),
+			       "version", PACKAGE_VERSION,
+			       "authors", authors,
+			       "artists", artists,
+			       "comments", _("GNOME LaTeX is a LaTeX editor for the GNOME desktop"),
+			       "copyright", "Copyright 2009-2020 – Sébastien Wilmet",
+			       "license-type", GTK_LICENSE_GPL_3_0,
+			       "title", _("About GNOME LaTeX"),
+			       "translator-credits", _("translator-credits"),
+			       "website", "https://wiki.gnome.org/Apps/GNOME-LaTeX",
+			       "logo-icon-name", "gnome-latex",
+			       NULL);
+}
+
+static void
+add_action_entries (LatexilaApp *app)
+{
+	const GActionEntry app_entries[] =
+	{
+		{ "about", about_activate_cb },
+	};
+
+	amtk_action_map_add_action_entries_check_dups (G_ACTION_MAP (app),
+						       app_entries,
+						       G_N_ELEMENTS (app_entries),
+						       app);
+}
+
+static void
+latexila_app_startup (GApplication *app)
+{
+	if (G_APPLICATION_CLASS (latexila_app_parent_class)->startup != NULL)
+	{
+		G_APPLICATION_CLASS (latexila_app_parent_class)->startup (app);
+	}
+
+	add_action_entries (LATEXILA_APP (app));
+}
+
+static void
 latexila_app_class_init (LatexilaAppClass *klass)
 {
+	GApplicationClass *gapp_class = G_APPLICATION_CLASS (klass);
+
+	gapp_class->startup = latexila_app_startup;
 }
 
 static void

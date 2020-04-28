@@ -34,20 +34,11 @@ public class GlatexApp : Latexila.App
 
     public GlatexApp ()
     {
-        Object (application_id: "org.gnome.gnome-latex");
-        set_flags (ApplicationFlags.HANDLES_OPEN);
-        Environment.set_application_name (Config.PACKAGE_NAME);
-        Gtk.Window.set_default_icon_name ("gnome-latex");
-
         setup_main_option_entries ();
 
         startup.connect (startup_cb);
         open.connect (open_documents);
         shutdown.connect (shutdown_cb);
-
-        Tepl.Application tepl_app = Tepl.Application.get_from_gtk_application (this);
-        tepl_app.handle_activate ();
-        tepl_app.handle_metadata ();
     }
 
     public static GlatexApp get_instance ()

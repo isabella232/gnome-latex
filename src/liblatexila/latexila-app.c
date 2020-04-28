@@ -95,9 +95,23 @@ latexila_app_startup (GApplication *app)
 }
 
 static void
+latexila_app_constructed (GObject *object)
+{
+	g_application_set_application_id (G_APPLICATION (object), "org.gnome.gnome-latex");
+
+	if (G_OBJECT_CLASS (latexila_app_parent_class)->constructed != NULL)
+	{
+		G_OBJECT_CLASS (latexila_app_parent_class)->constructed (object);
+	}
+}
+
+static void
 latexila_app_class_init (LatexilaAppClass *klass)
 {
+	GObjectClass *object_class = G_OBJECT_CLASS (klass);
 	GApplicationClass *gapp_class = G_APPLICATION_CLASS (klass);
+
+	object_class->constructed = latexila_app_constructed;
 
 	gapp_class->startup = latexila_app_startup;
 }
@@ -105,6 +119,15 @@ latexila_app_class_init (LatexilaAppClass *klass)
 static void
 latexila_app_init (LatexilaApp *app)
 {
+	TeplApplication *tepl_app;
+
+	g_application_set_flags (G_APPLICATION (app), G_APPLICATION_HANDLES_OPEN);
+	g_set_application_name (PACKAGE_NAME);
+	gtk_window_set_default_icon_name ("gnome-latex");
+
+	tepl_app = tepl_application_get_from_gtk_application (GTK_APPLICATION (app));
+	tepl_application_handle_activate (tepl_app);
+	tepl_application_handle_metadata (tepl_app);
 }
 
 /**

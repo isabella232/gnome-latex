@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: latexila master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-latex/issues\n"
-"POT-Creation-Date: 2020-04-28 01:22+0000\n"
-"PO-Revision-Date: 2020-04-28 11:16+0300\n"
+"POT-Creation-Date: 2020-04-28 19:50+0000\n"
+"PO-Revision-Date: 2020-04-29 08:57+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -782,39 +782,39 @@ msgstr "Елемент структури вже містить підпараг
 msgid "Activate “%s”"
 msgstr "Задіяти «%s»"
 
-#: ../src/document.vala:120
+#: ../src/document.vala:117
 #, c-format
 msgid "Impossible to load the file “%s”."
 msgstr "Завантаження файла «%s» неможливе."
 
-#: ../src/document.vala:202
+#: ../src/document.vala:199
 #, c-format
 msgid "The file %s has been modified since reading it."
 msgstr "До файла %s з моменту його читання було внесено зміни."
 
-#: ../src/document.vala:205
+#: ../src/document.vala:202
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
 "Якщо ви збережете його, зміни, внесені зовнішньою програмою, буде втрачено. "
 "Зберегти файл попри це?"
 
-#: ../src/document.vala:209
+#: ../src/document.vala:206
 msgid "_Save Anyway"
 msgstr "З_берегти попри це"
 
-#: ../src/document.vala:210
+#: ../src/document.vala:207
 msgid "_Don’t Save"
 msgstr "_Не зберігати"
 
-#: ../src/document.vala:227
+#: ../src/document.vala:224
 msgid "Impossible to save the file."
 msgstr "Збереження файла неможливе."
 
-#: ../src/document.vala:255
+#: ../src/document.vala:252
 msgid "Error trying to convert the document to UTF-8"
 msgstr "Помилка під час спроби перетворити дані документа у кодування UTF-8"
 
-#: ../src/document.vala:484
+#: ../src/document.vala:481
 msgid ""
 "The file has a temporary location. The data can be lost after rebooting your "
 "computer."
@@ -822,29 +822,29 @@ msgstr ""
 "Файл зберігається у тимчасовому каталозі. Дані буде втрачено під час "
 "перезавантаження системи."
 
-#: ../src/document.vala:485
+#: ../src/document.vala:482
 msgid "Do you want to save the file in a safer place?"
 msgstr "Хочете зберегти файл у безпечнішому місці?"
 
-#: ../src/document.vala:486 ../src/main_window_file.vala:44
+#: ../src/document.vala:483 ../src/main_window_file.vala:44
 #: ../src/main_window.vala:747
 msgid "Save _As"
 msgstr "Зберегти _як"
 
-#: ../src/document.vala:487
+#: ../src/document.vala:484
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: ../src/document_view.vala:308
+#: ../src/document_view.vala:289
 msgid "No dictionaries available for the spell-checking."
 msgstr "Не встановлено жодних словників для перевірки правопису."
 
 #. Help
-#: ../src/document_view.vala:310 ../src/main_window.vala:61
+#: ../src/document_view.vala:291 ../src/main_window.vala:61
 msgid "_Help"
 msgstr "_Довідка"
 
-#: ../src/document_view.vala:311
+#: ../src/document_view.vala:292
 msgid "_OK"
 msgstr "_Гаразд"
 
@@ -885,30 +885,6 @@ msgstr "Файлова система"
 msgid "File Browser"
 msgstr "Навігація файлами"
 
-#: ../src/glatex_app.vala:79
-msgid "Show the application’s version"
-msgstr "Показати дані щодо версії програми"
-
-#: ../src/glatex_app.vala:82
-msgid "Create new document"
-msgstr "Створити новий документ"
-
-#: ../src/glatex_app.vala:85
-msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
-msgstr "Створити нове вікно верхнього рівня у наявному екземплярі GNOME LaTeX"
-
-#: ../src/glatex_app.vala:195
-msgid "GNOME LaTeX is a LaTeX editor for the GNOME desktop"
-msgstr "GNOME LaTeX — редактор LaTeX для GNOME"
-
-#: ../src/glatex_app.vala:224 ../src/main_window.vala:67
-msgid "About GNOME LaTeX"
-msgstr "Про GNOME LaTeX"
-
-#: ../src/glatex_app.vala:225
-msgid "translator-credits"
-msgstr "Юрій Чорноіван <yurchor@ukr.net>"
-
 #. Sections and sub-sections
 #. LaTeX
 #. Math
@@ -943,6 +919,37 @@ msgstr "_Ліві роздільники"
 #: ../src/latex_menu.vala:39
 msgid "Right _Delimiters"
 msgstr "Праві _роздільники"
+
+#: ../src/liblatexila/latexila-app.c:64
+msgid "GNOME LaTeX is a LaTeX editor for the GNOME desktop"
+msgstr "GNOME LaTeX — редактор LaTeX для GNOME"
+
+#: ../src/liblatexila/latexila-app.c:67 ../src/main_window.vala:67
+msgid "About GNOME LaTeX"
+msgstr "Про GNOME LaTeX"
+
+#: ../src/liblatexila/latexila-app.c:68
+msgid "translator-credits"
+msgstr "Юрій Чорноіван <yurchor@ukr.net>"
+
+#: ../src/liblatexila/latexila-app.c:94
+#, c-format
+#| msgid "Impossible to do the forward search."
+msgid "Impossible to open the documentation: %s"
+msgstr "Не вдалося відкрити документацію: %s"
+
+#: ../src/liblatexila/latexila-app.c:121
+msgid "Show the application’s version"
+msgstr "Показати дані щодо версії програми"
+
+#: ../src/liblatexila/latexila-app.c:124
+msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
+msgstr "Створити нове вікно верхнього рівня у наявному екземплярі GNOME LaTeX"
+
+#: ../src/liblatexila/latexila-app.c:127
+#| msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
+msgid "Create a new document in an existing instance of GNOME LaTeX"
+msgstr "Створити документ у наявному екземплярі GNOME LaTeX"
 
 #: ../src/liblatexila/latexila-build-job.c:366
 #, c-format
@@ -1175,7 +1182,6 @@ msgid "_References"
 msgstr "_Посилання"
 
 #: ../src/liblatexila/latexila-latex-commands.c:175
-#| msgid "_List Environments"
 msgid "_Environments"
 msgstr "С_ередовища"
 
@@ -1208,7 +1214,6 @@ msgid "_Tabular"
 msgstr "_Таблиця"
 
 #: ../src/liblatexila/latexila-latex-commands.c:183
-#| msgid "Presentation"
 msgid "_Presentation"
 msgstr "_Презентація"
 
@@ -2658,6 +2663,9 @@ msgstr "Позначати слова з помилками у правопис�
 #: ../src/ui/preferences_dialog.ui.h:27
 msgid "Other"
 msgstr "Інше"
+
+#~ msgid "Create new document"
+#~ msgstr "Створити новий документ"
 
 #~ msgid "_Go to Line…"
 #~ msgstr "_Перейти до рядка…"

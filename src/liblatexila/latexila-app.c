@@ -53,7 +53,7 @@ about_activate_cb (GSimpleAction *about_action,
 
 	const gchar *artists[] = {
 		"Eric Forgeot <e.forgeot@laposte.net>",
-		"Brian Snider",
+		"Brian Snider <sniderbr@gmail.com>",
 		"Sébastien Wilmet <swilmet@gnome.org>",
 		"Alexander Wilms <f.alexander.wilms@gmail.com>",
 		"The Kile Team http://kile.sourceforge.net/",

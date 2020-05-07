@@ -1,5 +1,3 @@
-SUBDIRS = apps
-
 # Included in a GResource.
 EXTRA_DIST = actions mimetypes
 

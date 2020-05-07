@@ -168,19 +168,7 @@ AC_CONFIG_FILES([
 	data/build_tools/Makefile
 	data/icons/Makefile
 	data/icons/16x16/Makefile
-	data/icons/16x16/apps/Makefile
-	data/icons/22x22/Makefile
-	data/icons/22x22/apps/Makefile
 	data/icons/24x24/Makefile
-	data/icons/24x24/apps/Makefile
-	data/icons/32x32/Makefile
-	data/icons/32x32/apps/Makefile
-	data/icons/48x48/Makefile
-	data/icons/48x48/apps/Makefile
-	data/icons/256x256/Makefile
-	data/icons/256x256/apps/Makefile
-	data/icons/symbolic/Makefile
-	data/icons/symbolic/apps/Makefile
 	data/images/Makefile
 	data/templates/Makefile
 	docs/Makefile

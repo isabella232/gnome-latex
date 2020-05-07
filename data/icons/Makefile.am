@@ -4,9 +4,9 @@ SUBDIRS = 16x16 24x24
 EXTRA_DIST = others
 
 scalableicondir = $(datadir)/icons/hicolor/scalable/apps
-dist_scalableicon_DATA = gnome-latex.svg
+dist_scalableicon_DATA = org.gnome.gnome-latex.svg
 
 symbolicicondir = $(datadir)/icons/hicolor/symbolic/apps
-dist_symbolicicon_DATA = gnome-latex-symbolic.svg
+dist_symbolicicon_DATA = org.gnome.gnome-latex-symbolic.svg
 
 -include $(top_srcdir)/git.mk

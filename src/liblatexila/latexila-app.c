@@ -72,7 +72,7 @@ about_activate_cb (GSimpleAction *about_action,
 			       "title", _("About GNOME LaTeX"),
 			       "translator-credits", _("translator-credits"),
 			       "website", "https://wiki.gnome.org/Apps/GNOME-LaTeX",
-			       "logo-icon-name", "gnome-latex",
+			       "logo-icon-name", "org.gnome.gnome-latex",
 			       NULL);
 }
 
@@ -289,7 +289,7 @@ latexila_app_init (LatexilaApp *app)
 
 	g_application_set_flags (G_APPLICATION (app), G_APPLICATION_HANDLES_OPEN);
 	g_set_application_name (PACKAGE_NAME);
-	gtk_window_set_default_icon_name ("gnome-latex");
+	gtk_window_set_default_icon_name ("org.gnome.gnome-latex");
 
 	add_main_option_entries (app);
 

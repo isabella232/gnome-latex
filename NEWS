@@ -1,5 +1,20 @@
 GNOME LaTeX NEWS
 
+Release 3.37.2, 2020-xx-yy (not yet released)
+--------------------------
+* User-visible changes:
+ - New application icon! Thanks to Brian Snider.
+ - Use Tepl for the 'go to line' feature.
+ - Create the Edit toolbar with Amtk. This fixes the problem with some buttons
+   doing nothing when clicked (for the buttons containing a secondary arrow
+   button that displays a menu; now the two buttons are merged).
+ - Translation updates.
+
+* Under the hood changes:
+ - The LaTeX and Math menus are now created with Amtk, not with GtkUIManager.
+ - Rewrite some code in C in the liblatexila, to have less Vala code.
+ - App icon: rename to org.gnome.gnome-latex.
+
 Release 3.37.1, 2020-04-24
 --------------------------
 * User-visible changes:

@@ -156,7 +156,10 @@ public class DocumentTab : Tepl.Tab
             return false;
 
         // if file was never saved or is remote we do not check
-        if (!get_buffer ().get_file ().is_local ())
+        File? location = get_buffer ().get_file ().get_location ();
+        if (location == null)
+            return false;
+        if (!location.has_uri_scheme ("file"))
             return false;
 
         if (document.is_externally_modified ())

@@ -2,14 +2,14 @@
 # Copyright (C) 2012 latexila's COPYRIGHT HOLDER
 # This file is distributed under the same license as the latexila package.
 # Andika Triwidada <andika@gmail.com>, 2012-2014, 2016, 2017.
-#
+# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-latex gnome-2-32\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-latex/issues\n"
-"POT-Creation-Date: 2019-11-18 10:41+0000\n"
-"PO-Revision-Date: 2020-01-27 20:35+0700\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"POT-Creation-Date: 2020-05-17 09:21+0000\n"
+"PO-Revision-Date: 2020-05-22 11:04+0700\n"
+"Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural= n!=1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #. (itstool) path: tool/label
 #: build_tools.xml:43 ../src/build_tool_dialog.vala:165
@@ -358,9 +358,8 @@ msgid "Side panel component"
 msgstr "Komponen panel sisi"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:40
-msgid ""
-"Side panel’s active component. 0: Symbols. 1: File browser. 2: Structure."
-msgstr "Komponen aktif panel sisi. 0: Simbol. 1: Peramban berkas. 2: Struktur."
+msgid "Side panel’s active component."
+msgstr "Komponen aktif panel sisi"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:41
 msgid "Show build output warnings"
@@ -526,7 +525,7 @@ msgstr ""
 "\\end{letter}\n"
 "\\end{document}\n"
 
-#: ../src/bottom_panel.vala:53 ../src/side_panel.vala:85
+#: ../src/bottom_panel.vala:51
 msgid "Hide panel"
 msgstr "Sembunyikan panel"
 
@@ -536,12 +535,11 @@ msgstr "Perkakas Build Pribadi"
 
 #: ../src/build_tool_dialog.vala:72 ../src/build_tools_preferences.vala:335
 #: ../src/clean_build_files.vala:242 ../src/dialogs.vala:41
-#: ../src/document_tab.vala:178
 #: ../src/liblatexila/latexila-templates-dialogs.c:130
 #: ../src/liblatexila/latexila-templates-dialogs.c:238
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:147
-#: ../src/main_window_file.vala:157 ../src/main_window.vala:754
-#: ../src/main_window.vala:811 ../src/preferences_dialog.vala:114
+#: ../src/main_window_file.vala:157 ../src/main_window.vala:749
+#: ../src/main_window.vala:806 ../src/preferences_dialog.vala:114
 #: ../src/project_dialogs.vala:31 ../src/project_dialogs.vala:122
 #: ../src/project_dialogs.vala:276 ../src/project_dialogs.vala:296
 msgid "_Cancel"
@@ -600,7 +598,7 @@ msgid "Move down"
 msgstr "Turunkan"
 
 #: ../src/build_tool_dialog.vala:573 ../src/build_tools_preferences.vala:177
-#: ../src/liblatexila/latexila-latex-commands.c:71 ../src/structure.vala:783
+#: ../src/liblatexila/latexila-latex-commands.c:36 ../src/structure.vala:783
 msgid "Label"
 msgstr "Label"
 
@@ -732,19 +730,12 @@ msgstr "Tak ada berkas build untuk dibersihkan."
 msgid "No matching proposal"
 msgstr "Tak ada proposal yang cocok"
 
-#. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for
-#. "Column". Please, use abbreviations if possible.
-#: ../src/custom_statusbar.vala:45
-#, c-format
-msgid "Ln %d, Col %d"
-msgstr "Brs %d, Kol %d"
-
-#: ../src/dialogs.vala:40 ../src/main_window.vala:753
+#: ../src/dialogs.vala:40 ../src/main_window.vala:748
 msgid "Close _without Saving"
 msgstr "Tutup _tanpa Menyimpan"
 
 #: ../src/dialogs.vala:42 ../src/main_window_file.vala:41
-#: ../src/main_window.vala:759 ../src/main_window.vala:812
+#: ../src/main_window.vala:754 ../src/main_window.vala:807
 msgid "_Save"
 msgstr "_Simpan"
 
@@ -773,55 +764,38 @@ msgstr "Butir struktur telah mengandung suatu sub paragraf."
 msgid "Activate “%s”"
 msgstr "Aktifkan \"%s\""
 
-#: ../src/document_tab.vala:166
-#, c-format
-msgid "The file %s changed on disk."
-msgstr "Berkas %s berubah pada cakram."
-
-#: ../src/document_tab.vala:171
-msgid "Do you want to drop your changes and reload the file?"
-msgstr "Anda ingin membuang perubahan dan memuat ulang berkas?"
-
-#: ../src/document_tab.vala:173
-msgid "Do you want to reload the file?"
-msgstr "Anda ingin memuat ulang berkas?"
-
-#: ../src/document_tab.vala:177
-msgid "_Reload"
-msgstr "_Muat Ulang"
-
-#: ../src/document.vala:133
+#: ../src/document.vala:117
 #, c-format
 msgid "Impossible to load the file “%s”."
 msgstr "Tak mungkin memuat berkas \"%s\"."
 
-#: ../src/document.vala:215
+#: ../src/document.vala:199
 #, c-format
 msgid "The file %s has been modified since reading it."
 msgstr "Berkas %s telah diubah semenjak dibaca."
 
-#: ../src/document.vala:218
+#: ../src/document.vala:202
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
 "Jika Anda menyimpannya, seluruh perubahan dari luar akan hilang. Simpan saja?"
 
-#: ../src/document.vala:222
+#: ../src/document.vala:206
 msgid "_Save Anyway"
 msgstr "_Simpan Saja"
 
-#: ../src/document.vala:223
+#: ../src/document.vala:207
 msgid "_Don’t Save"
 msgstr "_Jangan Simpan"
 
-#: ../src/document.vala:240
+#: ../src/document.vala:224
 msgid "Impossible to save the file."
 msgstr "Tak mungkin menyimpan berkas."
 
-#: ../src/document.vala:268
+#: ../src/document.vala:252
 msgid "Error trying to convert the document to UTF-8"
 msgstr "Galat saat mencoba mengkonversi dokumen ke UTF-8"
 
-#: ../src/document.vala:497
+#: ../src/document.vala:481
 msgid ""
 "The file has a temporary location. The data can be lost after rebooting your "
 "computer."
@@ -829,29 +803,29 @@ msgstr ""
 "Berkas berada pada lokasi sementara. Data bisa hilang setelah komputer Anda "
 "reboot."
 
-#: ../src/document.vala:498
+#: ../src/document.vala:482
 msgid "Do you want to save the file in a safer place?"
 msgstr "Apakah Anda ingin menyimpan berkas ke tempat yang lebih aman?"
 
-#: ../src/document.vala:499 ../src/main_window_file.vala:44
-#: ../src/main_window.vala:757
+#: ../src/document.vala:483 ../src/main_window_file.vala:44
+#: ../src/main_window.vala:752
 msgid "Save _As"
 msgstr "Simp_an Sebagai"
 
-#: ../src/document.vala:500
+#: ../src/document.vala:484
 msgid "Cancel"
 msgstr "Batal"
 
-#: ../src/document_view.vala:312
+#: ../src/document_view.vala:289
 msgid "No dictionaries available for the spell-checking."
 msgstr "Tak tersedia kamus untuk pemeriksaan ejaan."
 
 #. Help
-#: ../src/document_view.vala:314 ../src/main_window.vala:63
+#: ../src/document_view.vala:291 ../src/main_window.vala:65
 msgid "_Help"
 msgstr "Ba_ntuan"
 
-#: ../src/document_view.vala:315
+#: ../src/document_view.vala:292
 msgid "_OK"
 msgstr "_OK"
 
@@ -888,757 +862,757 @@ msgid "File System"
 msgstr "Sistem Berkas"
 
 #. File browser
-#: ../src/file_browser.vala:524 ../src/main_window.vala:450
+#: ../src/file_browser.vala:524 ../src/main_window.vala:444
 msgid "File Browser"
 msgstr "Peramban Berkas"
 
-#: ../src/glatex_app.vala:78
-msgid "Show the application’s version"
-msgstr "Tampilkan versi aplikasi"
-
-#: ../src/glatex_app.vala:81
-msgid "Create new document"
-msgstr "Buat dokumen baru"
-
-#: ../src/glatex_app.vala:84
-msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
-msgstr "Buat jendela tingkat tertinggi dalam instansi GNOME LaTeX yang ada"
-
-#: ../src/glatex_app.vala:195
+#: ../src/liblatexila/latexila-app.c:70
 msgid "GNOME LaTeX is a LaTeX editor for the GNOME desktop"
 msgstr "GNOME LaTeX adalah Penyunting LaTeX untuk desktop GNOME"
 
-#: ../src/glatex_app.vala:224 ../src/main_window.vala:69
+#: ../src/liblatexila/latexila-app.c:73 ../src/main_window.vala:71
 msgid "About GNOME LaTeX"
 msgstr "Tentang GNOME LaTeX"
 
-#: ../src/glatex_app.vala:225
+#: ../src/liblatexila/latexila-app.c:74
 msgid "translator-credits"
 msgstr ""
 "Andika Triwidada <andika@gmail.com>, 2012-2014, 2016-2018, 2020.\n"
-"Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017."
+"Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2020."
 
-#. Sections and sub-sections
-#. LaTeX
-#: ../src/latex_menu.vala:30
-msgid "_Sectioning"
-msgstr "Penentuan _Seksi"
+#: ../src/liblatexila/latexila-app.c:100
+#, c-format
+msgid "Impossible to open the documentation: %s"
+msgstr "Tak mungkin membuka dokumentasi: %s"
 
-#: ../src/latex_menu.vala:31
-msgid "_References"
-msgstr "_Rujukan"
+#: ../src/liblatexila/latexila-app.c:127
+msgid "Show the application’s version"
+msgstr "Tampilkan versi aplikasi"
 
-#: ../src/latex_menu.vala:33
-msgid "_List Environments"
-msgstr "Daftar _Lingkungan"
+#: ../src/liblatexila/latexila-app.c:130
+msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
+msgstr "Buat jendela tingkat tertinggi dalam instansi GNOME LaTeX yang ada"
 
-#: ../src/latex_menu.vala:34
-msgid "_Characters Sizes"
-msgstr "Ukuran _Karakter"
+#: ../src/liblatexila/latexila-app.c:133
+msgid "Create a new document in an existing instance of GNOME LaTeX"
+msgstr "Buat dokumen baru dalam instansi GNOME LaTeX yang ada"
 
-#: ../src/latex_menu.vala:35
-msgid "_Font Styles"
-msgstr "Gaya _Fonta"
-
-#: ../src/latex_menu.vala:36
-msgid "_Font Family"
-msgstr "Keluarga _Fonta"
-
-#: ../src/latex_menu.vala:37
-msgid "F_ont Series"
-msgstr "Seri F_onta"
-
-#: ../src/latex_menu.vala:38
-msgid "Fo_nt Shape"
-msgstr "Bentuk Fo_nta"
-
-#: ../src/latex_menu.vala:39
-msgid "_Tabular"
-msgstr "_Tabular"
-
-#: ../src/latex_menu.vala:41
-msgid "_Spacing"
-msgstr "Jarak bari_s"
-
-#: ../src/latex_menu.vala:42
-msgid "International _Accents"
-msgstr "_Aksen Internasional"
-
-#: ../src/latex_menu.vala:43
-msgid "_Misc"
-msgstr "_Rupa-rupa"
-
-#. Math
-#: ../src/latex_menu.vala:46
-msgid "_Math"
-msgstr "_Matematika"
-
-#: ../src/latex_menu.vala:47
-msgid "_Math Environments"
-msgstr "Lingkungan _Math"
-
-#: ../src/latex_menu.vala:48
-msgid "Math _Functions"
-msgstr "_Fungsi-fungsi Matematika"
-
-#: ../src/latex_menu.vala:49
-msgid "Math Font _Styles"
-msgstr "_Gaya Fonta Math"
-
-#: ../src/latex_menu.vala:50
-msgid "Math _Accents"
-msgstr "_Aksen Math"
-
-#: ../src/latex_menu.vala:51
-msgid "Math _Spaces"
-msgstr "_Spasi Math"
-
-#: ../src/latex_menu.vala:52
-msgid "_Left Delimiters"
-msgstr "Pembatas K_iri"
-
-#: ../src/latex_menu.vala:53
-msgid "Right _Delimiters"
-msgstr "Pembatas K_anan"
-
-#. menus under toolitems
-#: ../src/latex_menu.vala:67
-msgid "Sectioning"
-msgstr "Penentuan Seksi"
-
-#: ../src/latex_menu.vala:70
-msgid "Characters Sizes"
-msgstr "Ukuran Karakter"
-
-#: ../src/latex_menu.vala:73
-msgid "References"
-msgstr "Rujukan"
-
-#: ../src/latex_menu.vala:76
-msgid "Presentation Environments"
-msgstr "Lingkungan Presentasi"
-
-#: ../src/latex_menu.vala:79
-msgid "Math Environments"
-msgstr "Lingkungan Math"
-
-#: ../src/liblatexila/latexila-build-job.c:365
+#: ../src/liblatexila/latexila-build-job.c:366
 #, c-format
 msgid "%s doesn’t seem to be installed."
 msgstr "%s nampaknya tak terpasang."
 
-#: ../src/liblatexila/latexila-build-tool.c:555
-#: ../src/liblatexila/latexila-synctex.c:569
+#: ../src/liblatexila/latexila-build-tool.c:556
+#: ../src/liblatexila/latexila-synctex.c:570
 #, c-format
 msgid "The file “%s” doesn’t exist."
 msgstr "Berkas \"%s\" tak ada."
 
-#: ../src/liblatexila/latexila-build-tool.c:583
+#: ../src/liblatexila/latexila-build-tool.c:584
 #, c-format
 msgid "Failed to open “%s”:"
 msgstr "Gagal membuka \"%s\":"
 
-#: ../src/liblatexila/latexila-build-tool.c:689
+#: ../src/liblatexila/latexila-build-tool.c:690
 #, c-format
 msgid "Open %s"
 msgstr "Buka %s"
 
-#: ../src/liblatexila/latexila-latex-commands.c:54 ../src/structure.vala:776
-msgid "Part"
-msgstr "Bagian"
-
-#: ../src/liblatexila/latexila-latex-commands.c:56 ../src/structure.vala:777
-msgid "Chapter"
-msgstr "Bab"
-
-#: ../src/liblatexila/latexila-latex-commands.c:58 ../src/structure.vala:778
-msgid "Section"
-msgstr "Seksi"
-
-#: ../src/liblatexila/latexila-latex-commands.c:60 ../src/structure.vala:779
-msgid "Sub-section"
-msgstr "Sub-seksi"
-
-#: ../src/liblatexila/latexila-latex-commands.c:62 ../src/structure.vala:780
-msgid "Sub-sub-section"
-msgstr "Sub-sub-seksi"
-
-#: ../src/liblatexila/latexila-latex-commands.c:64 ../src/structure.vala:781
-msgid "Paragraph"
-msgstr "Paragraf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:66 ../src/structure.vala:782
-msgid "Sub-paragraph"
-msgstr "Sub-paragraf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:73
+#: ../src/liblatexila/latexila-latex-commands.c:38
 msgid "Reference to a label"
 msgstr "Rujukan ke label"
 
-#: ../src/liblatexila/latexila-latex-commands.c:75
+#: ../src/liblatexila/latexila-latex-commands.c:40
 msgid "Page reference to a label"
 msgstr "Rujukan halaman ke label"
 
-#: ../src/liblatexila/latexila-latex-commands.c:77
+#: ../src/liblatexila/latexila-latex-commands.c:42
 msgid "Add a word to the index"
 msgstr "Tambah kata ke indeks"
 
-#: ../src/liblatexila/latexila-latex-commands.c:79
+#: ../src/liblatexila/latexila-latex-commands.c:44
 msgid "Footnote"
 msgstr "Catatan kaki"
 
-#: ../src/liblatexila/latexila-latex-commands.c:81
+#: ../src/liblatexila/latexila-latex-commands.c:46
 msgid "Reference to a bibliography item"
 msgstr "Rujukan ke butir bibliografi"
 
-#: ../src/liblatexila/latexila-latex-commands.c:86
-msgid "Center — \\begin{center}"
-msgstr "Tengah - \\begin{center}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:88
-msgid "Align Left — \\begin{flushleft}"
-msgstr "Rata Kiri - \\begin{flushleft}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:90
-msgid "Align Right — \\begin{flushright}"
-msgstr "Rata Kanan - \\begin{flushright}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:92
-msgid "Figure — \\begin{figure}"
-msgstr "Gambar - \\begin{figure}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:94
-msgid "Table — \\begin{table}"
-msgstr "Tabel - \\begin{table}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:96
-msgid "Quote — \\begin{quote}"
-msgstr "Kutip - \\begin{quote}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:98
-msgid "Quotation — \\begin{quotation}"
-msgstr "Kutipan - \\begin{quotation}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:100
-msgid "Verse — \\begin{verse}"
-msgstr "Verse - \\begin{verse}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:102
-msgid "Verbatim — \\begin{verbatim}"
-msgstr "Verbatim - \\begin{verbatim}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:104
-msgid "Minipage — \\begin{minipage}"
-msgstr "Laman mini - \\begin{minipage}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:106
-msgid "Title page — \\begin{titlepage}"
-msgstr "Halaman judul - \\begin{titlepage}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:111
-msgid "Bulleted List — \\begin{itemize}"
-msgstr "Daftar Bulet - \\begin{itemize}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:113
-msgid "Enumeration — \\begin{enumerate}"
-msgstr "Enumerasi - \\begin{enumerate}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:115
-msgid "Description — \\begin{description}"
-msgstr "Deskripsi - \\begin{description}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:117
-msgid "Custom list — \\begin{list}"
-msgstr "Daftar ubahan - \\begin{list}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:119
-msgid "List item — \\item"
-msgstr "Butir daftar - \\item"
-
-#: ../src/liblatexila/latexila-latex-commands.c:137
-msgid "Bold — \\textbf"
-msgstr "Tebal - \\textbf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:139
-msgid "Italic — \\textit"
-msgstr "Miring - \\textit"
-
-#: ../src/liblatexila/latexila-latex-commands.c:141
-msgid "Typewriter — \\texttt"
-msgstr "Mesin tik - \\texttt"
-
-#: ../src/liblatexila/latexila-latex-commands.c:143
-msgid "Slanted — \\textsl"
-msgstr "Slanted - \\textsl"
-
-#: ../src/liblatexila/latexila-latex-commands.c:145
-msgid "Small Capitals — \\textsc"
-msgstr "Kapital Kecil - \\textsc"
-
-#: ../src/liblatexila/latexila-latex-commands.c:147
-msgid "Sans Serif — \\textsf"
-msgstr "Sans Serif - \\textsf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:149
-msgid "Emphasized — \\emph"
-msgstr "Ditegaskan - \\emph"
-
-#: ../src/liblatexila/latexila-latex-commands.c:151
-msgid "Underline — \\underline"
-msgstr "Garis bawah - \\underline"
-
-#: ../src/liblatexila/latexila-latex-commands.c:154
-msgid "Roman — \\rmfamily"
-msgstr "Roman - \\rmfamily"
-
-#: ../src/liblatexila/latexila-latex-commands.c:156
-msgid "Sans Serif — \\sffamily"
-msgstr "Sans Serif - \\sffamily"
-
-#: ../src/liblatexila/latexila-latex-commands.c:158
-msgid "Monospace — \\ttfamily"
-msgstr "Monospace - \\ttfamily"
-
-#: ../src/liblatexila/latexila-latex-commands.c:161
-msgid "Medium — \\mdseries"
-msgstr "Medium - \\mdseries"
-
-#: ../src/liblatexila/latexila-latex-commands.c:163
-msgid "Bold — \\bfseries"
-msgstr "Tebal - \\bfseries"
-
-#: ../src/liblatexila/latexila-latex-commands.c:166
-msgid "Upright — \\upshape"
-msgstr "Tegak - \\upshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:168
-msgid "Italic — \\itshape"
-msgstr "Miring - \\itshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:170
-msgid "Slanted — \\slshape"
-msgstr "Slanted - \\slshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:172
-msgid "Small Capitals — \\scshape"
-msgstr "Kapital Kecil - \\scshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:177
+#: ../src/liblatexila/latexila-latex-commands.c:68
 msgid "Tabbing — \\begin{tabbing}"
 msgstr "Tabbing - \\begin{tabbing}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:179
+#: ../src/liblatexila/latexila-latex-commands.c:70
 msgid "Tabular — \\begin{tabular}"
 msgstr "Tabular - \\begin{tabular}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:181
+#: ../src/liblatexila/latexila-latex-commands.c:72
 msgid "Multicolumn — \\multicolumn"
 msgstr "Multi kolom - \\multicolumn"
 
-#: ../src/liblatexila/latexila-latex-commands.c:183
+#: ../src/liblatexila/latexila-latex-commands.c:74
 msgid "Horizontal line — \\hline"
 msgstr "Garis horisontal - \\hline"
 
-#: ../src/liblatexila/latexila-latex-commands.c:185
+#: ../src/liblatexila/latexila-latex-commands.c:76
 msgid "Vertical line — \\vline"
 msgstr "Garis vertikal - \\vline"
 
-#: ../src/liblatexila/latexila-latex-commands.c:187
+#: ../src/liblatexila/latexila-latex-commands.c:78
 msgid "Horizontal line (columns specified) — \\cline"
 msgstr "Garis horisontal (kolom dinyatakan) - \\cline"
 
-#: ../src/liblatexila/latexila-latex-commands.c:192
+#: ../src/liblatexila/latexila-latex-commands.c:85
 msgid "Frame — \\begin{frame}"
 msgstr "Bingkai - \\begin{frame}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:194
+#: ../src/liblatexila/latexila-latex-commands.c:87
 msgid "Block — \\begin{block}"
 msgstr "Blok - \\begin{block}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:196
+#: ../src/liblatexila/latexila-latex-commands.c:89
 msgid "Two columns — \\begin{columns}"
 msgstr "Dua kolom - \\begin{columns}"
 
-#. LaTeX: Spacing
-#: ../src/liblatexila/latexila-latex-commands.c:200
+#: ../src/liblatexila/latexila-latex-commands.c:95
 msgid "New _Line"
 msgstr "_Baris Baru"
 
-#: ../src/liblatexila/latexila-latex-commands.c:201
+#: ../src/liblatexila/latexila-latex-commands.c:96
 msgid "New Line — \\\\"
 msgstr "Baris Baru - \\\\"
 
-#: ../src/liblatexila/latexila-latex-commands.c:203
+#: ../src/liblatexila/latexila-latex-commands.c:98
 msgid "New page — \\newpage"
 msgstr "Halaman baru - \\newpage"
 
-#: ../src/liblatexila/latexila-latex-commands.c:205
+#: ../src/liblatexila/latexila-latex-commands.c:100
 msgid "Line break — \\linebreak"
 msgstr "Putus baris - \\linebreak"
 
-#: ../src/liblatexila/latexila-latex-commands.c:207
+#: ../src/liblatexila/latexila-latex-commands.c:102
 msgid "Page break — \\pagebreak"
 msgstr "Putus halaman - \\pagebreak"
 
-#: ../src/liblatexila/latexila-latex-commands.c:209
+#: ../src/liblatexila/latexila-latex-commands.c:104
 msgid "Big skip — \\bigskip"
 msgstr "Lewati banyak - \\bigskip"
 
-#: ../src/liblatexila/latexila-latex-commands.c:211
+#: ../src/liblatexila/latexila-latex-commands.c:106
 msgid "Medium skip — \\medskip"
 msgstr "Lewati sedang - \\medskip"
 
-#: ../src/liblatexila/latexila-latex-commands.c:213
+#: ../src/liblatexila/latexila-latex-commands.c:108
 msgid "Horizontal space — \\hspace"
 msgstr "Spasi horisontal - \\hspace"
 
-#: ../src/liblatexila/latexila-latex-commands.c:215
+#: ../src/liblatexila/latexila-latex-commands.c:110
 msgid "Vertical space — \\vspace"
 msgstr "Spasi vertikal - \\vspace"
 
-#: ../src/liblatexila/latexila-latex-commands.c:217
+#: ../src/liblatexila/latexila-latex-commands.c:112
 msgid "No paragraph indentation — \\noindent"
 msgstr "Tanpa indentasi paragraf - \\noindent"
 
-#. LaTeX: International accents
-#: ../src/liblatexila/latexila-latex-commands.c:221
+#: ../src/liblatexila/latexila-latex-commands.c:118
 msgid "Acute accent — \\'"
 msgstr "Aksen acute - \\'"
 
-#: ../src/liblatexila/latexila-latex-commands.c:222
+#: ../src/liblatexila/latexila-latex-commands.c:119
 msgid "Grave accent — \\`"
 msgstr "Aksen grave - \\`"
 
-#: ../src/liblatexila/latexila-latex-commands.c:223
+#: ../src/liblatexila/latexila-latex-commands.c:120
 msgid "Circumflex accent — \\^"
 msgstr "Akses circumflex - \\^"
 
-#: ../src/liblatexila/latexila-latex-commands.c:224
+#: ../src/liblatexila/latexila-latex-commands.c:121
 msgid "Trema — \\\""
 msgstr "Trema - \\\""
 
-#: ../src/liblatexila/latexila-latex-commands.c:225
+#: ../src/liblatexila/latexila-latex-commands.c:122
 msgid "Tilde — \\~"
 msgstr "Tilde - \\~"
 
-#: ../src/liblatexila/latexila-latex-commands.c:226
+#: ../src/liblatexila/latexila-latex-commands.c:123
 msgid "Macron — \\="
 msgstr "Macron - \\="
 
-#: ../src/liblatexila/latexila-latex-commands.c:227
+#: ../src/liblatexila/latexila-latex-commands.c:124
 msgid "Dot above — \\."
 msgstr "Titik di atas - \\."
 
-#: ../src/liblatexila/latexila-latex-commands.c:228
+#: ../src/liblatexila/latexila-latex-commands.c:125
 msgid "Caron — \\v"
 msgstr "Caron - \\v"
 
-#: ../src/liblatexila/latexila-latex-commands.c:229
+#: ../src/liblatexila/latexila-latex-commands.c:126
 msgid "Breve — \\u"
 msgstr "Breve - \\u"
 
-#: ../src/liblatexila/latexila-latex-commands.c:231
+#: ../src/liblatexila/latexila-latex-commands.c:128
 msgid "Double acute accent — \\H"
 msgstr "Aksen acute ganda - \\H"
 
-#: ../src/liblatexila/latexila-latex-commands.c:232
+#: ../src/liblatexila/latexila-latex-commands.c:129
 msgid "Cedilla — \\c"
 msgstr "Cedilla - \\c"
 
-#: ../src/liblatexila/latexila-latex-commands.c:233
+#: ../src/liblatexila/latexila-latex-commands.c:130
 msgid "Ogonek — \\k"
 msgstr "Ogonek - \\k"
 
-#: ../src/liblatexila/latexila-latex-commands.c:234
+#: ../src/liblatexila/latexila-latex-commands.c:131
 msgid "Dot below — \\d"
 msgstr "Titik di bawah - \\d"
 
-#: ../src/liblatexila/latexila-latex-commands.c:235
+#: ../src/liblatexila/latexila-latex-commands.c:132
 msgid "Macron below — \\b"
 msgstr "Macron di bawah - \\b"
 
-#: ../src/liblatexila/latexila-latex-commands.c:236
+#: ../src/liblatexila/latexila-latex-commands.c:133
 msgid "Ring — \\r"
 msgstr "Cincin - \\r"
 
-#: ../src/liblatexila/latexila-latex-commands.c:237
+#: ../src/liblatexila/latexila-latex-commands.c:134
 msgid "Tie — \\t"
 msgstr "Tie - \\t"
 
-#: ../src/liblatexila/latexila-latex-commands.c:242
-msgid "Document class — \\documentclass"
-msgstr "Kelas dokumen - \\documentclass"
-
-#: ../src/liblatexila/latexila-latex-commands.c:244
-msgid "Use package — \\usepackage"
-msgstr "Gunakan paket - \\usepackage"
-
-#: ../src/liblatexila/latexila-latex-commands.c:245
-msgid "_AMS packages"
-msgstr "Paket _AMS"
-
-#: ../src/liblatexila/latexila-latex-commands.c:246
-msgid "AMS packages"
-msgstr "Paket AMS"
-
-#: ../src/liblatexila/latexila-latex-commands.c:247
-msgid "Author — \\author"
-msgstr "Penulis - \\author"
-
-#: ../src/liblatexila/latexila-latex-commands.c:248
-msgid "Title — \\title"
-msgstr "Judul - \\title"
-
-#: ../src/liblatexila/latexila-latex-commands.c:250
-msgid "Content of the document — \\begin{document}"
-msgstr "Isi dokumen - \\begin{document}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:252
-msgid "Make title — \\maketitle"
-msgstr "Buat judul - \\maketitle"
-
-#: ../src/liblatexila/latexila-latex-commands.c:254
-msgid "Table of contents — \\tableofcontents"
-msgstr "Daftar isi - \\tableofcontents"
-
-#: ../src/liblatexila/latexila-latex-commands.c:256
-msgid "Abstract — \\begin{abstract}"
-msgstr "Abstrak - \\begin{abstract}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:258
-msgid "Include an image (graphicx package) — \\includegraphics"
-msgstr "Sertakan citra (paket graphicx) - \\includegraphics"
-
-#: ../src/liblatexila/latexila-latex-commands.c:260
-msgid "Include a file — \\input"
-msgstr "Sertakan suatu berkas - \\input"
-
-#. Math Environments
-#: ../src/liblatexila/latexila-latex-commands.c:264
+#: ../src/liblatexila/latexila-latex-commands.c:140
 msgid "_Mathematical Environment — $…$"
 msgstr "Lingkungan _Matematis - $…$"
 
-#: ../src/liblatexila/latexila-latex-commands.c:265
+#: ../src/liblatexila/latexila-latex-commands.c:141
 msgid "Mathematical Environment — $…$"
 msgstr "Lingkungan Matematis - $…$"
 
-#: ../src/liblatexila/latexila-latex-commands.c:266
+#: ../src/liblatexila/latexila-latex-commands.c:142
 msgid "_Centered Formula — \\[…\\]"
 msgstr "Rumus Di _Tengah - \\[…\\]"
 
-#: ../src/liblatexila/latexila-latex-commands.c:267
+#: ../src/liblatexila/latexila-latex-commands.c:143
 msgid "Centered Formula — \\[…\\]"
 msgstr "Rumus Di Tengah - \\[…\\]"
 
-#: ../src/liblatexila/latexila-latex-commands.c:269
+#: ../src/liblatexila/latexila-latex-commands.c:145
 msgid "_Numbered Equation — \\begin{equation}"
 msgstr "Persamaan Ber_nomor - \\begin{equation}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:270
+#: ../src/liblatexila/latexila-latex-commands.c:146
 msgid "Numbered Equation — \\begin{equation}"
 msgstr "Persamaan Bernomor - \\begin{equation}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:271
+#: ../src/liblatexila/latexila-latex-commands.c:147
 msgid "_Array of Equations — \\begin{align*}"
 msgstr "L_arik Persamaan - \\begin{align*}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:272
+#: ../src/liblatexila/latexila-latex-commands.c:148
 msgid "Array of Equations — \\begin{align*}"
 msgstr "Larik Persamaan - \\begin{align*}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:274
+#: ../src/liblatexila/latexila-latex-commands.c:150
 msgid "Numbered Array of _Equations — \\begin{align}"
 msgstr "Larik P_ersamaan Bernomor - \\begin{align}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:275
+#: ../src/liblatexila/latexila-latex-commands.c:151
 msgid "Numbered Array of Equations — \\begin{align}"
 msgstr "Larik Persamaan Bernomor - \\begin{align}"
 
-#. Math misc
-#: ../src/liblatexila/latexila-latex-commands.c:279
-msgid "_Superscript — ^{}"
-msgstr "_Superskrip - ^{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:280
-msgid "Superscript — ^{}"
-msgstr "Superskrip - ^{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:281
-msgid "Su_bscript — __{}"
-msgstr "Su_bskrip - __{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:282
-msgid "Subscript — _{}"
-msgstr "Subskrip - _{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:283
-msgid "_Fraction — \\frac{}{}"
-msgstr "_Pecahan - \\frac{}{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:284
-msgid "Fraction — \\frac{}{}"
-msgstr "Pecahan - \\frac{}{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:285
-msgid "Square _Root — \\sqrt{}"
-msgstr "Aka_r Kuadrat - \\sqrt{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:286
-msgid "Square Root — \\sqrt{}"
-msgstr "Akar Kuadrat - \\sqrt{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:287
-msgid "_N-th Root — \\sqrt[]{}"
-msgstr "Akar Pangkat-_N - \\sqrt[]{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:288
-msgid "N-th Root — \\sqrt[]{}"
-msgstr "Akar Pangkat-N - \\sqrt[]{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:326
+#: ../src/liblatexila/latexila-latex-commands.c:193
 msgid "Roman — \\mathrm"
 msgstr "Roman - \\mathrm"
 
-#: ../src/liblatexila/latexila-latex-commands.c:328
+#: ../src/liblatexila/latexila-latex-commands.c:195
 msgid "Italic — \\mathit"
 msgstr "Miring - \\mathit"
 
-#: ../src/liblatexila/latexila-latex-commands.c:330
+#: ../src/liblatexila/latexila-latex-commands.c:197
 msgid "Bold — \\mathbf"
 msgstr "Tebal - \\mathbf"
 
-#: ../src/liblatexila/latexila-latex-commands.c:332
+#: ../src/liblatexila/latexila-latex-commands.c:199
 msgid "Sans Serif — \\mathsf"
 msgstr "Sans Serif - \\mathsf"
 
-#: ../src/liblatexila/latexila-latex-commands.c:334
+#: ../src/liblatexila/latexila-latex-commands.c:201
 msgid "Typewriter — \\mathtt"
 msgstr "Mesin tik - \\mathtt"
 
-#: ../src/liblatexila/latexila-latex-commands.c:336
+#: ../src/liblatexila/latexila-latex-commands.c:203
 msgid "Calligraphic — \\mathcal"
 msgstr "Kaligrafis - \\mathcal"
 
-#: ../src/liblatexila/latexila-latex-commands.c:338
+#: ../src/liblatexila/latexila-latex-commands.c:205
 msgid "Blackboard (uppercase only) — \\mathbb (amsfonts package)"
 msgstr "Blackboard (hanya huruf besar) - \\mathbb (paket amsfonts)"
 
-#: ../src/liblatexila/latexila-latex-commands.c:340
+#: ../src/liblatexila/latexila-latex-commands.c:207
 msgid "Euler Fraktur — \\mathfrak (amsfonts package)"
 msgstr "Fraktur Euler - \\mathfrak (paket amsfonts)"
 
-#. Math Spaces
-#: ../src/liblatexila/latexila-latex-commands.c:358
+#: ../src/liblatexila/latexila-latex-commands.c:229
 msgid "_Small"
 msgstr "_Kecil"
 
-#: ../src/liblatexila/latexila-latex-commands.c:358
+#: ../src/liblatexila/latexila-latex-commands.c:229
 msgid "Small — \\,"
 msgstr "Kecil - \\,"
 
-#: ../src/liblatexila/latexila-latex-commands.c:359
+#: ../src/liblatexila/latexila-latex-commands.c:230
 msgid "_Medium"
 msgstr "_Sedang"
 
-#: ../src/liblatexila/latexila-latex-commands.c:359
+#: ../src/liblatexila/latexila-latex-commands.c:230
 msgid "Medium — \\:"
 msgstr "Sedang - \\:"
 
-#: ../src/liblatexila/latexila-latex-commands.c:360
+#: ../src/liblatexila/latexila-latex-commands.c:231
 msgid "_Large"
 msgstr "_Besar"
 
-#: ../src/liblatexila/latexila-latex-commands.c:360
+#: ../src/liblatexila/latexila-latex-commands.c:231
 msgid "Large — \\;"
 msgstr "Besar - \\;"
 
-#. Math: Left Delimiters
-#: ../src/liblatexila/latexila-latex-commands.c:366
+#: ../src/liblatexila/latexila-latex-commands.c:239
 msgid "left ("
 msgstr "( kiri"
 
-#: ../src/liblatexila/latexila-latex-commands.c:367
+#: ../src/liblatexila/latexila-latex-commands.c:240
 msgid "left ["
 msgstr "[ kiri"
 
-#: ../src/liblatexila/latexila-latex-commands.c:368
+#: ../src/liblatexila/latexila-latex-commands.c:241
 msgid "left { "
 msgstr "{ kiri"
 
-#: ../src/liblatexila/latexila-latex-commands.c:369
+#: ../src/liblatexila/latexila-latex-commands.c:242
 msgid "left <"
 msgstr "< kiri"
 
-#: ../src/liblatexila/latexila-latex-commands.c:370
+#: ../src/liblatexila/latexila-latex-commands.c:243
 msgid "left )"
 msgstr ") kiri"
 
-#: ../src/liblatexila/latexila-latex-commands.c:371
+#: ../src/liblatexila/latexila-latex-commands.c:244
 msgid "left ]"
 msgstr "] kiri"
 
-#: ../src/liblatexila/latexila-latex-commands.c:372
+#: ../src/liblatexila/latexila-latex-commands.c:245
 msgid "left  }"
 msgstr "} kiri"
 
-#: ../src/liblatexila/latexila-latex-commands.c:373
+#: ../src/liblatexila/latexila-latex-commands.c:246
 msgid "left >"
 msgstr "> kiri"
 
-#: ../src/liblatexila/latexila-latex-commands.c:374
+#: ../src/liblatexila/latexila-latex-commands.c:247
 msgid "left ."
 msgstr ". kiri"
 
-#. Math: Right Delimiters
-#: ../src/liblatexila/latexila-latex-commands.c:378
+#: ../src/liblatexila/latexila-latex-commands.c:253
 msgid "right )"
 msgstr ") kanan"
 
-#: ../src/liblatexila/latexila-latex-commands.c:379
+#: ../src/liblatexila/latexila-latex-commands.c:254
 msgid "right ]"
 msgstr "] kanan"
 
-#: ../src/liblatexila/latexila-latex-commands.c:380
+#: ../src/liblatexila/latexila-latex-commands.c:255
 msgid "right  }"
 msgstr "} kanan"
 
-#: ../src/liblatexila/latexila-latex-commands.c:381
+#: ../src/liblatexila/latexila-latex-commands.c:256
 msgid "right >"
 msgstr "> kanan"
 
-#: ../src/liblatexila/latexila-latex-commands.c:382
+#: ../src/liblatexila/latexila-latex-commands.c:257
 msgid "right ("
 msgstr "( kanan"
 
-#: ../src/liblatexila/latexila-latex-commands.c:383
+#: ../src/liblatexila/latexila-latex-commands.c:258
 msgid "right ["
 msgstr "[ kanan"
 
-#: ../src/liblatexila/latexila-latex-commands.c:384
+#: ../src/liblatexila/latexila-latex-commands.c:259
 msgid "right { "
 msgstr "{ kanan"
 
-#: ../src/liblatexila/latexila-latex-commands.c:385
+#: ../src/liblatexila/latexila-latex-commands.c:260
 msgid "right <"
 msgstr "< kanan"
 
-#: ../src/liblatexila/latexila-latex-commands.c:386
+#: ../src/liblatexila/latexila-latex-commands.c:261
 msgid "right ."
 msgstr ". kanan"
 
-#: ../src/liblatexila/latexila-synctex.c:194
+#. action, icon, label, accel, tooltip
+#: ../src/liblatexila/latexila-latex-commands.c:283
+msgid "_Sectioning"
+msgstr "Penentuan _Seksi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:284
+msgid "_References"
+msgstr "_Rujukan"
+
+#: ../src/liblatexila/latexila-latex-commands.c:285
+msgid "_Environments"
+msgstr "_Lingkungan"
+
+#: ../src/liblatexila/latexila-latex-commands.c:286
+msgid "_List Environments"
+msgstr "Daftar _Lingkungan"
+
+#: ../src/liblatexila/latexila-latex-commands.c:287
+msgid "_Characters Sizes"
+msgstr "Ukuran _Karakter"
+
+#: ../src/liblatexila/latexila-latex-commands.c:288
+msgid "_Font Styles"
+msgstr "Gaya _Fonta"
+
+#: ../src/liblatexila/latexila-latex-commands.c:289
+msgid "_Font Family"
+msgstr "Keluarga _Fonta"
+
+#: ../src/liblatexila/latexila-latex-commands.c:290
+msgid "F_ont Series"
+msgstr "Seri F_onta"
+
+#: ../src/liblatexila/latexila-latex-commands.c:291
+msgid "Fo_nt Shape"
+msgstr "Bentuk Fo_nta"
+
+#: ../src/liblatexila/latexila-latex-commands.c:292
+msgid "_Tabular"
+msgstr "_Tabular"
+
+#: ../src/liblatexila/latexila-latex-commands.c:293
+msgid "_Presentation"
+msgstr "_Presentasi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:294
+msgid "_Spacing"
+msgstr "Jarak bari_s"
+
+#: ../src/liblatexila/latexila-latex-commands.c:295
+msgid "International _Accents"
+msgstr "_Aksen Internasional"
+
+#: ../src/liblatexila/latexila-latex-commands.c:296
+msgid "_Misc"
+msgstr "_Rupa-rupa"
+
+#: ../src/liblatexila/latexila-latex-commands.c:298
+msgid "_Math Environments"
+msgstr "Lingkungan _Math"
+
+#: ../src/liblatexila/latexila-latex-commands.c:299
+msgid "Math _Functions"
+msgstr "_Fungsi-fungsi Matematika"
+
+#: ../src/liblatexila/latexila-latex-commands.c:300
+msgid "Math Font _Styles"
+msgstr "_Gaya Fonta Math"
+
+#: ../src/liblatexila/latexila-latex-commands.c:301
+msgid "Math _Accents"
+msgstr "_Aksen Math"
+
+#: ../src/liblatexila/latexila-latex-commands.c:302
+msgid "Math _Spaces"
+msgstr "_Spasi Math"
+
+#: ../src/liblatexila/latexila-latex-commands.c:303
+msgid "_Left Delimiters"
+msgstr "Pembatas K_iri"
+
+#: ../src/liblatexila/latexila-latex-commands.c:304
+msgid "Right _Delimiters"
+msgstr "Pembatas K_anan"
+
+#: ../src/liblatexila/latexila-latex-commands.c:309 ../src/structure.vala:776
+msgid "Part"
+msgstr "Bagian"
+
+#: ../src/liblatexila/latexila-latex-commands.c:311 ../src/structure.vala:777
+msgid "Chapter"
+msgstr "Bab"
+
+#: ../src/liblatexila/latexila-latex-commands.c:313 ../src/structure.vala:778
+msgid "Section"
+msgstr "Seksi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:315 ../src/structure.vala:779
+msgid "Sub-section"
+msgstr "Sub-seksi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:317 ../src/structure.vala:780
+msgid "Sub-sub-section"
+msgstr "Sub-sub-seksi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:319 ../src/structure.vala:781
+msgid "Paragraph"
+msgstr "Paragraf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:321 ../src/structure.vala:782
+msgid "Sub-paragraph"
+msgstr "Sub-paragraf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:326
+msgid "Center — \\begin{center}"
+msgstr "Tengah - \\begin{center}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:328
+msgid "Align Left — \\begin{flushleft}"
+msgstr "Rata Kiri - \\begin{flushleft}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:330
+msgid "Align Right — \\begin{flushright}"
+msgstr "Rata Kanan - \\begin{flushright}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:332
+msgid "Figure — \\begin{figure}"
+msgstr "Gambar - \\begin{figure}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:334
+msgid "Table — \\begin{table}"
+msgstr "Tabel - \\begin{table}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:336
+msgid "Quote — \\begin{quote}"
+msgstr "Kutip - \\begin{quote}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:338
+msgid "Quotation — \\begin{quotation}"
+msgstr "Kutipan - \\begin{quotation}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:340
+msgid "Verse — \\begin{verse}"
+msgstr "Verse - \\begin{verse}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:342
+msgid "Verbatim — \\begin{verbatim}"
+msgstr "Verbatim - \\begin{verbatim}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:344
+msgid "Minipage — \\begin{minipage}"
+msgstr "Laman mini - \\begin{minipage}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:346
+msgid "Title page — \\begin{titlepage}"
+msgstr "Halaman judul - \\begin{titlepage}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:351
+msgid "Bulleted List — \\begin{itemize}"
+msgstr "Daftar Bulet - \\begin{itemize}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:353
+msgid "Enumeration — \\begin{enumerate}"
+msgstr "Enumerasi - \\begin{enumerate}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:355
+msgid "Description — \\begin{description}"
+msgstr "Deskripsi - \\begin{description}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:357
+msgid "Custom list — \\begin{list}"
+msgstr "Daftar ubahan - \\begin{list}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:359
+msgid "List item — \\item"
+msgstr "Butir daftar - \\item"
+
+#: ../src/liblatexila/latexila-latex-commands.c:364
+msgid "Bold — \\textbf"
+msgstr "Tebal - \\textbf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:366
+msgid "Italic — \\textit"
+msgstr "Miring - \\textit"
+
+#: ../src/liblatexila/latexila-latex-commands.c:368
+msgid "Typewriter — \\texttt"
+msgstr "Mesin tik - \\texttt"
+
+#: ../src/liblatexila/latexila-latex-commands.c:370
+msgid "Slanted — \\textsl"
+msgstr "Slanted - \\textsl"
+
+#: ../src/liblatexila/latexila-latex-commands.c:372
+msgid "Small Capitals — \\textsc"
+msgstr "Kapital Kecil - \\textsc"
+
+#: ../src/liblatexila/latexila-latex-commands.c:374
+msgid "Sans Serif — \\textsf"
+msgstr "Sans Serif - \\textsf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:376
+msgid "Emphasized — \\emph"
+msgstr "Ditegaskan - \\emph"
+
+#: ../src/liblatexila/latexila-latex-commands.c:378
+msgid "Underline — \\underline"
+msgstr "Garis bawah - \\underline"
+
+#: ../src/liblatexila/latexila-latex-commands.c:381
+msgid "Roman — \\rmfamily"
+msgstr "Roman - \\rmfamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:383
+msgid "Sans Serif — \\sffamily"
+msgstr "Sans Serif - \\sffamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:385
+msgid "Monospace — \\ttfamily"
+msgstr "Monospace - \\ttfamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:388
+msgid "Medium — \\mdseries"
+msgstr "Medium - \\mdseries"
+
+#: ../src/liblatexila/latexila-latex-commands.c:390
+msgid "Bold — \\bfseries"
+msgstr "Tebal - \\bfseries"
+
+#: ../src/liblatexila/latexila-latex-commands.c:393
+msgid "Upright — \\upshape"
+msgstr "Tegak - \\upshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:395
+msgid "Italic — \\itshape"
+msgstr "Miring - \\itshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:397
+msgid "Slanted — \\slshape"
+msgstr "Slanted - \\slshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:399
+msgid "Small Capitals — \\scshape"
+msgstr "Kapital Kecil - \\scshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:404
+msgid "Document class — \\documentclass"
+msgstr "Kelas dokumen - \\documentclass"
+
+#: ../src/liblatexila/latexila-latex-commands.c:406
+msgid "Use package — \\usepackage"
+msgstr "Gunakan paket - \\usepackage"
+
+#: ../src/liblatexila/latexila-latex-commands.c:407
+msgid "_AMS packages"
+msgstr "Paket _AMS"
+
+#: ../src/liblatexila/latexila-latex-commands.c:408
+msgid "AMS packages"
+msgstr "Paket AMS"
+
+#: ../src/liblatexila/latexila-latex-commands.c:409
+msgid "Author — \\author"
+msgstr "Penulis - \\author"
+
+#: ../src/liblatexila/latexila-latex-commands.c:410
+msgid "Title — \\title"
+msgstr "Judul - \\title"
+
+#: ../src/liblatexila/latexila-latex-commands.c:412
+msgid "Content of the document — \\begin{document}"
+msgstr "Isi dokumen - \\begin{document}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:414
+msgid "Make title — \\maketitle"
+msgstr "Buat judul - \\maketitle"
+
+#: ../src/liblatexila/latexila-latex-commands.c:416
+msgid "Table of contents — \\tableofcontents"
+msgstr "Daftar isi - \\tableofcontents"
+
+#: ../src/liblatexila/latexila-latex-commands.c:418
+msgid "Abstract — \\begin{abstract}"
+msgstr "Abstrak - \\begin{abstract}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:420
+msgid "Include an image (graphicx package) — \\includegraphics"
+msgstr "Sertakan citra (paket graphicx) - \\includegraphics"
+
+#: ../src/liblatexila/latexila-latex-commands.c:422
+msgid "Include a file — \\input"
+msgstr "Sertakan suatu berkas - \\input"
+
+#. Math misc
+#: ../src/liblatexila/latexila-latex-commands.c:426
+msgid "_Superscript — ^{}"
+msgstr "_Superskrip - ^{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:427
+msgid "Superscript — ^{}"
+msgstr "Superskrip - ^{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:428
+msgid "Su_bscript — __{}"
+msgstr "Su_bskrip - __{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:429
+msgid "Subscript — _{}"
+msgstr "Subskrip - _{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:430
+msgid "_Fraction — \\frac{}{}"
+msgstr "_Pecahan - \\frac{}{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:431
+msgid "Fraction — \\frac{}{}"
+msgstr "Pecahan - \\frac{}{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:432
+msgid "Square _Root — \\sqrt{}"
+msgstr "Aka_r Kuadrat - \\sqrt{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:433
+msgid "Square Root — \\sqrt{}"
+msgstr "Akar Kuadrat - \\sqrt{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:434
+msgid "_N-th Root — \\sqrt[]{}"
+msgstr "Akar Pangkat-_N - \\sqrt[]{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:435
+msgid "N-th Root — \\sqrt[]{}"
+msgstr "Akar Pangkat-N - \\sqrt[]{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1541
+msgid "Sectioning"
+msgstr "Penentuan Seksi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1545
+msgid "References"
+msgstr "Rujukan"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1549
+msgid "Characters Sizes"
+msgstr "Ukuran Karakter"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1569
+msgid "Presentation Environments"
+msgstr "Lingkungan Presentasi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1575
+msgid "Math Environments"
+msgstr "Lingkungan Math"
+
+#: ../src/liblatexila/latexila-synctex.c:195
 msgid "Impossible to do the forward search."
 msgstr "Tak mungkin melakukan pencarian maju."
 
-#: ../src/liblatexila/latexila-synctex.c:539
+#: ../src/liblatexila/latexila-synctex.c:540
 msgid "Can not communicate with evince."
 msgstr "Tak bisa berkomunikasi dengan evince."
 
-#: ../src/liblatexila/latexila-synctex.c:603
+#: ../src/liblatexila/latexila-synctex.c:604
 msgid "The PDF file doesn’t exist."
 msgstr "Berkas PDF tak ada."
 
-#: ../src/liblatexila/latexila-synctex.c:654
+#: ../src/liblatexila/latexila-synctex.c:655
 msgid "The document is not saved."
 msgstr "Dokumen tak disimpan."
 
@@ -2160,18 +2134,10 @@ msgid "Search for and replace text"
 msgstr "Cari dan ganti teks"
 
 #: ../src/main_window.vala:46
-msgid "_Go to Line…"
-msgstr "Ke _Baris…"
-
-#: ../src/main_window.vala:47
-msgid "Go to a specific line"
-msgstr "Lompat ke baris tertentu"
-
-#: ../src/main_window.vala:48
 msgid "_Jump to PDF"
 msgstr "_Lompat ke PDF"
 
-#: ../src/main_window.vala:49
+#: ../src/main_window.vala:47
 msgid ""
 "Jump to the associated position in the PDF file. Another shortcut: Ctrl"
 "+click, which works in both directions."
@@ -2179,124 +2145,108 @@ msgstr ""
 "Melompat ke posisi terkait dalam berkas PDF. Pintasan lain: Ctrl+klik, yang "
 "bekerja dalam kedua arah."
 
+#. LaTeX and Math
+#: ../src/main_window.vala:52
+msgid "_Math"
+msgstr "_Matematika"
+
 #. Projects
-#: ../src/main_window.vala:53
+#: ../src/main_window.vala:55
 msgid "_Projects"
 msgstr "_Projek"
 
-#: ../src/main_window.vala:54
+#: ../src/main_window.vala:56
 msgid "_New Project"
 msgstr "Projek _Baru"
 
-#: ../src/main_window.vala:55
+#: ../src/main_window.vala:57
 msgid "Create a new project"
 msgstr "Membuat projek baru"
 
-#: ../src/main_window.vala:56
+#: ../src/main_window.vala:58
 msgid "_Configure Current Project"
 msgstr "Atur Projek _Kini"
 
-#: ../src/main_window.vala:57
+#: ../src/main_window.vala:59
 msgid "Change the main file of the current project"
 msgstr "Ubah berkas utama dari projek kini"
 
-#: ../src/main_window.vala:59
+#: ../src/main_window.vala:61
 msgid "_Manage Projects"
 msgstr "_Kelola Projek"
 
-#: ../src/main_window.vala:60 ../src/project_dialogs.vala:187
+#: ../src/main_window.vala:62 ../src/project_dialogs.vala:187
 msgid "Manage Projects"
 msgstr "Kelola Projek"
 
-#: ../src/main_window.vala:64
+#: ../src/main_window.vala:66
 msgid "_Contents"
 msgstr "_Isi"
 
-#: ../src/main_window.vala:65
+#: ../src/main_window.vala:67
 msgid "Open the GNOME LaTeX documentation"
 msgstr "Buka dokumentasi GNOME LaTeX"
 
-#: ../src/main_window.vala:66
+#: ../src/main_window.vala:68
 msgid "_LaTeX Reference"
 msgstr "Referensi _LaTeX"
 
-#: ../src/main_window.vala:67
+#: ../src/main_window.vala:69
 msgid "The Kile LaTeX Reference"
 msgstr "Referensi LaTeX Kile"
 
-#: ../src/main_window.vala:68
+#: ../src/main_window.vala:70
 msgid "_About"
 msgstr "Tent_ang"
 
-#: ../src/main_window.vala:74
+#: ../src/main_window.vala:76
 msgid "_Main Toolbar"
 msgstr "Bilah Alat Uta_ma"
 
-#: ../src/main_window.vala:75
+#: ../src/main_window.vala:77
 msgid "Show or hide the main toolbar"
 msgstr "Tampilkan atau sembunyikan bilah alat utama"
 
 #. Translators: "Edit" here is an adjective.
-#: ../src/main_window.vala:77
+#: ../src/main_window.vala:79
 msgid "_Edit Toolbar"
 msgstr "Bilah Alat P_enyuntingan"
 
-#: ../src/main_window.vala:78
+#: ../src/main_window.vala:80
 msgid "Show or hide the edit toolbar"
 msgstr "Tampilkan atau sembunyikan bilah alat penyuntingan"
 
-#: ../src/main_window.vala:79
+#: ../src/main_window.vala:81
 msgid "_Side panel"
 msgstr "_Panel Samping"
 
-#: ../src/main_window.vala:80
+#: ../src/main_window.vala:82
 msgid "Show or hide the side panel"
 msgstr "Menampilkan atau menyembunyikan panel samping"
 
-#: ../src/main_window.vala:81
+#: ../src/main_window.vala:83
 msgid "_Bottom panel"
 msgstr "Panel _bawah"
 
-#: ../src/main_window.vala:82
+#: ../src/main_window.vala:84
 msgid "Show or hide the bottom panel"
 msgstr "Tampilkan atau sembunyikan panel bawah"
 
 #. Symbols
-#: ../src/main_window.vala:446
+#: ../src/main_window.vala:440
 msgid "Symbols"
 msgstr "Simbol"
 
-#: ../src/main_window.vala:455
+#: ../src/main_window.vala:450
 msgid "Structure"
 msgstr "Struktur"
 
-#: ../src/main_window.vala:648
-#, c-format
-msgid "This file (%s) is already opened in another GNOME LaTeX window."
-msgstr "Berkas (%s) ini sedang dibuka dalam jendela GNOME LaTeX lain."
-
-#: ../src/main_window.vala:650
-msgid ""
-"GNOME LaTeX opened this instance of the file in a non-editable way. Do you "
-"want to edit it anyway?"
-msgstr ""
-"GNOME LaTeX membuka instansi berkas ini dalam cari yang tak dapat disunting. "
-"Apakah Anda ingin menyuntingnya saja?"
-
-#: ../src/main_window.vala:654
-msgid "Edit Anyway"
-msgstr "Sunting Saja"
-
-#: ../src/main_window.vala:655
-msgid "Don’t Edit"
-msgstr "Jangan Sunting"
-
-#: ../src/main_window.vala:750
+#: ../src/main_window.vala:745
 #, c-format
 msgid "Save changes to document “%s” before closing?"
 msgstr "Simpan perubahan ke dokumen \"%s\" sebelum menutup?"
 
-#: ../src/main_window.vala:809
+#: ../src/main_window.vala:804
 msgid "Save File"
 msgstr "Simpan Berkas"
 
@@ -2323,13 +2273,13 @@ msgid_plural "minutes"
 msgstr[0] "menit"
 msgstr[1] ""
 
-#: ../src/preferences_dialog.vala:294
+#: ../src/preferences_dialog.vala:253
 msgid "character"
 msgid_plural "characters"
 msgstr[0] "karakter"
 msgstr[1] ""
 
-#: ../src/preferences_dialog.vala:337
+#: ../src/preferences_dialog.vala:296
 #, c-format
 msgid "Use the system fixed width font (%s)"
 msgstr "Gunakan fonta lebar tetap sistem (%s)"
@@ -2389,57 +2339,49 @@ msgstr "Bersihk_an Semua"
 msgid "The Main File is not in the directory."
 msgstr "Berkas Utama tak di dalam direktori."
 
-#: ../src/search.vala:40
-msgid "Go to Line:"
-msgstr "Ke Baris:"
-
-#: ../src/search.vala:50
-msgid "Line you want to move the cursor to"
-msgstr "Pindahkan kursor ke baris"
-
-#: ../src/search.vala:172
+#: ../src/search.vala:100
 msgid "Replace with"
 msgstr "Gantikan dengan"
 
-#: ../src/search.vala:180
+#: ../src/search.vala:108
 msgid "Replace"
 msgstr "Ganti"
 
 #. replace all: image + label
-#: ../src/search.vala:184
+#: ../src/search.vala:112
 msgid "Replace All"
 msgstr "Ganti Semua"
 
-#: ../src/search.vala:194
+#: ../src/search.vala:122
 msgid "All"
 msgstr "Semua"
 
-#: ../src/search.vala:290
+#: ../src/search.vala:218
 msgid "Search for"
 msgstr "Cari untuk"
 
-#: ../src/search.vala:301
+#: ../src/search.vala:229
 msgid "Case sensitive"
 msgstr "Membedakan huruf besar/kecil"
 
-#: ../src/search.vala:304
+#: ../src/search.vala:232
 msgid "Entire words only"
 msgstr "Hanya kata lengkap"
 
-#: ../src/search.vala:451
+#: ../src/search.vala:381
 msgid "Not found"
 msgstr "Tak ditemukan"
 
 #. Translators: the first %d is the position of the current search occurrence,
 #. * and the second %d is the total number of search occurrences.
 #.
-#: ../src/search.vala:468
+#: ../src/search.vala:398
 #, c-format
 msgid "Match %d of %d"
 msgstr "Cocok %d dari %d"
 
 #. Translators: %d is the total number of search occurrences.
-#: ../src/search.vala:473
+#: ../src/search.vala:403
 #, c-format
 msgid "%d match"
 msgid_plural "%d matches"
@@ -2687,3 +2629,54 @@ msgstr "Sorot kata salah eja"
 #: ../src/ui/preferences_dialog.ui.h:27
 msgid "Other"
 msgstr "Lainnya"
+
+#~ msgid ""
+#~ "Side panel’s active component. 0: Symbols. 1: File browser. 2: Structure."
+#~ msgstr ""
+#~ "Komponen aktif panel sisi. 0: Simbol. 1: Peramban berkas. 2: Struktur."
+
+#~ msgid "Ln %d, Col %d"
+#~ msgstr "Brs %d, Kol %d"
+
+#~ msgid "The file %s changed on disk."
+#~ msgstr "Berkas %s berubah pada cakram."
+
+#~ msgid "Do you want to drop your changes and reload the file?"
+#~ msgstr "Anda ingin membuang perubahan dan memuat ulang berkas?"
+
+#~ msgid "Do you want to reload the file?"
+#~ msgstr "Anda ingin memuat ulang berkas?"
+
+#~ msgid "_Reload"
+#~ msgstr "_Muat Ulang"
+
+#~ msgid "Create new document"
+#~ msgstr "Buat dokumen baru"
+
+#~ msgid "_Go to Line…"
+#~ msgstr "Ke _Baris…"
+
+#~ msgid "Go to a specific line"
+#~ msgstr "Lompat ke baris tertentu"
+
+#~ msgid "This file (%s) is already opened in another GNOME LaTeX window."
+#~ msgstr "Berkas (%s) ini sedang dibuka dalam jendela GNOME LaTeX lain."
+
+#~ msgid ""
+#~ "GNOME LaTeX opened this instance of the file in a non-editable way. Do "
+#~ "you want to edit it anyway?"
+#~ msgstr ""
+#~ "GNOME LaTeX membuka instansi berkas ini dalam cari yang tak dapat "
+#~ "disunting. Apakah Anda ingin menyuntingnya saja?"
+
+#~ msgid "Edit Anyway"
+#~ msgstr "Sunting Saja"
+
+#~ msgid "Don’t Edit"
+#~ msgstr "Jangan Sunting"
+
+#~ msgid "Go to Line:"
+#~ msgstr "Ke Baris:"
+
+#~ msgid "Line you want to move the cursor to"
+#~ msgstr "Pindahkan kursor ke baris"

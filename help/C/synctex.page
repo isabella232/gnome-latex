@@ -43,10 +43,9 @@
 
   <p>If a document is split into several .tex files, create a
   <link xref="projects">project</link>. Unlike what is explained in the
-  <link href="help:evince/synctex-search#forward-search">
-    <app>Evince</app> documentation
-  </link>, there is no need to mention the main file with a LaTeX comment in
-  each secondary .tex file.</p>
+  <link href="help:evince/synctex-search#forward-search"><app>Evince</app>
+  documentation</link>, there is no need to mention the main file with a
+  LaTeX comment in each secondary .tex file.</p>
 </section>
 
 <section id="from_pdf_to_tex">

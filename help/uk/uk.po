@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: latexila master\n"
-"POT-Creation-Date: 2020-03-31 13:09+0000\n"
-"PO-Revision-Date: 2020-04-10 19:34+0300\n"
+"POT-Creation-Date: 2020-07-15 18:05+0000\n"
+"PO-Revision-Date: 2020-07-16 08:51+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -90,12 +90,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/build_tools.page:78
-#| msgid ""
-#| "Using a higher-level tool such as Latexmk simplify a lot all this "
-#| "process, since only one command is required. Indeed, Latexmk can detect "
-#| "how many times the <cmd>latex</cmd> or <cmd>pdflatex</cmd> command must "
-#| "be called, and whether <cmd>bibtex</cmd> or <cmd>makeindex</cmd> is "
-#| "required. By default, LaTeXila uses Latexmk."
 msgid ""
 "Using a higher-level tool such as Latexmk simplify a lot all this process, "
 "since only one command is required. Indeed, Latexmk can detect how many "
@@ -107,9 +101,8 @@ msgstr ""
 "процес, оскільки для його виконання потрібна лише одна команда. Зокрема, "
 "Latexmk може визначити кількість потрібних для обробки даних запусків команд "
 "<cmd>latex</cmd> та <cmd>pdflatex</cmd>, а також те, чи слід запускати "
-"<cmd>bibtex</cmd> і <cmd>makeindex</cmd>. У GNOME LaTeX типово"
-" використовується "
-"саме Latexmk."
+"<cmd>bibtex</cmd> і <cmd>makeindex</cmd>. У GNOME LaTeX типово "
+"використовується саме Latexmk."
 
 #. (itstool) path: section/title
 #: C/build_tools.page:86
@@ -336,7 +329,6 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/index.page:4
-#| msgid "LaTeXila Help"
 msgid "GNOME LaTeX Help"
 msgstr "Довідка з GNOME LaTeX"
 
@@ -403,19 +395,15 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/projects.page:39
-#| msgid ""
-#| "The <link xref=\"synctex#forward_search\">forward search</link> works for "
-#| "a secondary file of a project."
 msgid ""
 "<link xref=\"synctex#from_tex_to_pdf\">Jumping from a .tex file to the PDF</"
 "link> works for a secondary .tex file belonging to a project."
 msgstr ""
-"<link xref=\"synctex#from_tex_to_pdf\">Перехід з файла .tex до файла PDF<"
-"/link> працює і для підлеглих файлів .tex, які належать до проєкту."
+"<link xref=\"synctex#from_tex_to_pdf\">Перехід з файла .tex до файла PDF</"
+"link> працює і для підлеглих файлів .tex, які належать до проєкту."
 
 #. (itstool) path: page/title
 #: C/spell_checking.page:10
-#| msgid "Spell Checking"
 msgid "Spell-Checking"
 msgstr "Перевірка правопису"
 
@@ -426,16 +414,11 @@ msgstr "Метою є полегшення виправлення помилок
 
 #. (itstool) path: section/title
 #: C/spell_checking.page:17
-#| msgid "Use the spell checking"
 msgid "Use the spell-checking"
 msgstr "Використання перевірки правопису"
 
 #. (itstool) path: section/p
 #: C/spell_checking.page:18
-#| msgid ""
-#| "The default spell checking settings can be changed in the preferences "
-#| "dialog: <guiseq> <gui style=\"menu\">Edit</gui> <gui style=\"menu"
-#| "\">Preferences</gui> <gui style=\"tab\">Other</gui> </guiseq>"
 msgid ""
 "The default spell-checking settings can be changed in the preferences "
 "dialog: <guiseq> <gui style=\"menu\">Edit</gui> <gui style=\"menu"
@@ -484,29 +467,24 @@ msgid ""
 "both Aspell and Hunspell are installed for the same language, by default "
 "Enchant prefers the Hunspell one."
 msgstr ""
-"Для перевірки правопису у GNOME LaTeX використано <link"
-" href=\"https://wiki.gnome.org/Projects/gspell\">gspell</link>. gspell"
-" використовує <link href=\"https://"
-"abiword.github.io/enchant/\">Enchant</link>, у якому передбачено декілька"
-" модулів обробки, зокрема Hunspell та Aspell для роботи зі словниками. Модуль"
-" Aspell має проблеми у роботі з gspell — слід надавати перевагу Hunspell."
-" Якщо у системі одночасно встановлено словники Aspell і Hunspell для однієї"
-" мови, Enchant надаватиме перевагу словнику Hunspell."
+"Для перевірки правопису у GNOME LaTeX використано <link href=\"https://wiki."
+"gnome.org/Projects/gspell\">gspell</link>. gspell використовує <link href="
+"\"https://abiword.github.io/enchant/\">Enchant</link>, у якому передбачено "
+"декілька модулів обробки, зокрема Hunspell та Aspell для роботи зі "
+"словниками. Модуль Aspell має проблеми у роботі з gspell — слід надавати "
+"перевагу Hunspell. Якщо у системі одночасно встановлено словники Aspell і "
+"Hunspell для однієї мови, Enchant надаватиме перевагу словнику Hunspell."
 
 #. (itstool) path: section/p
 #: C/spell_checking.page:51
-#| msgid ""
-#| "If your language is not listed, install a dictionary for one of the "
-#| "supported backends."
 msgid ""
 "If your language is not listed in GNOME LaTeX, install a dictionary for one "
 "of the supported Enchant backends (for most languages the best choice is to "
 "install an Hunspell dictionary)."
 msgstr ""
-"Якщо потрібної вам мови немає у списку GNOME LaTeX, встановіть відповідний"
-" словник для "
-"одного з підтримуваних модулів перевірки правопису Enchant (для більшості мов"
-" кращим вибором буде встановлення словника Hunspell)."
+"Якщо потрібної вам мови немає у списку GNOME LaTeX, встановіть відповідний "
+"словник для одного з підтримуваних модулів перевірки правопису Enchant (для "
+"більшості мов кращим вибором буде встановлення словника Hunspell)."
 
 #. (itstool) path: page/title
 #: C/structure.page:10
@@ -609,15 +587,12 @@ msgstr "Перехід між .tex і PDF"
 
 #. (itstool) path: synopsis/p
 #: C/synctex.page:13
-#| msgid ""
-#| "Synchronization between the document's *.tex files and the resulting PDF "
-#| "output, opened with the <app>Evince</app> document viewer."
 msgid ""
 "Jumping between the document's *.tex files and the resulting PDF output, "
 "opened with the <app>Evince</app> document viewer."
 msgstr ""
-"Перехід між файлами *.tex документа і отриманим на основі цих файлів "
-"файлом PDF, відкритим у програмі для перегляду документів <app>Evince</app>."
+"Перехід між файлами *.tex документа і отриманим на основі цих файлів файлом "
+"PDF, відкритим у програмі для перегляду документів <app>Evince</app>."
 
 #. (itstool) path: note/p
 #: C/synctex.page:18
@@ -630,15 +605,11 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/synctex.page:23
-#| msgid "Forward Search: from .tex to PDF"
 msgid "Jumping from .tex to PDF"
 msgstr "Перехід між .tex і PDF"
 
 #. (itstool) path: section/p
 #: C/synctex.page:25
-#| msgid ""
-#| "From a certain position in the .tex source file, jump to the "
-#| "corresponding position in the PDF file."
 msgid ""
 "From a certain position in the .tex source file, jump to the corresponding "
 "position in the PDF file. Also called “forward search”."
@@ -648,15 +619,11 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/synctex.page:28
-#| msgid "There are different ways to do a forward search:"
 msgid "There are different ways to do this action:"
 msgstr "Існує декілька способів виконання цієї дії:"
 
 #. (itstool) path: item/p
 #: C/synctex.page:30
-#| msgid ""
-#| "In the menu: <guiseq> <gui style=\"menu\">Search</gui> <gui style=\"menu"
-#| "\">Search Forward</gui> </guiseq>"
 msgid ""
 "In the menu: <guiseq> <gui style=\"menu\">Search</gui> <gui style=\"menu"
 "\">Jump to PDF</gui> </guiseq>"
@@ -675,47 +642,39 @@ msgstr ""
 #: C/synctex.page:44
 #| msgid ""
 #| "If a document is split into several .tex files, create a <link xref="
-#| "\"projects\">project</link>. There is no need to mention the main file "
-#| "with a LaTeX comment in each secondary .tex file, like it is explained in "
-#| "the <link href=\"help:evince/synctex-search#forward-search\"> "
-#| "<app>Evince</app> documentation. </link>"
+#| "\"projects\">project</link>. Unlike what is explained in the <link href="
+#| "\"help:evince/synctex-search#forward-search\"> <app>Evince</app> "
+#| "documentation </link>, there is no need to mention the main file with a "
+#| "LaTeX comment in each secondary .tex file."
 msgid ""
 "If a document is split into several .tex files, create a <link xref="
 "\"projects\">project</link>. Unlike what is explained in the <link href="
-"\"help:evince/synctex-search#forward-search\"> <app>Evince</app> "
-"documentation </link>, there is no need to mention the main file with a "
-"LaTeX comment in each secondary .tex file."
+"\"help:evince/synctex-search#forward-search\"><app>Evince</app> "
+"documentation</link>, there is no need to mention the main file with a LaTeX "
+"comment in each secondary .tex file."
 msgstr ""
 "Якщо документ поділено на декілька файлів .tex, створіть <link xref="
-"\"projects\">проєкт</link>. Хоча це і вказано у <link href="
-"\"help:evince/synctex-search#forward-search\">документації до <app>Evince<"
-"/app></link>, вам не потрібно вказувати основний файл LaTeX у "
-"коментарі у кожному з підлеглих файлів .tex."
+"\"projects\">проєкт</link>. Хоча це і вказано у <link href=\"help:evince/"
+"synctex-search#forward-search\">документації до <app>Evince</app></link>, "
+"вам не потрібно вказувати основний файл LaTeX у коментарі у кожному з "
+"підлеглих файлів .tex."
 
 #. (itstool) path: section/title
-#: C/synctex.page:53
+#: C/synctex.page:52
 msgid "Jumping from PDF to .tex"
 msgstr "Перехід між PDF і .tex"
 
 #. (itstool) path: section/p
-#: C/synctex.page:55
-#| msgid ""
-#| "From a certain position in the .tex source file, jump to the "
-#| "corresponding position in the PDF file."
+#: C/synctex.page:54
 msgid ""
 "From a certain position in the PDF file, jump to the corresponding position "
 "in the .tex source file. Also called “backward search”."
 msgstr ""
-"Перехід від певного місця у файлі PDF до відповідного "
-"місця у файлі .tex із початковим кодом. Такий перехід називають «зворотним"
-" пошуком»."
+"Перехід від певного місця у файлі PDF до відповідного місця у файлі .tex із "
+"початковим кодом. Такий перехід називають «зворотним пошуком»."
 
 #. (itstool) path: section/p
-#: C/synctex.page:58
-#| msgid ""
-#| "In <app>Evince</app>, press <keyseq> <key>Ctrl</key> <key>left click</"
-#| "key> </keyseq>, and the corresponding position in the .tex file will be "
-#| "opened in <app>LaTeXila</app>."
+#: C/synctex.page:57
 msgid ""
 "In <app>Evince</app>, press <keyseq> <key>Ctrl</key> <key>left click</key> </"
 "keyseq>, and the corresponding position in the .tex file will be opened in "
@@ -726,16 +685,13 @@ msgstr ""
 "відкрито у <app>GNOME LaTeX</app>."
 
 #. (itstool) path: section/p
-#: C/synctex.page:66
-#| msgid ""
-#| "<app>Evince</app> have to be launched by <app>LaTeXila</app>. Else, the "
-#| "backward search will not work."
+#: C/synctex.page:65
 msgid ""
 "<app>Evince</app> has to be launched by <app>GNOME LaTeX</app>. Else, "
 "jumping from the PDF to the .tex file will not work."
 msgstr ""
-"<app>GNOME LaTeX</app> має запустити <app>Evince</app>. Якщо це не вдасться"
-" зробити, перехід з PDF до .tex не працюватиме."
+"<app>GNOME LaTeX</app> має запустити <app>Evince</app>. Якщо це не вдасться "
+"зробити, перехід з PDF до .tex не працюватиме."
 
 #~ msgid ""
 #~ "<link href=\"http://www.abisource.com/projects/enchant/\">Enchant</link> "

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: latexila-help\n"
-"POT-Creation-Date: 2018-03-24 17:55+0000\n"
+"POT-Creation-Date: 2020-07-15 18:05+0000\n"
 "PO-Revision-Date: 2018-03-25 21:38+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -627,9 +627,9 @@ msgstr ""
 msgid ""
 "If a document is split into several .tex files, create a <link xref="
 "\"projects\">project</link>. Unlike what is explained in the <link href="
-"\"help:evince/synctex-search#forward-search\"> <app>Evince</app> "
-"documentation </link>, there is no need to mention the main file with a "
-"LaTeX comment in each secondary .tex file."
+"\"help:evince/synctex-search#forward-search\"><app>Evince</app> "
+"documentation</link>, there is no need to mention the main file with a LaTeX "
+"comment in each secondary .tex file."
 msgstr ""
 "Jeśli dokument jest podzielony na kilka plików .tex, to utwórz <link xref="
 "\"projects\">projekt</link>. W przeciwieństwie do tego, co napisano w <link "
@@ -638,12 +638,12 @@ msgstr ""
 "komentarza LaTeX w każdym drugorzędnym pliku .tex."
 
 #. (itstool) path: section/title
-#: C/synctex.page:53
+#: C/synctex.page:52
 msgid "Jumping from PDF to .tex"
 msgstr "Przełączanie z pliku PDF na .tex"
 
 #. (itstool) path: section/p
-#: C/synctex.page:55
+#: C/synctex.page:54
 msgid ""
 "From a certain position in the PDF file, jump to the corresponding position "
 "in the .tex source file. Also called “backward search”."
@@ -652,7 +652,7 @@ msgstr ""
 "w pliku źródłowym PDF. Zwane także „wyszukiwaniem do tyłu”."
 
 #. (itstool) path: section/p
-#: C/synctex.page:58
+#: C/synctex.page:57
 msgid ""
 "In <app>Evince</app>, press <keyseq> <key>Ctrl</key> <key>left click</key> </"
 "keyseq>, and the corresponding position in the .tex file will be opened in "
@@ -663,7 +663,7 @@ msgstr ""
 "w pliku .tex zostanie otwarte w programie <app>GNOME LaTeX</app>."
 
 #. (itstool) path: section/p
-#: C/synctex.page:66
+#: C/synctex.page:65
 msgid ""
 "<app>Evince</app> has to be launched by <app>GNOME LaTeX</app>. Else, "
 "jumping from the PDF to the .tex file will not work."

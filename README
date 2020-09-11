@@ -1,7 +1,7 @@
 GNOME LaTeX
 ===========
 
-This is the version 3.37.2 of GNOME LaTeX.
+This is the version 3.38.0 of GNOME LaTeX.
 
 GNOME LaTeX is a LaTeX editor for the GNOME desktop.
 
@@ -21,7 +21,7 @@ Dependencies
 * GLib >= 2.56
 * GTK >= 3.22
 * GtkSourceView >= 4.0
-* Tepl >= 4.99.2 - https://wiki.gnome.org/Projects/Tepl
+* Tepl >= 5.0 - https://wiki.gnome.org/Projects/Tepl
 * gspell >= 1.8
 * gee-0.8 >= 0.10
 * gsettings-desktop-schemas

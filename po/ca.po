@@ -452,7 +452,7 @@ msgstr "Habilita per defecte les eines per muntatge"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:53
 msgid "The list of the default build tools that are enabled"
-msgstr "La llista d'eines de muntatge per defecte que hi ha habilitades "
+msgstr "La llista d'eines de muntatge per defecte que hi ha habilitades"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:54
 msgid "Disabled default build tools"
@@ -460,7 +460,7 @@ msgstr "Eines de muntatge per defecte deshabilitades"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:55
 msgid "The list of the default build tools that are disabled"
-msgstr "La llista d'eines de muntatge per defecte que estan deshabilitades "
+msgstr "La llista d'eines de muntatge per defecte que estan deshabilitades"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:56
 msgid "Current directory"
@@ -1014,7 +1014,7 @@ msgstr "E_spaiat"
 
 #: ../src/latex_menu.vala:42
 msgid "International _Accents"
-msgstr "_Accents internacional"
+msgstr "_Accents internacionals"
 
 #: ../src/latex_menu.vala:43
 msgid "_Misc"
@@ -1613,7 +1613,7 @@ msgstr "( esquerra"
 
 #: ../src/liblatexila/latexila-latex-commands.c:367
 msgid "left ["
-msgstr " [ esquerra "
+msgstr " [ esquerra"
 
 #: ../src/liblatexila/latexila-latex-commands.c:368
 msgid "left { "

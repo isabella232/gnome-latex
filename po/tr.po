@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-latex master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-latex/issues\n"
-"POT-Creation-Date: 2020-04-23 18:50+0000\n"
+"POT-Creation-Date: 2020-09-11 18:38+0000\n"
 "PO-Revision-Date: 2020-04-24 23:17+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
@@ -544,8 +544,8 @@ msgstr "Kişisel İnşa Aracı"
 #: ../src/liblatexila/latexila-templates-dialogs.c:130
 #: ../src/liblatexila/latexila-templates-dialogs.c:238
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:147
-#: ../src/main_window_file.vala:157 ../src/main_window.vala:748
-#: ../src/main_window.vala:805 ../src/preferences_dialog.vala:114
+#: ../src/main_window_file.vala:157 ../src/main_window.vala:749
+#: ../src/main_window.vala:806 ../src/preferences_dialog.vala:114
 #: ../src/project_dialogs.vala:31 ../src/project_dialogs.vala:122
 #: ../src/project_dialogs.vala:276 ../src/project_dialogs.vala:296
 msgid "_Cancel"
@@ -604,7 +604,7 @@ msgid "Move down"
 msgstr "Aşağı taşı"
 
 #: ../src/build_tool_dialog.vala:573 ../src/build_tools_preferences.vala:177
-#: ../src/liblatexila/latexila-latex-commands.c:71 ../src/structure.vala:783
+#: ../src/liblatexila/latexila-latex-commands.c:36 ../src/structure.vala:783
 msgid "Label"
 msgstr "Etiket"
 
@@ -735,12 +735,12 @@ msgstr "Temizlemek için gereken inşa dosyası yok."
 msgid "No matching proposal"
 msgstr "Eşleşen öneri yok"
 
-#: ../src/dialogs.vala:40 ../src/main_window.vala:747
+#: ../src/dialogs.vala:40 ../src/main_window.vala:748
 msgid "Close _without Saving"
 msgstr "Kaydet_meden Kapat"
 
 #: ../src/dialogs.vala:42 ../src/main_window_file.vala:41
-#: ../src/main_window.vala:753 ../src/main_window.vala:806
+#: ../src/main_window.vala:754 ../src/main_window.vala:807
 msgid "_Save"
 msgstr "_Kaydet"
 
@@ -769,39 +769,39 @@ msgstr "Yapı ögesi zaten alt paragraf içeriyor."
 msgid "Activate “%s”"
 msgstr "Etkinleştir “%s”"
 
-#: ../src/document.vala:120
+#: ../src/document.vala:117
 #, c-format
 msgid "Impossible to load the file “%s”."
 msgstr "“%s” dosyası yüklemek imkansız."
 
-#: ../src/document.vala:202
+#: ../src/document.vala:199
 #, c-format
 msgid "The file %s has been modified since reading it."
 msgstr "%s dosyası son okunmasından sonra değiştirilmiş."
 
-#: ../src/document.vala:205
+#: ../src/document.vala:202
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
 "Eğer kaydederseniz, harici olarak yapılmış tüm değişiklikler kaybolacak. "
 "Yine de kaydedilsin mi?"
 
-#: ../src/document.vala:209
+#: ../src/document.vala:206
 msgid "_Save Anyway"
 msgstr "_Yine de Kaydet"
 
-#: ../src/document.vala:210
+#: ../src/document.vala:207
 msgid "_Don’t Save"
 msgstr "_Kaydetme"
 
-#: ../src/document.vala:227
+#: ../src/document.vala:224
 msgid "Impossible to save the file."
 msgstr "Dosyanın kaydedilmesi imkansız."
 
-#: ../src/document.vala:255
+#: ../src/document.vala:252
 msgid "Error trying to convert the document to UTF-8"
 msgstr "Belge UTF-8 olarak dönüştürülürken hata oluştu"
 
-#: ../src/document.vala:484
+#: ../src/document.vala:481
 msgid ""
 "The file has a temporary location. The data can be lost after rebooting your "
 "computer."
@@ -809,29 +809,29 @@ msgstr ""
 "Dosyanın konumu geçicidir. Bilgisayarınızı yeniden başlatınca veri "
 "kaybolabilir."
 
-#: ../src/document.vala:485
+#: ../src/document.vala:482
 msgid "Do you want to save the file in a safer place?"
 msgstr "Dosyayı daha güvenli alana kaydetmek istiyor musunuz?"
 
-#: ../src/document.vala:486 ../src/main_window_file.vala:44
-#: ../src/main_window.vala:751
+#: ../src/document.vala:483 ../src/main_window_file.vala:44
+#: ../src/main_window.vala:752
 msgid "Save _As"
 msgstr "_Faklı Kaydet"
 
-#: ../src/document.vala:487
+#: ../src/document.vala:484
 msgid "Cancel"
 msgstr "İptal"
 
-#: ../src/document_view.vala:308
+#: ../src/document_view.vala:289
 msgid "No dictionaries available for the spell-checking."
 msgstr "Yazım denetimi için sözlük yok."
 
 #. Help
-#: ../src/document_view.vala:310 ../src/main_window.vala:63
+#: ../src/document_view.vala:291 ../src/main_window.vala:65
 msgid "_Help"
 msgstr "_Yardım"
 
-#: ../src/document_view.vala:311
+#: ../src/document_view.vala:292
 msgid "_OK"
 msgstr "_Tamam"
 
@@ -868,140 +868,41 @@ msgid "File System"
 msgstr "Dosya Sistemi"
 
 #. File browser
-#: ../src/file_browser.vala:524 ../src/main_window.vala:443
+#: ../src/file_browser.vala:524 ../src/main_window.vala:444
 msgid "File Browser"
 msgstr "Dosya Tarayıcısı"
 
-#: ../src/glatex_app.vala:79
-msgid "Show the application’s version"
-msgstr "Uygulamanın sürümünü göster"
-
-#: ../src/glatex_app.vala:82
-msgid "Create new document"
-msgstr "Yeni belge oluştur"
-
-#: ../src/glatex_app.vala:85
-msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
-msgstr "GNOME LaTeX’in var olan örneğinde yeni en üst düzey pencere oluştur"
-
-#: ../src/glatex_app.vala:195
+#: ../src/liblatexila/latexila-app.c:70
 msgid "GNOME LaTeX is a LaTeX editor for the GNOME desktop"
 msgstr "GNOME LaTeX, GNOME masaüstü için LaTeX düzenleyicidir"
 
-#: ../src/glatex_app.vala:224 ../src/main_window.vala:69
+#: ../src/liblatexila/latexila-app.c:73 ../src/main_window.vala:71
 msgid "About GNOME LaTeX"
 msgstr "GNOME LaTeX Hakkında"
 
-#: ../src/glatex_app.vala:225
+#: ../src/liblatexila/latexila-app.c:74
 msgid "translator-credits"
 msgstr ""
 "Kaan Özdinçer <kaanozdincer@gmail.com>\n"
 "Serdar Sağlam <teknomobil@yandex.com>\n"
 "Emin Tufan Çetin <etcetin@gmail.com>"
 
-#. Sections and sub-sections
-#. LaTeX
-#: ../src/latex_menu.vala:30
-msgid "_Sectioning"
-msgstr "_Bölümlendirme"
+#: ../src/liblatexila/latexila-app.c:100
+#, c-format
+msgid "Impossible to open the documentation: %s"
+msgstr "Belgelendirmeyi açmak imkansız: %s"
 
-#: ../src/latex_menu.vala:31
-msgid "_References"
-msgstr "_Kaynaklar"
+#: ../src/liblatexila/latexila-app.c:127
+msgid "Show the application’s version"
+msgstr "Uygulamanın sürümünü göster"
 
-#: ../src/latex_menu.vala:33
-msgid "_List Environments"
-msgstr "Ortamları _Listele"
+#: ../src/liblatexila/latexila-app.c:130
+msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
+msgstr "GNOME LaTeX’in var olan örneğinde yeni en üst düzey pencere oluştur"
 
-#: ../src/latex_menu.vala:34
-msgid "_Characters Sizes"
-msgstr "_Karakter Boyutları"
-
-#: ../src/latex_menu.vala:35
-msgid "_Font Styles"
-msgstr "_Yazı Tipleri"
-
-#: ../src/latex_menu.vala:36
-msgid "_Font Family"
-msgstr "_Yazı Tipi Ailesi"
-
-#: ../src/latex_menu.vala:37
-msgid "F_ont Series"
-msgstr "Ya_zı Tipi Dizileri"
-
-#: ../src/latex_menu.vala:38
-msgid "Fo_nt Shape"
-msgstr "Yaz_ı Tipi Şekli"
-
-#: ../src/latex_menu.vala:39
-msgid "_Tabular"
-msgstr "_Sekmeli"
-
-#: ../src/latex_menu.vala:41
-msgid "_Spacing"
-msgstr "_Boşluk"
-
-#: ../src/latex_menu.vala:42
-msgid "International _Accents"
-msgstr "Uluslararası _Vurgular"
-
-#: ../src/latex_menu.vala:43
-msgid "_Misc"
-msgstr "_Çeşitli"
-
-#. Math
-#: ../src/latex_menu.vala:46
-msgid "_Math"
-msgstr "_Matematik"
-
-#: ../src/latex_menu.vala:47
-msgid "_Math Environments"
-msgstr "_Matematik Ortamları"
-
-#: ../src/latex_menu.vala:48
-msgid "Math _Functions"
-msgstr "Matematik _Fonksiyonları"
-
-#: ../src/latex_menu.vala:49
-msgid "Math Font _Styles"
-msgstr "Matematik Yazı _Tipleri"
-
-#: ../src/latex_menu.vala:50
-msgid "Math _Accents"
-msgstr "Matematik _Vurguları"
-
-#: ../src/latex_menu.vala:51
-msgid "Math _Spaces"
-msgstr "Matematik _Boşlukları"
-
-#: ../src/latex_menu.vala:52
-msgid "_Left Delimiters"
-msgstr "_Sol Sınırlandırıcılar"
-
-#: ../src/latex_menu.vala:53
-msgid "Right _Delimiters"
-msgstr "_Sağ Sınırlandırıcılar"
-
-#. menus under toolitems
-#: ../src/latex_menu.vala:67
-msgid "Sectioning"
-msgstr "Bölümlendirme"
-
-#: ../src/latex_menu.vala:70
-msgid "Characters Sizes"
-msgstr "Karakter Boyutları"
-
-#: ../src/latex_menu.vala:73
-msgid "References"
-msgstr "Kaynaklar"
-
-#: ../src/latex_menu.vala:76
-msgid "Presentation Environments"
-msgstr "Sunum Ortamları"
-
-#: ../src/latex_menu.vala:79
-msgid "Math Environments"
-msgstr "Matematik Ortamları"
+#: ../src/liblatexila/latexila-app.c:133
+msgid "Create a new document in an existing instance of GNOME LaTeX"
+msgstr "GNOME LaTeX’in var olan örneğinde yeni belge oluştur"
 
 #: ../src/liblatexila/latexila-build-job.c:366
 #, c-format
@@ -1024,588 +925,687 @@ msgstr "“%s” açılamadı:"
 msgid "Open %s"
 msgstr "%s dosyasını aç"
 
-#: ../src/liblatexila/latexila-latex-commands.c:54 ../src/structure.vala:776
-msgid "Part"
-msgstr "Parça"
-
-#: ../src/liblatexila/latexila-latex-commands.c:56 ../src/structure.vala:777
-msgid "Chapter"
-msgstr "Bölüm"
-
-#: ../src/liblatexila/latexila-latex-commands.c:58 ../src/structure.vala:778
-msgid "Section"
-msgstr "Kısım"
-
-#: ../src/liblatexila/latexila-latex-commands.c:60 ../src/structure.vala:779
-msgid "Sub-section"
-msgstr "Alt Kısım"
-
-#: ../src/liblatexila/latexila-latex-commands.c:62 ../src/structure.vala:780
-msgid "Sub-sub-section"
-msgstr "Altın altındaki kısım"
-
-#: ../src/liblatexila/latexila-latex-commands.c:64 ../src/structure.vala:781
-msgid "Paragraph"
-msgstr "Paragraf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:66 ../src/structure.vala:782
-msgid "Sub-paragraph"
-msgstr "Alt Paragraf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:73
+#: ../src/liblatexila/latexila-latex-commands.c:38
 msgid "Reference to a label"
 msgstr "Etikete kaynak"
 
-#: ../src/liblatexila/latexila-latex-commands.c:75
+#: ../src/liblatexila/latexila-latex-commands.c:40
 msgid "Page reference to a label"
 msgstr "Etikete sayfa kaynağı"
 
-#: ../src/liblatexila/latexila-latex-commands.c:77
+#: ../src/liblatexila/latexila-latex-commands.c:42
 msgid "Add a word to the index"
 msgstr "Dizine sözcük ekle"
 
-#: ../src/liblatexila/latexila-latex-commands.c:79
+#: ../src/liblatexila/latexila-latex-commands.c:44
 msgid "Footnote"
 msgstr "Dipnot"
 
-#: ../src/liblatexila/latexila-latex-commands.c:81
+#: ../src/liblatexila/latexila-latex-commands.c:46
 msgid "Reference to a bibliography item"
 msgstr "Bibliyografi ögesine atıf"
 
-#: ../src/liblatexila/latexila-latex-commands.c:86
-msgid "Center — \\begin{center}"
-msgstr "Ortala — \\begin{center}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:88
-msgid "Align Left — \\begin{flushleft}"
-msgstr "Sola Hizala — \\begin{flushleft}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:90
-msgid "Align Right — \\begin{flushright}"
-msgstr "Sağa Hizala — \\begin{flushright}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:92
-msgid "Figure — \\begin{figure}"
-msgstr "Şekil — \\begin{figure}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:94
-msgid "Table — \\begin{table}"
-msgstr "Tablo — \\begin{table}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:96
-msgid "Quote — \\begin{quote}"
-msgstr "Alıntı — \\begin{quote}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:98
-msgid "Quotation — \\begin{quotation}"
-msgstr "Alıntılama — \\begin{quotation}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:100
-msgid "Verse — \\begin{verse}"
-msgstr "Şiir — \\begin{verse}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:102
-msgid "Verbatim — \\begin{verbatim}"
-msgstr "Harfiyen — \\begin{verbatim}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:104
-msgid "Minipage — \\begin{minipage}"
-msgstr "Minisayfa — \\begin{minipage}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:106
-msgid "Title page — \\begin{titlepage}"
-msgstr "Başlık sayfası — \\begin{titlepage}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:111
-msgid "Bulleted List — \\begin{itemize}"
-msgstr "Madde İmli Listesi — \\begin{itemize}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:113
-msgid "Enumeration — \\begin{enumerate}"
-msgstr "Numaralandırma — \\begin{enumerate}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:115
-msgid "Description — \\begin{description}"
-msgstr "Tanımlama — \\begin{description}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:117
-msgid "Custom list — \\begin{list}"
-msgstr "Özel liste — \\begin{list}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:119
-msgid "List item — \\item"
-msgstr "Liste ögesi — \\item"
-
-#: ../src/liblatexila/latexila-latex-commands.c:137
-msgid "Bold — \\textbf"
-msgstr "Kalın — \\textbf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:139
-msgid "Italic — \\textit"
-msgstr "Yatık — \\textit"
-
-#: ../src/liblatexila/latexila-latex-commands.c:141
-msgid "Typewriter — \\texttt"
-msgstr "Daktilo — \\texttt"
-
-#: ../src/liblatexila/latexila-latex-commands.c:143
-msgid "Slanted — \\textsl"
-msgstr "Eğik — \\textsl"
-
-#: ../src/liblatexila/latexila-latex-commands.c:145
-msgid "Small Capitals — \\textsc"
-msgstr "Küçültülmüş Büyük Harfler — \\textsc"
-
-#: ../src/liblatexila/latexila-latex-commands.c:147
-msgid "Sans Serif — \\textsf"
-msgstr "Sans Serif — \\textsf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:149
-msgid "Emphasized — \\emph"
-msgstr "Vurgulu — \\emph"
-
-#: ../src/liblatexila/latexila-latex-commands.c:151
-msgid "Underline — \\underline"
-msgstr "Altı çizili — \\underline"
-
-#: ../src/liblatexila/latexila-latex-commands.c:154
-msgid "Roman — \\rmfamily"
-msgstr "Roman — \\rmfamily"
-
-#: ../src/liblatexila/latexila-latex-commands.c:156
-msgid "Sans Serif — \\sffamily"
-msgstr "Sans Serif — \\sffamily"
-
-#: ../src/liblatexila/latexila-latex-commands.c:158
-msgid "Monospace — \\ttfamily"
-msgstr "Monospace — \\ttfamily"
-
-#: ../src/liblatexila/latexila-latex-commands.c:161
-msgid "Medium — \\mdseries"
-msgstr "Medium — \\mdseries"
-
-#: ../src/liblatexila/latexila-latex-commands.c:163
-msgid "Bold — \\bfseries"
-msgstr "Kalın — \\bfseries"
-
-#: ../src/liblatexila/latexila-latex-commands.c:166
-msgid "Upright — \\upshape"
-msgstr "Dik — \\upshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:168
-msgid "Italic — \\itshape"
-msgstr "Yatık — \\itshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:170
-msgid "Slanted — \\slshape"
-msgstr "Eğimli — \\slshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:172
-msgid "Small Capitals — \\scshape"
-msgstr "Küçültülmüş Büyük Harfler — \\scshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:177
+#: ../src/liblatexila/latexila-latex-commands.c:68
 msgid "Tabbing — \\begin{tabbing}"
 msgstr "Sekmeler — \\begin{tabbing}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:179
+#: ../src/liblatexila/latexila-latex-commands.c:70
 msgid "Tabular — \\begin{tabular}"
 msgstr "Tablo — \\begin{tabular}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:181
+#: ../src/liblatexila/latexila-latex-commands.c:72
 msgid "Multicolumn — \\multicolumn"
 msgstr "Çoklu sütun — \\multicolumn"
 
-#: ../src/liblatexila/latexila-latex-commands.c:183
+#: ../src/liblatexila/latexila-latex-commands.c:74
 msgid "Horizontal line — \\hline"
 msgstr "Yatay çizgi — \\hline"
 
-#: ../src/liblatexila/latexila-latex-commands.c:185
+#: ../src/liblatexila/latexila-latex-commands.c:76
 msgid "Vertical line — \\vline"
 msgstr "Düşey çizgi — \\vline"
 
-#: ../src/liblatexila/latexila-latex-commands.c:187
+#: ../src/liblatexila/latexila-latex-commands.c:78
 msgid "Horizontal line (columns specified) — \\cline"
 msgstr "Dikey çizgi (sütunlar belirtilmiş) — \\cline"
 
-#: ../src/liblatexila/latexila-latex-commands.c:192
+#: ../src/liblatexila/latexila-latex-commands.c:85
 msgid "Frame — \\begin{frame}"
 msgstr "Çerçeve — \\begin{frame}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:194
+#: ../src/liblatexila/latexila-latex-commands.c:87
 msgid "Block — \\begin{block}"
 msgstr "Blok — \\begin{block}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:196
+#: ../src/liblatexila/latexila-latex-commands.c:89
 msgid "Two columns — \\begin{columns}"
 msgstr "İki sütun — \\begin{columns}"
 
-#. LaTeX: Spacing
-#: ../src/liblatexila/latexila-latex-commands.c:200
+#: ../src/liblatexila/latexila-latex-commands.c:95
 msgid "New _Line"
 msgstr "Yeni _Satır"
 
-#: ../src/liblatexila/latexila-latex-commands.c:201
+#: ../src/liblatexila/latexila-latex-commands.c:96
 msgid "New Line — \\\\"
 msgstr "Yeni Satır — \\\\"
 
-#: ../src/liblatexila/latexila-latex-commands.c:203
+#: ../src/liblatexila/latexila-latex-commands.c:98
 msgid "New page — \\newpage"
 msgstr "Yeni sayfa — \\newpage"
 
-#: ../src/liblatexila/latexila-latex-commands.c:205
+#: ../src/liblatexila/latexila-latex-commands.c:100
 msgid "Line break — \\linebreak"
 msgstr "Satır sonu — \\linebreak"
 
-#: ../src/liblatexila/latexila-latex-commands.c:207
+#: ../src/liblatexila/latexila-latex-commands.c:102
 msgid "Page break — \\pagebreak"
 msgstr "Sayfa sonu — \\pagebreak"
 
-#: ../src/liblatexila/latexila-latex-commands.c:209
+#: ../src/liblatexila/latexila-latex-commands.c:104
 msgid "Big skip — \\bigskip"
 msgstr "Büyük atlama — \\bigskip"
 
-#: ../src/liblatexila/latexila-latex-commands.c:211
+#: ../src/liblatexila/latexila-latex-commands.c:106
 msgid "Medium skip — \\medskip"
 msgstr "Orta atlama — \\medskip"
 
-#: ../src/liblatexila/latexila-latex-commands.c:213
+#: ../src/liblatexila/latexila-latex-commands.c:108
 msgid "Horizontal space — \\hspace"
 msgstr "Yatay boşluk — \\hspace"
 
-#: ../src/liblatexila/latexila-latex-commands.c:215
+#: ../src/liblatexila/latexila-latex-commands.c:110
 msgid "Vertical space — \\vspace"
 msgstr "Düşey boşluk — \\vspace"
 
-#: ../src/liblatexila/latexila-latex-commands.c:217
+#: ../src/liblatexila/latexila-latex-commands.c:112
 msgid "No paragraph indentation — \\noindent"
 msgstr "Paragraf girdisi yok — \\noindent"
 
-#. LaTeX: International accents
-#: ../src/liblatexila/latexila-latex-commands.c:221
+#: ../src/liblatexila/latexila-latex-commands.c:118
 msgid "Acute accent — \\'"
 msgstr "Vurgu imi — \\'"
 
-#: ../src/liblatexila/latexila-latex-commands.c:222
+#: ../src/liblatexila/latexila-latex-commands.c:119
 msgid "Grave accent — \\`"
 msgstr "Aksan imi — \\`"
 
-#: ../src/liblatexila/latexila-latex-commands.c:223
+#: ../src/liblatexila/latexila-latex-commands.c:120
 msgid "Circumflex accent — \\^"
 msgstr "Düzeltme imi — \\^"
 
-#: ../src/liblatexila/latexila-latex-commands.c:224
+#: ../src/liblatexila/latexila-latex-commands.c:121
 msgid "Trema — \\\""
 msgstr "Çiftnokta imi — \\\""
 
-#: ../src/liblatexila/latexila-latex-commands.c:225
+#: ../src/liblatexila/latexila-latex-commands.c:122
 msgid "Tilde — \\~"
 msgstr "Dalga imi — \\~"
 
-#: ../src/liblatexila/latexila-latex-commands.c:226
+#: ../src/liblatexila/latexila-latex-commands.c:123
 msgid "Macron — \\="
 msgstr "Uzatma imi — \\="
 
-#: ../src/liblatexila/latexila-latex-commands.c:227
+#: ../src/liblatexila/latexila-latex-commands.c:124
 msgid "Dot above — \\."
 msgstr "Üstte nokta — \\."
 
-#: ../src/liblatexila/latexila-latex-commands.c:228
+#: ../src/liblatexila/latexila-latex-commands.c:125
 msgid "Caron — \\v"
 msgstr "Yumuşatma imi — \\v"
 
-#: ../src/liblatexila/latexila-latex-commands.c:229
+#: ../src/liblatexila/latexila-latex-commands.c:126
 msgid "Breve — \\u"
 msgstr "Kısaltma imi — \\u"
 
-#: ../src/liblatexila/latexila-latex-commands.c:231
+#: ../src/liblatexila/latexila-latex-commands.c:128
 msgid "Double acute accent — \\H"
 msgstr "Çift vurgu imi — \\H"
 
-#: ../src/liblatexila/latexila-latex-commands.c:232
+#: ../src/liblatexila/latexila-latex-commands.c:129
 msgid "Cedilla — \\c"
 msgstr "Çengel — \\c"
 
-#: ../src/liblatexila/latexila-latex-commands.c:233
+#: ../src/liblatexila/latexila-latex-commands.c:130
 msgid "Ogonek — \\k"
 msgstr "Kanca — \\k"
 
-#: ../src/liblatexila/latexila-latex-commands.c:234
+#: ../src/liblatexila/latexila-latex-commands.c:131
 msgid "Dot below — \\d"
 msgstr "Altta nokta — \\d"
 
-#: ../src/liblatexila/latexila-latex-commands.c:235
+#: ../src/liblatexila/latexila-latex-commands.c:132
 msgid "Macron below — \\b"
 msgstr "Altta uzatma imi — \\b"
 
-#: ../src/liblatexila/latexila-latex-commands.c:236
+#: ../src/liblatexila/latexila-latex-commands.c:133
 msgid "Ring — \\r"
 msgstr "Halka — \\r"
 
-#: ../src/liblatexila/latexila-latex-commands.c:237
+#: ../src/liblatexila/latexila-latex-commands.c:134
 msgid "Tie — \\t"
 msgstr "Bağ imi — \\t"
 
-#: ../src/liblatexila/latexila-latex-commands.c:242
-msgid "Document class — \\documentclass"
-msgstr "Belge sınıfı — \\documentclass"
-
-#: ../src/liblatexila/latexila-latex-commands.c:244
-msgid "Use package — \\usepackage"
-msgstr "Paket kullan — \\usepackage"
-
-#: ../src/liblatexila/latexila-latex-commands.c:245
-msgid "_AMS packages"
-msgstr "_AMS paketleri"
-
-#: ../src/liblatexila/latexila-latex-commands.c:246
-msgid "AMS packages"
-msgstr "AMS paketleri"
-
-#: ../src/liblatexila/latexila-latex-commands.c:247
-msgid "Author — \\author"
-msgstr "Yazar — \\author"
-
-#: ../src/liblatexila/latexila-latex-commands.c:248
-msgid "Title — \\title"
-msgstr "Başlık — \\title"
-
-#: ../src/liblatexila/latexila-latex-commands.c:250
-msgid "Content of the document — \\begin{document}"
-msgstr "Belgenin içeriği — \\begin{document}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:252
-msgid "Make title — \\maketitle"
-msgstr "Başlık oluştur — \\maketitle"
-
-#: ../src/liblatexila/latexila-latex-commands.c:254
-msgid "Table of contents — \\tableofcontents"
-msgstr "İçindekiler — \\tableofcontents"
-
-#: ../src/liblatexila/latexila-latex-commands.c:256
-msgid "Abstract — \\begin{abstract}"
-msgstr "Özet — \\begin{abstract}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:258
-msgid "Include an image (graphicx package) — \\includegraphics"
-msgstr "Görüntü içer (graphicx paketi) — \\includegraphics"
-
-#: ../src/liblatexila/latexila-latex-commands.c:260
-msgid "Include a file — \\input"
-msgstr "Dosya içer — \\input"
-
-#. Math Environments
-#: ../src/liblatexila/latexila-latex-commands.c:264
+#: ../src/liblatexila/latexila-latex-commands.c:140
 msgid "_Mathematical Environment — $…$"
 msgstr "_Matematiksel Ortam — $…$"
 
-#: ../src/liblatexila/latexila-latex-commands.c:265
+#: ../src/liblatexila/latexila-latex-commands.c:141
 msgid "Mathematical Environment — $…$"
 msgstr "Matematiksel Ortam — $…$"
 
-#: ../src/liblatexila/latexila-latex-commands.c:266
+#: ../src/liblatexila/latexila-latex-commands.c:142
 msgid "_Centered Formula — \\[…\\]"
 msgstr "_Ortalanmış Formül — \\[…\\]"
 
-#: ../src/liblatexila/latexila-latex-commands.c:267
+#: ../src/liblatexila/latexila-latex-commands.c:143
 msgid "Centered Formula — \\[…\\]"
 msgstr "Ortalanmış Formül — \\[…\\]"
 
-#: ../src/liblatexila/latexila-latex-commands.c:269
+#: ../src/liblatexila/latexila-latex-commands.c:145
 msgid "_Numbered Equation — \\begin{equation}"
 msgstr "_Numaralandırılmış Denklem — \\begin{equation}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:270
+#: ../src/liblatexila/latexila-latex-commands.c:146
 msgid "Numbered Equation — \\begin{equation}"
 msgstr "Numaralandırılmış Denklem — \\begin{equation}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:271
+#: ../src/liblatexila/latexila-latex-commands.c:147
 msgid "_Array of Equations — \\begin{align*}"
 msgstr "_Denklemlerin Dizisi — \\begin{align*}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:272
+#: ../src/liblatexila/latexila-latex-commands.c:148
 msgid "Array of Equations — \\begin{align*}"
 msgstr "Denklemlerin Dizisi — \\begin{align*}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:274
+#: ../src/liblatexila/latexila-latex-commands.c:150
 msgid "Numbered Array of _Equations — \\begin{align}"
 msgstr "Denklemlerin Numaralandırılmış _Dizisi — \\begin{align}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:275
+#: ../src/liblatexila/latexila-latex-commands.c:151
 msgid "Numbered Array of Equations — \\begin{align}"
 msgstr "Denklemlerin Numaralandırılmış Dizisi — \\begin{align}"
 
-#. Math misc
-#: ../src/liblatexila/latexila-latex-commands.c:279
-msgid "_Superscript — ^{}"
-msgstr "_Üstsimge — ^{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:280
-msgid "Superscript — ^{}"
-msgstr "Üstsimge — ^{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:281
-msgid "Su_bscript — __{}"
-msgstr "Ü_stsimge — __{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:282
-msgid "Subscript — _{}"
-msgstr "Üstsimge — _{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:283
-msgid "_Fraction — \\frac{}{}"
-msgstr "_Kesir — \\frac{}{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:284
-msgid "Fraction — \\frac{}{}"
-msgstr "Kesir — \\frac{}{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:285
-msgid "Square _Root — \\sqrt{}"
-msgstr "Kare _Kök — \\sqrt{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:286
-msgid "Square Root — \\sqrt{}"
-msgstr "Kare Kök — \\sqrt{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:287
-msgid "_N-th Root — \\sqrt[]{}"
-msgstr "_N Kök — \\sqrt[]{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:288
-msgid "N-th Root — \\sqrt[]{}"
-msgstr "N Kök — \\sqrt[]{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:326
+#: ../src/liblatexila/latexila-latex-commands.c:193
 msgid "Roman — \\mathrm"
 msgstr "Roman — \\mathrm"
 
-#: ../src/liblatexila/latexila-latex-commands.c:328
+#: ../src/liblatexila/latexila-latex-commands.c:195
 msgid "Italic — \\mathit"
 msgstr "Yatık — \\mathit"
 
-#: ../src/liblatexila/latexila-latex-commands.c:330
+#: ../src/liblatexila/latexila-latex-commands.c:197
 msgid "Bold — \\mathbf"
 msgstr "Kalın — \\mathbf"
 
-#: ../src/liblatexila/latexila-latex-commands.c:332
+#: ../src/liblatexila/latexila-latex-commands.c:199
 msgid "Sans Serif — \\mathsf"
 msgstr "Sans Serif — \\mathsf"
 
-#: ../src/liblatexila/latexila-latex-commands.c:334
+#: ../src/liblatexila/latexila-latex-commands.c:201
 msgid "Typewriter — \\mathtt"
 msgstr "Daktilo — \\mathtt"
 
-#: ../src/liblatexila/latexila-latex-commands.c:336
+#: ../src/liblatexila/latexila-latex-commands.c:203
 msgid "Calligraphic — \\mathcal"
 msgstr "Kaligrafi — \\mathcal"
 
-#: ../src/liblatexila/latexila-latex-commands.c:338
+#: ../src/liblatexila/latexila-latex-commands.c:205
 msgid "Blackboard (uppercase only) — \\mathbb (amsfonts package)"
 msgstr "Kara Tahta (yalnızca büyük harf) — \\mathbb (amsfonts paketi)"
 
-#: ../src/liblatexila/latexila-latex-commands.c:340
+#: ../src/liblatexila/latexila-latex-commands.c:207
 msgid "Euler Fraktur — \\mathfrak (amsfonts package)"
 msgstr "Euler Fraktur — \\mathfrak (amsfonts paketi)"
 
-#. Math Spaces
-#: ../src/liblatexila/latexila-latex-commands.c:358
+#: ../src/liblatexila/latexila-latex-commands.c:229
 msgid "_Small"
 msgstr "_Küçük"
 
-#: ../src/liblatexila/latexila-latex-commands.c:358
+#: ../src/liblatexila/latexila-latex-commands.c:229
 msgid "Small — \\,"
 msgstr "Küçük — \\,"
 
-#: ../src/liblatexila/latexila-latex-commands.c:359
+#: ../src/liblatexila/latexila-latex-commands.c:230
 msgid "_Medium"
 msgstr "_Orta"
 
-#: ../src/liblatexila/latexila-latex-commands.c:359
+#: ../src/liblatexila/latexila-latex-commands.c:230
 msgid "Medium — \\:"
 msgstr "Orta — \\:"
 
-#: ../src/liblatexila/latexila-latex-commands.c:360
+#: ../src/liblatexila/latexila-latex-commands.c:231
 msgid "_Large"
 msgstr "_Büyük"
 
-#: ../src/liblatexila/latexila-latex-commands.c:360
+#: ../src/liblatexila/latexila-latex-commands.c:231
 msgid "Large — \\;"
 msgstr "Büyük — \\;"
 
-#. Math: Left Delimiters
-#: ../src/liblatexila/latexila-latex-commands.c:366
+#: ../src/liblatexila/latexila-latex-commands.c:239
 msgid "left ("
 msgstr "sol ("
 
-#: ../src/liblatexila/latexila-latex-commands.c:367
+#: ../src/liblatexila/latexila-latex-commands.c:240
 msgid "left ["
 msgstr "sol ["
 
-#: ../src/liblatexila/latexila-latex-commands.c:368
+#: ../src/liblatexila/latexila-latex-commands.c:241
 msgid "left { "
 msgstr "sol { "
 
-#: ../src/liblatexila/latexila-latex-commands.c:369
+#: ../src/liblatexila/latexila-latex-commands.c:242
 msgid "left <"
 msgstr "sol <"
 
-#: ../src/liblatexila/latexila-latex-commands.c:370
+#: ../src/liblatexila/latexila-latex-commands.c:243
 msgid "left )"
 msgstr "sol )"
 
-#: ../src/liblatexila/latexila-latex-commands.c:371
+#: ../src/liblatexila/latexila-latex-commands.c:244
 msgid "left ]"
 msgstr "sol ]"
 
-#: ../src/liblatexila/latexila-latex-commands.c:372
+#: ../src/liblatexila/latexila-latex-commands.c:245
 msgid "left  }"
 msgstr "sol  }"
 
-#: ../src/liblatexila/latexila-latex-commands.c:373
+#: ../src/liblatexila/latexila-latex-commands.c:246
 msgid "left >"
 msgstr "sol >"
 
-#: ../src/liblatexila/latexila-latex-commands.c:374
+#: ../src/liblatexila/latexila-latex-commands.c:247
 msgid "left ."
 msgstr "sol ."
 
-#. Math: Right Delimiters
-#: ../src/liblatexila/latexila-latex-commands.c:378
+#: ../src/liblatexila/latexila-latex-commands.c:253
 msgid "right )"
 msgstr "sağ )"
 
-#: ../src/liblatexila/latexila-latex-commands.c:379
+#: ../src/liblatexila/latexila-latex-commands.c:254
 msgid "right ]"
 msgstr "sağ ]"
 
-#: ../src/liblatexila/latexila-latex-commands.c:380
+#: ../src/liblatexila/latexila-latex-commands.c:255
 msgid "right  }"
 msgstr "sağ  }"
 
-#: ../src/liblatexila/latexila-latex-commands.c:381
+#: ../src/liblatexila/latexila-latex-commands.c:256
 msgid "right >"
 msgstr "sağ >"
 
-#: ../src/liblatexila/latexila-latex-commands.c:382
+#: ../src/liblatexila/latexila-latex-commands.c:257
 msgid "right ("
 msgstr "sağ ("
 
-#: ../src/liblatexila/latexila-latex-commands.c:383
+#: ../src/liblatexila/latexila-latex-commands.c:258
 msgid "right ["
 msgstr "sağ ["
 
-#: ../src/liblatexila/latexila-latex-commands.c:384
+#: ../src/liblatexila/latexila-latex-commands.c:259
 msgid "right { "
 msgstr "sağ { "
 
-#: ../src/liblatexila/latexila-latex-commands.c:385
+#: ../src/liblatexila/latexila-latex-commands.c:260
 msgid "right <"
 msgstr "sağ <"
 
-#: ../src/liblatexila/latexila-latex-commands.c:386
+#: ../src/liblatexila/latexila-latex-commands.c:261
 msgid "right ."
 msgstr "sağ ."
+
+#. action, icon, label, accel, tooltip
+#: ../src/liblatexila/latexila-latex-commands.c:283
+msgid "_Sectioning"
+msgstr "_Bölümlendirme"
+
+#: ../src/liblatexila/latexila-latex-commands.c:284
+msgid "_References"
+msgstr "_Kaynaklar"
+
+#: ../src/liblatexila/latexila-latex-commands.c:285
+msgid "_Environments"
+msgstr "_Ortamlar"
+
+#: ../src/liblatexila/latexila-latex-commands.c:286
+msgid "_List Environments"
+msgstr "Ortamları _Listele"
+
+#: ../src/liblatexila/latexila-latex-commands.c:287
+msgid "_Characters Sizes"
+msgstr "_Karakter Boyutları"
+
+#: ../src/liblatexila/latexila-latex-commands.c:288
+msgid "_Font Styles"
+msgstr "_Yazı Tipleri"
+
+#: ../src/liblatexila/latexila-latex-commands.c:289
+msgid "_Font Family"
+msgstr "_Yazı Tipi Ailesi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:290
+msgid "F_ont Series"
+msgstr "Ya_zı Tipi Dizileri"
+
+#: ../src/liblatexila/latexila-latex-commands.c:291
+msgid "Fo_nt Shape"
+msgstr "Yaz_ı Tipi Şekli"
+
+#: ../src/liblatexila/latexila-latex-commands.c:292
+msgid "_Tabular"
+msgstr "_Sekmeli"
+
+#: ../src/liblatexila/latexila-latex-commands.c:293
+msgid "_Presentation"
+msgstr "_Sunum"
+
+#: ../src/liblatexila/latexila-latex-commands.c:294
+msgid "_Spacing"
+msgstr "_Boşluk"
+
+#: ../src/liblatexila/latexila-latex-commands.c:295
+msgid "International _Accents"
+msgstr "Uluslararası _Vurgular"
+
+#: ../src/liblatexila/latexila-latex-commands.c:296
+msgid "_Misc"
+msgstr "_Çeşitli"
+
+#: ../src/liblatexila/latexila-latex-commands.c:298
+msgid "_Math Environments"
+msgstr "_Matematik Ortamları"
+
+#: ../src/liblatexila/latexila-latex-commands.c:299
+msgid "Math _Functions"
+msgstr "Matematik _Fonksiyonları"
+
+#: ../src/liblatexila/latexila-latex-commands.c:300
+msgid "Math Font _Styles"
+msgstr "Matematik Yazı _Tipleri"
+
+#: ../src/liblatexila/latexila-latex-commands.c:301
+msgid "Math _Accents"
+msgstr "Matematik _Vurguları"
+
+#: ../src/liblatexila/latexila-latex-commands.c:302
+msgid "Math _Spaces"
+msgstr "Matematik _Boşlukları"
+
+#: ../src/liblatexila/latexila-latex-commands.c:303
+msgid "_Left Delimiters"
+msgstr "_Sol Sınırlandırıcılar"
+
+#: ../src/liblatexila/latexila-latex-commands.c:304
+msgid "Right _Delimiters"
+msgstr "_Sağ Sınırlandırıcılar"
+
+#: ../src/liblatexila/latexila-latex-commands.c:309 ../src/structure.vala:776
+msgid "Part"
+msgstr "Parça"
+
+#: ../src/liblatexila/latexila-latex-commands.c:311 ../src/structure.vala:777
+msgid "Chapter"
+msgstr "Bölüm"
+
+#: ../src/liblatexila/latexila-latex-commands.c:313 ../src/structure.vala:778
+msgid "Section"
+msgstr "Kısım"
+
+#: ../src/liblatexila/latexila-latex-commands.c:315 ../src/structure.vala:779
+msgid "Sub-section"
+msgstr "Alt Kısım"
+
+#: ../src/liblatexila/latexila-latex-commands.c:317 ../src/structure.vala:780
+msgid "Sub-sub-section"
+msgstr "Altın altındaki kısım"
+
+#: ../src/liblatexila/latexila-latex-commands.c:319 ../src/structure.vala:781
+msgid "Paragraph"
+msgstr "Paragraf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:321 ../src/structure.vala:782
+msgid "Sub-paragraph"
+msgstr "Alt Paragraf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:326
+msgid "Center — \\begin{center}"
+msgstr "Ortala — \\begin{center}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:328
+msgid "Align Left — \\begin{flushleft}"
+msgstr "Sola Hizala — \\begin{flushleft}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:330
+msgid "Align Right — \\begin{flushright}"
+msgstr "Sağa Hizala — \\begin{flushright}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:332
+msgid "Figure — \\begin{figure}"
+msgstr "Şekil — \\begin{figure}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:334
+msgid "Table — \\begin{table}"
+msgstr "Tablo — \\begin{table}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:336
+msgid "Quote — \\begin{quote}"
+msgstr "Alıntı — \\begin{quote}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:338
+msgid "Quotation — \\begin{quotation}"
+msgstr "Alıntılama — \\begin{quotation}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:340
+msgid "Verse — \\begin{verse}"
+msgstr "Şiir — \\begin{verse}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:342
+msgid "Verbatim — \\begin{verbatim}"
+msgstr "Harfiyen — \\begin{verbatim}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:344
+msgid "Minipage — \\begin{minipage}"
+msgstr "Minisayfa — \\begin{minipage}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:346
+msgid "Title page — \\begin{titlepage}"
+msgstr "Başlık sayfası — \\begin{titlepage}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:351
+msgid "Bulleted List — \\begin{itemize}"
+msgstr "Madde İmli Listesi — \\begin{itemize}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:353
+msgid "Enumeration — \\begin{enumerate}"
+msgstr "Numaralandırma — \\begin{enumerate}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:355
+msgid "Description — \\begin{description}"
+msgstr "Tanımlama — \\begin{description}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:357
+msgid "Custom list — \\begin{list}"
+msgstr "Özel liste — \\begin{list}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:359
+msgid "List item — \\item"
+msgstr "Liste ögesi — \\item"
+
+#: ../src/liblatexila/latexila-latex-commands.c:364
+msgid "Bold — \\textbf"
+msgstr "Kalın — \\textbf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:366
+msgid "Italic — \\textit"
+msgstr "Yatık — \\textit"
+
+#: ../src/liblatexila/latexila-latex-commands.c:368
+msgid "Typewriter — \\texttt"
+msgstr "Daktilo — \\texttt"
+
+#: ../src/liblatexila/latexila-latex-commands.c:370
+msgid "Slanted — \\textsl"
+msgstr "Eğik — \\textsl"
+
+#: ../src/liblatexila/latexila-latex-commands.c:372
+msgid "Small Capitals — \\textsc"
+msgstr "Küçültülmüş Büyük Harfler — \\textsc"
+
+#: ../src/liblatexila/latexila-latex-commands.c:374
+msgid "Sans Serif — \\textsf"
+msgstr "Sans Serif — \\textsf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:376
+msgid "Emphasized — \\emph"
+msgstr "Vurgulu — \\emph"
+
+#: ../src/liblatexila/latexila-latex-commands.c:378
+msgid "Underline — \\underline"
+msgstr "Altı çizili — \\underline"
+
+#: ../src/liblatexila/latexila-latex-commands.c:381
+msgid "Roman — \\rmfamily"
+msgstr "Roman — \\rmfamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:383
+msgid "Sans Serif — \\sffamily"
+msgstr "Sans Serif — \\sffamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:385
+msgid "Monospace — \\ttfamily"
+msgstr "Monospace — \\ttfamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:388
+msgid "Medium — \\mdseries"
+msgstr "Medium — \\mdseries"
+
+#: ../src/liblatexila/latexila-latex-commands.c:390
+msgid "Bold — \\bfseries"
+msgstr "Kalın — \\bfseries"
+
+#: ../src/liblatexila/latexila-latex-commands.c:393
+msgid "Upright — \\upshape"
+msgstr "Dik — \\upshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:395
+msgid "Italic — \\itshape"
+msgstr "Yatık — \\itshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:397
+msgid "Slanted — \\slshape"
+msgstr "Eğimli — \\slshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:399
+msgid "Small Capitals — \\scshape"
+msgstr "Küçültülmüş Büyük Harfler — \\scshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:404
+msgid "Document class — \\documentclass"
+msgstr "Belge sınıfı — \\documentclass"
+
+#: ../src/liblatexila/latexila-latex-commands.c:406
+msgid "Use package — \\usepackage"
+msgstr "Paket kullan — \\usepackage"
+
+#: ../src/liblatexila/latexila-latex-commands.c:407
+msgid "_AMS packages"
+msgstr "_AMS paketleri"
+
+#: ../src/liblatexila/latexila-latex-commands.c:408
+msgid "AMS packages"
+msgstr "AMS paketleri"
+
+#: ../src/liblatexila/latexila-latex-commands.c:409
+msgid "Author — \\author"
+msgstr "Yazar — \\author"
+
+#: ../src/liblatexila/latexila-latex-commands.c:410
+msgid "Title — \\title"
+msgstr "Başlık — \\title"
+
+#: ../src/liblatexila/latexila-latex-commands.c:412
+msgid "Content of the document — \\begin{document}"
+msgstr "Belgenin içeriği — \\begin{document}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:414
+msgid "Make title — \\maketitle"
+msgstr "Başlık oluştur — \\maketitle"
+
+#: ../src/liblatexila/latexila-latex-commands.c:416
+msgid "Table of contents — \\tableofcontents"
+msgstr "İçindekiler — \\tableofcontents"
+
+#: ../src/liblatexila/latexila-latex-commands.c:418
+msgid "Abstract — \\begin{abstract}"
+msgstr "Özet — \\begin{abstract}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:420
+msgid "Include an image (graphicx package) — \\includegraphics"
+msgstr "Görüntü içer (graphicx paketi) — \\includegraphics"
+
+#: ../src/liblatexila/latexila-latex-commands.c:422
+msgid "Include a file — \\input"
+msgstr "Dosya içer — \\input"
+
+#. Math misc
+#: ../src/liblatexila/latexila-latex-commands.c:426
+msgid "_Superscript — ^{}"
+msgstr "_Üstsimge — ^{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:427
+msgid "Superscript — ^{}"
+msgstr "Üstsimge — ^{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:428
+msgid "Su_bscript — __{}"
+msgstr "Ü_stsimge — __{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:429
+msgid "Subscript — _{}"
+msgstr "Üstsimge — _{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:430
+msgid "_Fraction — \\frac{}{}"
+msgstr "_Kesir — \\frac{}{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:431
+msgid "Fraction — \\frac{}{}"
+msgstr "Kesir — \\frac{}{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:432
+msgid "Square _Root — \\sqrt{}"
+msgstr "Kare _Kök — \\sqrt{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:433
+msgid "Square Root — \\sqrt{}"
+msgstr "Kare Kök — \\sqrt{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:434
+msgid "_N-th Root — \\sqrt[]{}"
+msgstr "_N Kök — \\sqrt[]{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:435
+msgid "N-th Root — \\sqrt[]{}"
+msgstr "N Kök — \\sqrt[]{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1541
+msgid "Sectioning"
+msgstr "Bölümlendirme"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1545
+msgid "References"
+msgstr "Kaynaklar"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1549
+msgid "Characters Sizes"
+msgstr "Karakter Boyutları"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1569
+msgid "Presentation Environments"
+msgstr "Sunum Ortamları"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1575
+msgid "Math Environments"
+msgstr "Matematik Ortamları"
 
 #: ../src/liblatexila/latexila-synctex.c:195
 msgid "Impossible to do the forward search."
@@ -2142,18 +2142,10 @@ msgid "Search for and replace text"
 msgstr "Metin ara ve değiştir"
 
 #: ../src/main_window.vala:46
-msgid "_Go to Line…"
-msgstr "Satıra _Git…"
-
-#: ../src/main_window.vala:47
-msgid "Go to a specific line"
-msgstr "Belirtilen satıra git"
-
-#: ../src/main_window.vala:48
 msgid "_Jump to PDF"
 msgstr "PDF’ye _Atla"
 
-#: ../src/main_window.vala:49
+#: ../src/main_window.vala:47
 msgid ""
 "Jump to the associated position in the PDF file. Another shortcut: Ctrl"
 "+click, which works in both directions."
@@ -2161,103 +2153,108 @@ msgstr ""
 "PDF dosyasındaki ilişkili konuma geçin. Başka kısayol: CTRL+tıklama, her iki "
 "yönde de çalışır."
 
+#. LaTeX and Math
+#: ../src/main_window.vala:52
+msgid "_Math"
+msgstr "_Matematik"
+
 #. Projects
-#: ../src/main_window.vala:53
+#: ../src/main_window.vala:55
 msgid "_Projects"
 msgstr "_Projeler"
 
-#: ../src/main_window.vala:54
+#: ../src/main_window.vala:56
 msgid "_New Project"
 msgstr "_Yeni Proje"
 
-#: ../src/main_window.vala:55
+#: ../src/main_window.vala:57
 msgid "Create a new project"
 msgstr "Yeni proje oluştur"
 
-#: ../src/main_window.vala:56
+#: ../src/main_window.vala:58
 msgid "_Configure Current Project"
 msgstr "Geçerli Projeyi _Yapılandır"
 
-#: ../src/main_window.vala:57
+#: ../src/main_window.vala:59
 msgid "Change the main file of the current project"
 msgstr "Geçerli projenin ana dosyasını değiştir"
 
-#: ../src/main_window.vala:59
+#: ../src/main_window.vala:61
 msgid "_Manage Projects"
 msgstr "Projeleri _Yönet"
 
-#: ../src/main_window.vala:60 ../src/project_dialogs.vala:187
+#: ../src/main_window.vala:62 ../src/project_dialogs.vala:187
 msgid "Manage Projects"
 msgstr "Projeleri Yönet"
 
-#: ../src/main_window.vala:64
+#: ../src/main_window.vala:66
 msgid "_Contents"
 msgstr "_İçerik"
 
-#: ../src/main_window.vala:65
+#: ../src/main_window.vala:67
 msgid "Open the GNOME LaTeX documentation"
 msgstr "GNOME LaTeX belgelendirmesini aç"
 
-#: ../src/main_window.vala:66
+#: ../src/main_window.vala:68
 msgid "_LaTeX Reference"
 msgstr "_LaTeX Kaynağı"
 
-#: ../src/main_window.vala:67
+#: ../src/main_window.vala:69
 msgid "The Kile LaTeX Reference"
 msgstr "Kile LaTeX Kaynağı"
 
-#: ../src/main_window.vala:68
+#: ../src/main_window.vala:70
 msgid "_About"
 msgstr "_Hakkında"
 
-#: ../src/main_window.vala:74
+#: ../src/main_window.vala:76
 msgid "_Main Toolbar"
 msgstr "_Ana Araç Çubuğu"
 
-#: ../src/main_window.vala:75
+#: ../src/main_window.vala:77
 msgid "Show or hide the main toolbar"
 msgstr "Ana araç çubuğunu göster veya gizle"
 
 #. Translators: "Edit" here is an adjective.
-#: ../src/main_window.vala:77
+#: ../src/main_window.vala:79
 msgid "_Edit Toolbar"
 msgstr "Araç Çubuğunu _Düzenle"
 
-#: ../src/main_window.vala:78
+#: ../src/main_window.vala:80
 msgid "Show or hide the edit toolbar"
 msgstr "Düzenleme araç çubuğunu gizle veya göster"
 
-#: ../src/main_window.vala:79
+#: ../src/main_window.vala:81
 msgid "_Side panel"
 msgstr "_Yan pano"
 
-#: ../src/main_window.vala:80
+#: ../src/main_window.vala:82
 msgid "Show or hide the side panel"
 msgstr "Yan panoyu göster veya gizle"
 
-#: ../src/main_window.vala:81
+#: ../src/main_window.vala:83
 msgid "_Bottom panel"
 msgstr "_Alt pano"
 
-#: ../src/main_window.vala:82
+#: ../src/main_window.vala:84
 msgid "Show or hide the bottom panel"
 msgstr "Alt panoyu göster veya gizle"
 
 #. Symbols
-#: ../src/main_window.vala:439
+#: ../src/main_window.vala:440
 msgid "Symbols"
 msgstr "Simgeler"
 
-#: ../src/main_window.vala:449
+#: ../src/main_window.vala:450
 msgid "Structure"
 msgstr "Yapı"
 
-#: ../src/main_window.vala:744
+#: ../src/main_window.vala:745
 #, c-format
 msgid "Save changes to document “%s” before closing?"
 msgstr "Kapatmadan önce “%s” belgesindeki değişiklikleri kaydedilsin mi?"
 
-#: ../src/main_window.vala:803
+#: ../src/main_window.vala:804
 msgid "Save File"
 msgstr "Dosyayı Kaydet"
 
@@ -2348,57 +2345,49 @@ msgstr "_Tümünü Temizle"
 msgid "The Main File is not in the directory."
 msgstr "Ana Dosya dizin içinde yok."
 
-#: ../src/search.vala:40
-msgid "Go to Line:"
-msgstr "Satıra Git:"
-
-#: ../src/search.vala:50
-msgid "Line you want to move the cursor to"
-msgstr "İmleci taşımak istediğiniz satır"
-
-#: ../src/search.vala:174
+#: ../src/search.vala:100
 msgid "Replace with"
 msgstr "Yer değiştir"
 
-#: ../src/search.vala:182
+#: ../src/search.vala:108
 msgid "Replace"
 msgstr "Değiştir"
 
 #. replace all: image + label
-#: ../src/search.vala:186
+#: ../src/search.vala:112
 msgid "Replace All"
 msgstr "Tümünü Değiştir"
 
-#: ../src/search.vala:196
+#: ../src/search.vala:122
 msgid "All"
 msgstr "Hepsi"
 
-#: ../src/search.vala:292
+#: ../src/search.vala:218
 msgid "Search for"
 msgstr "Ara"
 
-#: ../src/search.vala:303
+#: ../src/search.vala:229
 msgid "Case sensitive"
 msgstr "Büyük küçük haf duyarlı"
 
-#: ../src/search.vala:306
+#: ../src/search.vala:232
 msgid "Entire words only"
 msgstr "Yalnızca tüm sözcükler"
 
-#: ../src/search.vala:455
+#: ../src/search.vala:381
 msgid "Not found"
 msgstr "Bulunamadı"
 
 #. Translators: the first %d is the position of the current search occurrence,
 #. * and the second %d is the total number of search occurrences.
 #.
-#: ../src/search.vala:472
+#: ../src/search.vala:398
 #, c-format
 msgid "Match %d of %d"
 msgstr "Eşleşme %d, toplam %d"
 
 #. Translators: %d is the total number of search occurrences.
-#: ../src/search.vala:477
+#: ../src/search.vala:403
 #, c-format
 msgid "%d match"
 msgid_plural "%d matches"
@@ -2645,6 +2634,21 @@ msgstr "Yanlış yazılan sözcükleri vurgula"
 #: ../src/ui/preferences_dialog.ui.h:27
 msgid "Other"
 msgstr "Diğer"
+
+#~ msgid "Create new document"
+#~ msgstr "Yeni belge oluştur"
+
+#~ msgid "_Go to Line…"
+#~ msgstr "Satıra _Git…"
+
+#~ msgid "Go to a specific line"
+#~ msgstr "Belirtilen satıra git"
+
+#~ msgid "Go to Line:"
+#~ msgstr "Satıra Git:"
+
+#~ msgid "Line you want to move the cursor to"
+#~ msgstr "İmleci taşımak istediğiniz satır"
 
 #~ msgid ""
 #~ "Side panel’s active component. 0: Symbols. 1: File browser. 2: Structure."

@@ -1,14 +1,14 @@
-# Swedish translation for latexila help.
-# Copyright © 2016, 2017, 2018 latexila's COPYRIGHT HOLDER
-# This file is distributed under the same license as the latexila package.
+# Swedish translation for gnome-latex help.
+# Copyright © 2016, 2017, 2018, 2020 latexila's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-latex package.
 # Josef Andersson <josef.andersson@fripost.org>, 2016.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: latexila master\n"
-"POT-Creation-Date: 2018-04-11 16:00+0000\n"
-"PO-Revision-Date: 2018-09-05 22:42+0200\n"
+"Project-Id-Version: gnome-latex master\n"
+"POT-Creation-Date: 2020-07-15 18:05+0000\n"
+"PO-Revision-Date: 2020-10-12 01:12+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -628,9 +628,9 @@ msgstr ""
 msgid ""
 "If a document is split into several .tex files, create a <link xref="
 "\"projects\">project</link>. Unlike what is explained in the <link href="
-"\"help:evince/synctex-search#forward-search\"> <app>Evince</app> "
-"documentation </link>, there is no need to mention the main file with a "
-"LaTeX comment in each secondary .tex file."
+"\"help:evince/synctex-search#forward-search\"><app>Evince</app> "
+"documentation</link>, there is no need to mention the main file with a LaTeX "
+"comment in each secondary .tex file."
 msgstr ""
 "Om ett dokument är delat i flera olika .tex-filer, skapa ett <link xref="
 "\"projects\">projekt</link>. Till skillnad till vad som förklaras i <link "
@@ -639,12 +639,12 @@ msgstr ""
 "huvudfilen med en LaTeX-kommentar i varje sekundär .tex-fil."
 
 #. (itstool) path: section/title
-#: C/synctex.page:53
+#: C/synctex.page:52
 msgid "Jumping from PDF to .tex"
 msgstr "Hoppa från PDF till .tex"
 
 #. (itstool) path: section/p
-#: C/synctex.page:55
+#: C/synctex.page:54
 msgid ""
 "From a certain position in the PDF file, jump to the corresponding position "
 "in the .tex source file. Also called “backward search”."
@@ -653,7 +653,7 @@ msgstr ""
 "källfilen. Också kallat ”bakåtsökning”."
 
 #. (itstool) path: section/p
-#: C/synctex.page:58
+#: C/synctex.page:57
 msgid ""
 "In <app>Evince</app>, press <keyseq> <key>Ctrl</key> <key>left click</key> </"
 "keyseq>, and the corresponding position in the .tex file will be opened in "
@@ -664,7 +664,7 @@ msgstr ""
 "<app>GNOME LaTeX</app>."
 
 #. (itstool) path: section/p
-#: C/synctex.page:66
+#: C/synctex.page:65
 msgid ""
 "<app>Evince</app> has to be launched by <app>GNOME LaTeX</app>. Else, "
 "jumping from the PDF to the .tex file will not work."

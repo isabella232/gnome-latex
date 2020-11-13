@@ -1,13 +1,13 @@
-# Czech translation for latexila.
+# Czech translation for gnome-latex.
 # Copyright (C) 2011 latexila's COPYRIGHT HOLDER
-# This file is distributed under the same license as the latexila package.
-# Marek Černocký <marek@manet.cz>, 2011, 2012, 2013, 2015, 2017, 2018.
+# This file is distributed under the same license as the gnome-latex package.
+# Marek Černocký <marek@manet.cz>, 2011, 2012, 2013, 2015, 2017, 2018, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: latexila master\n"
-"POT-Creation-Date: 2018-03-24 17:55+0000\n"
-"PO-Revision-Date: 2018-03-25 08:28+0200\n"
+"Project-Id-Version: gnome-latex\n"
+"POT-Creation-Date: 2020-07-15 18:05+0000\n"
+"PO-Revision-Date: 2020-11-13 18:01+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -623,9 +623,9 @@ msgstr "Zmáčknutím <keyseq> <key>Ctrl</key> <key>levý klik</key> </keyseq>"
 msgid ""
 "If a document is split into several .tex files, create a <link xref="
 "\"projects\">project</link>. Unlike what is explained in the <link href="
-"\"help:evince/synctex-search#forward-search\"> <app>Evince</app> "
-"documentation </link>, there is no need to mention the main file with a "
-"LaTeX comment in each secondary .tex file."
+"\"help:evince/synctex-search#forward-search\"><app>Evince</app> "
+"documentation</link>, there is no need to mention the main file with a LaTeX "
+"comment in each secondary .tex file."
 msgstr ""
 "Pokud je dokument rozdělen do více souborů .tex, vytvořte <link xref="
 "\"projects\">projekt</link>. Není snad potřeba zmiňovat, že hlavní soubor je "
@@ -634,12 +634,12 @@ msgstr ""
 "aplikace <app>Evince</app></link>."
 
 #. (itstool) path: section/title
-#: C/synctex.page:53
+#: C/synctex.page:52
 msgid "Jumping from PDF to .tex"
 msgstr "Přecházení z PDF do .tex"
 
 #. (itstool) path: section/p
-#: C/synctex.page:55
+#: C/synctex.page:54
 msgid ""
 "From a certain position in the PDF file, jump to the corresponding position "
 "in the .tex source file. Also called “backward search”."
@@ -648,7 +648,7 @@ msgstr ""
 "souboru .tex. Tzv. „zpětné hledání“."
 
 #. (itstool) path: section/p
-#: C/synctex.page:58
+#: C/synctex.page:57
 msgid ""
 "In <app>Evince</app>, press <keyseq> <key>Ctrl</key> <key>left click</key> </"
 "keyseq>, and the corresponding position in the .tex file will be opened in "
@@ -659,7 +659,7 @@ msgstr ""
 "příslušné místo v souboru .tex."
 
 #. (itstool) path: section/p
-#: C/synctex.page:66
+#: C/synctex.page:65
 msgid ""
 "<app>Evince</app> has to be launched by <app>GNOME LaTeX</app>. Else, "
 "jumping from the PDF to the .tex file will not work."

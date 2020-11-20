@@ -224,7 +224,7 @@ public class Document : Tepl.Buffer
                     string primary_msg = _("Impossible to save the file.");
                     Tepl.InfoBar infobar = new Tepl.InfoBar.simple (MessageType.ERROR,
                         primary_msg, e.message);
-                    infobar.add_close_button ();
+                    infobar.setup_close_button ();
                     tab.add_info_bar (infobar);
                     infobar.show ();
                 }

@@ -110,11 +110,11 @@ msgid ""
 "document in one click. And projects containing several .tex files are "
 "managed easily."
 msgstr ""
-"Per ajudar a escriure el marcatge de LaTeX, l'autocompleció està disponible, "
-"així com els menús i les barres d'eines amb les ordres principals. Els "
-"documents nous es creen a partir de plantilles. Hi ha botons per compilar, "
-"convertir i visualitzar un document amb un sol clic. I els projectes que "
-"contenen diversos fitxers .tex es gestionen fàcilment."
+"Per a ajudar a escriure el marcatge de LaTeX, l'autocompleció està "
+"disponible, així com els menús i les barres d'eines amb les ordres "
+"principals. Els documents nous es creen a partir de plantilles. Hi ha botons "
+"per compilar, convertir i visualitzar un document amb un sol clic. I els "
+"projectes que contenen diversos fitxers .tex es gestionen fàcilment."
 
 #: ../data/org.gnome.gnome-latex.appdata.xml.in.h:4
 msgid ""
@@ -122,9 +122,9 @@ msgid ""
 "navigate in it; lists of symbols to insert them in a document; and a file "
 "browser."
 msgstr ""
-"Un quadre lateral conté tres components: l'estructura del document per "
-"navegar fàcilment en ell; llistes de símbols per inserir-les en un document; "
-"i un navegador de fitxers."
+"Un quadre lateral conté tres components: l'estructura del document per a "
+"navegar fàcilment en ell; llistes de símbols per a inserir-les en un "
+"document; i un navegador de fitxers."
 
 #: ../data/org.gnome.gnome-latex.appdata.xml.in.h:5
 msgid ""
@@ -180,7 +180,7 @@ msgid ""
 "system font."
 msgstr ""
 "Si s'utilitza el tipus de lletra d'amplada fixa predeterminada del sistema "
-"per editar text en comptes del tipus de lletra específica del GNOME LaTeX. "
+"per a editar text en comptes del tipus de lletra específica del GNOME LaTeX. "
 "Si aquesta opció està desactivada, s'utilitzarà el tipus de lletra indicada "
 "a l'opció «Tipus de lletra de l'editor» en comptes del tipus de lletra del "
 "sistema."
@@ -335,7 +335,7 @@ msgid ""
 "take the best language available based on the environment."
 msgstr ""
 "L'idioma per defecte usat en la verificació ortogràfica. Deixeu-ho en buit "
-"per prendre l'idioma de l'entorn."
+"per a prendre l'idioma de l'entorn."
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:31
 msgid "Main toolbar is visible"
@@ -624,12 +624,12 @@ msgstr "Suprimeix"
 #: ../src/build_tool_dialog.vala:318 ../src/build_tools_preferences.vala:354
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:286
 msgid "Move up"
-msgstr "Vés amunt"
+msgstr "Ves amunt"
 
 #: ../src/build_tool_dialog.vala:369 ../src/build_tools_preferences.vala:406
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:298
 msgid "Move down"
-msgstr "Vés avall"
+msgstr "Ves avall"
 
 #: ../src/build_tool_dialog.vala:573 ../src/build_tools_preferences.vala:177
 #: ../src/liblatexila/latexila-latex-commands.c:71 ../src/structure.vala:783
@@ -697,7 +697,7 @@ msgstr "Els fitxers estan separats per espais."
 
 #: ../src/build_tool_dialog.vala:683
 msgid "You should use the placeholders to specify the files."
-msgstr "Hauríeu d'usar marcadors de posició per especificar els fitxers."
+msgstr "Hauríeu d'usar marcadors de posició per a especificar els fitxers."
 
 #: ../src/build_tool_dialog.vala:686
 msgid "Files to open"
@@ -762,7 +762,7 @@ msgstr "Seleccioneu els fitxers que voleu suprimir:"
 
 #: ../src/clean_build_files.vala:336
 msgid "No build file to clean up."
-msgstr "Cap fitxer muntat per netejar."
+msgstr "Cap fitxer muntat per a netejar."
 
 #: ../src/completion.vala:334
 msgid "No matching proposal"
@@ -901,15 +901,15 @@ msgstr "D'ac_ord"
 
 #: ../src/file_browser.vala:219
 msgid "Go to the home directory"
-msgstr "Vés al directori de l'usuari"
+msgstr "Ves al directori de l'usuari"
 
 #: ../src/file_browser.vala:234
 msgid "Go to the parent directory"
-msgstr "Vés al directori pare"
+msgstr "Ves al directori pare"
 
 #: ../src/file_browser.vala:250
 msgid "Go to the active document directory"
-msgstr "Vés al directori del document actiu"
+msgstr "Ves al directori del document actiu"
 
 #: ../src/file_browser.vala:290
 #| msgid "Open a file"
@@ -1218,7 +1218,7 @@ msgstr "Cursiva — \\textit"
 
 #: ../src/liblatexila/latexila-latex-commands.c:141
 msgid "Typewriter — \\texttt"
-msgstr "Maquina d'escriure — \\texttt"
+msgstr "Màquina d'escriure — \\texttt"
 
 #: ../src/liblatexila/latexila-latex-commands.c:143
 msgid "Slanted — \\textsl"
@@ -1566,7 +1566,7 @@ msgstr "Sans Serif — \\mathsf"
 
 #: ../src/liblatexila/latexila-latex-commands.c:334
 msgid "Typewriter — \\mathtt"
-msgstr "Maquina d'escriure — \\mathtt"
+msgstr "Màquina d'escriure — \\mathtt"
 
 #: ../src/liblatexila/latexila-latex-commands.c:336
 msgid "Calligraphic — \\mathcal"
@@ -1924,7 +1924,8 @@ msgid "Copy the selection"
 msgstr "Copia la selecció"
 
 #. No shortcut here because if the shortcut is null, Ctrl+V is used for _all_
-#. the window. In this case Ctrl+V in the search text entry would be broken (the
+#. the window. In this case Ctrl+V in the search text entry would be broken
+#. (the
 #. text is pasted in the document instead of the entry).
 #. Anyway if we press Ctrl+V when the cursor is in the document, no problem.
 #: ../src/main_window_edit.vala:48
@@ -2121,8 +2122,8 @@ msgstr "Desplaçament a l'_esquerra"
 #: ../src/main_window_structure.vala:48
 msgid "Shift the selected structure item to the left (e.g. section → chapter)"
 msgstr ""
-"Desplaça l'element seleccionat de l'estructura cap a l'esquerra (p. ex. secció "
-"→ capítol)"
+"Desplaça l'element seleccionat de l'estructura cap a l'esquerra (p. ex. "
+"secció → capítol)"
 
 #: ../src/main_window_structure.vala:51
 msgid "Shift _Right"
@@ -2131,8 +2132,8 @@ msgstr "Desplaçament a la d_reta"
 #: ../src/main_window_structure.vala:52
 msgid "Shift the selected structure item to the right (e.g. chapter → section)"
 msgstr ""
-"Desplaça l'element seleccionat de l'estructura cap a la dreta (p. ex. secció → "
-"capítol)"
+"Desplaça l'element seleccionat de l'estructura cap a la dreta (p. ex. secció "
+"→ capítol)"
 
 #: ../src/main_window_structure.vala:55
 msgid "_Open File"
@@ -2234,11 +2235,11 @@ msgstr "Cerca i reemplaça text"
 
 #: ../src/main_window.vala:46
 msgid "_Go to Line…"
-msgstr "_Vés a la línia..."
+msgstr "_Ves a la línia..."
 
 #: ../src/main_window.vala:47
 msgid "Go to a specific line"
-msgstr "Vés a una línia específica"
+msgstr "Ves a una línia específica"
 
 #: ../src/main_window.vala:48
 msgid "_Jump to PDF"
@@ -2470,7 +2471,7 @@ msgstr "El fitxer principal no està al directori."
 
 #: ../src/search.vala:40
 msgid "Go to Line:"
-msgstr "Vés a la línia:"
+msgstr "Ves a la línia:"
 
 #: ../src/search.vala:50
 msgid "Line you want to move the cursor to"
@@ -2512,7 +2513,6 @@ msgstr "No trobat"
 
 #. Translators: the first %d is the position of the current search occurrence,
 #. * and the second %d is the total number of search occurrences.
-#.
 #: ../src/search.vala:486
 #, c-format
 msgid "Match %d of %d"
@@ -2775,51 +2775,3 @@ msgstr "Ressalta els mots mal escrits"
 msgid "Other"
 msgstr "Altres"
 
-#~ msgid "Integrated LaTeX Environment"
-#~ msgstr "Entorn LaTeX integrat"
-
-#~ msgid "Add..."
-#~ msgstr "Afegeix..."
-
-#~ msgid "Close document"
-#~ msgstr "Tanca el document"
-
-#~ msgid "Main File:"
-#~ msgstr "Fitxer principal:"
-
-#~ msgid "Unsaved Document"
-#~ msgstr "Document sense desar"
-
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options.\n"
-#~ msgstr ""
-#~ "Executeu «%s --help» per veure tota la llista d'opcions de la línia "
-#~ "d'ordres disponibles.\n"
-
-#, fuzzy
-#~| msgid "Spell checking"
-#~ msgid "_Spell Check"
-#~ msgstr "Verificació de l'ortografia"
-
-#~ msgid "Read-Only"
-#~ msgstr "Només lectura"
-
-#~ msgid "A file named \"%s\" already exists. Do you want to replace it?"
-#~ msgstr "Ja existeix un fitxer anomenat «%s». Voleu sobreescriure'l?"
-
-#, fuzzy
-#~| msgid "Replace"
-#~ msgid "_Replace"
-#~ msgstr "Reemplaça"
-
-#~ msgid "(no suggestions)"
-#~ msgstr "(cap suggeriment)"
-
-#~ msgid "More..."
-#~ msgstr "Més..."
-
-#~ msgid "Add \"%s\" to Dictionary"
-#~ msgstr "Afegeix «%s» al diccionari"
-
-#~ msgid "Ignore All"
-#~ msgstr "Ignora-ho tot"

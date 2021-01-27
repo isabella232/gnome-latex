@@ -7,17 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: latexila latexila-2-2\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-latex/issues\n"
-"POT-Creation-Date: 2018-10-24 15:29+0000\n"
-"PO-Revision-Date: 2011-11-28 18:06+0200\n"
+"POT-Creation-Date: 2020-11-20 15:53+0000\n"
+"PO-Revision-Date: 2021-01-27 17:04+0100\n"
 "Last-Translator: \n"
 "Language-Team: Romanian <kde-i18n-doc@kde.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2);;\n"
-"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
+"%100<=19) ? 1 : 2);\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #. (itstool) path: tool/label
 #: build_tools.xml:43 ../src/build_tool_dialog.vala:165
@@ -86,7 +87,7 @@ msgstr "Convertiți documentul PostScript în format PDF"
 
 #: ../data/org.gnome.gnome-latex.appdata.xml.in.h:1
 msgid "LaTeX editor"
-msgstr ""
+msgstr "Editor LaTeX"
 
 #: ../data/org.gnome.gnome-latex.appdata.xml.in.h:2
 msgid ""
@@ -110,6 +111,9 @@ msgid ""
 "navigate in it; lists of symbols to insert them in a document; and a file "
 "browser."
 msgstr ""
+"Un panou lateral conține trei componente: structura documentului pentru a "
+"naviga ușor; liste de simboluri pentru a le introduce în document; și un "
+"navigator de fișiere."
 
 #: ../data/org.gnome.gnome-latex.appdata.xml.in.h:5
 msgid ""
@@ -119,7 +123,7 @@ msgstr ""
 
 #: ../data/org.gnome.gnome-latex.appdata.xml.in.h:6
 msgid "Completion of LaTeX commands"
-msgstr ""
+msgstr "Completarea comenzilor LaTeX"
 
 #: ../data/org.gnome.gnome-latex.appdata.xml.in.h:7
 #, fuzzy
@@ -134,10 +138,8 @@ msgid "Document structure in the side panel"
 msgstr "Arată sau ascunde panoul lateral"
 
 #: ../data/org.gnome.gnome-latex.desktop.in.h:1
-#, fuzzy
-#| msgid "Editor"
 msgid "LaTeX Editor"
-msgstr "Editor"
+msgstr "Editor LaTeX"
 
 #: ../data/org.gnome.gnome-latex.desktop.in.h:2
 #, fuzzy
@@ -147,23 +149,19 @@ msgstr "Deschide documentația LaTeXila"
 
 #: ../data/org.gnome.gnome-latex.desktop.in.h:3
 msgid "text;tex;latex;editor;documents;"
-msgstr ""
+msgstr "text;tex;latex;editor;documents;documente;"
 
 #: ../data/org.gnome.gnome-latex.desktop.in.h:4
-#, fuzzy
-#| msgid "_Move to New Window"
 msgid "Open a New Window"
-msgstr "_Mergi la noua fereastră"
+msgstr "Deschide o fereastră nouă"
 
 #: ../data/org.gnome.gnome-latex.desktop.in.h:5
-#, fuzzy
-#| msgid "Unsaved Document"
 msgid "Open a New Document"
-msgstr "Document nesalvat"
+msgstr "Deschide un nou document"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:1
 msgid "Use Default Font"
-msgstr ""
+msgstr "Utilizează fontul implicit"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:2
 msgid ""
@@ -174,16 +172,16 @@ msgid ""
 msgstr ""
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:3
-#, fuzzy
-#| msgid "Editor _font: "
 msgid "Editor Font"
-msgstr "_Fontul de editare:"
+msgstr "¡Fontul de editare"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:4
 msgid ""
 "A custom font that will be used for the editing area. This will only take "
 "effect if the “Use Default Font” option is turned off."
 msgstr ""
+"Un font personalizat care va fi folosit pentru zona de editare. Aceasta va "
+"lua efect numai dacă opțiunea „Utilizează fontul implicit” este dezactivată."
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:5
 #, fuzzy
@@ -197,7 +195,7 @@ msgstr ""
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:7
 msgid "Create Backup Copies"
-msgstr ""
+msgstr "Creează copii de siguranță"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:8
 msgid "Whether GNOME LaTeX should create backup copies for the files it saves."
@@ -205,7 +203,7 @@ msgstr ""
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:9
 msgid "Autosave"
-msgstr ""
+msgstr "Salvare automată"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:10
 msgid ""
@@ -215,7 +213,7 @@ msgstr ""
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:11
 msgid "Autosave Interval"
-msgstr ""
+msgstr "Intervalul salvării automate"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:12
 msgid ""
@@ -235,7 +233,7 @@ msgstr ""
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:15
 msgid "Tab Size"
-msgstr ""
+msgstr "Dimensiunea tabului"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:16
 msgid ""
@@ -309,7 +307,7 @@ msgstr ""
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:29
 msgid "Spell-Checking Language"
-msgstr ""
+msgstr "Limbă pentru corectorul ortografic"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:30
 msgid ""
@@ -366,9 +364,10 @@ msgid "Side panel component"
 msgstr "Panou later_al"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:40
-msgid ""
-"Side panel’s active component. 0: Symbols. 1: File browser. 2: Structure."
-msgstr ""
+#, fuzzy
+#| msgid "_Side panel"
+msgid "Side panel’s active component."
+msgstr "Panou later_al"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:41
 #, fuzzy
@@ -388,7 +387,7 @@ msgstr "Completare interactivă după"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:44
 msgid "Automatically show LaTeX commands proposals"
-msgstr ""
+msgstr "Arată automat propuneri de comenzi LaTeX"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:45
 msgid "Minimum number of characters for interactive completion"
@@ -474,10 +473,8 @@ msgstr ""
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:60
 #: ../src/file_browser.vala:356
-#, fuzzy
-#| msgid "Show all files"
 msgid "Show hidden files"
-msgstr "Arată toate fișierele"
+msgstr "Arată fișierele ascunse"
 
 #: ../data/org.gnome.gnome-latex.gschema.xml.in.h:61
 #, fuzzy
@@ -540,7 +537,7 @@ msgstr ""
 "\\begin{letter}{Destinația\\\\Adresa destinației\\\\Numărul de telefon al destinației}\n"
 "\n"
 
-#: ../src/bottom_panel.vala:53 ../src/side_panel.vala:85
+#: ../src/bottom_panel.vala:51
 msgid "Hide panel"
 msgstr "Ascunde panoul"
 
@@ -552,24 +549,23 @@ msgstr "Unealtă de build"
 
 #: ../src/build_tool_dialog.vala:72 ../src/build_tools_preferences.vala:335
 #: ../src/clean_build_files.vala:242 ../src/dialogs.vala:41
-#: ../src/document_tab.vala:178
 #: ../src/liblatexila/latexila-templates-dialogs.c:130
 #: ../src/liblatexila/latexila-templates-dialogs.c:238
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:147
-#: ../src/main_window_file.vala:157 ../src/main_window.vala:754
-#: ../src/main_window.vala:811 ../src/preferences_dialog.vala:114
+#: ../src/main_window_file.vala:157 ../src/main_window.vala:749
+#: ../src/main_window.vala:806 ../src/preferences_dialog.vala:114
 #: ../src/project_dialogs.vala:31 ../src/project_dialogs.vala:122
 #: ../src/project_dialogs.vala:276 ../src/project_dialogs.vala:296
 msgid "_Cancel"
-msgstr ""
+msgstr "_Anulează"
 
 #: ../src/build_tool_dialog.vala:73 ../src/project_dialogs.vala:123
 msgid "_Apply"
-msgstr ""
+msgstr "_Aplică"
 
 #: ../src/build_tool_dialog.vala:77
 msgid "Default Build Tool (read-only)"
-msgstr ""
+msgstr "Unealtă de construire implicită (protejată la scriere)"
 
 #. icon-name
 #. label
@@ -599,24 +595,24 @@ msgstr "Post-procesor"
 
 #: ../src/build_tool_dialog.vala:271 ../src/build_tools_preferences.vala:297
 msgid "Add…"
-msgstr ""
+msgstr "Adaugă…"
 
 #: ../src/build_tool_dialog.vala:288 ../src/build_tools_preferences.vala:314
 msgid "Remove"
-msgstr ""
+msgstr "Elimină"
 
 #: ../src/build_tool_dialog.vala:318 ../src/build_tools_preferences.vala:354
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:286
 msgid "Move up"
-msgstr ""
+msgstr "Mută în sus"
 
 #: ../src/build_tool_dialog.vala:369 ../src/build_tools_preferences.vala:406
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:298
 msgid "Move down"
-msgstr ""
+msgstr "Mută în jos"
 
 #: ../src/build_tool_dialog.vala:573 ../src/build_tools_preferences.vala:177
-#: ../src/liblatexila/latexila-latex-commands.c:71 ../src/structure.vala:783
+#: ../src/liblatexila/latexila-latex-commands.c:36 ../src/structure.vala:783
 msgid "Label"
 msgstr "Etichetă"
 
@@ -691,7 +687,7 @@ msgstr ""
 
 #: ../src/build_tool_dialog.vala:686
 msgid "Files to open"
-msgstr ""
+msgstr "Fișiere de deschis"
 
 #: ../src/build_tools_preferences.vala:57
 msgid "Build Tools"
@@ -710,10 +706,8 @@ msgid "Personal Build Tools"
 msgstr "Unelte de build"
 
 #: ../src/build_tools_preferences.vala:168
-#, fuzzy
-#| msgid "Table"
 msgid "Enabled"
-msgstr "Tabel"
+msgstr "Activat"
 
 #: ../src/build_tools_preferences.vala:241
 msgid "View the properties (read-only)"
@@ -746,10 +740,8 @@ msgstr "Sigur ștergeți unealta de build „%s”?"
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:148
 #: ../src/main_window_edit.vala:51 ../src/main_window_structure.vala:38
 #: ../src/project_dialogs.vala:242 ../src/project_dialogs.vala:277
-#, fuzzy
-#| msgid "delete"
 msgid "_Delete"
-msgstr "șterge"
+msgstr "Ș_terge"
 
 #: ../src/clean_build_files.vala:267
 msgid "Do you really want to delete these files?"
@@ -768,25 +760,16 @@ msgstr "Niciun fișier de build de curățat."
 msgid "No matching proposal"
 msgstr "Nicio propunere de potrivire"
 
-#. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for
-#. "Column". Please, use abbreviations if possible.
-#: ../src/custom_statusbar.vala:45
-#, c-format
-msgid "Ln %d, Col %d"
-msgstr "Ln %d, Col %d"
-
-#: ../src/dialogs.vala:40 ../src/main_window.vala:753
+#: ../src/dialogs.vala:40 ../src/main_window.vala:748
 #, fuzzy
 #| msgid "Close without Saving"
 msgid "Close _without Saving"
 msgstr "Închide fără a salva"
 
 #: ../src/dialogs.vala:42 ../src/main_window_file.vala:41
-#: ../src/main_window.vala:759 ../src/main_window.vala:812
-#, fuzzy
-#| msgid "_Save All"
+#: ../src/main_window.vala:754 ../src/main_window.vala:807
 msgid "_Save"
-msgstr "_Salvează toate"
+msgstr "_Salvează"
 
 #: ../src/dialogs.vala:66
 #, c-format
@@ -816,95 +799,72 @@ msgstr "Elementul de structură conține deja un sub-paragraf."
 msgid "Activate “%s”"
 msgstr "Activează „%s”"
 
-#: ../src/document_tab.vala:166
-#, c-format
-msgid "The file %s changed on disk."
-msgstr "Fișierul %s a fost schimbat pe disk."
-
-#: ../src/document_tab.vala:171
-msgid "Do you want to drop your changes and reload the file?"
-msgstr "Doriți să renunțați la schimbări și să reîncărcați fișierul?"
-
-#: ../src/document_tab.vala:173
-msgid "Do you want to reload the file?"
-msgstr "Doriți să reîncărcați fișierul?"
-
-#: ../src/document_tab.vala:177
-#, fuzzy
-#| msgid "Reload"
-msgid "_Reload"
-msgstr "Reîncarcă"
-
-#: ../src/document.vala:133
+#: ../src/document.vala:117
 #, fuzzy, c-format
 #| msgid "Impossible to load the file '%s'."
 msgid "Impossible to load the file “%s”."
 msgstr "Nu se poate încărca fișierul „%s”."
 
-#: ../src/document.vala:215
+#: ../src/document.vala:199
 #, c-format
 msgid "The file %s has been modified since reading it."
 msgstr "Fișierul %s a fost modificat de la citirea sa."
 
-#: ../src/document.vala:218
+#: ../src/document.vala:202
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr "Dacă salvați, toate schimbările externe se pot pierde. Salvați?"
 
-#: ../src/document.vala:222
-#, fuzzy
-#| msgid "Save Anyway"
+#: ../src/document.vala:206
 msgid "_Save Anyway"
-msgstr "Salvează oricum"
+msgstr "_Salvează oricum"
 
-#: ../src/document.vala:223
+#: ../src/document.vala:207
 #, fuzzy
 #| msgid "Don't Save"
 msgid "_Don’t Save"
 msgstr "Nu salva"
 
-#: ../src/document.vala:240
+#: ../src/document.vala:224
 msgid "Impossible to save the file."
-msgstr "Nu se poate încărca fișierul „%s”"
+msgstr "Salvarea fișierului este imposibilă."
 
-#: ../src/document.vala:268
+#: ../src/document.vala:252
 msgid "Error trying to convert the document to UTF-8"
 msgstr "Eroare la încercarea de a converti documentul la UTF-8"
 
-#: ../src/document.vala:497
+#: ../src/document.vala:481
 msgid ""
 "The file has a temporary location. The data can be lost after rebooting your "
 "computer."
 msgstr ""
 
-#: ../src/document.vala:498
+#: ../src/document.vala:482
 #, fuzzy
 #| msgid "Do you want to reload the file?"
 msgid "Do you want to save the file in a safer place?"
 msgstr "Doriți să reîncărcați fișierul?"
 
-#: ../src/document.vala:499 ../src/main_window_file.vala:44
-#: ../src/main_window.vala:757
-#, fuzzy
-#| msgid "_Save All"
+#: ../src/document.vala:483 ../src/main_window_file.vala:44
+#: ../src/main_window.vala:752
 msgid "Save _As"
-msgstr "_Salvează toate"
+msgstr "_Salvează ca"
 
-#: ../src/document.vala:500
+#: ../src/document.vala:484
 msgid "Cancel"
-msgstr ""
+msgstr "Anulează"
 
-#: ../src/document_view.vala:312
+#: ../src/document_view.vala:289
 msgid "No dictionaries available for the spell-checking."
 msgstr ""
 
 #. Help
-#: ../src/document_view.vala:314 ../src/main_window.vala:63
+#: ../src/document_view.vala:291 ../src/main_window.vala:65
 msgid "_Help"
 msgstr "_Ajutor"
 
-#: ../src/document_view.vala:315
+#: ../src/document_view.vala:292
 msgid "_OK"
-msgstr ""
+msgstr "_OK"
 
 #: ../src/file_browser.vala:219
 msgid "Go to the home directory"
@@ -919,1008 +879,1001 @@ msgid "Go to the active document directory"
 msgstr "Navighează la documentul directorului activ"
 
 #: ../src/file_browser.vala:290
-#, fuzzy
-#| msgid "Open a file"
 msgid "Open in a file manager"
-msgstr "Deschide un fișier"
+msgstr "Deschide într-un administrator de fișiere"
 
 #: ../src/file_browser.vala:292
-#, fuzzy
-#| msgid "Save the current file with a different name"
 msgid "Open the current directory in a file manager"
-msgstr "Salvează fișierul actual cu un alt nume"
+msgstr "Deschide directorul curent într-un administrator de fișiere"
 
 #: ../src/file_browser.vala:314
-#, fuzzy
-#| msgid "Open a file"
 msgid "Open in a terminal"
-msgstr "Deschide un fișier"
+msgstr "Deschide într-un terminal"
 
 #: ../src/file_browser.vala:315
-#, fuzzy
-#| msgid "Save the current file with a different name"
 msgid "Open the current directory in a terminal"
-msgstr "Salvează fișierul actual cu un alt nume"
+msgstr "Deschide directorul curent într-un terminal"
 
 #: ../src/file_browser.vala:405
 msgid "File System"
 msgstr "Sistem de fișiere"
 
 #. File browser
-#: ../src/file_browser.vala:524 ../src/main_window.vala:450
+#: ../src/file_browser.vala:524 ../src/main_window.vala:444
 msgid "File Browser"
 msgstr "Navigator de fișiere"
 
-#: ../src/glatex_app.vala:78
+#: ../src/liblatexila/latexila-app.c:70
 #, fuzzy
-#| msgid "Show the application's version"
+#| msgid "LaTeXila is an Integrated LaTeX Environment for the GNOME Desktop"
+msgid "GNOME LaTeX is a LaTeX editor for the GNOME desktop"
+msgstr "LaTeXila este un mediu integrat LaTeX pentru desktop-ul GNOME"
+
+#: ../src/liblatexila/latexila-app.c:73 ../src/main_window.vala:71
+#, fuzzy
+#| msgid "About LaTeXila"
+msgid "About GNOME LaTeX"
+msgstr "Despre LaTeXila"
+
+#: ../src/liblatexila/latexila-app.c:74
+msgid "translator-credits"
+msgstr ""
+"Alexandru Florescu Marian <acdc152@gmail.com>\n"
+"Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>, 2021"
+
+#: ../src/liblatexila/latexila-app.c:100
+#, fuzzy, c-format
+#| msgid "Impossible to load the file '%s'."
+msgid "Impossible to open the documentation: %s"
+msgstr "Nu se poate încărca fișierul „%s”."
+
+#: ../src/liblatexila/latexila-app.c:127
 msgid "Show the application’s version"
 msgstr "Arată versiunea aplicației"
 
-#: ../src/glatex_app.vala:81
-msgid "Create new document"
-msgstr "Creează un document nou"
-
-#: ../src/glatex_app.vala:84
+#: ../src/liblatexila/latexila-app.c:130
 #, fuzzy
 #| msgid "Create a new top-level window in an existing instance of LaTeXila"
 msgid "Create a new top-level window in an existing instance of GNOME LaTeX"
 msgstr ""
 "Creează o nouă fereastră de prim nivel într-o instanță existentă de LaTeXila"
 
-#: ../src/glatex_app.vala:195
+#: ../src/liblatexila/latexila-app.c:133
 #, fuzzy
-#| msgid "LaTeXila is an Integrated LaTeX Environment for the GNOME Desktop"
-msgid "GNOME LaTeX is a LaTeX editor for the GNOME desktop"
-msgstr "LaTeXila este un mediu integrat LaTeX pentru desktop-ul GNOME"
+#| msgid "Create a new top-level window in an existing instance of LaTeXila"
+msgid "Create a new document in an existing instance of GNOME LaTeX"
+msgstr ""
+"Creează o nouă fereastră de prim nivel într-o instanță existentă de LaTeXila"
 
-#: ../src/glatex_app.vala:224 ../src/main_window.vala:69
-#, fuzzy
-#| msgid "About LaTeXila"
-msgid "About GNOME LaTeX"
-msgstr "Despre LaTeXila"
-
-#: ../src/glatex_app.vala:225
-msgid "translator-credits"
-msgstr "Alexandru Florescu Marian <acdc152@gmail.com>"
-
-#. Sections and sub-sections
-#. LaTeX
-#: ../src/latex_menu.vala:30
-msgid "_Sectioning"
-msgstr "_Secționare"
-
-#: ../src/latex_menu.vala:31
-msgid "_References"
-msgstr "_Referințe"
-
-#: ../src/latex_menu.vala:33
-msgid "_List Environments"
-msgstr "_Listează mediile"
-
-#: ../src/latex_menu.vala:34
-msgid "_Characters Sizes"
-msgstr "Dimensiunea _caracterelor"
-
-#: ../src/latex_menu.vala:35
-msgid "_Font Styles"
-msgstr "Stilul _fontului"
-
-#: ../src/latex_menu.vala:36
-msgid "_Font Family"
-msgstr "_Familie de fonturi"
-
-#: ../src/latex_menu.vala:37
-msgid "F_ont Series"
-msgstr "Serie de f_onturi"
-
-#: ../src/latex_menu.vala:38
-msgid "Fo_nt Shape"
-msgstr "Forma fo_ntului"
-
-#: ../src/latex_menu.vala:39
-msgid "_Tabular"
-msgstr "_Tabular"
-
-#: ../src/latex_menu.vala:41
-msgid "_Spacing"
-msgstr "_Spațiere"
-
-#: ../src/latex_menu.vala:42
-msgid "International _Accents"
-msgstr "_Accente internaționale"
-
-#: ../src/latex_menu.vala:43
-msgid "_Misc"
-msgstr "_Diverse"
-
-#. Math
-#: ../src/latex_menu.vala:46
-msgid "_Math"
-msgstr "_Matematică"
-
-#: ../src/latex_menu.vala:47
-msgid "_Math Environments"
-msgstr "_Medii matematice"
-
-#: ../src/latex_menu.vala:48
-msgid "Math _Functions"
-msgstr "_Funcții  matematice"
-
-#: ../src/latex_menu.vala:49
-msgid "Math Font _Styles"
-msgstr "_Stilurile fontului matematic"
-
-#: ../src/latex_menu.vala:50
-msgid "Math _Accents"
-msgstr "_Accente matematice"
-
-#: ../src/latex_menu.vala:51
-msgid "Math _Spaces"
-msgstr "_Spații matematice"
-
-#: ../src/latex_menu.vala:52
-msgid "_Left Delimiters"
-msgstr "De_limitatori la stânga"
-
-#: ../src/latex_menu.vala:53
-msgid "Right _Delimiters"
-msgstr "Delimitatori la _dreapta"
-
-#. menus under toolitems
-#: ../src/latex_menu.vala:67
-msgid "Sectioning"
-msgstr "Secționare"
-
-#: ../src/latex_menu.vala:70
-msgid "Characters Sizes"
-msgstr "Dimensiunile caracterelor"
-
-#: ../src/latex_menu.vala:73
-msgid "References"
-msgstr "Referințe"
-
-#: ../src/latex_menu.vala:76
-#, fuzzy
-#| msgid "Math Environments"
-msgid "Presentation Environments"
-msgstr "Medii matematice"
-
-#: ../src/latex_menu.vala:79
-msgid "Math Environments"
-msgstr "Medii matematice"
-
-#: ../src/liblatexila/latexila-build-job.c:365
+#: ../src/liblatexila/latexila-build-job.c:366
 #, fuzzy, c-format
 #| msgid "%s doesn't seem to be installed."
 msgid "%s doesn’t seem to be installed."
 msgstr "%s nu este instalat."
 
-#: ../src/liblatexila/latexila-build-tool.c:555
-#: ../src/liblatexila/latexila-synctex.c:569
+#: ../src/liblatexila/latexila-build-tool.c:556
+#: ../src/liblatexila/latexila-synctex.c:570
 #, fuzzy, c-format
 #| msgid "The file %s changed on disk."
 msgid "The file “%s” doesn’t exist."
 msgstr "Fișierul %s a fost schimbat pe disk."
 
-#: ../src/liblatexila/latexila-build-tool.c:583
+#: ../src/liblatexila/latexila-build-tool.c:584
 #, c-format
 msgid "Failed to open “%s”:"
-msgstr ""
+msgstr "Eșec la deschiderea „%s”:"
 
-#: ../src/liblatexila/latexila-build-tool.c:689
-#, fuzzy, c-format
-#| msgid "Open Files"
+#: ../src/liblatexila/latexila-build-tool.c:690
+#, c-format
 msgid "Open %s"
-msgstr "Deschide fișiere"
+msgstr "Deschide %s"
 
-#: ../src/liblatexila/latexila-latex-commands.c:54 ../src/structure.vala:776
-msgid "Part"
-msgstr "Parte"
-
-#: ../src/liblatexila/latexila-latex-commands.c:56 ../src/structure.vala:777
-msgid "Chapter"
-msgstr "Capitol"
-
-#: ../src/liblatexila/latexila-latex-commands.c:58 ../src/structure.vala:778
-msgid "Section"
-msgstr "Secțiune"
-
-#: ../src/liblatexila/latexila-latex-commands.c:60 ../src/structure.vala:779
-msgid "Sub-section"
-msgstr "Sub-secțiune"
-
-#: ../src/liblatexila/latexila-latex-commands.c:62 ../src/structure.vala:780
-msgid "Sub-sub-section"
-msgstr "Sub-sub-secțiune"
-
-#: ../src/liblatexila/latexila-latex-commands.c:64 ../src/structure.vala:781
-msgid "Paragraph"
-msgstr "Paragraf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:66 ../src/structure.vala:782
-msgid "Sub-paragraph"
-msgstr "Sub-paragraf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:73
+#: ../src/liblatexila/latexila-latex-commands.c:38
 msgid "Reference to a label"
 msgstr "Referințe la o etichetă"
 
-#: ../src/liblatexila/latexila-latex-commands.c:75
+#: ../src/liblatexila/latexila-latex-commands.c:40
 msgid "Page reference to a label"
 msgstr "Referințele paginii la o etichetă"
 
-#: ../src/liblatexila/latexila-latex-commands.c:77
+#: ../src/liblatexila/latexila-latex-commands.c:42
 msgid "Add a word to the index"
 msgstr "Adaugă un cuvânt în index"
 
-#: ../src/liblatexila/latexila-latex-commands.c:79
+#: ../src/liblatexila/latexila-latex-commands.c:44
 msgid "Footnote"
 msgstr "Notă de subsol"
 
-#: ../src/liblatexila/latexila-latex-commands.c:81
+#: ../src/liblatexila/latexila-latex-commands.c:46
 msgid "Reference to a bibliography item"
 msgstr "Referințe la un element bibliografic"
 
-#: ../src/liblatexila/latexila-latex-commands.c:86
-#, fuzzy
-#| msgid "Center - \\begin{center}"
-msgid "Center — \\begin{center}"
-msgstr "Centru - \\begin{center}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:88
-#, fuzzy
-#| msgid "Align Left - \\begin{flushleft}"
-msgid "Align Left — \\begin{flushleft}"
-msgstr "Aliniere la stânga - \\begin{flushleft}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:90
-#, fuzzy
-#| msgid "Align Right - \\begin{flushright}"
-msgid "Align Right — \\begin{flushright}"
-msgstr "Aliniere la dreapta - \\begin{flushright}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:92
-#, fuzzy
-#| msgid "Figure - \\begin{figure}"
-msgid "Figure — \\begin{figure}"
-msgstr "Figura - \\begin{figure}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:94
-#, fuzzy
-#| msgid "Table - \\begin{table}"
-msgid "Table — \\begin{table}"
-msgstr "Tabel - \\begin{table}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:96
-#, fuzzy
-#| msgid "Quote - \\begin{quote}"
-msgid "Quote — \\begin{quote}"
-msgstr "Citat - \\begin{quote}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:98
-#, fuzzy
-#| msgid "Quotation - \\begin{quotation}"
-msgid "Quotation — \\begin{quotation}"
-msgstr "Citare - \\begin{quotation}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:100
-#, fuzzy
-#| msgid "Verse - \\begin{verse}"
-msgid "Verse — \\begin{verse}"
-msgstr "Vers - \\begin{verse}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:102
-#, fuzzy
-#| msgid "Verbatim - \\begin{verbatim}"
-msgid "Verbatim — \\begin{verbatim}"
-msgstr "Textual - \\begin{verbatim}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:104
-#, fuzzy
-#| msgid "Minipage - \\begin{minipage}"
-msgid "Minipage — \\begin{minipage}"
-msgstr "Minipagină - \\begin{minipage}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:106
-#, fuzzy
-#| msgid "Title page - \\begin{titlepage}"
-msgid "Title page — \\begin{titlepage}"
-msgstr "Pagina de titlu - \\begin{titlepage}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:111
-#, fuzzy
-#| msgid "Bulleted List - \\begin{itemize}"
-msgid "Bulleted List — \\begin{itemize}"
-msgstr "Lista cu buline - \\begin{itemize}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:113
-#, fuzzy
-#| msgid "Enumeration - \\begin{enumerate}"
-msgid "Enumeration — \\begin{enumerate}"
-msgstr "Enumerație - \\begin{enumerate}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:115
-#, fuzzy
-#| msgid "Description - \\begin{description}"
-msgid "Description — \\begin{description}"
-msgstr "Descriere - \\begin{description}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:117
-#, fuzzy
-#| msgid "Custom list - \\begin{list}"
-msgid "Custom list — \\begin{list}"
-msgstr "Lista personalizată - \\begin{list}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:119
-#, fuzzy
-#| msgid "List item - \\item"
-msgid "List item — \\item"
-msgstr "Listează elemente - \\item"
-
-#: ../src/liblatexila/latexila-latex-commands.c:137
-#, fuzzy
-#| msgid "Bold - \\textbf"
-msgid "Bold — \\textbf"
-msgstr "Îngroșat - \\textbf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:139
-#, fuzzy
-#| msgid "Italic - \\textit"
-msgid "Italic — \\textit"
-msgstr "Italic - \\textit"
-
-#: ../src/liblatexila/latexila-latex-commands.c:141
-#, fuzzy
-#| msgid "Typewriter - \\texttt"
-msgid "Typewriter — \\texttt"
-msgstr "Stil dactilografiat - \\texttt"
-
-#: ../src/liblatexila/latexila-latex-commands.c:143
-#, fuzzy
-#| msgid "Slanted - \\textsl"
-msgid "Slanted — \\textsl"
-msgstr "Înclinat - \\textsl"
-
-#: ../src/liblatexila/latexila-latex-commands.c:145
-#, fuzzy
-#| msgid "Small Capitals - \\textsc"
-msgid "Small Capitals — \\textsc"
-msgstr "Majuscule mici - \\textsc"
-
-#: ../src/liblatexila/latexila-latex-commands.c:147
-#, fuzzy
-#| msgid "Sans Serif - \\textsf"
-msgid "Sans Serif — \\textsf"
-msgstr "Sans Serif - \\textsf"
-
-#: ../src/liblatexila/latexila-latex-commands.c:149
-#, fuzzy
-#| msgid "Emphasized - \\emph"
-msgid "Emphasized — \\emph"
-msgstr "Accentuat - \\emph"
-
-#: ../src/liblatexila/latexila-latex-commands.c:151
-#, fuzzy
-#| msgid "Underline - \\underline"
-msgid "Underline — \\underline"
-msgstr "Subliniat - \\underline"
-
-#: ../src/liblatexila/latexila-latex-commands.c:154
-#, fuzzy
-#| msgid "Roman - \\rmfamily"
-msgid "Roman — \\rmfamily"
-msgstr "Roman - \\rmfamily"
-
-#: ../src/liblatexila/latexila-latex-commands.c:156
-#, fuzzy
-#| msgid "Sans Serif - \\sffamily"
-msgid "Sans Serif — \\sffamily"
-msgstr "Sans Serif - \\sffamily"
-
-#: ../src/liblatexila/latexila-latex-commands.c:158
-#, fuzzy
-#| msgid "Monospace - \\ttfamily"
-msgid "Monospace — \\ttfamily"
-msgstr "Monospațiu - \\ttfamily"
-
-#: ../src/liblatexila/latexila-latex-commands.c:161
-#, fuzzy
-#| msgid "Medium - \\mdseries"
-msgid "Medium — \\mdseries"
-msgstr "Mediu - \\mdseries"
-
-#: ../src/liblatexila/latexila-latex-commands.c:163
-#, fuzzy
-#| msgid "Bold - \\bfseries"
-msgid "Bold — \\bfseries"
-msgstr "Îngroșat - \\bfseries"
-
-#: ../src/liblatexila/latexila-latex-commands.c:166
-#, fuzzy
-#| msgid "Upright - \\upshape"
-msgid "Upright — \\upshape"
-msgstr "Drept - \\upshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:168
-#, fuzzy
-#| msgid "Italic - \\itshape"
-msgid "Italic — \\itshape"
-msgstr "Italic - \\itshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:170
-#, fuzzy
-#| msgid "Slanted - \\slshape"
-msgid "Slanted — \\slshape"
-msgstr "Înclinat - \\slshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:172
-#, fuzzy
-#| msgid "Small Capitals - \\scshape"
-msgid "Small Capitals — \\scshape"
-msgstr "Majuscule mici - \\scshape"
-
-#: ../src/liblatexila/latexila-latex-commands.c:177
+#: ../src/liblatexila/latexila-latex-commands.c:68
 #, fuzzy
 msgid "Tabbing — \\begin{tabbing}"
 msgstr "Tabbing - \\begin{tabbing}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:179
+#: ../src/liblatexila/latexila-latex-commands.c:70
 #, fuzzy
 #| msgid "Tabular - \\begin{tabular}"
 msgid "Tabular — \\begin{tabular}"
 msgstr "Tabular - \\begin{tabular}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:181
+#: ../src/liblatexila/latexila-latex-commands.c:72
 #, fuzzy
 #| msgid "Multicolumn - \\multicolumn"
 msgid "Multicolumn — \\multicolumn"
 msgstr "Multi-coloană - \\multicolumn"
 
-#: ../src/liblatexila/latexila-latex-commands.c:183
+#: ../src/liblatexila/latexila-latex-commands.c:74
 #, fuzzy
 #| msgid "Horizontal line - \\hline"
 msgid "Horizontal line — \\hline"
 msgstr "Linie orizontală - \\hline"
 
-#: ../src/liblatexila/latexila-latex-commands.c:185
+#: ../src/liblatexila/latexila-latex-commands.c:76
 #, fuzzy
 #| msgid "Vertical line - \\vline"
 msgid "Vertical line — \\vline"
 msgstr "Linie verticală - \\vline"
 
-#: ../src/liblatexila/latexila-latex-commands.c:187
+#: ../src/liblatexila/latexila-latex-commands.c:78
 #, fuzzy
 #| msgid "Horizontal line (columns specified) - \\cline"
 msgid "Horizontal line (columns specified) — \\cline"
 msgstr "Linie orizontală (coloanele specificate) - \\cline"
 
-#: ../src/liblatexila/latexila-latex-commands.c:192
+#: ../src/liblatexila/latexila-latex-commands.c:85
 #, fuzzy
 #| msgid "Figure - \\begin{figure}"
 msgid "Frame — \\begin{frame}"
 msgstr "Figura - \\begin{figure}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:194
+#: ../src/liblatexila/latexila-latex-commands.c:87
 msgid "Block — \\begin{block}"
-msgstr ""
+msgstr "Bloc — \\begin{block}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:196
+#: ../src/liblatexila/latexila-latex-commands.c:89
 msgid "Two columns — \\begin{columns}"
 msgstr ""
 
-#. LaTeX: Spacing
-#: ../src/liblatexila/latexila-latex-commands.c:200
+#: ../src/liblatexila/latexila-latex-commands.c:95
 msgid "New _Line"
 msgstr "_Linie nouă"
 
-#: ../src/liblatexila/latexila-latex-commands.c:201
+#: ../src/liblatexila/latexila-latex-commands.c:96
 #, fuzzy
 #| msgid "New Line - \\\\"
 msgid "New Line — \\\\"
 msgstr "Linie nouă - \\\\"
 
-#: ../src/liblatexila/latexila-latex-commands.c:203
+#: ../src/liblatexila/latexila-latex-commands.c:98
 #, fuzzy
 #| msgid "New page - \\newpage"
 msgid "New page — \\newpage"
 msgstr "Pagină nouă - \\newpage"
 
-#: ../src/liblatexila/latexila-latex-commands.c:205
+#: ../src/liblatexila/latexila-latex-commands.c:100
 #, fuzzy
 #| msgid "Line break - \\linebreak"
 msgid "Line break — \\linebreak"
 msgstr "Pauză de linie - \\linebreak"
 
-#: ../src/liblatexila/latexila-latex-commands.c:207
+#: ../src/liblatexila/latexila-latex-commands.c:102
 #, fuzzy
 #| msgid "Page break - \\pagebreak"
 msgid "Page break — \\pagebreak"
 msgstr "Pauză de pagină - \\pagebreak"
 
-#: ../src/liblatexila/latexila-latex-commands.c:209
+#: ../src/liblatexila/latexila-latex-commands.c:104
 #, fuzzy
 #| msgid "Big skip - \\bigskip"
 msgid "Big skip — \\bigskip"
 msgstr "Omitere mare - \\bigskip"
 
-#: ../src/liblatexila/latexila-latex-commands.c:211
+#: ../src/liblatexila/latexila-latex-commands.c:106
 #, fuzzy
 #| msgid "Medium skip - \\medskip"
 msgid "Medium skip — \\medskip"
 msgstr "Omitere medie - medskip"
 
-#: ../src/liblatexila/latexila-latex-commands.c:213
+#: ../src/liblatexila/latexila-latex-commands.c:108
 #, fuzzy
 #| msgid "Horizontal space - \\hspace"
 msgid "Horizontal space — \\hspace"
 msgstr "Spațiu orizontal - \\hspace"
 
-#: ../src/liblatexila/latexila-latex-commands.c:215
+#: ../src/liblatexila/latexila-latex-commands.c:110
 #, fuzzy
 #| msgid "Vertical space - \\vspace"
 msgid "Vertical space — \\vspace"
 msgstr "Spațiu vertical - \\vspace"
 
-#: ../src/liblatexila/latexila-latex-commands.c:217
+#: ../src/liblatexila/latexila-latex-commands.c:112
 #, fuzzy
 #| msgid "No paragraph indentation - \\noindent"
 msgid "No paragraph indentation — \\noindent"
 msgstr "Nicio indentare de paragraf - \\noindent"
 
-#. LaTeX: International accents
-#: ../src/liblatexila/latexila-latex-commands.c:221
+#: ../src/liblatexila/latexila-latex-commands.c:118
 #, fuzzy
 #| msgid "Acute accent - \\'"
 msgid "Acute accent — \\'"
 msgstr "Accent ascuțit - \\'"
 
-#: ../src/liblatexila/latexila-latex-commands.c:222
+#: ../src/liblatexila/latexila-latex-commands.c:119
 #, fuzzy
 #| msgid "Grave accent - \\`"
 msgid "Grave accent — \\`"
 msgstr "Accent grav - \\`"
 
-#: ../src/liblatexila/latexila-latex-commands.c:223
+#: ../src/liblatexila/latexila-latex-commands.c:120
 #, fuzzy
 #| msgid "Circumflex accent - \\^"
 msgid "Circumflex accent — \\^"
 msgstr "Accent circumflex - \\^"
 
-#: ../src/liblatexila/latexila-latex-commands.c:224
+#: ../src/liblatexila/latexila-latex-commands.c:121
 #, fuzzy
 #| msgid "Trema - \\\""
 msgid "Trema — \\\""
 msgstr "Trema - \\\""
 
-#: ../src/liblatexila/latexila-latex-commands.c:225
+#: ../src/liblatexila/latexila-latex-commands.c:122
 #, fuzzy
 #| msgid "Tilde - \\~"
 msgid "Tilde — \\~"
 msgstr "Tilda -\\~"
 
-#: ../src/liblatexila/latexila-latex-commands.c:226
+#: ../src/liblatexila/latexila-latex-commands.c:123
 #, fuzzy
 #| msgid "Macron - \\="
 msgid "Macron — \\="
 msgstr "Macron - \\="
 
-#: ../src/liblatexila/latexila-latex-commands.c:227
+#: ../src/liblatexila/latexila-latex-commands.c:124
 #, fuzzy
 #| msgid "Dot above - \\."
 msgid "Dot above — \\."
 msgstr "Punct superior - \\."
 
-#: ../src/liblatexila/latexila-latex-commands.c:228
+#: ../src/liblatexila/latexila-latex-commands.c:125
 #, fuzzy
 #| msgid "Caron - \\v"
 msgid "Caron — \\v"
 msgstr "Caron - \\v"
 
-#: ../src/liblatexila/latexila-latex-commands.c:229
+#: ../src/liblatexila/latexila-latex-commands.c:126
 #, fuzzy
 msgid "Breve — \\u"
 msgstr "Brevă - \\u"
 
-#: ../src/liblatexila/latexila-latex-commands.c:231
+#: ../src/liblatexila/latexila-latex-commands.c:128
 #, fuzzy
 #| msgid "Double acute accent - \\H"
 msgid "Double acute accent — \\H"
 msgstr "Accent ascuțit dublu -\\H"
 
-#: ../src/liblatexila/latexila-latex-commands.c:232
+#: ../src/liblatexila/latexila-latex-commands.c:129
 #, fuzzy
 #| msgid "Cedilla - \\c"
 msgid "Cedilla — \\c"
 msgstr "Sedilă - \\c"
 
-#: ../src/liblatexila/latexila-latex-commands.c:233
+#: ../src/liblatexila/latexila-latex-commands.c:130
 #, fuzzy
 #| msgid "Ogonek - \\k"
 msgid "Ogonek — \\k"
 msgstr "Ogonek - \\k"
 
-#: ../src/liblatexila/latexila-latex-commands.c:234
+#: ../src/liblatexila/latexila-latex-commands.c:131
 #, fuzzy
 #| msgid "Dot below - \\d"
 msgid "Dot below — \\d"
 msgstr "Punct sub - \\d"
 
-#: ../src/liblatexila/latexila-latex-commands.c:235
+#: ../src/liblatexila/latexila-latex-commands.c:132
 #, fuzzy
 #| msgid "Macron below - \\b"
 msgid "Macron below — \\b"
 msgstr "Macron sub - \\b"
 
-#: ../src/liblatexila/latexila-latex-commands.c:236
+#: ../src/liblatexila/latexila-latex-commands.c:133
 #, fuzzy
 #| msgid "Ring - \\r"
 msgid "Ring — \\r"
 msgstr "Inel - \\r"
 
-#: ../src/liblatexila/latexila-latex-commands.c:237
+#: ../src/liblatexila/latexila-latex-commands.c:134
 #, fuzzy
 msgid "Tie — \\t"
 msgstr "Cravată - \\t"
 
-#: ../src/liblatexila/latexila-latex-commands.c:242
-#, fuzzy
-#| msgid "Document class - \\documentclass"
-msgid "Document class — \\documentclass"
-msgstr "Clasa document - \\documentclass"
-
-#: ../src/liblatexila/latexila-latex-commands.c:244
-#, fuzzy
-#| msgid "Use package - \\usepackage"
-msgid "Use package — \\usepackage"
-msgstr "Folosește pachet - \\usepackage"
-
-#: ../src/liblatexila/latexila-latex-commands.c:245
-msgid "_AMS packages"
-msgstr "Pachete _AMS"
-
-#: ../src/liblatexila/latexila-latex-commands.c:246
-msgid "AMS packages"
-msgstr "Pachete AMS"
-
-#: ../src/liblatexila/latexila-latex-commands.c:247
-#, fuzzy
-#| msgid "Author - \\author"
-msgid "Author — \\author"
-msgstr "Autor - \\author"
-
-#: ../src/liblatexila/latexila-latex-commands.c:248
-#, fuzzy
-#| msgid "Title - \\title"
-msgid "Title — \\title"
-msgstr "Titlu - \\title"
-
-#: ../src/liblatexila/latexila-latex-commands.c:250
-#, fuzzy
-#| msgid "Content of the document - \\begin{document}"
-msgid "Content of the document — \\begin{document}"
-msgstr "Conținutul documentului - \\begin{document}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:252
-#, fuzzy
-#| msgid "Make title - \\maketitle"
-msgid "Make title — \\maketitle"
-msgstr "Creează titlu - \\maketitle"
-
-#: ../src/liblatexila/latexila-latex-commands.c:254
-#, fuzzy
-#| msgid "Table of contents - \\tableofcontents"
-msgid "Table of contents — \\tableofcontents"
-msgstr "Cuprins - \\tableofcontents"
-
-#: ../src/liblatexila/latexila-latex-commands.c:256
-#, fuzzy
-#| msgid "Abstract - \\begin{abstract}"
-msgid "Abstract — \\begin{abstract}"
-msgstr "Abstract -\\begin{abstract}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:258
-#, fuzzy
-#| msgid "Include an image (graphicx package) - \\includegraphics"
-msgid "Include an image (graphicx package) — \\includegraphics"
-msgstr "Include o imagine (pachete graphicx) - \\includegraphics"
-
-#: ../src/liblatexila/latexila-latex-commands.c:260
-#, fuzzy
-#| msgid "Include a file - \\input"
-msgid "Include a file — \\input"
-msgstr "Include un fișier - \\input"
-
-#. Math Environments
-#: ../src/liblatexila/latexila-latex-commands.c:264
+#: ../src/liblatexila/latexila-latex-commands.c:140
 #, fuzzy
 #| msgid "_Mathematical Environment - $...$"
 msgid "_Mathematical Environment — $…$"
 msgstr "_Mediu matematic - $...$"
 
-#: ../src/liblatexila/latexila-latex-commands.c:265
+#: ../src/liblatexila/latexila-latex-commands.c:141
 #, fuzzy
 #| msgid "Mathematical Environment - $...$"
 msgid "Mathematical Environment — $…$"
 msgstr "Mediu matematic - $...$"
 
-#: ../src/liblatexila/latexila-latex-commands.c:266
+#: ../src/liblatexila/latexila-latex-commands.c:142
 #, fuzzy
 #| msgid "_Centered Formula - \\[...\\]"
 msgid "_Centered Formula — \\[…\\]"
 msgstr "Formulă _centrată -\\[...\\]"
 
-#: ../src/liblatexila/latexila-latex-commands.c:267
+#: ../src/liblatexila/latexila-latex-commands.c:143
 #, fuzzy
 #| msgid "Centered Formula - \\[...\\]"
 msgid "Centered Formula — \\[…\\]"
 msgstr "Formulă centrată - \\[...\\]"
 
-#: ../src/liblatexila/latexila-latex-commands.c:269
+#: ../src/liblatexila/latexila-latex-commands.c:145
 #, fuzzy
 #| msgid "_Numbered Equation - \\begin{equation}"
 msgid "_Numbered Equation — \\begin{equation}"
 msgstr "Ecuație _numerotată - \\begin{equation}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:270
+#: ../src/liblatexila/latexila-latex-commands.c:146
 #, fuzzy
 #| msgid "Numbered Equation - \\begin{equation}"
 msgid "Numbered Equation — \\begin{equation}"
 msgstr "Ecuație numerotată - \\begin{equation}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:271
+#: ../src/liblatexila/latexila-latex-commands.c:147
 #, fuzzy
 #| msgid "_Array of Equations - \\begin{align*}"
 msgid "_Array of Equations — \\begin{align*}"
 msgstr "_Vector de ecuații - \\begin{align*}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:272
+#: ../src/liblatexila/latexila-latex-commands.c:148
 #, fuzzy
 #| msgid "Array of Equations - \\begin{align*}"
 msgid "Array of Equations — \\begin{align*}"
 msgstr "Vector de ecuații - \\begin{align*}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:274
+#: ../src/liblatexila/latexila-latex-commands.c:150
 #, fuzzy
 #| msgid "Numbered Array of _Equations - \\begin{align}"
 msgid "Numbered Array of _Equations — \\begin{align}"
 msgstr "Vector numerotat de _ecuații - \\begin{align}"
 
-#: ../src/liblatexila/latexila-latex-commands.c:275
+#: ../src/liblatexila/latexila-latex-commands.c:151
 #, fuzzy
 #| msgid "Numbered Array of Equations - \\begin{align}"
 msgid "Numbered Array of Equations — \\begin{align}"
 msgstr "Vector numerotat de ecuații - \\begin{align}"
 
-#. Math misc
-#: ../src/liblatexila/latexila-latex-commands.c:279
-#, fuzzy
-#| msgid "_Superscript - ^{}"
-msgid "_Superscript — ^{}"
-msgstr "_Exponent - ^{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:280
-#, fuzzy
-#| msgid "Superscript - ^{}"
-msgid "Superscript — ^{}"
-msgstr "Exponent - ^{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:281
-#, fuzzy
-#| msgid "Su_bscript - __{}"
-msgid "Su_bscript — __{}"
-msgstr "In_dice - __{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:282
-#, fuzzy
-#| msgid "Subscript - _{}"
-msgid "Subscript — _{}"
-msgstr "Incidce - _{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:283
-#, fuzzy
-#| msgid "_Fraction - \\frac{}{}"
-msgid "_Fraction — \\frac{}{}"
-msgstr "_Fracție - \\frac{}{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:284
-#, fuzzy
-#| msgid "Fraction - \\frac{}{}"
-msgid "Fraction — \\frac{}{}"
-msgstr "Fracție - \\frac{}{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:285
-#, fuzzy
-#| msgid "Square _Root - \\sqrt{}"
-msgid "Square _Root — \\sqrt{}"
-msgstr "_Radical - \\sqrt{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:286
-#, fuzzy
-#| msgid "Square Root - \\sqrt{}"
-msgid "Square Root — \\sqrt{}"
-msgstr "Radical - \\sqrt{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:287
-#, fuzzy
-#| msgid "_N-th Root - \\sqrt[]{}"
-msgid "_N-th Root — \\sqrt[]{}"
-msgstr "Radical de ordin _n - \\sqrt[]{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:288
-#, fuzzy
-#| msgid "N-th Root - \\sqrt[]{}"
-msgid "N-th Root — \\sqrt[]{}"
-msgstr "Radical de ordin n - \\sqrt[]{}"
-
-#: ../src/liblatexila/latexila-latex-commands.c:326
+#: ../src/liblatexila/latexila-latex-commands.c:193
 #, fuzzy
 #| msgid "Roman - \\mathrm"
 msgid "Roman — \\mathrm"
 msgstr "Roman - \\mathrm "
 
-#: ../src/liblatexila/latexila-latex-commands.c:328
+#: ../src/liblatexila/latexila-latex-commands.c:195
 #, fuzzy
 #| msgid "Italic - \\mathit"
 msgid "Italic — \\mathit"
 msgstr "Înclinat - \\mathit"
 
-#: ../src/liblatexila/latexila-latex-commands.c:330
+#: ../src/liblatexila/latexila-latex-commands.c:197
 #, fuzzy
 #| msgid "Bold - \\mathbf"
 msgid "Bold — \\mathbf"
 msgstr "Îngroșat - \\mathbf"
 
-#: ../src/liblatexila/latexila-latex-commands.c:332
+#: ../src/liblatexila/latexila-latex-commands.c:199
 #, fuzzy
 #| msgid "Sans Serif - \\mathsf"
 msgid "Sans Serif — \\mathsf"
 msgstr "Sans Serif - \\mathsf"
 
-#: ../src/liblatexila/latexila-latex-commands.c:334
+#: ../src/liblatexila/latexila-latex-commands.c:201
 #, fuzzy
 #| msgid "Typewriter - \\mathtt"
 msgid "Typewriter — \\mathtt"
 msgstr "Stil dactilografiat - \\mathtt"
 
-#: ../src/liblatexila/latexila-latex-commands.c:336
+#: ../src/liblatexila/latexila-latex-commands.c:203
 #, fuzzy
 #| msgid "Calligraphic - \\mathcal"
 msgid "Calligraphic — \\mathcal"
 msgstr "Caligrafic - \\mathcal"
 
-#: ../src/liblatexila/latexila-latex-commands.c:338
+#: ../src/liblatexila/latexila-latex-commands.c:205
 #, fuzzy
 #| msgid "Blackboard (uppercase only)  - \\mathbb (amsfonts package)"
 msgid "Blackboard (uppercase only) — \\mathbb (amsfonts package)"
 msgstr "Blackboard (doar majuscule) - \\mathbb (pachetul amsfonts)"
 
-#: ../src/liblatexila/latexila-latex-commands.c:340
+#: ../src/liblatexila/latexila-latex-commands.c:207
 #, fuzzy
 #| msgid "Euler Fraktur - \\mathfrak (amsfonts package)"
 msgid "Euler Fraktur — \\mathfrak (amsfonts package)"
 msgstr "Euler Fraktur - \\mathfrak (pachetul amsfonts)"
 
-#. Math Spaces
-#: ../src/liblatexila/latexila-latex-commands.c:358
+#: ../src/liblatexila/latexila-latex-commands.c:229
 msgid "_Small"
 msgstr "_Mic"
 
-#: ../src/liblatexila/latexila-latex-commands.c:358
+#: ../src/liblatexila/latexila-latex-commands.c:229
 #, fuzzy
 #| msgid "Small - \\,"
 msgid "Small — \\,"
 msgstr "Mic - \\,"
 
-#: ../src/liblatexila/latexila-latex-commands.c:359
+#: ../src/liblatexila/latexila-latex-commands.c:230
 msgid "_Medium"
 msgstr "_Mediu"
 
-#: ../src/liblatexila/latexila-latex-commands.c:359
+#: ../src/liblatexila/latexila-latex-commands.c:230
 #, fuzzy
 #| msgid "Medium - \\:"
 msgid "Medium — \\:"
 msgstr "Mediu - \\:"
 
-#: ../src/liblatexila/latexila-latex-commands.c:360
+#: ../src/liblatexila/latexila-latex-commands.c:231
 msgid "_Large"
 msgstr "Ma_re"
 
-#: ../src/liblatexila/latexila-latex-commands.c:360
+#: ../src/liblatexila/latexila-latex-commands.c:231
 #, fuzzy
 #| msgid "Large - \\;"
 msgid "Large — \\;"
 msgstr "Mare - \\;"
 
-#. Math: Left Delimiters
-#: ../src/liblatexila/latexila-latex-commands.c:366
+#: ../src/liblatexila/latexila-latex-commands.c:239
 msgid "left ("
 msgstr "stânga ("
 
-#: ../src/liblatexila/latexila-latex-commands.c:367
+#: ../src/liblatexila/latexila-latex-commands.c:240
 msgid "left ["
 msgstr "stânga ("
 
-#: ../src/liblatexila/latexila-latex-commands.c:368
+#: ../src/liblatexila/latexila-latex-commands.c:241
 msgid "left { "
-msgstr "stânga {"
+msgstr "stânga { "
 
-#: ../src/liblatexila/latexila-latex-commands.c:369
+#: ../src/liblatexila/latexila-latex-commands.c:242
 msgid "left <"
 msgstr "stânga <"
 
-#: ../src/liblatexila/latexila-latex-commands.c:370
+#: ../src/liblatexila/latexila-latex-commands.c:243
 msgid "left )"
 msgstr "stânga )"
 
-#: ../src/liblatexila/latexila-latex-commands.c:371
+#: ../src/liblatexila/latexila-latex-commands.c:244
 msgid "left ]"
 msgstr "stânga )"
 
-#: ../src/liblatexila/latexila-latex-commands.c:372
+#: ../src/liblatexila/latexila-latex-commands.c:245
 msgid "left  }"
 msgstr "stânga }"
 
-#: ../src/liblatexila/latexila-latex-commands.c:373
+#: ../src/liblatexila/latexila-latex-commands.c:246
 msgid "left >"
 msgstr "stânga >"
 
-#: ../src/liblatexila/latexila-latex-commands.c:374
+#: ../src/liblatexila/latexila-latex-commands.c:247
 msgid "left ."
 msgstr "stânga ."
 
-#. Math: Right Delimiters
-#: ../src/liblatexila/latexila-latex-commands.c:378
+#: ../src/liblatexila/latexila-latex-commands.c:253
 msgid "right )"
 msgstr "dreapta )"
 
-#: ../src/liblatexila/latexila-latex-commands.c:379
+#: ../src/liblatexila/latexila-latex-commands.c:254
 msgid "right ]"
 msgstr "dreapta ]"
 
-#: ../src/liblatexila/latexila-latex-commands.c:380
+#: ../src/liblatexila/latexila-latex-commands.c:255
 msgid "right  }"
 msgstr "dreapta }"
 
-#: ../src/liblatexila/latexila-latex-commands.c:381
+#: ../src/liblatexila/latexila-latex-commands.c:256
 msgid "right >"
 msgstr "dreapta >"
 
-#: ../src/liblatexila/latexila-latex-commands.c:382
+#: ../src/liblatexila/latexila-latex-commands.c:257
 msgid "right ("
 msgstr "dreapta ("
 
-#: ../src/liblatexila/latexila-latex-commands.c:383
+#: ../src/liblatexila/latexila-latex-commands.c:258
 msgid "right ["
 msgstr "dreapta ["
 
-#: ../src/liblatexila/latexila-latex-commands.c:384
+#: ../src/liblatexila/latexila-latex-commands.c:259
 msgid "right { "
-msgstr "dreapta {"
+msgstr "dreapta { "
 
-#: ../src/liblatexila/latexila-latex-commands.c:385
+#: ../src/liblatexila/latexila-latex-commands.c:260
 msgid "right <"
 msgstr "dreapta <"
 
-#: ../src/liblatexila/latexila-latex-commands.c:386
+#: ../src/liblatexila/latexila-latex-commands.c:261
 msgid "right ."
 msgstr "dreapta ."
 
-#: ../src/liblatexila/latexila-synctex.c:194
+#. action, icon, label, accel, tooltip
+#: ../src/liblatexila/latexila-latex-commands.c:283
+msgid "_Sectioning"
+msgstr "_Secționare"
+
+#: ../src/liblatexila/latexila-latex-commands.c:284
+msgid "_References"
+msgstr "_Referințe"
+
+#: ../src/liblatexila/latexila-latex-commands.c:285
+msgid "_Environments"
+msgstr "M_edii"
+
+#: ../src/liblatexila/latexila-latex-commands.c:286
+msgid "_List Environments"
+msgstr "_Listează mediile"
+
+#: ../src/liblatexila/latexila-latex-commands.c:287
+msgid "_Characters Sizes"
+msgstr "Dimensiunea _caracterelor"
+
+#: ../src/liblatexila/latexila-latex-commands.c:288
+msgid "_Font Styles"
+msgstr "Stilul _fontului"
+
+#: ../src/liblatexila/latexila-latex-commands.c:289
+msgid "_Font Family"
+msgstr "_Familie de fonturi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:290
+msgid "F_ont Series"
+msgstr "Serie de f_onturi"
+
+#: ../src/liblatexila/latexila-latex-commands.c:291
+msgid "Fo_nt Shape"
+msgstr "Forma fo_ntului"
+
+#: ../src/liblatexila/latexila-latex-commands.c:292
+msgid "_Tabular"
+msgstr "_Tabular"
+
+#: ../src/liblatexila/latexila-latex-commands.c:293
+msgid "_Presentation"
+msgstr "_Prezentare"
+
+#: ../src/liblatexila/latexila-latex-commands.c:294
+msgid "_Spacing"
+msgstr "_Spațiere"
+
+#: ../src/liblatexila/latexila-latex-commands.c:295
+msgid "International _Accents"
+msgstr "_Accente internaționale"
+
+#: ../src/liblatexila/latexila-latex-commands.c:296
+msgid "_Misc"
+msgstr "_Diverse"
+
+#: ../src/liblatexila/latexila-latex-commands.c:298
+msgid "_Math Environments"
+msgstr "_Medii matematice"
+
+#: ../src/liblatexila/latexila-latex-commands.c:299
+msgid "Math _Functions"
+msgstr "_Funcții  matematice"
+
+#: ../src/liblatexila/latexila-latex-commands.c:300
+msgid "Math Font _Styles"
+msgstr "_Stilurile fontului matematic"
+
+#: ../src/liblatexila/latexila-latex-commands.c:301
+msgid "Math _Accents"
+msgstr "_Accente matematice"
+
+#: ../src/liblatexila/latexila-latex-commands.c:302
+msgid "Math _Spaces"
+msgstr "_Spații matematice"
+
+#: ../src/liblatexila/latexila-latex-commands.c:303
+msgid "_Left Delimiters"
+msgstr "De_limitatori la stânga"
+
+#: ../src/liblatexila/latexila-latex-commands.c:304
+msgid "Right _Delimiters"
+msgstr "Delimitatori la _dreapta"
+
+#: ../src/liblatexila/latexila-latex-commands.c:309 ../src/structure.vala:776
+msgid "Part"
+msgstr "Parte"
+
+#: ../src/liblatexila/latexila-latex-commands.c:311 ../src/structure.vala:777
+msgid "Chapter"
+msgstr "Capitol"
+
+#: ../src/liblatexila/latexila-latex-commands.c:313 ../src/structure.vala:778
+msgid "Section"
+msgstr "Secțiune"
+
+#: ../src/liblatexila/latexila-latex-commands.c:315 ../src/structure.vala:779
+msgid "Sub-section"
+msgstr "Sub-secțiune"
+
+#: ../src/liblatexila/latexila-latex-commands.c:317 ../src/structure.vala:780
+msgid "Sub-sub-section"
+msgstr "Sub-sub-secțiune"
+
+#: ../src/liblatexila/latexila-latex-commands.c:319 ../src/structure.vala:781
+msgid "Paragraph"
+msgstr "Paragraf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:321 ../src/structure.vala:782
+msgid "Sub-paragraph"
+msgstr "Sub-paragraf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:326
+#, fuzzy
+#| msgid "Center - \\begin{center}"
+msgid "Center — \\begin{center}"
+msgstr "Centru - \\begin{center}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:328
+#, fuzzy
+#| msgid "Align Left - \\begin{flushleft}"
+msgid "Align Left — \\begin{flushleft}"
+msgstr "Aliniere la stânga - \\begin{flushleft}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:330
+#, fuzzy
+#| msgid "Align Right - \\begin{flushright}"
+msgid "Align Right — \\begin{flushright}"
+msgstr "Aliniere la dreapta - \\begin{flushright}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:332
+#, fuzzy
+#| msgid "Figure - \\begin{figure}"
+msgid "Figure — \\begin{figure}"
+msgstr "Figura - \\begin{figure}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:334
+#, fuzzy
+#| msgid "Table - \\begin{table}"
+msgid "Table — \\begin{table}"
+msgstr "Tabel - \\begin{table}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:336
+#, fuzzy
+#| msgid "Quote - \\begin{quote}"
+msgid "Quote — \\begin{quote}"
+msgstr "Citat - \\begin{quote}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:338
+#, fuzzy
+#| msgid "Quotation - \\begin{quotation}"
+msgid "Quotation — \\begin{quotation}"
+msgstr "Citare - \\begin{quotation}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:340
+#, fuzzy
+#| msgid "Verse - \\begin{verse}"
+msgid "Verse — \\begin{verse}"
+msgstr "Vers - \\begin{verse}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:342
+#, fuzzy
+#| msgid "Verbatim - \\begin{verbatim}"
+msgid "Verbatim — \\begin{verbatim}"
+msgstr "Textual - \\begin{verbatim}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:344
+#, fuzzy
+#| msgid "Minipage - \\begin{minipage}"
+msgid "Minipage — \\begin{minipage}"
+msgstr "Minipagină - \\begin{minipage}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:346
+#, fuzzy
+#| msgid "Title page - \\begin{titlepage}"
+msgid "Title page — \\begin{titlepage}"
+msgstr "Pagina de titlu - \\begin{titlepage}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:351
+#, fuzzy
+#| msgid "Bulleted List - \\begin{itemize}"
+msgid "Bulleted List — \\begin{itemize}"
+msgstr "Lista cu buline - \\begin{itemize}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:353
+#, fuzzy
+#| msgid "Enumeration - \\begin{enumerate}"
+msgid "Enumeration — \\begin{enumerate}"
+msgstr "Enumerație - \\begin{enumerate}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:355
+#, fuzzy
+#| msgid "Description - \\begin{description}"
+msgid "Description — \\begin{description}"
+msgstr "Descriere - \\begin{description}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:357
+#, fuzzy
+#| msgid "Custom list - \\begin{list}"
+msgid "Custom list — \\begin{list}"
+msgstr "Lista personalizată - \\begin{list}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:359
+#, fuzzy
+#| msgid "List item - \\item"
+msgid "List item — \\item"
+msgstr "Listează elemente - \\item"
+
+#: ../src/liblatexila/latexila-latex-commands.c:364
+#, fuzzy
+#| msgid "Bold - \\textbf"
+msgid "Bold — \\textbf"
+msgstr "Îngroșat - \\textbf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:366
+#, fuzzy
+#| msgid "Italic - \\textit"
+msgid "Italic — \\textit"
+msgstr "Italic - \\textit"
+
+#: ../src/liblatexila/latexila-latex-commands.c:368
+#, fuzzy
+#| msgid "Typewriter - \\texttt"
+msgid "Typewriter — \\texttt"
+msgstr "Stil dactilografiat - \\texttt"
+
+#: ../src/liblatexila/latexila-latex-commands.c:370
+#, fuzzy
+#| msgid "Slanted - \\textsl"
+msgid "Slanted — \\textsl"
+msgstr "Înclinat - \\textsl"
+
+#: ../src/liblatexila/latexila-latex-commands.c:372
+#, fuzzy
+#| msgid "Small Capitals - \\textsc"
+msgid "Small Capitals — \\textsc"
+msgstr "Majuscule mici - \\textsc"
+
+#: ../src/liblatexila/latexila-latex-commands.c:374
+#, fuzzy
+#| msgid "Sans Serif - \\textsf"
+msgid "Sans Serif — \\textsf"
+msgstr "Sans Serif - \\textsf"
+
+#: ../src/liblatexila/latexila-latex-commands.c:376
+#, fuzzy
+#| msgid "Emphasized - \\emph"
+msgid "Emphasized — \\emph"
+msgstr "Accentuat - \\emph"
+
+#: ../src/liblatexila/latexila-latex-commands.c:378
+#, fuzzy
+#| msgid "Underline - \\underline"
+msgid "Underline — \\underline"
+msgstr "Subliniat - \\underline"
+
+#: ../src/liblatexila/latexila-latex-commands.c:381
+#, fuzzy
+#| msgid "Roman - \\rmfamily"
+msgid "Roman — \\rmfamily"
+msgstr "Roman - \\rmfamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:383
+#, fuzzy
+#| msgid "Sans Serif - \\sffamily"
+msgid "Sans Serif — \\sffamily"
+msgstr "Sans Serif - \\sffamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:385
+#, fuzzy
+#| msgid "Monospace - \\ttfamily"
+msgid "Monospace — \\ttfamily"
+msgstr "Monospațiu - \\ttfamily"
+
+#: ../src/liblatexila/latexila-latex-commands.c:388
+#, fuzzy
+#| msgid "Medium - \\mdseries"
+msgid "Medium — \\mdseries"
+msgstr "Mediu - \\mdseries"
+
+#: ../src/liblatexila/latexila-latex-commands.c:390
+#, fuzzy
+#| msgid "Bold - \\bfseries"
+msgid "Bold — \\bfseries"
+msgstr "Îngroșat - \\bfseries"
+
+#: ../src/liblatexila/latexila-latex-commands.c:393
+#, fuzzy
+#| msgid "Upright - \\upshape"
+msgid "Upright — \\upshape"
+msgstr "Drept - \\upshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:395
+#, fuzzy
+#| msgid "Italic - \\itshape"
+msgid "Italic — \\itshape"
+msgstr "Italic - \\itshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:397
+#, fuzzy
+#| msgid "Slanted - \\slshape"
+msgid "Slanted — \\slshape"
+msgstr "Înclinat - \\slshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:399
+#, fuzzy
+#| msgid "Small Capitals - \\scshape"
+msgid "Small Capitals — \\scshape"
+msgstr "Majuscule mici - \\scshape"
+
+#: ../src/liblatexila/latexila-latex-commands.c:404
+#, fuzzy
+#| msgid "Document class - \\documentclass"
+msgid "Document class — \\documentclass"
+msgstr "Clasa document - \\documentclass"
+
+#: ../src/liblatexila/latexila-latex-commands.c:406
+#, fuzzy
+#| msgid "Use package - \\usepackage"
+msgid "Use package — \\usepackage"
+msgstr "Folosește pachet - \\usepackage"
+
+#: ../src/liblatexila/latexila-latex-commands.c:407
+msgid "_AMS packages"
+msgstr "Pachete _AMS"
+
+#: ../src/liblatexila/latexila-latex-commands.c:408
+msgid "AMS packages"
+msgstr "Pachete AMS"
+
+#: ../src/liblatexila/latexila-latex-commands.c:409
+#, fuzzy
+#| msgid "Author - \\author"
+msgid "Author — \\author"
+msgstr "Autor - \\author"
+
+#: ../src/liblatexila/latexila-latex-commands.c:410
+#, fuzzy
+#| msgid "Title - \\title"
+msgid "Title — \\title"
+msgstr "Titlu - \\title"
+
+#: ../src/liblatexila/latexila-latex-commands.c:412
+#, fuzzy
+#| msgid "Content of the document - \\begin{document}"
+msgid "Content of the document — \\begin{document}"
+msgstr "Conținutul documentului - \\begin{document}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:414
+#, fuzzy
+#| msgid "Make title - \\maketitle"
+msgid "Make title — \\maketitle"
+msgstr "Creează titlu - \\maketitle"
+
+#: ../src/liblatexila/latexila-latex-commands.c:416
+#, fuzzy
+#| msgid "Table of contents - \\tableofcontents"
+msgid "Table of contents — \\tableofcontents"
+msgstr "Cuprins - \\tableofcontents"
+
+#: ../src/liblatexila/latexila-latex-commands.c:418
+#, fuzzy
+#| msgid "Abstract - \\begin{abstract}"
+msgid "Abstract — \\begin{abstract}"
+msgstr "Abstract -\\begin{abstract}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:420
+#, fuzzy
+#| msgid "Include an image (graphicx package) - \\includegraphics"
+msgid "Include an image (graphicx package) — \\includegraphics"
+msgstr "Include o imagine (pachete graphicx) - \\includegraphics"
+
+#: ../src/liblatexila/latexila-latex-commands.c:422
+#, fuzzy
+#| msgid "Include a file - \\input"
+msgid "Include a file — \\input"
+msgstr "Include un fișier - \\input"
+
+#. Math misc
+#: ../src/liblatexila/latexila-latex-commands.c:426
+#, fuzzy
+#| msgid "_Superscript - ^{}"
+msgid "_Superscript — ^{}"
+msgstr "_Exponent - ^{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:427
+#, fuzzy
+#| msgid "Superscript - ^{}"
+msgid "Superscript — ^{}"
+msgstr "Exponent - ^{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:428
+#, fuzzy
+#| msgid "Su_bscript - __{}"
+msgid "Su_bscript — __{}"
+msgstr "In_dice - __{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:429
+#, fuzzy
+#| msgid "Subscript - _{}"
+msgid "Subscript — _{}"
+msgstr "Incidce - _{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:430
+#, fuzzy
+#| msgid "_Fraction - \\frac{}{}"
+msgid "_Fraction — \\frac{}{}"
+msgstr "_Fracție - \\frac{}{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:431
+#, fuzzy
+#| msgid "Fraction - \\frac{}{}"
+msgid "Fraction — \\frac{}{}"
+msgstr "Fracție - \\frac{}{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:432
+#, fuzzy
+#| msgid "Square _Root - \\sqrt{}"
+msgid "Square _Root — \\sqrt{}"
+msgstr "_Radical - \\sqrt{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:433
+#, fuzzy
+#| msgid "Square Root - \\sqrt{}"
+msgid "Square Root — \\sqrt{}"
+msgstr "Radical - \\sqrt{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:434
+#, fuzzy
+#| msgid "_N-th Root - \\sqrt[]{}"
+msgid "_N-th Root — \\sqrt[]{}"
+msgstr "Radical de ordin _n - \\sqrt[]{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:435
+#, fuzzy
+#| msgid "N-th Root - \\sqrt[]{}"
+msgid "N-th Root — \\sqrt[]{}"
+msgstr "Radical de ordin n - \\sqrt[]{}"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1541
+msgid "Sectioning"
+msgstr "Secționare"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1545
+msgid "References"
+msgstr "Referințe"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1549
+msgid "Characters Sizes"
+msgstr "Dimensiunile caracterelor"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1569
+msgid "Presentation Environments"
+msgstr "Medii de prezentare"
+
+#: ../src/liblatexila/latexila-latex-commands.c:1575
+msgid "Math Environments"
+msgstr "Medii matematice"
+
+#: ../src/liblatexila/latexila-synctex.c:195
 #, fuzzy
 #| msgid "Impossible to load the file '%s'."
 msgid "Impossible to do the forward search."
 msgstr "Nu se poate încărca fișierul „%s”."
 
-#: ../src/liblatexila/latexila-synctex.c:539
+#: ../src/liblatexila/latexila-synctex.c:540
 msgid "Can not communicate with evince."
-msgstr ""
+msgstr "Nu s-a putut comunica cu evince."
 
-#: ../src/liblatexila/latexila-synctex.c:603
+#: ../src/liblatexila/latexila-synctex.c:604
 msgid "The PDF file doesn’t exist."
-msgstr ""
+msgstr "Fișierul PDF nu există."
 
-#: ../src/liblatexila/latexila-synctex.c:654
+#: ../src/liblatexila/latexila-synctex.c:655
 #, fuzzy
 msgid "The document is not saved."
 msgstr "Numele activ al documentului"
@@ -1962,15 +1915,13 @@ msgid "Personal Templates"
 msgstr "Șabloane personale"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:124
-#, fuzzy
-#| msgid "New file"
 msgid "New File…"
-msgstr "Fișier nou"
+msgstr "Fișier nou…"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:131
 #: ../src/main_window_file.vala:32
 msgid "_New"
-msgstr ""
+msgstr "_Nou"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:232
 #, fuzzy
@@ -1981,7 +1932,7 @@ msgstr "Șablon nou..."
 #: ../src/liblatexila/latexila-templates-dialogs.c:239
 #: ../src/project_dialogs.vala:32
 msgid "Crea_te"
-msgstr ""
+msgstr "Creea_ză"
 
 #: ../src/liblatexila/latexila-templates-dialogs.c:249
 msgid "Name of the new template"
@@ -2006,17 +1957,15 @@ msgstr "Sigur doriți să ștergeți aceste fișiere?"
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:170
 #, c-format
 msgid "Error when deleting the template “%s”."
-msgstr ""
+msgstr "Eroare la ștergerea șablonului „%s”."
 
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:230
 msgid "Error when moving the template."
-msgstr ""
+msgstr "Eroare la mutarea șablonului."
 
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:274
-#, fuzzy
-#| msgid "delete"
 msgid "Delete"
-msgstr "șterge"
+msgstr "Șterge"
 
 #: ../src/liblatexila/latexila-templates-manage-dialog.c:366
 #, fuzzy
@@ -2143,7 +2092,7 @@ msgstr "_Editare"
 
 #: ../src/main_window_edit.vala:32
 msgid "_Undo"
-msgstr ""
+msgstr "_Anulează"
 
 #: ../src/main_window_edit.vala:33
 msgid "Undo the last action"
@@ -2151,7 +2100,7 @@ msgstr "Anulează ultima acțiune"
 
 #: ../src/main_window_edit.vala:35
 msgid "_Redo"
-msgstr ""
+msgstr "_Refă"
 
 #: ../src/main_window_edit.vala:36
 msgid "Redo the last undone action"
@@ -2159,7 +2108,7 @@ msgstr "Refă ultima acțiune anulată"
 
 #: ../src/main_window_edit.vala:38 ../src/main_window_structure.vala:32
 msgid "Cu_t"
-msgstr ""
+msgstr "_Taie"
 
 #: ../src/main_window_edit.vala:39
 msgid "Cut the selection"
@@ -2167,7 +2116,7 @@ msgstr "Taie selecția"
 
 #: ../src/main_window_edit.vala:41 ../src/main_window_structure.vala:35
 msgid "_Copy"
-msgstr ""
+msgstr "_Copiază"
 
 #: ../src/main_window_edit.vala:42
 msgid "Copy the selection"
@@ -2179,7 +2128,7 @@ msgstr "Copiază selecția"
 #. Anyway if we press Ctrl+V when the cursor is in the document, no problem.
 #: ../src/main_window_edit.vala:48
 msgid "_Paste"
-msgstr ""
+msgstr "Li_pește"
 
 #: ../src/main_window_edit.vala:49
 msgid "Paste the clipboard"
@@ -2190,10 +2139,8 @@ msgid "Delete the selected text"
 msgstr "Șterge textul selectat"
 
 #: ../src/main_window_edit.vala:54
-#, fuzzy
-#| msgid "_Select"
 msgid "Select _All"
-msgstr "_Selectează"
+msgstr "Selectează t_ot"
 
 #: ../src/main_window_edit.vala:55
 msgid "Select the entire document"
@@ -2201,7 +2148,7 @@ msgstr "Selectează întregul document"
 
 #: ../src/main_window_edit.vala:57
 msgid "_Indent"
-msgstr ""
+msgstr "_Indentare"
 
 #: ../src/main_window_edit.vala:58
 #, fuzzy
@@ -2211,7 +2158,7 @@ msgstr "Șterge textul selectat"
 
 #: ../src/main_window_edit.vala:60
 msgid "_Unindent"
-msgstr ""
+msgstr "_Deindentează"
 
 #: ../src/main_window_edit.vala:61
 #, fuzzy
@@ -2247,13 +2194,11 @@ msgstr "_Comentează"
 
 #: ../src/main_window_edit.vala:72
 msgid "Complete the LaTeX command"
-msgstr ""
+msgstr "Completează comanda LaTeX"
 
 #: ../src/main_window_edit.vala:74
-#, fuzzy
-#| msgid "Preferences"
 msgid "_Preferences"
-msgstr "Preferințe"
+msgstr "_Preferințe"
 
 #: ../src/main_window_edit.vala:75
 msgid "Configure the application"
@@ -2277,7 +2222,7 @@ msgstr "Creează o fereastră nouă"
 
 #: ../src/main_window_file.vala:38 ../src/main_window_file.vala:158
 msgid "_Open"
-msgstr ""
+msgstr "_Deschide"
 
 #: ../src/main_window_file.vala:39 ../src/main_window_file.vala:90
 msgid "Open a file"
@@ -2399,24 +2344,20 @@ msgstr ""
 "Mută elementul de structură selectat la dreapta (e.g. capitol → secțiune)"
 
 #: ../src/main_window_structure.vala:55
-#, fuzzy
-#| msgid "Open Files"
 msgid "_Open File"
-msgstr "Deschide fișiere"
+msgstr "_Deschide fișier"
 
 #: ../src/main_window_structure.vala:56
-#, fuzzy
-#| msgid "Delete the selected structure item"
 msgid "Open the file referenced by the selected structure item"
-msgstr "Șterge elementul de structură selectat"
+msgstr "Deschide fișierul referit de elementul de structură selectat"
 
 #: ../src/main_window_tools.vala:28
 msgid "_Tools"
-msgstr ""
+msgstr "_Unelte"
 
 #: ../src/main_window_tools.vala:29
 msgid "_Check Spelling…"
-msgstr ""
+msgstr "_Verifică ortografia…"
 
 #: ../src/main_window_tools.vala:30
 #, fuzzy
@@ -2426,7 +2367,7 @@ msgstr "Schimbă fișierul principal al proiectului actual"
 
 #: ../src/main_window_tools.vala:31
 msgid "_Set Language…"
-msgstr ""
+msgstr "_Stabilește limba…"
 
 #: ../src/main_window_tools.vala:32
 #, fuzzy
@@ -2444,7 +2385,7 @@ msgstr ""
 
 #: ../src/main_window.vala:28
 msgid "_Quit"
-msgstr ""
+msgstr "_Ieșire"
 
 #: ../src/main_window.vala:29
 msgid "Quit the program"
@@ -2486,7 +2427,7 @@ msgstr "C_aută"
 
 #: ../src/main_window.vala:42
 msgid "_Find"
-msgstr ""
+msgstr "_Caută"
 
 #: ../src/main_window.vala:43
 msgid "Search for text"
@@ -2503,153 +2444,117 @@ msgid "Search for and replace text"
 msgstr "Caută și înlocuiește textul"
 
 #: ../src/main_window.vala:46
-#, fuzzy
-#| msgid "Go to Line:"
-msgid "_Go to Line…"
-msgstr "Sari la linia:"
+msgid "_Jump to PDF"
+msgstr "_Sari la PDF"
 
 #: ../src/main_window.vala:47
-msgid "Go to a specific line"
-msgstr "Navighează la linia specificată"
-
-#: ../src/main_window.vala:48
-msgid "_Jump to PDF"
-msgstr ""
-
-#: ../src/main_window.vala:49
 msgid ""
 "Jump to the associated position in the PDF file. Another shortcut: Ctrl"
 "+click, which works in both directions."
 msgstr ""
 
+#. LaTeX and Math
+#: ../src/main_window.vala:52
+msgid "_Math"
+msgstr "_Matematică"
+
 #. Projects
-#: ../src/main_window.vala:53
+#: ../src/main_window.vala:55
 msgid "_Projects"
 msgstr "_Proiecte"
 
-#: ../src/main_window.vala:54
+#: ../src/main_window.vala:56
 msgid "_New Project"
 msgstr "Proiect _nou"
 
-#: ../src/main_window.vala:55
+#: ../src/main_window.vala:57
 msgid "Create a new project"
 msgstr "Creează un proiect nou"
 
-#: ../src/main_window.vala:56
+#: ../src/main_window.vala:58
 msgid "_Configure Current Project"
 msgstr "_Configurează proiectul actual"
 
-#: ../src/main_window.vala:57
+#: ../src/main_window.vala:59
 msgid "Change the main file of the current project"
 msgstr "Schimbă fișierul principal al proiectului actual"
 
-#: ../src/main_window.vala:59
+#: ../src/main_window.vala:61
 msgid "_Manage Projects"
 msgstr "Gestio_nează proiectele"
 
-#: ../src/main_window.vala:60 ../src/project_dialogs.vala:187
+#: ../src/main_window.vala:62 ../src/project_dialogs.vala:187
 msgid "Manage Projects"
 msgstr "Gestionează proiectele"
 
-#: ../src/main_window.vala:64
+#: ../src/main_window.vala:66
 msgid "_Contents"
 msgstr "_Conținut"
 
-#: ../src/main_window.vala:65
-#, fuzzy
-#| msgid "Open the LaTeXila documentation"
+#: ../src/main_window.vala:67
 msgid "Open the GNOME LaTeX documentation"
-msgstr "Deschide documentația LaTeXila"
+msgstr "Deschide documentația GNOME LaTeX"
 
-#: ../src/main_window.vala:66
+#: ../src/main_window.vala:68
 msgid "_LaTeX Reference"
 msgstr "Referințe _LaTeX"
 
-#: ../src/main_window.vala:67
+#: ../src/main_window.vala:69
 msgid "The Kile LaTeX Reference"
 msgstr "Referința Kile LaTeX"
 
-#: ../src/main_window.vala:68
+#: ../src/main_window.vala:70
 msgid "_About"
-msgstr ""
+msgstr "_Despre"
 
-#: ../src/main_window.vala:74
+#: ../src/main_window.vala:76
 msgid "_Main Toolbar"
 msgstr "Bara principală de u_nelte"
 
-#: ../src/main_window.vala:75
+#: ../src/main_window.vala:77
 msgid "Show or hide the main toolbar"
 msgstr "Arată sau ascunde bara principală de unelte"
 
 #. Translators: "Edit" here is an adjective.
-#: ../src/main_window.vala:77
+#: ../src/main_window.vala:79
 msgid "_Edit Toolbar"
 msgstr "_Editează bara de unelte"
 
-#: ../src/main_window.vala:78
+#: ../src/main_window.vala:80
 msgid "Show or hide the edit toolbar"
 msgstr "Arată sau ascunde bara de unelte de editare"
 
-#: ../src/main_window.vala:79
+#: ../src/main_window.vala:81
 msgid "_Side panel"
 msgstr "Panou later_al"
 
-#: ../src/main_window.vala:80
+#: ../src/main_window.vala:82
 msgid "Show or hide the side panel"
 msgstr "Arată sau ascunde panoul lateral"
 
-#: ../src/main_window.vala:81
+#: ../src/main_window.vala:83
 msgid "_Bottom panel"
 msgstr "Panou de su_bsol"
 
-#: ../src/main_window.vala:82
+#: ../src/main_window.vala:84
 msgid "Show or hide the bottom panel"
 msgstr "Arată sau ascunde panoul de subsol"
 
 #. Symbols
-#: ../src/main_window.vala:446
+#: ../src/main_window.vala:440
 msgid "Symbols"
 msgstr "Simboluri"
 
-#: ../src/main_window.vala:455
+#: ../src/main_window.vala:450
 msgid "Structure"
 msgstr "Structură"
 
-#: ../src/main_window.vala:648
-#, fuzzy, c-format
-#| msgid "This file (%s) is already opened in another LaTeXila window."
-msgid "This file (%s) is already opened in another GNOME LaTeX window."
-msgstr "Acest fișier (%s) este deja deschis într-o altă fereastră LaTeXila."
-
-#: ../src/main_window.vala:650
-#, fuzzy
-#| msgid ""
-#| "LaTeXila opened this instance of the file in a non-editable way. Do you "
-#| "want to edit it anyway?"
-msgid ""
-"GNOME LaTeX opened this instance of the file in a non-editable way. Do you "
-"want to edit it anyway?"
-msgstr ""
-"LaTeXila a deschis această instanță a fișierului într-un mod non-editabil. "
-"Editați oricum?"
-
-#: ../src/main_window.vala:654
-msgid "Edit Anyway"
-msgstr "Editează oricum"
-
-#: ../src/main_window.vala:655
-#, fuzzy
-#| msgid "Don't Edit"
-msgid "Don’t Edit"
-msgstr "Nu edita"
-
-#: ../src/main_window.vala:750
-#, fuzzy, c-format
-#| msgid "Save changes to document \"%s\" before closing?"
+#: ../src/main_window.vala:745
+#, c-format
 msgid "Save changes to document “%s” before closing?"
-msgstr "Salvați schimbările la documentul „%s” înainte de închidere?"
+msgstr "Salvați modificările documentului „%s” înainte de închidere?"
 
-#: ../src/main_window.vala:809
+#: ../src/main_window.vala:804
 msgid "Save File"
 msgstr "Salvează fișierul"
 
@@ -2659,10 +2564,8 @@ msgstr "Preferințe"
 
 #. reset all button
 #: ../src/preferences_dialog.vala:42 ../src/preferences_dialog.vala:115
-#, fuzzy
-#| msgid "Reset All"
 msgid "_Reset All"
-msgstr "Resetează tot"
+msgstr "_Restabiliește tot"
 
 #: ../src/preferences_dialog.vala:43
 msgid "Reset all preferences"
@@ -2679,14 +2582,14 @@ msgstr[0] "minut"
 msgstr[1] "minute"
 msgstr[2] "de minute"
 
-#: ../src/preferences_dialog.vala:294
+#: ../src/preferences_dialog.vala:253
 msgid "character"
 msgid_plural "characters"
 msgstr[0] "caracter"
 msgstr[1] "caractere"
 msgstr[2] "de caractere"
 
-#: ../src/preferences_dialog.vala:337
+#: ../src/preferences_dialog.vala:296
 #, c-format
 msgid "Use the system fixed width font (%s)"
 msgstr "Folosește fontul de lățime fixă al sistemului (%s)"
@@ -2723,10 +2626,8 @@ msgid "Location of the project"
 msgstr "Locația proiectului"
 
 #: ../src/project_dialogs.vala:241
-#, fuzzy
-#| msgid "_Projects"
 msgid "_Properties"
-msgstr "_Proiecte"
+msgstr "_Proprietăți"
 
 #: ../src/project_dialogs.vala:243
 #, fuzzy
@@ -2754,64 +2655,55 @@ msgstr "Curăță totul"
 msgid "The Main File is not in the directory."
 msgstr "Fișierul principal nu este în dosar."
 
-#: ../src/search.vala:40
-msgid "Go to Line:"
-msgstr "Sari la linia:"
-
-#: ../src/search.vala:50
-msgid "Line you want to move the cursor to"
-msgstr "Linia la care vreți să mutați cursorul"
-
-#: ../src/search.vala:172
+#: ../src/search.vala:100
 msgid "Replace with"
 msgstr "Înlocuiește cu"
 
-#: ../src/search.vala:180
+#: ../src/search.vala:108
 msgid "Replace"
 msgstr "Înlocuiește"
 
 #. replace all: image + label
-#: ../src/search.vala:184
+#: ../src/search.vala:112
 msgid "Replace All"
 msgstr "Înlocuiește tot"
 
-#: ../src/search.vala:194
+#: ../src/search.vala:122
 msgid "All"
 msgstr "Toate"
 
-#: ../src/search.vala:290
+#: ../src/search.vala:218
 msgid "Search for"
 msgstr "Caută după"
 
-#: ../src/search.vala:301
+#: ../src/search.vala:229
 msgid "Case sensitive"
 msgstr "Sensibil la majuscule"
 
-#: ../src/search.vala:304
+#: ../src/search.vala:232
 msgid "Entire words only"
 msgstr "Doar cuvinte întregi"
 
-#: ../src/search.vala:451
+#: ../src/search.vala:381
 msgid "Not found"
 msgstr "Nu s-a găsit"
 
 #. Translators: the first %d is the position of the current search occurrence,
 #. * and the second %d is the total number of search occurrences.
 #.
-#: ../src/search.vala:468
+#: ../src/search.vala:398
 #, c-format
 msgid "Match %d of %d"
-msgstr ""
+msgstr "Potrivire %d din %d"
 
 #. Translators: %d is the total number of search occurrences.
-#: ../src/search.vala:473
-#, fuzzy, c-format
-#| msgid "%u matches"
+#: ../src/search.vala:403
+#, c-format
 msgid "%d match"
 msgid_plural "%d matches"
-msgstr[0] "%u potriviri"
-msgstr[1] "%u potriviri"
-msgstr[2] "%u potriviri"
+msgstr[0] "%d potrivire"
+msgstr[1] "%d potriviri"
+msgstr[2] "%d de potriviri"
 
 #: ../src/structure.vala:164
 msgid "Refresh"
@@ -2826,10 +2718,8 @@ msgid "Show labels"
 msgstr "Arată etichetele"
 
 #: ../src/structure.vala:190
-#, fuzzy
-#| msgid "Show all files"
 msgid "Show included files"
-msgstr "Arată toate fișierele"
+msgstr "Arată fișierele incluse"
 
 #: ../src/structure.vala:191
 msgid "Show tables"
@@ -2888,10 +2778,8 @@ msgid "shift right"
 msgstr "mută la dreapta"
 
 #: ../src/structure.vala:741
-#, fuzzy
-#| msgid "Open a file"
 msgid "open file"
-msgstr "Deschide un fișier"
+msgstr "deschide fișier"
 
 #: ../src/structure.vala:786
 msgid "Table"
@@ -2956,11 +2844,11 @@ msgstr "Numărul celor mai folosite simboluri:"
 
 #: ../src/tab_label.vala:48
 msgid "Project main file"
-msgstr ""
+msgstr "Fișierul principal al proiectului"
 
 #: ../src/tab_label.vala:51
 msgid "Project main file:"
-msgstr ""
+msgstr "Fișierul principal al proiectului:"
 
 #: ../src/ui/preferences_dialog.ui.h:1
 msgid "Display line numbers"
@@ -3010,7 +2898,7 @@ msgstr "Folosește font_ul de lățime fixă al sistemului (%s)"
 
 #: ../src/ui/preferences_dialog.ui.h:14
 msgid "Editor _font: "
-msgstr "_Fontul de editare:"
+msgstr "_Fontul de editare: "
 
 #: ../src/ui/preferences_dialog.ui.h:15
 msgid "Pick the editor font"
@@ -3050,11 +2938,11 @@ msgstr ""
 
 #: ../src/ui/preferences_dialog.ui.h:24
 msgid "Default Spell-Checking Settings"
-msgstr ""
+msgstr "Configurări de _ortografie implicite"
 
 #: ../src/ui/preferences_dialog.ui.h:25
 msgid "Language:"
-msgstr ""
+msgstr "Limbă:"
 
 #: ../src/ui/preferences_dialog.ui.h:26
 msgid "Highlight misspelled words"
@@ -3063,6 +2951,64 @@ msgstr ""
 #: ../src/ui/preferences_dialog.ui.h:27
 msgid "Other"
 msgstr "Alta"
+
+#~ msgid "Ln %d, Col %d"
+#~ msgstr "Ln %d, Col %d"
+
+#~ msgid "The file %s changed on disk."
+#~ msgstr "Fișierul %s a fost schimbat pe disk."
+
+#~ msgid "Do you want to drop your changes and reload the file?"
+#~ msgstr "Doriți să renunțați la schimbări și să reîncărcați fișierul?"
+
+#~ msgid "Do you want to reload the file?"
+#~ msgstr "Doriți să reîncărcați fișierul?"
+
+#, fuzzy
+#~| msgid "Reload"
+#~ msgid "_Reload"
+#~ msgstr "Reîncarcă"
+
+#~ msgid "Create new document"
+#~ msgstr "Creează un document nou"
+
+#, fuzzy
+#~| msgid "Go to Line:"
+#~ msgid "_Go to Line…"
+#~ msgstr "Sari la linia:"
+
+#~ msgid "Go to a specific line"
+#~ msgstr "Navighează la linia specificată"
+
+#, fuzzy
+#~| msgid "This file (%s) is already opened in another LaTeXila window."
+#~ msgid "This file (%s) is already opened in another GNOME LaTeX window."
+#~ msgstr "Acest fișier (%s) este deja deschis într-o altă fereastră LaTeXila."
+
+#, fuzzy
+#~| msgid ""
+#~| "LaTeXila opened this instance of the file in a non-editable way. Do you "
+#~| "want to edit it anyway?"
+#~ msgid ""
+#~ "GNOME LaTeX opened this instance of the file in a non-editable way. Do "
+#~ "you want to edit it anyway?"
+#~ msgstr ""
+#~ "LaTeXila a deschis această instanță a fișierului într-un mod non-"
+#~ "editabil. Editați oricum?"
+
+#~ msgid "Edit Anyway"
+#~ msgstr "Editează oricum"
+
+#, fuzzy
+#~| msgid "Don't Edit"
+#~ msgid "Don’t Edit"
+#~ msgstr "Nu edita"
+
+#~ msgid "Go to Line:"
+#~ msgstr "Sari la linia:"
+
+#~ msgid "Line you want to move the cursor to"
+#~ msgstr "Linia la care vreți să mutați cursorul"
 
 #~ msgid "Must Succeed"
 #~ msgstr "Trebuie să reușească"
